@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ data.title_en if lang == 'en' else data.title_jp }}</title>
+  <style>
+    body { font-family: serif; margin: 5%; line-height: 1.6; color: #333; }
+    h1 { color: #002244; border-bottom: 2px solid #002244; }
+    p { color: #666; }
+    div { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>{{ data.title_en if lang == 'en' else data.title_jp }}</h1>
+  <p>{{ data.date }}</p>
+  <div>
+    {{ data.content_en if lang == 'en' else data.content_jp }}
+  </div>
+  <div>
+    <strong>Trend Insight:</strong> {{ data.trend_en if lang == 'en' else data.trend_jp }}
+  </div>
+</body>
+</html>
