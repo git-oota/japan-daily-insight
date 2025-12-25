@@ -6,43 +6,39 @@
     <title>Daily Japan Insight Portal</title>
     <style>
         :root { --main: #002244; --accent: #e63946; }
-        body { font-family: sans-serif; margin: 0; background: #f8f9fa; }
-        header { background: var(--main); color: white; padding: 30px; text-align: center; position: relative; }
-        .lang-btn { position: absolute; top: 10px; right: 10px; padding: 8px; cursor: pointer; background: var(--accent); color: white; border: none; }
-        .container { display: flex; max-width: 1200px; margin: 20px auto; gap: 20px; }
-        .main-col { flex: 3; background: white; padding: 20px; border-radius: 5px; }
-        .side-col { flex: 1; background: #e9ecef; padding: 20px; border-radius: 5px; }
-        .list-item { display: block; padding: 12px; border-bottom: 1px solid #ddd; text-decoration: none; color: #333; }
-        .list-item:hover { background: #f1f1f1; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; background: #f0f2f5; color: #333; }
+        header { background: var(--main); color: white; padding: 40px 20px; text-align: center; border-bottom: 8px solid var(--accent); position: relative; }
+        .lang-btn { position: absolute; top: 15px; right: 15px; padding: 10px 15px; cursor: pointer; background: var(--accent); color: white; border: none; font-weight: bold; border-radius: 4px; }
+        .main-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .article-card { background: white; margin-bottom: 25px; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-decoration: none; color: inherit; display: block; transition: transform 0.2s; }
+        .article-card:hover { transform: translateY(-5px); }
+        .date-tag { display: inline-block; background: var(--main); color: white; padding: 4px 12px; font-size: 0.85rem; border-radius: 20px; margin-bottom: 15px; }
+        h2 { margin: 0; font-size: 1.8rem; color: var(--main); line-height: 1.4; }
         .en, .jp { display: none; }
+        footer { text-align: center; padding: 40px; color: #888; font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <header>
         <h1>DAILY JAPAN INSIGHT</h1>
+        <p>Expert News Analysis for the Next Generation</p>
         <button class="lang-btn" onclick="toggleLang()">JP / EN</button>
     </header>
-    <div class="container">
-        <main class="main-col">
-            <h2 class="jp">最新ニュース</h2><h2 class="en">Latest News</h2>
-            {% for item in items %}
-            <a href="articles/{{ item.date }}.html" class="list-item">
-                <small>{{ item.date }}</small>
-                <div class="jp">{{ item.title_jp }}</div>
-                <div class="en">{{ item.title_en }}</div>
-            </a>
-            {% endfor %}
-        </main>
-        <aside class="side-col">
-            <h2 class="jp">ことわざ集</h2><h2 class="en">Proverb Archives</h2>
-            {% for item in items %}
-            <a href="articles/{{ item.date }}.html#proverb-anchor" class="list-item">
-                <div class="jp">{{ item.proverb.title_jp }}</div>
-                <div class="en">{{ item.proverb.title_en }}</div>
-            </a>
-            {% endfor %}
-        </aside>
-    </div>
+
+    <main class="main-container">
+        {% for item in items %}
+        <a href="articles/{{ item.date }}.html" class="article-card">
+            <span class="date-tag">{{ item.date }}</span>
+            <h2 class="jp">{{ item.title_jp }}</h2>
+            <h2 class="en">{{ item.title_en }}</h2>
+        </a>
+        {% endfor %}
+    </main>
+
+    <footer>
+        &copy; 2025 Daily Japan Insight
+    </footer>
+
     <script>
         let lang = localStorage.getItem('lang') || 'jp';
         function update() {
