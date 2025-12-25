@@ -5,7 +5,7 @@ import google.generativeai as genai
 from jinja2 import Template
 
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-3-flash-preview')
 PROMPT = "Create a news article about Japan in JSON format. Include title_en, title_jp, content_en, content_jp, trend_en, trend_jp, and a proverb."
 
 def generate():
