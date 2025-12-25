@@ -4,60 +4,59 @@ import datetime
 import google.generativeai as genai
 from jinja2 import Template
 
-# API設定
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-
-# モデル名を最新版エイリアスに変更
 model = genai.GenerativeModel('gemini-3-flash-preview')
 
 PROMPT = """
-Identify today's top story from Japan's 5 major newspapers. 
-Write a sophisticated column as "The Crimson Pen".
-Include: Comparison, Cultural Context, and a related Japanese Proverb.
+Analyze today's top stories from Japan's 5 major newspapers. 
+Identify the most common story and write as a witty American columnist "The Crimson Pen".
+Requirements:
+1. Provide content in BOTH English and Japanese.
+2. Content: Comparison of papers, Cultural/Historical context, and Japanese Common Sense.
+3. Proverb: Select 1 related Japanese proverb.
+4. Glossary: 3 terms with definitions in both languages.
+
 Output ONLY valid JSON:
 {
-  "title": "...", "content": "...",
-  "proverb": {"title": "...", "desc": "..."},
-  "glossary": [{"term": "...", "def": "..."}]
+  "title_en": "...", "title_jp": "...",
+  "content_en": "...", "content_jp": "...",
+  "proverb": {
+    "title_en": "...", "title_jp": "...",
+    "desc_en": "...", "desc_jp": "..."
+  },
+  "glossary": [
+    {"term_en": "...", "term_jp": "...", "def_en": "...", "def_jp": "..."}
+  ]
 }
 """
 
 def generate():
-    # 安全にコンテンツを生成
     response = model.generate_content(PROMPT)
-    
-    # JSON抽出のロジックを強化
     res_text = response.text.strip()
-    # マークダウンの除去
     if "```json" in res_text:
         res_text = res_text.split("```json")[1].split("```")[0]
     elif "```" in res_text:
         res_text = res_text.split("```")[1].split("```")[0]
     
-    new_entry = json.loads(res_text)
+    new_entry = json.loads(res_text.strip())
     date_str = datetime.date.today().strftime("%Y-%m-%d")
     new_entry['date'] = date_str
 
-    # データの保存処理
     data_path = 'docs/data.json'
     os.makedirs('docs/articles', exist_ok=True)
     
     history = []
     if os.path.exists(data_path):
-        try:
-            with open(data_path, 'r', encoding='utf-8') as f:
-                history = json.load(f)
-        except:
-            history = []
+        with open(data_path, 'r', encoding='utf-8') as f:
+            history = json.load(f)
 
-    # 重複を防いで先頭に追加
-    if not any(day.get('date') == date_str for day in history):
+    if not any(entry.get('date') == date_str for entry in history):
         history.insert(0, new_entry)
         
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
-    # ページ生成
+    # テンプレート読み込み
     with open('template_article.html', 'r', encoding='utf-8') as f:
         tmpl_art = Template(f.read())
     with open(f'docs/articles/{date_str}.html', 'w', encoding='utf-8') as f:
