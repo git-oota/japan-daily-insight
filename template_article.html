@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ item.title }}</title>
+    <style>
+        body { font-family: 'Noto Serif JP', serif; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; }
+        h1 { color: #002244; font-size: 2.5rem; line-height: 1.2; border-bottom: 4px solid #e63946; padding-bottom: 15px; }
+        .meta { color: #e63946; font-weight: bold; margin-bottom: 40px; }
+        .article-body { font-size: 1.15rem; margin-bottom: 60px; }
+        .proverb-section { background: #f4f7f9; padding: 30px; border-left: 8px solid #002244; margin: 40px 0; }
+        .term-highlight { border-bottom: 2px dotted #e63946; cursor: help; background: #fffdf0; }
+        #popup { position: fixed; bottom: -120px; left: 0; width: 100%; background: #002244; color: white; padding: 25px; transition: 0.4s ease; z-index: 1000; box-sizing: border-box; }
+        #popup.active { bottom: 0; }
+        .back-link { display: inline-block; margin-top: 40px; text-decoration: none; color: #002244; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>{{ item.title }}</h1>
+        <div class="meta">{{ item.date }} | THE CRIMSON PEN COLUMN</div>
+        
+        <div class="article-body" id="main-content">
+            {{ item.content | replace('\n', '<br>') }}
+        </div>
 
+        <div class="proverb-section">
+            <h3>Today's Wisdom</h3>
+            <p><strong>{{ item.proverb.title }}</strong></p>
+            <p>{{ item.proverb.desc }}</p>
+        </div>
+    </article>
+
+    <a href="../index.html" class="back-link">← Back to Portal</a>
+
+    <div id="popup"><strong id="popup-term"></strong>: <span id="popup-def"></span></div>
+
+    <script>
+        const glossary = {{ item.glossary | tojson }};
+        const contentArea = document.getElementById('main-content');
+        let html = contentArea.innerHTML;
+
+        glossary.forEach(item => {
+            const regex = new RegExp(item.term, 'g');
+            html = html.replace(regex, `<span class="term-highlight" onmousedown="showDef('${item.term}', '${item.def}')">${item.term}</span>`);
+        });
+        contentArea.innerHTML = html;
+
+        function showDef(term, definition) {
+            document.getElementById('popup-term').innerText = term;
+            document.getElementById('popup-def').innerText = definition;
+            document.getElementById('popup').classList.add('active');
+            setTimeout(() => document.getElementById('popup').classList.remove('active'), 6000);
+        }
+        // スマホ長押し対応
+        document.addEventListener('contextmenu', e => { if(e.target.classList.contains('term-highlight')) e.preventDefault(); });
+    </script>
+</body>
+</html>
