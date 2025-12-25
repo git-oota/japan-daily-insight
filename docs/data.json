@@ -1,0 +1,25 @@
+[
+  {
+    "title": "The Paper Shield: Japan's Political Reform and the Art of Persistent Shadows",
+    "content": "In the hallowed halls of the Diet, a drama of ink and evasion has reached its crescendo. Today, Japan's 'Big Five' find themselves tracing the same jagged outline: the passage of the amended Political Funds Control Act through the Lower House. Yet, through the lens of The Crimson Pen, the uniformity of the headline masks a fractured reality. The Yomiuri and Nikkei offer a pragmatic dissection, focusing on the technicalities of the LDP-Komeito compromise and the economic stability promised by such a settlement. In contrast, the Asahi and Mainichi spill far more acidic ink, decrying the 'gaping loopholes' and the lack of a truly independent oversight body—portraying the reform not as a cleaning of the stables, but as a mere rearranging of the dust. Sankei, ever the guardian of sovereignty, views the discord through the prism of national stability amidst external threats. Culturally, this legislative dance reflects the enduring tension between 'tatemae'—the public facade of accountability—and 'honne'—the ingrained reality of factional influence. While the newspapers debate the nuances of 'transparency,' the Japanese public remains wary of a political culture that often prioritizes the preservation of 'wa' (harmony) over the surgical removal of corruption. The reform, much like a traditional folding screen, seems designed more to obscure what lies behind than to invite the light of day.",
+    "proverb": {
+      "title": "Doronawa (泥縄)",
+      "desc": "Literally 'to start weaving a rope after the thief has already been caught.' It refers to taking belated, hurried measures only after a crisis has occurred, perfectly encapsulating the rushed nature of the current political reform."
+    },
+    "glossary": [
+      {
+        "term": "Seiji Shikin Kiseihou",
+        "def": "The Political Funds Control Act; the primary law governing how Japanese politicians handle and report their finances."
+      },
+      {
+        "term": "Tatemae",
+        "def": "The 'built-in' front or public face one presents to society, as opposed to one's true feelings (honne)."
+      },
+      {
+        "term": "Diet (Kokkai)",
+        "def": "Japan's bicameral legislature, consisting of the House of Representatives and the House of Councillors."
+      }
+    ],
+    "date": "2025-12-25"
+  }
+]

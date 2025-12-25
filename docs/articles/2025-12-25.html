@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Paper Shield: Japan's Political Reform and the Art of Persistent Shadows</title>
+    <style>
+        body { font-family: 'Noto Serif JP', serif; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; }
+        h1 { color: #002244; font-size: 2.5rem; line-height: 1.2; border-bottom: 4px solid #e63946; padding-bottom: 15px; }
+        .meta { color: #e63946; font-weight: bold; margin-bottom: 40px; }
+        .article-body { font-size: 1.15rem; margin-bottom: 60px; }
+        .proverb-section { background: #f4f7f9; padding: 30px; border-left: 8px solid #002244; margin: 40px 0; }
+        .term-highlight { border-bottom: 2px dotted #e63946; cursor: help; background: #fffdf0; }
+        #popup { position: fixed; bottom: -120px; left: 0; width: 100%; background: #002244; color: white; padding: 25px; transition: 0.4s ease; z-index: 1000; box-sizing: border-box; }
+        #popup.active { bottom: 0; }
+        .back-link { display: inline-block; margin-top: 40px; text-decoration: none; color: #002244; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>The Paper Shield: Japan's Political Reform and the Art of Persistent Shadows</h1>
+        <div class="meta">2025-12-25 | THE CRIMSON PEN COLUMN</div>
+        
+        <div class="article-body" id="main-content">
+            In the hallowed halls of the Diet, a drama of ink and evasion has reached its crescendo. Today, Japan's 'Big Five' find themselves tracing the same jagged outline: the passage of the amended Political Funds Control Act through the Lower House. Yet, through the lens of The Crimson Pen, the uniformity of the headline masks a fractured reality. The Yomiuri and Nikkei offer a pragmatic dissection, focusing on the technicalities of the LDP-Komeito compromise and the economic stability promised by such a settlement. In contrast, the Asahi and Mainichi spill far more acidic ink, decrying the 'gaping loopholes' and the lack of a truly independent oversight body—portraying the reform not as a cleaning of the stables, but as a mere rearranging of the dust. Sankei, ever the guardian of sovereignty, views the discord through the prism of national stability amidst external threats. Culturally, this legislative dance reflects the enduring tension between 'tatemae'—the public facade of accountability—and 'honne'—the ingrained reality of factional influence. While the newspapers debate the nuances of 'transparency,' the Japanese public remains wary of a political culture that often prioritizes the preservation of 'wa' (harmony) over the surgical removal of corruption. The reform, much like a traditional folding screen, seems designed more to obscure what lies behind than to invite the light of day.
+        </div>
+
+        <div class="proverb-section">
+            <h3>Today's Wisdom</h3>
+            <p><strong>Doronawa (泥縄)</strong></p>
+            <p>Literally 'to start weaving a rope after the thief has already been caught.' It refers to taking belated, hurried measures only after a crisis has occurred, perfectly encapsulating the rushed nature of the current political reform.</p>
+        </div>
+    </article>
+
+    <a href="../index.html" class="back-link">← Back to Portal</a>
+
+    <div id="popup"><strong id="popup-term"></strong>: <span id="popup-def"></span></div>
+
+    <script>
+        const glossary = [{"def": "The Political Funds Control Act; the primary law governing how Japanese politicians handle and report their finances.", "term": "Seiji Shikin Kiseihou"}, {"def": "The \u0027built-in\u0027 front or public face one presents to society, as opposed to one\u0027s true feelings (honne).", "term": "Tatemae"}, {"def": "Japan\u0027s bicameral legislature, consisting of the House of Representatives and the House of Councillors.", "term": "Diet (Kokkai)"}];
+        const contentArea = document.getElementById('main-content');
+        let html = contentArea.innerHTML;
+
+        glossary.forEach(item => {
+            const regex = new RegExp(item.term, 'g');
+            html = html.replace(regex, `<span class="term-highlight" onmousedown="showDef('${item.term}', '${item.def}')">${item.term}</span>`);
+        });
+        contentArea.innerHTML = html;
+
+        function showDef(term, definition) {
+            document.getElementById('popup-term').innerText = term;
+            document.getElementById('popup-def').innerText = definition;
+            document.getElementById('popup').classList.add('active');
+            setTimeout(() => document.getElementById('popup').classList.remove('active'), 6000);
+        }
+        // スマホ長押し対応
+        document.addEventListener('contextmenu', e => { if(e.target.classList.contains('term-highlight')) e.preventDefault(); });
+    </script>
+</body>
+</html>
