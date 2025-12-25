@@ -3,82 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
+    <title>{{ item.title_jp }}</title>
     <style>
-        body { font-family: serif; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 30px; }
-        h1 { color: #002244; border-bottom: 3px solid var(--accent); }
-        .section-title { font-weight: bold; color: #e63946; margin-top: 30px; border-left: 5px solid #002244; padding-left: 10px; }
-        .critique { background: #fff3f3; padding: 20px; border-radius: 5px; font-style: italic; margin-top: 40px; }
-        .hints { display: flex; gap: 20px; margin-top: 20px; }
-        .hint-card { flex: 1; background: #f0fdf4; padding: 15px; border: 1px solid #bbf7d0; border-radius: 5px; }
-        .proverb-area { margin-top: 60px; padding: 20px; background: #002244; color: white; border-radius: 8px; }
-        .term-hl { border-bottom: 2px dotted #e63946; cursor: pointer; background: #ffffcc; }
-        #popup { position: fixed; bottom: -150px; left: 0; width: 100%; background: #002244; color: white; padding: 20px; transition: 0.4s; z-index: 1000; text-align: center; }
+        body { font-family: 'Noto Serif JP', serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; color: #222; }
+        h1 { color: #002244; font-size: 2.2rem; border-bottom: 4px solid #e63946; padding-bottom: 15px; margin-top: 0; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .lang-switch button { padding: 8px 15px; cursor: pointer; background: #002244; color: white; border: none; border-radius: 4px; }
+        .article-section { margin: 40px 0; font-size: 1.15rem; }
+        .critique-box { background: #fff5f5; padding: 30px; border-radius: 10px; margin: 50px 0; border-left: 10px solid #e63946; }
+        .hints-container { display: flex; gap: 20px; margin: 40px 0; }
+        .hint-card { flex: 1; background: #f0fdf4; padding: 20px; border: 1px solid #bbf7d0; border-radius: 8px; }
+        .proverb-footer { background: #002244; color: white; padding: 30px; border-radius: 12px; margin-top: 60px; }
+        .term-hl { border-bottom: 2px dotted #e63946; cursor: pointer; background: #ffffcc; padding: 0 2px; }
+        #popup { position: fixed; bottom: -150px; left: 0; width: 100%; background: #002244; color: white; padding: 25px; transition: 0.4s; z-index: 1000; text-align: center; box-sizing: border-box; }
         #popup.active { bottom: 0; }
         .en, .jp { display: none; }
-        .footer-note { font-size: 0.7rem; color: #888; margin-top: 50px; text-align: center; }
+        .back-nav { margin-bottom: 30px; }
+        .back-nav a { text-decoration: none; color: #002244; font-weight: bold; }
     </style>
 </head>
 <body>
-    <button onclick="toggleLang()">JP / EN</button>
+    <div class="back-nav"><a href="../index.html">← TOP PAGE</a></div>
+    <div class="lang-switch"><button onclick="toggleLang()">JP / EN</button></div>
+
     <article>
         <h1 class="jp">{{ item.title_jp }}</h1><h1 class="en">{{ item.title_en }}</h1>
-        <div id="news-content">
-            <div class="jp">{{ item.content_jp | replace('\n', '<br>') }}</div>
-            <div class="en">{{ item.content_en | replace('\n', '<br>') }}</div>
+        <p style="color: #666;">{{ item.date }}</p>
+
+        <div class="article-section">
+            <div class="jp" id="main-jp">{{ item.content_jp | replace('\n', '<br>') }}</div>
+            <div class="en" id="main-en">{{ item.content_en | replace('\n', '<br>') }}</div>
         </div>
 
-        <div class="critique">
-            <div class="section-title jp">辛口コラムニストの視点</div><div class="section-title en">The Crimson Pen's View</div>
+        <div class="critique-box">
+            <h3 class="jp">Crimson Penの鋭い視点</h3><h3 class="en">The Crimson Pen's Sharp View</h3>
             <div class="jp">{{ item.critique_jp }}</div><div class="en">{{ item.critique_en }}</div>
         </div>
 
-        <div class="hints">
+        <div class="hints-container">
             <div class="hint-card">
-                <strong>💡 <span class="jp">投資のヒント</span><span class="en">Investment Hint</span></strong>
+                <strong>📈 <span class="jp">投資のヒント</span><span class="en">Investment Hint</span></strong>
                 <p class="jp">{{ item.investment_hint_jp }}</p><p class="en">{{ item.investment_hint_en }}</p>
             </div>
             <div class="hint-card">
-                <strong>🌱 <span class="jp">生き方のヒント</span><span class="en">Life Hint</span></strong>
+                <strong>💡 <span class="jp">人生のヒント</span><span class="en">Life Hint</span></strong>
                 <p class="jp">{{ item.life_hint_jp }}</p><p class="en">{{ item.life_hint_en }}</p>
             </div>
         </div>
 
-        <div class="proverb-area" id="proverb-anchor">
-            <h3>📖 <span class="jp">本日のことわざ</span><span class="en">Today's Proverb</span></h3>
-            <p><strong><span class="jp">{{ item.proverb.title_jp }}</span><span class="en">{{ item.proverb.title_en }}</span></strong></p>
+        <div class="proverb-footer">
+            <h3>📖 <span class="jp">今日のことわざ</span><span class="en">Today's Proverb</span></h3>
+            <p style="font-size: 1.4rem;"><strong><span class="jp">{{ item.proverb.title_jp }}</span><span class="en">{{ item.proverb.title_en }}</span></strong></p>
             <p class="jp">{{ item.proverb.desc_jp }}</p><p class="en">{{ item.proverb.desc_en }}</p>
         </div>
     </article>
 
     <div id="popup"><strong id="p-term"></strong>: <span id="p-def"></span></div>
-    <div class="footer-note">[PC: Click terms | Mobile: Long-press]</div>
 
     <script>
         const glossary = {{ item.glossary | tojson }};
         let lang = localStorage.getItem('lang') || 'jp';
         function toggleLang() { lang = lang === 'jp' ? 'en' : 'jp'; localStorage.setItem('lang', lang); location.reload(); }
 
-        function showPop(t, d) {
+        function showDef(t, d) {
             document.getElementById('p-term').innerText = t;
             document.getElementById('p-def').innerText = d;
-            const p = document.getElementById('popup');
-            p.classList.add('active');
-            setTimeout(() => p.classList.remove('active'), 7000);
+            document.getElementById('popup').classList.add('active');
+            setTimeout(() => document.getElementById('popup').classList.remove('active'), 8000);
         }
 
-        // 用語ハイライトとイベント
-        document.querySelectorAll('.jp, .en').forEach(div => {
-            if(div.id === 'news-content' || div.classList.contains('critique')) {
-                let html = div.innerHTML;
-                glossary.forEach(g => {
-                    const t = div.classList.contains('jp') ? g.term_jp : g.term_en;
-                    const d = div.classList.contains('jp') ? g.def_jp : g.def_en;
-                    html = html.replace(new RegExp(t, 'g'), `<span class="term-hl" onclick="showPop('${t}','${d}')">${t}</span>`);
-                });
-                div.innerHTML = html;
-            }
+        // 用語ハイライト処理
+        ['jp', 'en'].forEach(l => {
+            const container = document.getElementById('main-' + l);
+            let html = container.innerHTML;
+            glossary.forEach(g => {
+                const term = l === 'jp' ? g.term_jp : g.term_en;
+                const def = l === 'jp' ? g.def_jp : g.def_en;
+                html = html.replace(new RegExp(term, 'g'), `<span class="term-hl" onclick="showDef('${term}','${def}')">${term}</span>`);
+            });
+            container.innerHTML = html;
         });
+
         document.querySelectorAll('.' + lang).forEach(e => e.style.display = 'block');
     </script>
 </body>
