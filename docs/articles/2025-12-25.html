@@ -3,58 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Paper Shield: Japan's Political Reform and the Art of Persistent Shadows</title>
+    <title>Article</title>
     <style>
-        body { font-family: 'Noto Serif JP', serif; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background: #fff; }
-        h1 { color: #002244; font-size: 2.5rem; line-height: 1.2; border-bottom: 4px solid #e63946; padding-bottom: 15px; }
-        .meta { color: #e63946; font-weight: bold; margin-bottom: 40px; }
-        .article-body { font-size: 1.15rem; margin-bottom: 60px; }
-        .proverb-section { background: #f4f7f9; padding: 30px; border-left: 8px solid #002244; margin: 40px 0; }
-        .term-highlight { border-bottom: 2px dotted #e63946; cursor: help; background: #fffdf0; }
-        #popup { position: fixed; bottom: -120px; left: 0; width: 100%; background: #002244; color: white; padding: 25px; transition: 0.4s ease; z-index: 1000; box-sizing: border-box; }
+        body { font-family: serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        h1 { color: #002244; border-bottom: 4px solid #e63946; }
+        .lang-switch { text-align: right; margin-bottom: 20px; }
+        .content { font-size: 1.2rem; margin-bottom: 40px; }
+        .proverb-section { background: #f0f4f8; padding: 20px; border-left: 8px solid #002244; }
+        .term-hl { border-bottom: 2px dotted #e63946; cursor: pointer; font-weight: bold; }
+        #popup { position: fixed; bottom: -150px; left: 0; width: 100%; background: #002244; color: white; padding: 25px; transition: 0.4s; box-sizing: border-box; z-index: 1000; text-align: center; }
         #popup.active { bottom: 0; }
-        .back-link { display: inline-block; margin-top: 40px; text-decoration: none; color: #002244; font-weight: bold; }
+        .en, .jp { display: none; }
+        .help-text { font-size: 0.7rem; color: #ccc; margin-top: 10px; }
     </style>
 </head>
 <body>
+    <div class="lang-switch"><button onclick="toggleLang()">EN / JP</button></div>
+    
     <article>
-        <h1>The Paper Shield: Japan's Political Reform and the Art of Persistent Shadows</h1>
-        <div class="meta">2025-12-25 | THE CRIMSON PEN COLUMN</div>
-        
-        <div class="article-body" id="main-content">
-            In the hallowed halls of the Diet, a drama of ink and evasion has reached its crescendo. Today, Japan's 'Big Five' find themselves tracing the same jagged outline: the passage of the amended Political Funds Control Act through the Lower House. Yet, through the lens of The Crimson Pen, the uniformity of the headline masks a fractured reality. The Yomiuri and Nikkei offer a pragmatic dissection, focusing on the technicalities of the LDP-Komeito compromise and the economic stability promised by such a settlement. In contrast, the Asahi and Mainichi spill far more acidic ink, decrying the 'gaping loopholes' and the lack of a truly independent oversight body—portraying the reform not as a cleaning of the stables, but as a mere rearranging of the dust. Sankei, ever the guardian of sovereignty, views the discord through the prism of national stability amidst external threats. Culturally, this legislative dance reflects the enduring tension between 'tatemae'—the public facade of accountability—and 'honne'—the ingrained reality of factional influence. While the newspapers debate the nuances of 'transparency,' the Japanese public remains wary of a political culture that often prioritizes the preservation of 'wa' (harmony) over the surgical removal of corruption. The reform, much like a traditional folding screen, seems designed more to obscure what lies behind than to invite the light of day.
-        </div>
+        <h1 class="jp">国会が興じる高額なかくれんぼ</h1><h1 class="en">The Diet's Expensive Game of Hide and Seek</h1>
+        <p>2025-12-25</p>
+
+        <div class="content jp" id="content-jp">東京から失礼。湿気と政治的絶望の香りが漂う季節になりました。今日の主要五紙に目を通せば、印刷機が純粋な憤慨を燃料に動いていると思うでしょう。話題の主役は「政治資金規正法」の改正です。朝日と毎日は、自民党の改革案を「生ぬるい」と切り捨て、実質的にクワを持って抗議しているかのようです。一方、日経は財政的なロジスティクスに焦点を当て、冷静な大人を演じています。読売と産経は、透明性の必要性と与党の潤滑油を維持するという現実の間で、見事な綱渡りを披露しています。歴史的に見れば、日本は政治不祥事を季節外れの台風のように扱ってきました。破壊的ですが、結局は「想定内」なのです。ここでの常識（コモンセンス）は「空気」という名の不思議な怪物です。現在、世論の空気は自民党に対して冷ややかですが、政治家たちは「空気を読む」天才であり、どの傘を使えば一番うまく顔を隠せるかを判断しているに過ぎません。西洋ではそれを「裏金（slush fund）」と呼びますが、ここでは「記載漏れ」と呼びます。中身は同じワインですが、ラベルが違うだけですね。</div>
+        <div class="content en" id="content-en">Greetings from Tokyo, where the air is thick with the scent of humidity and political desperation. If you've glanced at the 'Big Five' newspapers today, you’d think the printing presses were fueled by pure indignation. The hot topic? The reform of the Political Funds Control Act. The Asahi and Mainichi are practically wielding pitchforks, calling the LDP’s reform proposal a 'half-baked cracker,' while the Nikkei tries to remain the adult in the room by focusing on the fiscal logistics. Meanwhile, the Yomiuri and Sankei are performing a delicate tightrope walk, balancing the need for transparency with the reality of keeping the ruling party's gears greased. Historically, Japan has treated political scandals like seasonal typhoons—destructive, but ultimately expected. The 'Common Sense' here is a fascinating beast called 'Kuuki' (the air). Right now, the public air is chilly toward the LDP, but the politicians are experts at 'reading the air' only to decide which umbrella will best hide their faces. In the West, we call it a slush fund; here, it’s a 'reporting error.' Same wine, different bottle.</div>
 
         <div class="proverb-section">
-            <h3>Today's Wisdom</h3>
-            <p><strong>Doronawa (泥縄)</strong></p>
-            <p>Literally 'to start weaving a rope after the thief has already been caught.' It refers to taking belated, hurried measures only after a crisis has occurred, perfectly encapsulating the rushed nature of the current political reform.</p>
+            <h3 class="jp">今日のことわざ: 頭隠して尻隠さず</h3>
+            <h3 class="en">Today's Proverb: Hide the head, but not the tail</h3>
+            <p class="jp">悪事や欠点の一部を隠して、全部を隠したつもりでいるが、他の部分が露出していること。現在の政治改革の試みにぴったりの表現です。</p>
+            <p class="en">To cover up a portion of a fault or secret while leaving the rest exposed; an apt description of current political reform efforts.</p>
         </div>
     </article>
 
-    <a href="../index.html" class="back-link">← Back to Portal</a>
-
-    <div id="popup"><strong id="popup-term"></strong>: <span id="popup-def"></span></div>
+    <div id="popup">
+        <strong id="p-term"></strong>: <span id="p-def"></span>
+        <div class="help-text">Tap to close | クリックで閉じる</div>
+    </div>
 
     <script>
-        const glossary = [{"def": "The Political Funds Control Act; the primary law governing how Japanese politicians handle and report their finances.", "term": "Seiji Shikin Kiseihou"}, {"def": "The \u0027built-in\u0027 front or public face one presents to society, as opposed to one\u0027s true feelings (honne).", "term": "Tatemae"}, {"def": "Japan\u0027s bicameral legislature, consisting of the House of Representatives and the House of Councillors.", "term": "Diet (Kokkai)"}];
-        const contentArea = document.getElementById('main-content');
-        let html = contentArea.innerHTML;
+        const glossary = [{"def_en": "Money collected and spent secretly for illegal or unethical political purposes.", "def_jp": "\u4e0d\u6cd5\u3001\u3042\u308b\u3044\u306f\u4e0d\u9069\u5207\u306a\u653f\u6cbb\u7684\u76ee\u7684\u306e\u305f\u3081\u306b\u79d8\u5bc6\u88cf\u306b\u96c6\u3081\u3089\u308c\u3001\u4f7f\u308f\u308c\u308b\u8cc7\u91d1\u3002", "term_en": "Slush Fund (Uragane)", "term_jp": "\u88cf\u91d1"}, {"def_en": "The law intended to ensure transparency in how politicians raise and spend their money.", "def_jp": "\u653f\u6cbb\u5bb6\u304c\u3069\u306e\u3088\u3046\u306b\u8cc7\u91d1\u3092\u96c6\u3081\u3001\u4f7f\u3046\u304b\u306e\u900f\u660e\u6027\u3092\u78ba\u4fdd\u3059\u308b\u305f\u3081\u306e\u6cd5\u5f8b\u3002", "term_en": "Political Funds Control Act", "term_jp": "\u653f\u6cbb\u8cc7\u91d1\u898f\u6b63\u6cd5"}, {"def_en": "To sense the mood or social expectations of a situation without being told explicitly.", "def_jp": "\u306f\u3063\u304d\u308a\u3068\u8a00\u8449\u306b\u3055\u308c\u306a\u304f\u3066\u3082\u3001\u305d\u306e\u5834\u306e\u72b6\u6cc1\u3084\u793e\u4f1a\u7684\u306a\u671f\u5f85\u3092\u5bdf\u3059\u308b\u3053\u3068\u3002", "term_en": "Reading the Air (Kuuki wo yomu)", "term_jp": "\u7a7a\u6c17\u3092\u8aad\u3080"}];
+        let lang = localStorage.getItem('lang') || 'jp';
 
-        glossary.forEach(item => {
-            const regex = new RegExp(item.term, 'g');
-            html = html.replace(regex, `<span class="term-highlight" onmousedown="showDef('${item.term}', '${item.def}')">${item.term}</span>`);
-        });
-        contentArea.innerHTML = html;
-
-        function showDef(term, definition) {
-            document.getElementById('popup-term').innerText = term;
-            document.getElementById('popup-def').innerText = definition;
-            document.getElementById('popup').classList.add('active');
-            setTimeout(() => document.getElementById('popup').classList.remove('active'), 6000);
+        function toggleLang() {
+            lang = lang === 'jp' ? 'en' : 'jp';
+            localStorage.setItem('lang', lang);
+            location.reload();
         }
-        // スマホ長押し対応
-        document.addEventListener('contextmenu', e => { if(e.target.classList.contains('term-highlight')) e.preventDefault(); });
+
+        function showPopup(term, def) {
+            document.getElementById('p-term').innerText = term;
+            document.getElementById('p-def').innerText = def;
+            const popup = document.getElementById('popup');
+            popup.classList.add('active');
+            popup.onclick = () => popup.classList.remove('active');
+            setTimeout(() => popup.classList.remove('active'), 8000);
+        }
+
+        // 用語ハイライト処理
+        ['jp', 'en'].forEach(l => {
+            const container = document.getElementById('content-' + l);
+            let html = container.innerHTML;
+            glossary.forEach(g => {
+                const term = l === 'jp' ? g.term_jp : g.term_en;
+                const def = l === 'jp' ? g.def_jp : g.def_en;
+                const regex = new RegExp(term, 'g');
+                html = html.replace(regex, `<span class="term-hl" data-term="${term}" data-def="${def}">${term}</span>`);
+            });
+            container.innerHTML = html;
+        });
+
+        // 言語表示切り替え
+        document.querySelectorAll('.' + lang).forEach(el => el.style.display = 'block');
+
+        // イベント付与（クリック＆長押し）
+        document.querySelectorAll('.term-hl').forEach(el => {
+            let timer;
+            const term = el.dataset.term;
+            const def = el.dataset.def;
+
+            el.onclick = () => showPopup(term, def); // PCクリック
+
+            // スマホ長押し
+            el.ontouchstart = () => { timer = setTimeout(() => showPopup(term, def), 800); };
+            el.ontouchend = () => { clearTimeout(timer); };
+        });
     </script>
 </body>
 </html>
