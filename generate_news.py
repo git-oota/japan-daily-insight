@@ -1,53 +1,69 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Japan Insight | Intelligence Portal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <style>
-        :root { --main: #002244; --accent: #e63946; --text: #1a1a1a; }
-        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #f0f0f0; color: var(--text); }
-        header { background: var(--main); color: white; padding: 60px 20px; text-align: center; border-bottom: 6px solid var(--accent); }
-        header h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin: 0; letter-spacing: 2px; }
-        .container { display: flex; max-width: 1200px; margin: 30px auto; gap: 30px; padding: 0 20px; }
-        .column { flex: 1; background: white; padding: 25px; border-radius: 2px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        h2 { border-bottom: 2px solid var(--main); padding-bottom: 10px; font-family: 'Playfair Display', serif; color: var(--main); }
-        .list-item { display: block; padding: 15px; border-bottom: 1px solid #eee; text-decoration: none; color: inherit; transition: 0.2s; }
-        .list-item:hover { background: #f9f9f9; transform: translateX(5px); border-left: 4px solid var(--accent); }
-        .date { font-size: 0.85rem; color: var(--accent); font-weight: bold; }
-        .footer-nav { text-align: center; padding: 40px; font-size: 0.8rem; color: #888; }
-        @media (max-width: 768px) { .container { flex-direction: column; } }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>DAILY JAPAN INSIGHT</h1>
-        <p>Deciphering the Morning News with Intelligence and Edge</p>
-    </header>
-    <div class="container">
-        <section class="column">
-            <h2>LATEST TOP STORIES</h2>
-            {% for item in items %}
-            <a href="articles/{{ item.date }}.html" class="list-item">
-                <div class="date">{{ item.date }}</div>
-                <div style="font-weight: bold; margin-top:5px;">{{ item.title }}</div>
-            </a>
-            {% endfor %}
-        </section>
-        <section class="column">
-            <h2>DAILY PROVERBS</h2>
-            {% for item in items %}
-            <a href="articles/{{ item.date }}.html" class="list-item">
-                <div class="date">{{ item.date }}</div>
-                <div style="font-weight: bold; margin-top:5px;">{{ item.proverb.title }}</div>
-            </a>
-            {% endfor %}
-        </section>
-    </div>
-    <div class="footer-nav">
-        [PC: Click terms for glossary | Mobile: Long-press for glossary]<br>
-        <div id="ad-space" style="margin-top:20px; border:1px dashed #ccc; padding:10px;">ADVERTISEMENT SPACE</div>
-    </div>
-</body>
-</html>
+import os
+import json
+import datetime
+import google.generativeai as genai
+from jinja2 import Template
+
+# API設定
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+model = genai.GenerativeModel('gemini-1.5-flash')
+
+# ニュース解析プロンプト
+PROMPT = """
+Analyze today's top stories from Japan's 5 major newspapers (Asahi, Yomiuri, Mainichi, Sankei, Nikkei).
+1. Identify the most common TOP story across these papers.
+2. Write a sophisticated article as an energetic American columnist (Persona: "The Crimson Pen").
+3. Include:
+   - Comparison of how different papers reported it.
+   - Historical and cultural context.
+   - The "Japanese Common Sense" (Joshiki) perspective.
+4. Select 1 related Japanese proverb/idiom and explain it.
+5. Define 3 key terms for a glossary.
+
+Output ONLY valid JSON:
+{
+  "title": "...",
+  "content": "...",
+  "proverb": {"title": "...", "desc": "..."},
+  "glossary": [{"term": "...", "def": "..."}]
+}
+"""
+
+def generate():
+    response = model.generate_content(PROMPT)
+    text = response.text.strip().replace('```json', '').replace('```', '')
+    new_entry = json.loads(text)
+    date_str = datetime.date.today().strftime("%Y-%m-%d")
+    new_entry['date'] = date_str
+
+    # データの蓄積
+    data_path = 'docs/data.json'
+    os.makedirs('docs/articles', exist_ok=True)
+    
+    if os.path.exists(data_path):
+        with open(data_path, 'r', encoding='utf-8') as f:
+            history = json.load(f)
+    else:
+        history = []
+
+    # 重複チェックをして先頭に追加
+    if not any(day['date'] == date_str for day in history):
+        history.insert(0, new_entry)
+        
+    with open(data_path, 'w', encoding='utf-8') as f:
+        json.dump(history[:100], f, ensure_ascii=False, indent=2)
+
+    # 1. 個別記事ページの生成
+    with open('template_article.html', 'r', encoding='utf-8') as f:
+        tmpl_art = Template(f.read())
+    with open(f'docs/articles/{date_str}.html', 'w', encoding='utf-8') as f:
+        f.write(tmpl_art.render(item=new_entry))
+
+    # 2. トップポータルページの生成
+    with open('template_portal.html', 'r', encoding='utf-8') as f:
+        tmpl_port = Template(f.read())
+    with open('docs/index.html', 'w', encoding='utf-8') as f:
+        f.write(tmpl_port.render(items=history))
+
+if __name__ == "__main__":
+    generate()
