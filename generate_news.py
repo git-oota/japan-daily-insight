@@ -1,25 +1,53 @@
-import os
-import json
-import datetime
-import google.generativeai as genai
-from jinja2 import Template
-
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-model = genai.GenerativeModel('gemini-3-flash-preview')
-PROMPT = "Create a news article about Japan in JSON format. Include title_en, title_jp, content_en, content_jp, trend_en, trend_jp, and a proverb."
-
-def generate():
-  response = model.generate_content(PROMPT)
-  text = response.text.strip().replace('```json', '').replace('```', '')
-  data = json.loads(text)
-  data['date'] = datetime.date.today().strftime("%Y-%m-%d")
-  with open('template.html', 'r', encoding='utf-8') as f:
-    tmpl = Template(f.read())
-  os.makedirs('docs', exist_ok=True)
-  for lang in ['en', 'jp']:
-    path = f"docs/index{'' if lang == 'en' else '_jp'}.html"
-    with open(path, 'w', encoding='utf-8') as f:
-      f.write(tmpl.render(data=data, lang=lang))
-
-if __name__ == "__main__":
-  generate()
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Japan Insight | Intelligence Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <style>
+        :root { --main: #002244; --accent: #e63946; --text: #1a1a1a; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #f0f0f0; color: var(--text); }
+        header { background: var(--main); color: white; padding: 60px 20px; text-align: center; border-bottom: 6px solid var(--accent); }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin: 0; letter-spacing: 2px; }
+        .container { display: flex; max-width: 1200px; margin: 30px auto; gap: 30px; padding: 0 20px; }
+        .column { flex: 1; background: white; padding: 25px; border-radius: 2px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        h2 { border-bottom: 2px solid var(--main); padding-bottom: 10px; font-family: 'Playfair Display', serif; color: var(--main); }
+        .list-item { display: block; padding: 15px; border-bottom: 1px solid #eee; text-decoration: none; color: inherit; transition: 0.2s; }
+        .list-item:hover { background: #f9f9f9; transform: translateX(5px); border-left: 4px solid var(--accent); }
+        .date { font-size: 0.85rem; color: var(--accent); font-weight: bold; }
+        .footer-nav { text-align: center; padding: 40px; font-size: 0.8rem; color: #888; }
+        @media (max-width: 768px) { .container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DAILY JAPAN INSIGHT</h1>
+        <p>Deciphering the Morning News with Intelligence and Edge</p>
+    </header>
+    <div class="container">
+        <section class="column">
+            <h2>LATEST TOP STORIES</h2>
+            {% for item in items %}
+            <a href="articles/{{ item.date }}.html" class="list-item">
+                <div class="date">{{ item.date }}</div>
+                <div style="font-weight: bold; margin-top:5px;">{{ item.title }}</div>
+            </a>
+            {% endfor %}
+        </section>
+        <section class="column">
+            <h2>DAILY PROVERBS</h2>
+            {% for item in items %}
+            <a href="articles/{{ item.date }}.html" class="list-item">
+                <div class="date">{{ item.date }}</div>
+                <div style="font-weight: bold; margin-top:5px;">{{ item.proverb.title }}</div>
+            </a>
+            {% endfor %}
+        </section>
+    </div>
+    <div class="footer-nav">
+        [PC: Click terms for glossary | Mobile: Long-press for glossary]<br>
+        <div id="ad-space" style="margin-top:20px; border:1px dashed #ccc; padding:10px;">ADVERTISEMENT SPACE</div>
+    </div>
+</body>
+</html>
