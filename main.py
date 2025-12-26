@@ -12,7 +12,7 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 # 検索能力が高い 2.0 Flash を推奨 (1.5 Flash でも動作可能)
 model = genai.GenerativeModel(
-    model_name='gemini-2.0-flash-exp', 
+    model_name='gemini-3-flash-preview', 
     tools=[{'google_search_retrieval': {}}]
 )
 
