@@ -19,7 +19,7 @@ jobs:
       - name: Generate News
         env:
           GEMINI_API_KEY: ${{secrets.GEMINI_API_KEY }}
-        run: python generate_news.py
+        run: python main.py
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
