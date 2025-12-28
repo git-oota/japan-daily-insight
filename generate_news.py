@@ -8,7 +8,7 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 # リアルタイム検索を有効化したモデル
 model = genai.GenerativeModel(
-    model_name='gemini-1.5-flash-latest',
+    model_name='gemini-3-flash-preview',
     tools=[{'google_search_retrieval': {}}]
 )
 
