@@ -12,7 +12,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11' # 3.10 を 3.11 に変更
       - name: Install dependencies
         run: |
           pip install -U google-generativeai jinja2  # -U を追加して最新版に
