@@ -1,76 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Japan Insight - NBC Style</title>
-    <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap](https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap)" rel="stylesheet">
-    <style>
-        :root { --nbc-blue: #003063; --nbc-red: #db0000; --bg: #ffffff; --text: #333; }
-        body { font-family: 'Roboto', sans-serif; margin: 0; background: #f6f6f6; color: var(--text); }
-        
-        /* NBC Header */
-        header { background: var(--bg); padding: 20px; border-bottom: 4px solid var(--nbc-blue); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--nbc-blue); font-weight: bold; text-transform: uppercase; }
-        .lang-btn { background: var(--nbc-blue); color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
-
-        .container { max-width: 1200px; margin: 30px auto; display: grid; grid-template-columns: 3fr 1fr; gap: 30px; padding: 0 20px; }
-
-        /* Main Story */
-        .main-story { background: white; padding: 0; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .main-img { width: 100%; height: 400px; background: linear-gradient(45deg, var(--nbc-blue), #555); position: relative; }
-        .main-img::after { content: "TOP STORY"; position: absolute; top: 20px; left: 20px; background: var(--nbc-red); color: white; padding: 5px 15px; font-weight: bold; }
-        .main-content { padding: 30px; }
-        .main-title { font-family: 'Playfair Display', serif; font-size: 42px; line-height: 1.1; margin: 10px 0; color: var(--nbc-blue); text-decoration: none; display: block; }
-        
-        /* Side Bar (Back Number) */
-        .sidebar { background: white; padding: 20px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .sidebar h3 { border-bottom: 2px solid var(--nbc-blue); padding-bottom: 10px; margin-top: 0; }
-        .side-item { display: block; text-decoration: none; color: inherit; padding: 15px 0; border-bottom: 1px solid #eee; transition: 0.2s; }
-        .side-item:hover { color: var(--nbc-red); }
-        .side-date { font-size: 12px; color: #888; text-transform: uppercase; }
-
-        .en, .jp { display: none; }
-        @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">Daily Japan Insight</div>
-        <button class="lang-btn" onclick="toggleLang()">JP / EN</button>
-    </header>
-
-    <div class="container">
-        <main class="main-story">
-            
-            <div class="main-img"></div>
-            <div class="main-content">
-                <span style="color: var(--nbc-red); font-weight: bold;">2025-12-30</span>
-                <a href="articles/2025-12-30.html" class="main-title jp">静かなる新年：老いゆく魂を癒やす日本のハイテクな慰め</a>
-                <a href="articles/2025-12-30.html" class="main-title en">The Silence of the New Year: Japan’s High-Tech Solace for an Aging Soul</a>
-            </div>
-        </main>
-
-        <aside class="sidebar">
-            <h3 class="jp">過去の記事</h3><h3 class="en">Archives</h3>
-            
-            <a href="articles/2025-12-25.html" class="side-item">
-                <div class="side-date">2025-12-25</div>
-                <div class="jp"></div>
-                <div class="en"></div>
-            </a>
-            
-        </aside>
-    </div>
-
-    <script>
-        let lang = localStorage.getItem('lang') || 'jp';
-        function update() {
-            document.querySelectorAll('.en').forEach(e => e.style.display = lang === 'en' ? 'block' : 'none');
-            document.querySelectorAll('.jp').forEach(e => e.style.display = lang === 'jp' ? 'block' : 'none');
-        }
-        function toggleLang() { lang = lang === 'jp' ? 'en' : 'jp'; localStorage.setItem('lang', lang); update(); }
-        update();
-    </script>
+<html>
+<head><meta charset="UTF-8"><title>THE INSIGHT</title></head>
+<body style="text-align:center; padding:100px; font-family:serif;">
+    <h1>THE INSIGHT</h1>
+    <p>現在、新しい記事を準備中です。明日をお楽しみに。</p>
+    <a href="index.html" style="color:#c5a059;">最新の状態に更新</a>
 </body>
 </html>
