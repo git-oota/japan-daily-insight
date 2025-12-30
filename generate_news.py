@@ -10,7 +10,7 @@ genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
 # モデル設定 (最新ニュース取得のため検索ツールを維持)
 model = genai.GenerativeModel(
-    model_name='models/gemini-1.5-flash',
+    model_name='models/gemini-3-flash-preview',
     tools=[{'google_search_retrieval': {}}]
 )
 
