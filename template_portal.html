@@ -3,74 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Japan Insight - NBC Style</title>
-    <link href="[https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap](https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap)" rel="stylesheet">
+    <title>THE INSIGHT</title>
+    <link href="[https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap)" rel="stylesheet">
     <style>
-        :root { --nbc-blue: #003063; --nbc-red: #db0000; --bg: #ffffff; --text: #333; }
-        body { font-family: 'Roboto', sans-serif; margin: 0; background: #f6f6f6; color: var(--text); }
+        :root { --navy: #001f3f; --gold: #c5a059; --bg: #fdfdfb; }
+        body { font-family: 'Noto Serif JP', serif; background: var(--bg); color: #2c3e50; margin: 0; }
+        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: white; border-bottom: 1px solid #eee; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 5rem; letter-spacing: 10px; color: var(--navy); margin: 0; }
+        .date-hero { font-family: 'Playfair Display', serif; color: var(--gold); letter-spacing: 4px; margin-bottom: 20px; }
         
-        /* NBC Header */
-        header { background: var(--bg); padding: 20px; border-bottom: 4px solid var(--nbc-blue); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--nbc-blue); font-weight: bold; text-transform: uppercase; }
-        .lang-btn { background: var(--nbc-blue); color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
-
-        .container { max-width: 1200px; margin: 30px auto; display: grid; grid-template-columns: 3fr 1fr; gap: 30px; padding: 0 20px; }
-
-        /* Main Story */
-        .main-story { background: white; padding: 0; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .main-img { width: 100%; height: 400px; background: linear-gradient(45deg, var(--nbc-blue), #555); position: relative; }
-        .main-img::after { content: "TOP STORY"; position: absolute; top: 20px; left: 20px; background: var(--nbc-red); color: white; padding: 5px 15px; font-weight: bold; }
-        .main-content { padding: 30px; }
-        .main-title { font-family: 'Playfair Display', serif; font-size: 42px; line-height: 1.1; margin: 10px 0; color: var(--nbc-blue); text-decoration: none; display: block; }
+        .main-grid { max-width: 1100px; margin: -100px auto 100px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
+        .card { background: white; padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); transition: 0.5s; text-decoration: none; color: inherit; }
+        .card:hover { transform: translateY(-10px); }
+        .category { color: var(--gold); font-weight: bold; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
+        .title { font-size: 2.2rem; margin: 20px 0; color: var(--navy); line-height: 1.2; }
         
-        /* Side Bar (Back Number) */
-        .sidebar { background: white; padding: 20px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .sidebar h3 { border-bottom: 2px solid var(--nbc-blue); padding-bottom: 10px; margin-top: 0; }
-        .side-item { display: block; text-decoration: none; color: inherit; padding: 15px 0; border-bottom: 1px solid #eee; transition: 0.2s; }
-        .side-item:hover { color: var(--nbc-red); }
-        .side-date { font-size: 12px; color: #888; text-transform: uppercase; }
-
-        .en, .jp { display: none; }
-        @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
+        .archives { border-top: 1px solid #ddd; padding-top: 20px; }
+        .archive-item { display: block; padding: 15px 0; border-bottom: 1px solid #eee; text-decoration: none; color: #666; font-size: 0.9rem; }
+        .archive-item:hover { color: var(--gold); }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Daily Japan Insight</div>
-        <button class="lang-btn" onclick="toggleLang()">JP / EN</button>
+        <span class="date-hero">{{ item.date }}</span>
+        <h1>THE INSIGHT</h1>
+        <p>A Perspective That Shapes the Future</p>
     </header>
 
-    <div class="container">
-        <main class="main-story">
-            {% set latest = items[0] %}
-            <div class="main-img"></div>
-            <div class="main-content">
-                <span style="color: var(--nbc-red); font-weight: bold;">{{ latest.date }}</span>
-                <a href="articles/{{ latest.date }}.html" class="main-title jp">{{ latest.title_jp }}</a>
-                <a href="articles/{{ latest.date }}.html" class="main-title en">{{ latest.title_en }}</a>
-            </div>
-        </main>
-
-        <aside class="sidebar">
-            <h3 class="jp">過去の記事</h3><h3 class="en">Archives</h3>
-            {% for item in items[1:] %}
-            <a href="articles/{{ item.date }}.html" class="side-item">
-                <div class="side-date">{{ item.date }}</div>
-                <div class="jp">{{ item.title_jp }}</div>
-                <div class="en">{{ item.title_en }}</div>
+    <div class="main-grid">
+        <main>
+            {% for art in item.articles %}
+            <a href="articles/{{ item.date }}.html" class="card" style="display: block; margin-bottom: 30px;">
+                <span class="category">{{ art.category }}</span>
+                <h2 class="title">{{ art.title_jp }}</h2>
+                <p style="color: #888;">{{ art.content_jp[:100] }}...</p>
             </a>
             {% endfor %}
+        </main>
+        <aside>
+            <div class="archives">
+                <h3 style="font-family: 'Playfair Display'; color: var(--navy);">Archives</h3>
+                {% for past in items[1:6] %}
+                <a href="articles/{{ past.date }}.html" class="archive-item">
+                    {{ past.date }} / {{ past.articles[0].title_jp[:20] }}...
+                </a>
+                {% endfor %}
+            </div>
         </aside>
     </div>
-
-    <script>
-        let lang = localStorage.getItem('lang') || 'jp';
-        function update() {
-            document.querySelectorAll('.en').forEach(e => e.style.display = lang === 'en' ? 'block' : 'none');
-            document.querySelectorAll('.jp').forEach(e => e.style.display = lang === 'jp' ? 'block' : 'none');
-        }
-        function toggleLang() { lang = lang === 'jp' ? 'en' : 'jp'; localStorage.setItem('lang', lang); update(); }
-        update();
-    </script>
 </body>
 </html>
