@@ -25,5 +25,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Daily update: $(date +'%Y-%m-%d')" || echo "No changes"
-          git push
+          git commit -m "Daily update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
+          git pull --rebase origin main  # これを追加して競合を自動解決
+          git push origin main
