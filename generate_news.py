@@ -1,35 +1,27 @@
 import os
 import json
 import datetime
+import time
 import google.generativeai as genai
 from jinja2 import Template
 
+# API設定
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
-# リアルタイム検索を有効化したモデル
+# モデル設定 (最新ニュース取得のため検索ツールを維持)
 model = genai.GenerativeModel(
-    model_name='gemini-3-flash-preview',
+    model_name='models/gemini-1.5-flash',
     tools=[{'google_search_retrieval': {}}]
 )
 
 today_str = datetime.date.today().strftime("%Y-%m-%d")
 
-# Nicholas Kristof スタイルの詳細指示
+# プロンプトをより簡潔にしてトークン消費を抑える
 PROMPT = f"""
-Search for today's ({today_str}) top news from Japan's 5 major newspapers (Asahi, Yomiuri, Mainichi, Nikkei, Sankei).
-Identify the most significant shared topic.
-
-Write an original column in the style of Nicholas Kristof (NYT columnist).
-Kristof's Style: Empathic, moral, focusing on human stories, and using provocative questions to engage the reader.
-
-Requirements:
-1. Target: Junior high school students to global intellectuals (Simple but deep).
-2. Structure:
-   - A Kristof-style opening (The Human Element).
-   - Core Analysis (The moral or social challenge).
-   - The Crimson Pen's Critique (Sharp analysis inserted near the end).
-   - Conclusion: Investment Hint & Life Hint.
-   - Proverb & Glossary (5 terms).
+Analyze today's ({today_str}) top news from Japan's 5 major newspapers. 
+Write an original column in the style of Nicholas Kristof.
+Target: Junior high school level.
+Include: Simple Summary, Crimson Pen's Critique, Investment/Life Hints, Proverb, and 5 Glossary terms.
 
 Output ONLY valid JSON:
 {{
@@ -44,21 +36,32 @@ Output ONLY valid JSON:
 """
 
 def generate():
-    response = model.generate_content(PROMPT)
-    res_text = response.text.strip()
-    if "```json" in res_text:
-        res_text = res_text.split("```json")[1].split("```")[0]
-    
-    new_entry = json.loads(res_text.strip())
-    new_entry['date'] = today_str
+    # 429エラー対策: 最大3回リトライ
+    for attempt in range(3):
+        try:
+            response = model.generate_content(PROMPT)
+            res_text = response.text.strip()
+            if "```json" in res_text:
+                res_text = res_text.split("```json")[1].split("```")[0]
+            new_entry = json.loads(res_text.strip())
+            break
+        except Exception as e:
+            if "429" in str(e) and attempt < 2:
+                print(f"Quota exceeded. Waiting 60s... (Attempt {attempt+1})")
+                time.sleep(60)
+                continue
+            raise e
 
+    new_entry['date'] = today_str
     data_path = 'docs/data.json'
     os.makedirs('docs/articles', exist_ok=True)
     
     history = []
     if os.path.exists(data_path):
-        with open(data_path, 'r', encoding='utf-8') as f:
-            history = json.load(f)
+        try:
+            with open(data_path, 'r', encoding='utf-8') as f:
+                history = json.load(f)
+        except: history = []
 
     if not any(entry.get('date') == today_str for entry in history):
         history.insert(0, new_entry)
@@ -66,7 +69,7 @@ def generate():
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
-    # テンプレート反映 (Portalは3:1構成へ)
+    # テンプレート反映
     for t_name, out_name in [('template_article.html', f'docs/articles/{today_str}.html'), ('template_portal.html', 'docs/index.html')]:
         with open(t_name, 'r', encoding='utf-8') as f:
             tmpl = Template(f.read())
