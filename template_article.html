@@ -3,93 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ item.title_jp }}</title>
-    <link href="[https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Noto+Serif+JP&display=swap](https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Noto+Serif+JP&display=swap)" rel="stylesheet">
+    <title>Article | THE INSIGHT</title>
     <style>
-        :root { --bg: #ffffff; --navy: #001f3f; --gold: #c5a059; --light-gold: #fdfaf4; }
-        body { font-family: 'Noto Serif JP', serif; margin: 0; background: var(--bg); line-height: 2; color: #333; }
-        .back-nav { padding: 40px; }
-        .back-nav a { text-decoration: none; color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.1rem; }
+        body { font-family: 'Noto Serif JP', serif; line-height: 2; background: #fff; margin: 0; padding-bottom: 100px; }
+        .nav { padding: 40px; border-bottom: 1px solid #eee; }
+        article { max-width: 750px; margin: 60px auto; padding: 0 20px; }
+        h1 { font-size: 3rem; color: #001f3f; line-height: 1.2; }
+        .critique-box { background: #fdfaf4; padding: 40px; border-left: 5px solid #c5a059; margin: 60px 0; font-style: italic; }
+        .proverb-box { background: #001f3f; color: #fff; padding: 40px; border-radius: 8px; text-align: center; }
         
-        article { max-width: 750px; margin: 0 auto; padding: 0 20px 100px; }
-        h1 { font-size: 2.8rem; line-height: 1.2; color: var(--navy); margin-bottom: 40px; border-bottom: 2px solid var(--gold); padding-bottom: 20px; }
-        .meta { font-family: 'Playfair Display', serif; color: var(--gold); margin-bottom: 60px; font-style: italic; }
-        
-        .section-box { margin: 80px 0; padding: 40px; background: var(--light-gold); border-radius: 4px; border-left: 1px solid var(--gold); }
-        .critique-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--gold); margin-bottom: 20px; display: block; }
-        
-        .hints { display: flex; gap: 40px; margin: 60px 0; }
-        .hint-card { flex: 1; border: 1px solid #eee; padding: 30px; }
-        .hint-card strong { color: var(--gold); display: block; margin-bottom: 10px; }
-
-        .proverb-footer { background: var(--navy); color: white; padding: 60px; text-align: center; margin-top: 100px; }
-        .term-hl { border-bottom: 1px solid var(--gold); cursor: pointer; transition: 0.3s; }
-        .term-hl:hover { background: var(--light-gold); }
-
-        #popup { position: fixed; bottom: -120px; left: 0; width: 100%; background: var(--navy); color: white; padding: 30px; transition: 0.4s; text-align: center; box-sizing: border-box; }
+        /* ポップアップUI */
+        .term-hl { border-bottom: 2px solid #c5a059; cursor: pointer; transition: 0.3s; }
+        .term-hl:hover { background: #fdfaf4; }
+        #popup { position: fixed; bottom: -100%; left: 0; width: 100%; background: #001f3f; color: white; padding: 30px; transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1); z-index: 1000; box-sizing: border-box; box-shadow: 0 -10px 30px rgba(0,0,0,0.3); }
         #popup.active { bottom: 0; }
-        .en, .jp { display: none; }
+        #popup h4 { color: #c5a059; margin: 0 0 10px 0; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
     </style>
 </head>
 <body>
-    <div class="back-nav"><a href="../index.html">← RETURN</a> <button onclick="toggleLang()" style="float:right">JP/EN</button></div>
+    <div class="nav"><a href="../index.html" style="text-decoration: none; color: #c5a059;">← BACK TO JOURNAL</a></div>
 
+    {% for art in item.articles %}
     <article>
-        <span class="meta">{{ item.date }} | BY THE CRIMSON PEN</span>
-        <h1 class="jp">{{ item.title_jp }}</h1><h1 class="en">{{ item.title_en }}</h1>
-        
-        <div id="main-content">
-            <div class="jp" id="text-jp">{{ item.content_jp | replace('\n', '<br>') }}</div>
-            <div class="en" id="text-en">{{ item.content_en | replace('\n', '<br>') }}</div>
+        <span style="color: #c5a059; font-weight: bold;">{{ art.category }}</span>
+        <h1>{{ art.title_jp }}</h1>
+        <div class="content" id="content-{{ loop.index0 }}">
+            {{ art.content_jp | replace('\n', '<br>') }}
         </div>
 
-        <div class="section-box">
-            <span class="critique-title">The Sharp Critique</span>
-            <div class="jp">{{ item.critique_jp }}</div><div class="en">{{ item.critique_en }}</div>
+        <div class="critique-box">
+            <h3 style="margin-top: 0;">Crimson Pen's View</h3>
+            {{ art.critique_jp }}
         </div>
 
-        <div class="hints">
-            <div class="hint-card">
-                <strong>INVESTMENT</strong>
-                <p class="jp">{{ item.investment_hint_jp }}</p><p class="en">{{ item.investment_hint_en }}</p>
-            </div>
-            <div class="hint-card">
-                <strong>LIFE HINT</strong>
-                <p class="jp">{{ item.life_hint_jp }}</p><p class="en">{{ item.life_hint_en }}</p>
-            </div>
+        <div class="proverb-box">
+            <h3 style="color: #c5a059; margin-top: 0;">Today's Proverb</h3>
+            <div style="font-size: 1.5rem; margin-bottom: 10px;">{{ art.proverb.title }}</div>
+            <p style="opacity: 0.8; margin: 0;">{{ art.proverb.desc }}</p>
         </div>
     </article>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 100px 0;">
+    {% endfor %}
 
-    <div class="proverb-footer">
-        <div class="jp">「{{ item.proverb.title_jp }}」</div><div class="en">"{{ item.proverb.title_en }}"</div>
-        <p class="jp" style="opacity: 0.8">{{ item.proverb.desc_jp }}</p><p class="en" style="opacity: 0.8">{{ item.proverb.desc_en }}</p>
-    </div>
-
-    <div id="popup"><strong id="p-term"></strong>: <span id="p-def"></span></div>
+    <div id="popup"><h4 id="p-term">Definition</h4><div id="p-def"></div></div>
 
     <script>
-        const glossary = {{ item.glossary | tojson }};
-        let lang = localStorage.getItem('lang') || 'jp';
-        function toggleLang() { lang = lang === 'jp' ? 'en' : 'jp'; localStorage.setItem('lang', lang); location.reload(); }
-
+        const articles = {{ item.articles | tojson }};
         function showPop(t, d) {
             document.getElementById('p-term').innerText = t;
             document.getElementById('p-def').innerText = d;
-            document.getElementById('popup').classList.add('active');
-            setTimeout(() => document.getElementById('popup').classList.remove('active'), 7000);
+            const p = document.getElementById('popup');
+            p.classList.add('active');
+            setTimeout(() => { p.classList.remove('active'); }, 6000);
         }
 
-        ['jp', 'en'].forEach(l => {
-            const container = document.getElementById('text-' + l);
+        articles.forEach((art, idx) => {
+            const container = document.getElementById('content-' + idx);
             let html = container.innerHTML;
-            glossary.forEach(g => {
-                const t = l === 'jp' ? g.term_jp : g.term_en;
-                const d = l === 'jp' ? g.def_jp : g.def_en;
-                html = html.replace(new RegExp(t, 'g'), `<span class="term-hl" onclick="showPop('${t}','${d}')">${t}</span>`);
+            art.glossary.forEach(g => {
+                const regex = new RegExp(g.term, 'g');
+                html = html.replace(regex, `<span class="term-hl" onclick="showPop('${g.term}','${g.def}')">${g.term}</span>`);
             });
             container.innerHTML = html;
         });
-        document.querySelectorAll('.' + lang).forEach(e => e.style.display = 'block');
+        document.getElementById('popup').onclick = () => { document.getElementById('popup').classList.remove('active'); };
     </script>
 </body>
 </html>
