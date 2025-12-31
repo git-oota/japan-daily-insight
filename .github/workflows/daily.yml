@@ -1,7 +1,8 @@
 name: Daily Japan Insight Update
 on:
   schedule:
-    - cron: '27 11 * * *'
+    # 毎日 日本時間 午前8:00（UTC 午後23:00）に実行
+    - cron: '0 23 * * *'
   workflow_dispatch:
 jobs:
   build:
@@ -12,14 +13,14 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11' # 3.10 を 3.11 に変更
+          python-version: '3.11'
       - name: Install dependencies
         run: |
-          pip install -U google-generativeai jinja2  # -U を追加して最新版に
+          pip install -U google-generativeai jinja2
       - name: Generate News
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python generate_news.py  # ファイル名を正しく指定
+        run: python generate_news.py
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
