@@ -1,7 +1,7 @@
 name: Daily Japan Insight Update
 on:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '15 11 * * *'
   workflow_dispatch:
 jobs:
   build:
