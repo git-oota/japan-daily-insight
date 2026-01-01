@@ -34,42 +34,20 @@ def generate():
         try:
             response = model.generate_content(PROMPT)
             res_text = response.text.strip()
-            if "```json" in res_text:
-                res_text = res_text.split("```json")[1].split("```")[0]
-            data = json.loads(res_text.strip())
-            break
+            
+            # JSONを抽出するための正規表現的な処理を強化
+            if "{" in res_text:
+                # 最初の '{' から最後の '}' までを抜き出す
+                start = res_text.find("{")
+                end = res_text.rfind("}") + 1
+                json_str = res_text[start:end]
+                data = json.loads(json_str)
+                break
+            else:
+                print(f"No JSON found in response. Raw: {res_text[:100]}")
         except Exception as e:
             print(f"Error: {e}. Retrying...")
             time.sleep(60)
-    
-    if not data: return
-
-    data['date'] = today_str
-    data_path = 'docs/data.json'
-    os.makedirs('docs/articles', exist_ok=True)
-    
-    history = []
-    if os.path.exists(data_path):
-        with open(data_path, 'r', encoding='utf-8') as f:
-            try:
-                history = json.load(f)
-            except:
-                history = []
-
-    # 【重要】同じ日の記事があったら一旦削除して、最新のもので作り直す
-    history = [entry for entry in history if entry.get('date') != today_str]
-    history.insert(0, data)
-        
-    with open(data_path, 'w', encoding='utf-8') as f:
-        json.dump(history[:100], f, ensure_ascii=False, indent=2)
-
-    # テンプレート反映
-    for t_name, out_name in [('template_article.html', f'docs/articles/{today_str}.html'), ('template_portal.html', 'docs/index.html')]:
-        if os.path.exists(t_name):
-            with open(t_name, 'r', encoding='utf-8') as f:
-                tmpl = Template(f.read())
-            with open(out_name, 'w', encoding='utf-8') as f:
-                f.write(tmpl.render(items=history, item=data))
-
+            
 if __name__ == "__main__":
     generate()
