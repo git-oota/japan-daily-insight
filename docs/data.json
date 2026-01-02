@@ -3,148 +3,148 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "Japan’s Digital New Year Shifting Traditions ： Balancing Ancient Rituals with a Shrinking Workforce",
-        "title_jp": "日本のデジタル初詣が変える伝統 ： 人口減少社会における儀式と効率の共存",
-        "content_en": "As 2026 begins, major shrines across Japan, including Meiji Jingu and Ise Grand Shrine, have implemented advanced digital crowd management and QR-based '<span class=\"term\" onclick=\"openPanel('Saisen', 'Monetary offerings given to deities at shrines or temples.')\">Saisen</span>' (offering) systems. Faced with a chronic shortage of shrine maidens and staff, religious institutions are turning to automation to maintain the influx of millions of visitors. While some traditionalists argue that digital offerings diminish the spiritual weight of the act, the necessity of technology to preserve cultural heritage in a hyper-aged society has become a central theme of this year's festivities.",
-        "content_jp": "2026年の幕開けとともに、明治神宮や伊勢神宮を含む全国の主要な神社では、高度なデジタル混雑管理システムやQRコードによる「<span class=\"term\" onclick=\"openPanel('お賽銭', '祈願成就の感謝として、あるいは神仏への供え物として捧げる金銭。')\">お賽銭</span>」システムが導入されました。巫女や運営スタッフの慢性的な不足に直面し、宗教施設は数百万人規模の参拝客を維持するために自動化へと舵を切っています。一部の保守層からは、デジタル化が儀式の精神的な重みを損なうとの声も上がっていますが、<span class=\"term\" onclick=\"openPanel('超高齢社会', '65歳以上の人口が全人口の21%を超えた社会。')\">超高齢社会</span>において文化遺産を継承するためのテクノロジーの必要性は、今年の年始を象徴するテーマとなっています。",
-        "critique_en": "Editor H's Perspective: The digitization of the 'Hatsumode' is more than a convenience; it is a mirror reflecting Japan's demographic reality. We are witnessing the 'pragmatic evolution' of Shintoism. The challenge is not whether we use technology, but whether we can retain the 'Ma'—the sacred space and timing—when the physical friction of tradition is smoothed over by software. It is a poignant reminder that for a culture to survive, it must sometimes change its form to save its soul.",
-        "critique_jp": "編集者Hの視点：初詣のデジタル化は、単なる利便性の向上ではなく、日本の人口動態の現実を映し出す鏡です。私たちは今、神道の「実用的進化」を目の当たりにしています。課題はテクノロジーを使うか否かではなく、伝統の持つ物理的な摩擦がソフトウェアによって平滑化されたとき、神聖な「間」を維持できるかどうかにあります。文化が生き残るためには、その魂を守るために形を変えなければならないこともあるという、切実な教訓を提示しています。",
-        "proverb_en": {
-          "title": "Continuity in Change",
-          "desc": "The only way to keep things the same is to change everything."
-        },
+        "title_en": "Security Breach at Imperial Palace ： Tradition Confronts a Fractured Social Reality",
+        "title_jp": "皇居・一般参賀での不祥事 ： 伝統行事が直面する社会の不協和音",
+        "content_en": "On January 2, 2026, during the final session of the <span class=\"term\" onclick=\"openPanel('New Year's Greeting', 'A public event where the Imperial Family appears to greet the public.')\">New Year's Greeting</span> at the Imperial Palace, a man was arrested for public indecency after stripping naked in the front row as the Emperor and the Imperial family appeared on the balcony. The incident, which occurred just as the Emperor concluded his peace message, sent shockwaves through the crowd of thousands. Security forces including the <span class=\"term\" onclick=\"openPanel('Imperial Guard', 'The specialized security force dedicated to protecting the Imperial Family and palace.')\">Imperial Guard</span> and the Metropolitan Police quickly apprehended the suspect, but the breach has raised serious questions about security protocols during the nation's most sacred public traditions. This comes at a time when Japan is debating its national identity and security posture under the Takaichi administration.",
+        "content_jp": "2026年1月2日、皇居で行われた新年<span class=\"term\" onclick=\"openPanel('一般参賀', '天皇や皇族が国民から祝賀を受け、それに応えるために宮殿のベランダに立つ行事。')\">一般参賀</span>の第5回回において、天皇皇后両陛下や皇族方がベランダに立たれた直後、最前列にいた男が突然全裸になり、<span class=\"term\" onclick=\"openPanel('公然わいせつ', '不特定または多数の人が見ることができる状況で、わいせつな行為を行う罪。')\">公然わいせつ</span>の疑いで現行犯逮捕されるという異例の事態が発生した。天皇陛下が平和へのメッセージを終えられた直後の凶行に、会場にいた数千人の参賀者は一時騒然となった。<span class=\"term\" onclick=\"openPanel('皇宮警察', '皇居や御所、天皇・皇族の警護を専門に担当する警察庁の機関。')\">皇宮警察</span>と警視庁の警察官が即座に取り押さえたものの、この不祥事は、国家の最も神聖な伝統行事における警備体制の脆弱性を露呈させた。<span class=\"term\" onclick=\"openPanel('高市政権', '高市早苗首相に率いられた、保守的で安全保障重視の姿勢をとる現在の内閣。')\">高市政権</span>下で国家のアイデンティティと安全保障が議論される中、この出来事は社会の不穏な空気を象徴するものとして注目されている。",
+        "critique_en": "Editor H's Perspective: This bizarre disruption at the Imperial Palace is more than a mere security lapse; it is a mirror reflecting the hidden cracks in Japan's social fabric. We often pride ourselves on 'Wa' (harmony), yet such an extreme act of defiance in the heart of tradition suggests a desperate search for visibility in an increasingly alienated society. It reminds us that while we bolster our digital and military defenses, the mental resilience and social cohesion of the citizenry remain our most vulnerable frontiers. True security cannot be found in barriers alone, but in the sense of belonging we provide to every individual.",
+        "critique_jp": "編集者Hの視点：皇居で起きたこの異様な騒動は、単なる警備の不備ではなく、日本の社会構造に潜む「ひび割れ」を映し出す鏡である。我々はしばしば「和」の精神を誇りとするが、伝統の中枢でこれほど過激な抵抗が行われたことは、疎外感が深まる社会で「存在を認められたい」という悲痛な叫びを予感させる。デジタルや軍事的な防衛を強化しても、国民の精神的な回復力や社会的な連帯感こそが、実は最も脆弱な最前線であることを忘れてはならない。真の安全保障とは、物理的な障壁だけでなく、一人ひとりが社会に居場所を感じられるかどうかにかかっているのではないか。",
         "proverb_jp": {
-          "title": "不易流行",
-          "desc": "いつまでも変化しない本質的なものを忘れない中にも、新しく変化を重ねていくこと。"
+          "title": "備えあれば憂いなし",
+          "desc": "万全の準備をしていれば、何が起きても心配はない。しかし、想定外の事態こそが現代の常態であることを教えている。"
+        },
+        "proverb_en": {
+          "title": "A fly in the ointment",
+          "desc": "A small defect or incident that spoils an otherwise grand or harmonious occasion."
         },
         "glossary": [
           {
-            "term_en": "Hatsumode",
-            "def_en": "The first Shinto shrine or Buddhist temple visit of the Japanese New Year.",
-            "term_jp": "初詣",
-            "def_jp": "年が明けて初めて神社や寺院に参拝し、一年の無事と平安を祈る行事。"
+            "term_en": "New Year's Greeting",
+            "def_en": "A public event where the Imperial Family appears to greet the public.",
+            "term_jp": "一般参賀",
+            "def_jp": "天皇や皇族が国民から祝賀を受け、それに応えるために宮殿のベランダに立つ行事。"
           },
           {
-            "term_en": "Saisen",
-            "def_en": "Monetary offerings given to deities at shrines or temples.",
-            "term_jp": "お賽銭",
-            "def_jp": "祈願成就の感謝として、あるいは神仏への供え物として捧げる金銭。"
+            "term_en": "Imperial Guard",
+            "def_en": "The specialized security force dedicated to protecting the Imperial Family and palace.",
+            "term_jp": "皇宮警察",
+            "def_jp": "皇居や御所、天皇・皇族の警護を専門に担当する警察庁の機関。"
           },
           {
-            "term_en": "Demographic Reality",
-            "def_en": "The actual state of a population's size, growth, and age distribution.",
-            "term_jp": "人口動態の現実",
-            "def_jp": "人口の規模、成長、年齢構成などの実際の状態。"
+            "term_en": "Public Indecency",
+            "def_en": "A criminal act of performing offensive physical acts in public spaces.",
+            "term_jp": "公然わいせつ",
+            "def_jp": "不特定または多数の人が見ることができる状況で、わいせつな行為を行う罪。"
           },
           {
-            "term_en": "Hyper-aged Society",
-            "def_en": "A society where more than 21% of the population is aged 65 or older.",
-            "term_jp": "超高齢社会",
-            "def_jp": "65歳以上の人口が全人口の21%を超えた社会。"
+            "term_en": "Reiwa Era",
+            "def_en": "The current era of Japan which began in 2019.",
+            "term_jp": "令和",
+            "def_jp": "2019年5月1日から始まった現在の日本の元号。"
           },
           {
-            "term_en": "Pragmatic Evolution",
-            "def_en": "The process of adapting based on practical considerations rather than purely theoretical ones.",
-            "term_jp": "実用的進化",
-            "def_jp": "理論よりも現実的な必要性に基づいて適応していく過程。"
+            "term_en": "Takaichi Administration",
+            "def_en": "The Japanese government led by Prime Minister Sanae Takaichi.",
+            "term_jp": "高市政権",
+            "def_jp": "高市早苗首相に率いられた、保守的で安全保障重視の姿勢をとる現在の内閣。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "Nikkei 225 Eyes New Heights in 2026 ： Corporate Governance Reforms Driving Global Capital Inflow",
-        "title_jp": "2026年の日経平均は新高値を模索 ： コーポレートガバナンス改革が呼び込む世界資本",
-        "content_en": "Following a robust 2025, Japanese equities are starting 2026 with strong momentum. The Tokyo Stock Exchange’s ongoing pressure on companies to improve capital efficiency and increase <span class=\"term\" onclick=\"openPanel('PBR (Price-to-Book Ratio)', 'A financial ratio used to compare a company\\'s current market price to its book value.')\">PBR (Price-to-Book Ratio)</span> is finally yielding results that resonate with global institutional investors. Analysts suggest that the 'Japan Premium' is returning, as geopolitical stability and structural reforms make the Tokyo market a preferred destination over other volatile Asian markets. Retail participation via the expanded <span class=\"term\" onclick=\"openPanel('NISA', 'Nippon Individual Savings Account; a tax-exemption scheme for retail investors in Japan.')\">NISA</span> system also provides a steady floor for domestic valuations.",
-        "content_jp": "堅調な2025年を引き継ぎ、2026年の日本株は強い勢いでスタートしました。東京証券取引所による資本効率の改善と<span class=\"term\" onclick=\"openPanel('PBR（株価純資産倍率）', '株価が1株当たりの純資産の何倍まで買われているかを示す指標。')\">PBR（株価純資産倍率）</span>の向上を求める継続的な圧力は、ようやく世界の<span class=\"term\" onclick=\"openPanel('機関投資家', '多額の資金を運用する銀行、保険会社、年金基金などの組織投資家。')\">機関投資家</span>に響く成果を上げ始めています。地政学的な安定性と構造改革により、東京市場が他の変動の激しいアジア市場よりも優先的な投資先となる中、アナリストは「ジャパン・プレミアム」の復活を示唆しています。拡充された<span class=\"term\" onclick=\"openPanel('NISA', '日本国内の個人投資家を対象とした少額投資非課税制度。')\">NISA</span>制度を通じた個人投資家の参画も、国内のバリュエーションを安定的に支えています。",
-        "critique_en": "Editor H's Perspective: Japan is no longer the 'value trap' of the lost decades. We are seeing a fundamental shift where 'capital efficiency' has moved from a buzzword to a boardroom mandate. However, the true test for 2026 will be whether these profits translate into significant wage growth. Real investment sustainability depends not just on stock charts, but on the purchasing power of the people behind those companies. The bull market needs a human foundation to endure.",
-        "critique_jp": "編集者Hの視点：日本はもはや「失われた数十年」のバリュートラップ（割安の罠）ではありません。「資本効率」が単なる流行語から、取締役会の必須課題へと根本的に変化したのです。しかし、2026年の真の試練は、これらの利益が大幅な賃金上昇に結びつくかどうかにあります。投資の真の持続可能性は、株価チャートだけでなく、企業を支える人々の購買力に依存します。強気相場が持続するためには、人間中心の基盤が必要なのです。",
-        "proverb_en": {
-          "title": "Strike while the iron is hot",
-          "desc": "Take advantage of an opportunity as soon as it exists."
-        },
+        "title_en": "SoftBank Completes $40 Billion OpenAI Stake ： Japan’s Bold Gambit in the AI Era",
+        "title_jp": "ソフトバンク、OpenAIへの400億ドル出資を完了 ： AI時代における日本の乾坤一擲",
+        "content_en": "On the second day of 2026, SoftBank Group announced the completion of its massive $40 billion investment into OpenAI. This move, one of the largest single private investments in tech history, marks a definitive shift for Masayoshi Son's conglomerate as it positions itself at the epicenter of the artificial general intelligence (<span class=\"term\" onclick=\"openPanel('AGI', 'Artificial General Intelligence; AI that equals or surpasses human ability across all tasks.')\">AGI</span>) revolution. With the <span class=\"term\" onclick=\"openPanel('Nikkei 225', 'Japan\\'s benchmark stock market index.')\">Nikkei 225</span> starting the year near historic highs above 50,000, analysts see this as a sign that Japanese capital is no longer playing defense. SoftBank’s infrastructure play seeks to integrate <span class=\"term\" onclick=\"openPanel('AGI', 'Artificial General Intelligence; AI that equals or surpasses human ability across all tasks.')\">AGI</span> into every sector of Japan's economy, from manufacturing to elderly care, aiming to reclaim the nation's technological leadership.",
+        "content_jp": "2026年の幕開け早々、ソフトバンクグループはOpenAIへの400億ドル（約6兆円）に及ぶ巨額出資を完了したと発表した。テック史上最大規模の民間投資の一つとなるこの決断は、孫正義率いる同社が<span class=\"term\" onclick=\"openPanel('人工汎用知能', '人間が行うあらゆる知的な作業を同等、あるいはそれ以上にこなせるAIのこと。')\">人工汎用知能</span>（AGI）革命の中心地へと軸足を完全に移したことを象徴している。<span class=\"term\" onclick=\"openPanel('日経平均株価', '日本を代表する225銘柄の株価をもとに算出される株価指標。')\">日経平均株価</span>が5万円の大台を維持し、過去最高値圏で推移する中、この動きは日本資本がもはや守りの姿勢ではないことを示唆している。ソフトバンクは、製造業から介護まであらゆる産業にAGIを組み込み、日本の技術的優位性を再構築することを目指している。",
+        "critique_en": "Editor H's Perspective: Masayoshi Son has always been a man who bets on the 'tomorrow' others are too afraid to envision. By pouring $40 billion into OpenAI, SoftBank is essentially purchasing a seat at the table where the future of human intelligence will be decided. It is a high-stakes gamble that underscores a profound truth: in the AI age, being a spectator is the most dangerous risk of all. While some fear the concentration of power, this move forces us to ask if Japan can afford to stay in the slow lane of digital transformation. This is not just an investment; it is an existential hedge against stagnation.",
+        "critique_jp": "編集者Hの視点：孫正義氏は常に、他者が直視することを恐れる「明日」に賭けてきた。OpenAIへの400億ドルの投入は、人類の知能の未来が決定される会議の「席」を実質的に買い取ったことを意味する。これは、AI時代においては「傍観者でいることこそが最大のリスクである」という冷徹な真実を浮き彫りにする乾坤一擲の勝負だ。権力の集中を危惧する声もあるが、この動きは、日本がデジタル変革の後方集団に甘んじ続ける余裕があるのかという問いを突きつけている。これは単なる投資ではなく、停滞に対する生存戦略としてのヘッジなのだ。",
         "proverb_jp": {
-          "title": "好機逸すべからず",
-          "desc": "絶好の機会を逃してはならない。チャンスが来たら即座に行動すべきであること。"
+          "title": "虎穴に入らずんば虎子を得ず",
+          "desc": "危険を冒さなければ、大きな成功や利益を得ることはできないという意味。"
+        },
+        "proverb_en": {
+          "title": "Nothing ventured, nothing gained",
+          "desc": "One cannot expect to achieve anything if one is never willing to take risks."
         },
         "glossary": [
           {
-            "term_en": "Corporate Governance",
-            "def_en": "The system of rules, practices, and processes by which a firm is directed and controlled.",
-            "term_jp": "コーポレートガバナンス",
-            "def_jp": "企業経営を監視・規律するための仕組み（企業統治）。"
+            "term_en": "AGI",
+            "def_en": "Artificial General Intelligence; AI that equals or surpasses human ability across all tasks.",
+            "term_jp": "人工汎用知能",
+            "def_jp": "人間が行うあらゆる知的な作業を同等、あるいはそれ以上にこなせるAIのこと。"
           },
           {
-            "term_en": "PBR (Price-to-Book Ratio)",
-            "def_en": "A financial ratio used to compare a company's current market price to its book value.",
-            "term_jp": "PBR（株価純資産倍率）",
-            "def_jp": "株価が1株当たりの純資産の何倍まで買われているかを示す指標。"
+            "term_en": "Nikkei 225",
+            "def_en": "Japan's benchmark stock market index.",
+            "term_jp": "日経平均株価",
+            "def_jp": "日本を代表する225銘柄の株価をもとに算出される株価指標。"
           },
           {
-            "term_en": "Institutional Investors",
-            "def_en": "Large organizations, such as banks or insurance companies, that invest large sums of money.",
-            "term_jp": "機関投資家",
-            "def_jp": "多額の資金を運用する銀行、保険会社、年金基金などの組織投資家。"
+            "term_en": "Capital Injection",
+            "def_en": "The act of investing money into a company to facilitate growth.",
+            "term_jp": "資本投下",
+            "def_jp": "企業の成長を促すために、事業や株式に対して資金を投入すること。"
           },
           {
-            "term_en": "NISA",
-            "def_en": "Nippon Individual Savings Account; a tax-exemption scheme for retail investors in Japan.",
-            "term_jp": "NISA",
-            "def_jp": "日本国内の個人投資家を対象とした少額投資非課税制度。"
+            "term_en": "Syndicated Co-investors",
+            "def_en": "A group of investors who jointly fund a large project or company.",
+            "term_jp": "協調出資者",
+            "def_jp": "大規模なプロジェクトや企業に対し、主導企業と共に資金を出し合う投資家グループ。"
           },
           {
-            "term_en": "Value Trap",
-            "def_en": "A stock that appears cheap but continues to trade at low levels due to underlying problems.",
-            "term_jp": "バリュートラップ",
-            "def_jp": "指標面で割安に見えるが、成長性の欠如などにより株価が低迷し続ける銘柄。"
+            "term_en": "Exponential Growth",
+            "def_en": "Growth that becomes ever more rapid in proportion to the growing total size.",
+            "term_jp": "指数関数的な成長",
+            "def_jp": "ある一定の期間ごとに一定の倍率で増えていく、極めて急速な成長のこと。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "Global Energy Transition Reaches Critical Juncture ： Decoupling from Fossil Fuels Amidst Geopolitical Fractures",
-        "title_jp": "世界のエネルギー転換が岐路に ： 地政学的分断の中で進む化石燃料からの脱却",
-        "content_en": "Reports from Reuters and the BBC highlight a pivotal year for the global energy landscape. As of early 2026, renewable energy capacity has surpassed initial 2030 projections in several European and Nordic nations. However, tension remains high as resource-rich nations in the <span class=\"term\" onclick=\"openPanel('Global South', 'A term used to describe developing and emerging nations, primarily in the Southern Hemisphere.')\">Global South</span> demand 'climate justice' and technological transfers in exchange for critical minerals. With supply chains increasingly fragmented by national security concerns, the transition is becoming as much a race for sovereignty as it is a battle for the environment.",
-        "content_jp": "ロイターやBBCの報道は、世界のエネルギー情勢にとって極めて重要な1年であることを強調しています。2026年初頭の時点で、欧州や北欧の数カ国では再生可能エネルギーの設備容量が当初の2030年予測を上回りました。しかし、<span class=\"term\" onclick=\"openPanel('グローバル・サウス', '主に南半球に位置する発展途上国や新興国の総称。')\">グローバル・サウス</span>の資源大国が、<span class=\"term\" onclick=\"openPanel('重要鉱物', 'リチウムやコバルトなど、経済や安全保障に不可欠で代替が困難な鉱物資源。')\">重要鉱物</span>との引き換えに「<span class=\"term\" onclick=\"openPanel('気候正義', '地球温暖化を単なる環境問題ではなく、倫理的、政治的な公正さの観点から捉える考え方。')\">気候正義</span>」と技術移転を要求しており、緊張が高まっています。国家安全保障上の懸念からサプライチェーンの分断が進む中、エネルギー転換は環境保護のための戦いであると同時に、<span class=\"term\" onclick=\"openPanel('主権', '国家が他国からの干渉を受けず、自国の意思で統治を行う権利。')\">主権</span>をめぐる争いにもなっています。",
-        "critique_en": "Editor H's Perspective: We are moving from the era of 'Resource Diplomacy' to 'Electron Diplomacy.' The world is discovering that the path to a green future is paved with messy geopolitical realities. While the technology to save our planet exists, the political will to share it remains scarce. The danger is that the energy transition could create a new class of 'energy-rich' and 'energy-poor' nations, replacing old oil dependencies with new mineral monopolies. True progress requires a bridge, not just a battery.",
-        "critique_jp": "編集者Hの視点：私たちは今、「資源外交」から「電子外交」の時代へと移行しています。緑の未来への道は、複雑な地政学的現実に直面していることが明らかになりました。地球を救う技術は存在しますが、それを共有するための政治的意志は依然として不足しています。危険なのは、エネルギー転換によって新たな「エネルギー富国」と「エネルギー貧国」が生まれ、かつての石油依存が新たな鉱物独占に置き換わってしまうことです。真の進歩には、バッテリーだけでなく、国家間の橋渡しが必要です。",
-        "proverb_en": {
-          "title": "A house divided against itself cannot stand",
-          "desc": "A group that is divided by internal disagreement will not be able to succeed."
-        },
+        "title_en": "Tragedy in the Swiss Alps ： A Somber Reminder of Fragility Amidst Celebration",
+        "title_jp": "スイス・アルプスを襲った新年の悲劇 ： 祝祭の影に潜む生の危うさ",
+        "content_en": "A devastating fire at a crowded New Year's Eve party in the Swiss ski resort of Crans-Montana has left at least 40 dead and over 115 injured, international news services reported on January 2, 2026. The blaze broke out shortly after midnight at 'Le Constellation' bar, where revelers were celebrating the turn of the year. Swiss President Guy Parmelin declared five days of national mourning as forensic teams struggle to identify victims, many of whom were young international tourists. Early reports suggest a 'flashover' phenomenon trapped attendees within seconds, turning a night of joy into one of Switzerland’s deadliest modern disasters.",
+        "content_jp": "スイスの人気スキーリゾート、クラン＝モンタナのバーで大晦日の祝賀パーティー中に火災が発生し、少なくとも40人が死亡、115人が負傷した。BBCやロイターが1月2日に伝えた。火災は新年を迎えた直後、多くの若者で賑わっていた「ル・コンステラシオン」で発生。スイスのパルムラン大統領は5日間の<span class=\"term\" onclick=\"openPanel('国家服喪', '国家的な悲劇や要人の死去に際し、国全体で哀悼の意を表す期間。')\">国家服喪</span>を宣言した。<span class=\"term\" onclick=\"openPanel('鑑識', '科学的な技術を用いて、現場の状況や証拠品、遺体などを調査すること。')\">鑑識</span>チームは犠牲者の身元確認を急いでいるが、熱で可燃物が一気に燃え上がる「<span class=\"term\" onclick=\"openPanel('フラッシュオーバー', '火災時、室内の温度が上昇し、可燃物が一斉に発火して爆発的に燃え広がる現象。')\">フラッシュオーバー</span>」現象により、歓喜の夜は一瞬にして同国史上最悪級の惨劇へと変わった。多くの犠牲者が国外からの若年層の観光客であるとみられている。",
+        "critique_en": "Editor H's Perspective: There is a cruel irony in starting a new year, a time of hope, with such visceral loss. The Swiss tragedy reminds us that our modern temples of leisure are often just as fragile as the lives within them. As we globalize our celebrations, we must also globalize our standards of safety and fire prevention. But beyond the technicalities, there is a human moral to this story: life is a fleeting breath. In an era where we focus so much on future technologies and grand policies, let us not forget the profound importance of protecting the simple, joyful spaces where we gather to feel human.",
+        "critique_jp": "編集者Hの視点：希望に満ちた新年の幕開けが、これほどまでに生々しい喪失で彩られることには残酷な皮肉を感じざるを得ない。スイスの悲劇は、我々のレジャーという名の現代の神殿が、そこに集う命と同様に脆いものであることを思い出させる。祝祭をグローバル化させるのであれば、安全基準や防火対策も等しくグローバル化されなければならない。しかし、技術的な議論を超えて、この事件は「生はいかに儚いか」という普遍的な教訓を投げかけている。未来のテクノロジーや壮大な政策に目を奪われがちな時代だからこそ、人間であることを実感するために集う、ささやかで喜びあふれる場所を守ることの尊さを忘れてはならない。",
         "proverb_jp": {
-          "title": "内憂外患",
-          "desc": "国内の心配事と、外国から受ける困難な事柄。内にも外にも悩みがあること。"
+          "title": "一寸先は闇",
+          "desc": "ほんの少し先のことでも、何が起こるか全く予測できないということ。新年の祝祭が一転して悲劇となった状況を表している。"
+        },
+        "proverb_en": {
+          "title": "Death at the door",
+          "desc": "A reminder that tragedy or danger can strike at any moment, even during the most celebratory times."
         },
         "glossary": [
           {
-            "term_en": "Global South",
-            "def_en": "A term used to describe developing and emerging nations, primarily in the Southern Hemisphere.",
-            "term_jp": "グローバル・サウス",
-            "def_jp": "主に南半球に位置する発展途上国や新興国の総称。"
+            "term_en": "Flashover",
+            "def_en": "A rapid transition where all surfaces in a room ignite simultaneously due to heat.",
+            "term_jp": "フラッシュオーバー",
+            "def_jp": "火災時、室内の温度が上昇し、可燃物が一斉に発火して爆発的に燃え広がる現象。"
           },
           {
-            "term_en": "Climate Justice",
-            "def_en": "The framing of global warming as an ethical and political issue, rather than just environmental.",
-            "term_jp": "気候正義",
-            "def_jp": "地球温暖化を単なる環境問題ではなく、倫理的、政治的な公正さの観点から捉える考え方。"
+            "term_en": "National Mourning",
+            "def_en": "A period of time during which a nation honors the memory of victims or a prominent person.",
+            "term_jp": "国家服喪",
+            "def_jp": "国家的な悲劇や要人の死去に際し、国全体で哀悼の意を表す期間。"
           },
           {
-            "term_en": "Critical Minerals",
-            "def_en": "Non-fuel minerals essential to the economy and national security, such as lithium and cobalt.",
-            "term_jp": "重要鉱物",
-            "def_jp": "リチウムやコバルトなど、経済や安全保障に不可欠で代替が困難な鉱物資源。"
+            "term_en": "Canton of Valais",
+            "def_en": "The administrative region in southwestern Switzerland where the resort is located.",
+            "term_jp": "ヴァレー州",
+            "def_jp": "スイス南西部に位置する、クラン＝モンタナなどのリゾート地を擁する行政区画。"
           },
           {
-            "term_en": "Decoupling",
-            "def_en": "The process of separating two entities, such as economic growth from environmental degradation.",
-            "term_jp": "デカップリング（切り離し）",
-            "def_jp": "二つの事象が連動しなくなること。ここでは経済成長と環境負荷の分離などを指す。"
+            "term_en": "Forensics",
+            "def_en": "Scientific tests or techniques used in connection with the investigation of crimes or deaths.",
+            "term_jp": "鑑識",
+            "def_jp": "科学的な技術を用いて、現場の状況や証拠品、遺体などを調査すること。"
           },
           {
-            "term_en": "Sovereignty",
-            "def_en": "The authority of a state to govern itself or another state.",
-            "term_jp": "主権",
-            "def_jp": "国家が他国からの干渉を受けず、自国の意思で統治を行う権利。"
+            "term_en": "Revelers",
+            "def_en": "People who are enjoying themselves in a lively and noisy way.",
+            "term_jp": "祝賀客",
+            "def_jp": "お祭りやパーティーなどで賑やかに楽しんでいる人々。"
           }
         ]
       }
