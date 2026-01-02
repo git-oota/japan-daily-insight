@@ -9,58 +9,30 @@
         :root { --navy: #001f3f; --gold: #c5a059; }
         body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; color: #333; }
         
-        /* --- 修正：重ならないヘッダー --- */
-        header { 
-            background: var(--navy); 
-            color: white; 
-            padding: 15px 25px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky; 
-            top: 0; 
-            z-index: 100; 
-            border-bottom: 5px solid var(--gold); 
-        }
-        .header-logo { 
-            font-family: 'Playfair Display'; 
-            font-size: 2rem; 
-            letter-spacing: 3px; 
-            flex-grow: 1; 
-            text-align: center; 
-            margin-left: 70px; /* ボタンの幅分ロゴを左に寄せて中央を維持 */
-        }
-        .lang-btn { 
-            background: var(--gold); 
-            color: white; 
-            border: none; 
-            padding: 8px 16px; 
-            cursor: pointer; 
-            border-radius: 4px; 
-            font-weight: bold; 
-            white-space: nowrap; 
-            transition: 0.3s;
-        }
-        .lang-btn:hover { opacity: 0.8; }
-
-        @media (max-width: 700px) {
-            header { flex-direction: column; padding: 10px; }
-            .header-logo { margin-left: 0; font-size: 1.5rem; }
-            .lang-btn { margin-top: 10px; font-size: 0.8rem; }
-        }
-        /* --- ヘッダー修正ここまで --- */
+        /* ヘッダー改善：重なり防止 */
+        header { background: var(--navy); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
+        .header-logo { font-family: 'Playfair Display'; font-size: 2.2rem; letter-spacing: 3px; flex-grow: 1; text-align: center; margin-left: 80px; }
+        .lang-btn { background: var(--gold); color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; white-space: nowrap; }
 
         .container { display: grid; grid-template-columns: 1fr 350px; max-width: 1200px; margin: 40px auto; gap: 50px; padding: 0 20px; }
         .category { color: var(--gold); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; }
-        .main-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin: 10px 0 5px 0; line-height: 1.1; font-weight: 700; }
-        .sub-title { font-size: 1.1rem; color: #666; font-weight: normal; margin-bottom: 15px; line-height: 1.4; }
-        .excerpt { line-height: 1.8; color: #444; font-size: 1.05rem; }
+        
+        /* ニュースらしいタイトル階層 */
+        .main-title { font-size: 1.8rem; margin: 10px 0 5px 0; line-height: 1.2; font-weight: 700; color: var(--navy); }
+        .sub-title { font-size: 1rem; color: #666; font-weight: normal; margin-bottom: 15px; }
+        
         .read-more { display: inline-block; margin-top: 15px; color: var(--navy); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--gold); }
         .side-col h3 { border-bottom: 2px solid var(--navy); padding-bottom: 10px; font-family: 'Playfair Display'; }
         .archive-item { margin-bottom: 25px; list-style: none; }
         .archive-item a { text-decoration: none; color: #555; font-size: 0.95rem; }
+
         .en { display: none; }
-        @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+        @media (max-width: 800px) { 
+            header { flex-direction: column; padding: 10px; }
+            .header-logo { margin-left: 0; font-size: 1.5rem; }
+            .lang-btn { margin-top: 10px; }
+            .container { grid-template-columns: 1fr; } 
+        }
     </style>
 </head>
 <body>
@@ -79,14 +51,14 @@
                 {% set parts = art.title_jp.split('：') %}
                 <div class="main-title">{{ parts[0] }}</div>
                 {% if parts|length > 1 %}<div class="sub-title">{{ parts[1] }}</div>{% endif %}
-                <div class="excerpt">{{ art.content_jp | safe }}</div>
+                <div class="excerpt">{{ art.content_jp | safe | truncate(150) }}</div>
                 <a href="articles/{{ item.date }}.html" class="read-more">記事を読む</a>
             </div>
             <div class="en">
-                {% set parts_en = art.title_en.split(' : ') %}
+                {% set parts_en = art.title_en.split(' ： ') %}
                 <div class="main-title">{{ parts_en[0] }}</div>
                 {% if parts_en|length > 1 %}<div class="sub-title">{{ parts_en[1] }}</div>{% endif %}
-                <div class="excerpt">{{ art.content_en | safe }}</div>
+                <div class="excerpt">{{ art.content_en | safe | truncate(150) }}</div>
                 <a href="articles/{{ item.date }}.html" class="read-more">Read More</a>
             </div>
         </article>
