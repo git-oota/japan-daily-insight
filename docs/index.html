@@ -3,55 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE INSIGHT</title>
-    <link href="[https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap)" rel="stylesheet">
+    <title>THE INSIGHT | Daily News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --navy: #001f3f; --gold: #c5a059; --bg: #fdfdfb; }
-        body { font-family: 'Noto Serif JP', serif; background: var(--bg); color: #2c3e50; margin: 0; }
-        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: white; border-bottom: 1px solid #eee; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 5rem; letter-spacing: 10px; color: var(--navy); margin: 0; }
-        .date-hero { font-family: 'Playfair Display', serif; color: var(--gold); letter-spacing: 4px; margin-bottom: 20px; }
+        :root { --navy: #001f3f; --gold: #c5a059; --bg: #ffffff; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; background: var(--bg); color: #333; }
+        header { background: var(--navy); color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 4px solid var(--gold); }
+        .lang-btn { position: absolute; right: 20px; top: 25px; background: var(--gold); color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; }
         
-        .main-grid { max-width: 1100px; margin: -100px auto 100px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
-        .card { background: white; padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); transition: 0.5s; text-decoration: none; color: inherit; }
-        .card:hover { transform: translateY(-10px); }
-        .category { color: var(--gold); font-weight: bold; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
-        .title { font-size: 2.2rem; margin: 20px 0; color: var(--navy); line-height: 1.2; }
+        .container { display: grid; grid-template-columns: 1fr 350px; max-width: 1200px; margin: 40px auto; gap: 40px; padding: 0 20px; }
+        .main-col article { margin-bottom: 60px; padding-bottom: 40px; border-bottom: 1px solid #eee; }
+        .category { color: var(--gold); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 10px 0; line-height: 1.2; }
+        .excerpt { line-height: 1.8; color: #555; font-size: 1.1rem; }
+        .read-more { display: inline-block; margin-top: 15px; color: var(--navy); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--gold); }
         
-        .archives { border-top: 1px solid #ddd; padding-top: 20px; }
-        .archive-item { display: block; padding: 15px 0; border-bottom: 1px solid #eee; text-decoration: none; color: #666; font-size: 0.9rem; }
-        .archive-item:hover { color: var(--gold); }
+        .side-col h3 { border-bottom: 2px solid var(--navy); padding-bottom: 10px; }
+        .archive-list { list-style: none; padding: 0; }
+        .archive-item { margin-bottom: 20px; font-size: 0.9rem; }
+        .archive-item a { text-decoration: none; color: #666; }
+
+        .en { display: none; }
+        @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <header>
-        <span class="date-hero">2026-01-02</span>
-        <h1>THE INSIGHT</h1>
-        <p>A Perspective That Shapes the Future</p>
-    </header>
 
-    <div class="main-grid">
-        <main>
-            
-            <a href="articles/2026-01-02.html" class="card" style="display: block; margin-bottom: 30px;">
-                <span class="category">Social</span>
-                <h2 class="title">老いゆく先駆者が見せる、静かなる強さ</h2>
-                <p style="color: #888;">2026年の初日の出と共に、日本の主要各紙はほろ苦い調和を見せています。リベラルな朝日新聞から保守的な産経新聞まで、見出しが描き出すのは「子供が減りつつも、精神的な深みを増す国家」という逆説です。高市...</p>
-            </a>
-            
-            <a href="articles/2026-01-02.html" class="card" style="display: block; margin-bottom: 30px;">
-                <span class="category">Investment</span>
-                <h2 class="title">日経平均5万円の壁：人間効率への投資</h2>
-                <p style="color: #888;">日経平均株価がついに5万円の大台を突破しました。10年前には夢物語のように思えた数字です。しかし、これは1989年のバブル期のような狂乱ではありません。日本経済新聞や読売新聞によれば、現在の成長を支え...</p>
-            </a>
-            
-        </main>
-        <aside>
-            <div class="archives">
-                <h3 style="font-family: 'Playfair Display'; color: var(--navy);">Archives</h3>
-                
-            </div>
-        </aside>
+<header>
+    <div style="font-family: 'Playfair Display'; font-size: 2rem;">THE INSIGHT</div>
+    <button class="lang-btn" onclick="toggleLang()">EN / JP</button>
+</header>
+
+<div class="container">
+    <div class="main-col">
+        
+        <article>
+            <div class="category">Social</div>
+            <h2 class="jp">空席の食卓：日本の静かな冬に向き合う</h2>
+            <h2 class="en">The Empty Chair: Facing Japan’s Silent Winter</h2>
+            <div class="excerpt jp">2026年の幕開け、除夜の鐘の音の裏側で、多くの地域が突き刺さるような静寂に包まれています。煌びやかな高層ビルの影で、数千人もの高齢者が一人きりで新年を迎えています。私たちはこれを「孤独死」と呼びますが、これは単なる統計データではなく、道徳的な挑戦です。かつての日本は、固い絆で結ばれた村社会の織物（...</div>
+            <div class="excerpt en">As Japan rings in 2026, the festive sounds of New Year bells mask a haunting silence in many neighborhoods. In the shadow of our gleaming skyscrapers,...</div>
+            <a href="articles/2026-01-02.html" class="read-more jp">記事を読む</a>
+            <a href="articles/2026-01-02.html" class="read-more en">Read More</a>
+        </article>
+        
+        <article>
+            <div class="category">Investment</div>
+            <h2 class="jp">黄金の貯金箱：あなたのお小遣いが世界を変える理由</h2>
+            <h2 class="en">The Golden Piggy Bank: Why Your Allowance Matters to the World</h2>
+            <div class="excerpt jp">何十年もの間、日本の家庭は富をマットレスの下や金利ゼロの銀行口座に眠らせてきました。しかし2026年1月、革命が起きています。日経平均株価が最高値を更新し、インフレが長い眠りから目覚める中、日本の若者たちは「投資家市民」へと変貌を遂げています。これは単にお金を稼ぐことではなく、未来に投票することなの...</div>
+            <div class="excerpt en">For decades, Japanese households kept their wealth tucked under mattresses or in zero-interest bank accounts. But as of January 2026, a revolution is ...</div>
+            <a href="articles/2026-01-02.html" class="read-more jp">記事を読む</a>
+            <a href="articles/2026-01-02.html" class="read-more en">Read More</a>
+        </article>
+        
+        <article>
+            <div class="category">International</div>
+            <h2 class="jp">深淵に架かる橋：2026年の和平合意</h2>
+            <h2 class="en">A Bridge Across the Abyss: The 2026 Peace Accord</h2>
+            <div class="excerpt jp">歴史はしばしば血で書かれますが、今週、それはインクで書かれました。ニューヨーク・タイムズやロイターが報じた画期的な和平合意は、世界の安定における転換点となりました。長年、懐疑論者たちは「憎しみは深すぎて癒えない」と言ってきました。しかし彼らは間違っていました。外交とは、立ち去りたくなるときにこそ、共...</div>
+            <div class="excerpt en">History is often written in blood, but this week, it was written in ink. The breakthrough peace agreement reported by the New York Times and Reuters m...</div>
+            <a href="articles/2026-01-02.html" class="read-more jp">記事を読む</a>
+            <a href="articles/2026-01-02.html" class="read-more en">Read More</a>
+        </article>
+        
     </div>
+
+    <div class="side-col">
+        <h3>BACK NUMBERS</h3>
+        <ul class="archive-list">
+            
+            <li class="archive-item">
+                <a href="articles/2026-01-02.html">
+                    <small>2026-01-02</small><br>
+                    <strong>空席の食卓：日本の静かな冬に向き合う</strong>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleLang() {
+        const jps = document.querySelectorAll('.jp');
+        const ens = document.querySelectorAll('.en');
+        const isJp = jps[0].style.display !== 'none';
+        jps.forEach(el => el.style.display = isJp ? 'none' : 'block');
+        ens.forEach(el => el.style.display = isJp ? 'block' : 'none');
+    }
+</script>
 </body>
 </html>

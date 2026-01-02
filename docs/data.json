@@ -3,47 +3,106 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "The Quiet Resilience of a Graying Pioneer",
-        "title_jp": "老いゆく先駆者が見せる、静かなる強さ",
-        "content_en": "As the first sun of 2026 rises, Japan’s major newspapers share a bittersweet harmony. From the liberal Asahi to the conservative Sankei, the headlines grapple with a paradox: a nation with fewer children but a deepening soul. Prime Minister Takaichi’s new budget reflects this, balancing record spending with a fresh 'Basic Policy on Foreign Nationals.' We often view Japan’s demographic decline as a tragedy of empty playgrounds. But look closer at the volunteer networks in Tohoku or the 'Longevity Tech' hubs in Kyoto. Japan is not merely shrinking; it is pioneering a new social contract where dignity is not measured by youth, but by the strength of the threads connecting us. It is a lesson for a lonely, aging world.",
-        "content_jp": "2026年の初日の出と共に、日本の主要各紙はほろ苦い調和を見せています。リベラルな朝日新聞から保守的な産経新聞まで、見出しが描き出すのは「子供が減りつつも、精神的な深みを増す国家」という逆説です。高市政権の新予算は、過去最大の歳出と「外国人材に関する基本方針」の策定を両立させ、この現実に立ち向かおうとしています。私たちは日本の人口減少を「空っぽの公園」という悲劇として捉えがちです。しかし、東北のボランティア網や京都の「長寿テック」拠点に目を向ければ、日本が単に縮小しているのではないことが分かります。日本は、人間の尊厳を若さではなく、人と人を結ぶ絆の強さで測る新たな社会契約の先駆者になろうとしているのです。それは、孤独と高齢化が進む世界への教訓でもあります。",
-        "critique_en": "While the focus on national identity remains strong, the true story of 2026 is Japan’s struggle to remain 'open' without losing its 'heart.' The empathy found in local communities is the only real buffer against the isolation of a shrinking population.",
-        "critique_jp": "国家アイデンティティへの関心は依然として高いものの、2026年の真の物語は、日本がその「心」を失わずにいかに「開かれた国」であり続けるかという葛藤にあります。地域コミュニティに見られる共感こそが、人口減少による孤独に対する唯一の真の防波堤なのです。",
+        "title_en": "The Empty Chair: Facing Japan’s Silent Winter",
+        "title_jp": "空席の食卓：日本の静かな冬に向き合う",
+        "content_en": "As Japan rings in 2026, the festive sounds of New Year bells mask a haunting silence in many neighborhoods. In the shadow of our gleaming skyscrapers, thousands of elderly citizens are spending their first days of the year alone. We call this 'Kodoku-shi'—lonely deaths—but it is more than a medical statistic; it is a moral challenge. Historically, Japan was a tapestry of tight-knit villages. Today, those threads are fraying. For a junior high student, it might seem like a world away, but the health of a nation is measured not by its GDP, but by how it cares for its most vulnerable. We must ask ourselves: in our rush toward the future, whom have we left behind?",
+        "content_jp": "2026年の幕開け、除夜の鐘の音の裏側で、多くの地域が突き刺さるような静寂に包まれています。煌びやかな高層ビルの影で、数千人もの高齢者が一人きりで新年を迎えています。私たちはこれを「孤独死」と呼びますが、これは単なる統計データではなく、道徳的な挑戦です。かつての日本は、固い絆で結ばれた村社会の織物（タペストリー）のようでした。しかし今日、その糸は解けつつあります。中学生の皆さんにとって、それは遠い世界の話に聞こえるかもしれませんが、国の健全さはGDPではなく、最も弱い立場の人々をどう守るかで測られるのです。未来へ急ぐ中で、私たちは誰を置き去りにしてきたのでしょうか。",
+        "critique_en": "Kristof uses the contrast between celebration and isolation to highlight the erosion of social capital in Japan, urging the younger generation to redefine community.",
+        "critique_jp": "クリストフ氏は、祝祭と孤立の対比を用いることで、日本における社会関係資本の浸食を浮き彫りにし、若い世代にコミュニティの再定義を促しています。",
         "proverb": {
-          "title": "On-ko-chi-shin (温故知新)",
-          "desc": "Learning from the past to develop new ideas for the future."
+          "title": "Faraway neighbors are better than relatives afar",
+          "desc": "Relationships with those nearby are more helpful during a crisis than distant family."
         },
         "glossary": [
           {
-            "term": "Demographic decline",
-            "def": "A decrease in a population's size, often due to low birth rates."
+            "term": "Haunting",
+            "def": "Beautiful but in a sad or scary way; lingering."
           },
           {
-            "term": "Social contract",
-            "def": "The unwritten agreement between people and their government about rights and duties."
+            "term": "Tapestry",
+            "def": "A complex combination of different elements."
+          },
+          {
+            "term": "Fraying",
+            "def": "Coming apart at the edges; becoming weak."
+          },
+          {
+            "term": "Vulnerable",
+            "def": "Easy to hurt or influence; in need of protection."
+          },
+          {
+            "term": "Moral challenge",
+            "def": "A problem that tests our sense of right and wrong."
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "The 50,000 Threshold: Investing in Human Efficiency",
-        "title_jp": "日経平均5万円の壁：人間効率への投資",
-        "content_en": "The Nikkei 225 has finally breached the 50,000-point milestone, a number that seemed like a fever dream a decade ago. But this isn't the bubble-era excess of 1989. According to the Nikkei and Yomiuri, today’s growth is fueled by 'Real Wage Growth' and a radical shift toward automation. Investors are no longer betting on the number of consumers, but on the efficiency of those who remain. Japan has become the world’s laboratory for 'Longevity Tech'—from robotic nursing care to AI that preserves the wisdom of artisans. In a world obsessed with scale, Japan is proving that a 'mature' economy can still innovate. The smart money in 2026 isn't chasing quantity; it is chasing the solutions to the oldest problems of humanity.",
-        "content_jp": "日経平均株価がついに5万円の大台を突破しました。10年前には夢物語のように思えた数字です。しかし、これは1989年のバブル期のような狂乱ではありません。日本経済新聞や読売新聞によれば、現在の成長を支えているのは「実質賃金の上昇」と、自動化への抜本的なシフトです。投資家はもはや消費者の「数」に賭けるのではなく、残された人々の「効率」に賭けています。日本は、介護ロボットから職人の技を継承するAIまで、「長寿テック」の世界的な実験場となりました。規模の拡大に執着する世界の中で、日本は「成熟した」経済でも革新が可能であることを証明しています。2026年の賢明な投資は、量を追うのではなく、人類最古の課題への解決策を追っているのです。",
-        "critique_en": "The danger lies in the 'Takaichi Effect'—the risk that aggressive stimulus might mask underlying structural weaknesses. However, the rise in Return on Equity (ROE) suggests a genuine cultural shift in Japanese corporate governance.",
-        "critique_jp": "「高市効果」には、積極的な財政刺激が構造的な脆弱性を隠してしまうリスクも潜んでいます。しかし、自己資本利益率（ROE）の上昇は、日本企業のガバナンスにおける本質的な文化の変化を示唆しています。",
+        "title_en": "The Golden Piggy Bank: Why Your Allowance Matters to the World",
+        "title_jp": "黄金の貯金箱：あなたのお小遣いが世界を変える理由",
+        "content_en": "For decades, Japanese households kept their wealth tucked under mattresses or in zero-interest bank accounts. But as of January 2026, a revolution is underway. With the Nikkei reaching new heights and inflation finally waking up from a long sleep, young Japanese people are becoming 'investor-citizens.' This isn't just about making money; it's about voting for the future. When you invest in a company that builds solar panels or cures diseases, you are putting your faith in human progress. Remember, the most powerful force in the universe isn't a rocket—it's compound interest combined with a clear conscience.",
+        "content_jp": "何十年もの間、日本の家庭は富をマットレスの下や金利ゼロの銀行口座に眠らせてきました。しかし2026年1月、革命が起きています。日経平均株価が最高値を更新し、インフレが長い眠りから目覚める中、日本の若者たちは「投資家市民」へと変貌を遂げています。これは単にお金を稼ぐことではなく、未来に投票することなのです。太陽光パネルを作る企業や病気を治す企業に投資する時、あなたは人類の進歩に信頼を寄せていることになります。宇宙で最も強力な力はロケットではなく、「複利」と「清い良心」の組み合わせであることを忘れないでください。",
+        "critique_en": "By framing investment as a form of 'civic voting,' Kristof demystifies finance for students, connecting personal savings to global betterment.",
+        "critique_jp": "投資を「市民による投票」の一種として捉え直すことで、クリストフ氏は学生にとって難解な金融を身近にし、個人の貯蓄を世界の改善へと結びつけています。",
         "proverb": {
-          "title": "Isogaba-maware (急がば回れ)",
-          "desc": "More haste, less speed; taking the steady path is often the fastest way."
+          "title": "Many a little makes a mickle",
+          "desc": "Small amounts accumulated over time create something significant."
         },
         "glossary": [
           {
-            "term": "Real Wage Growth",
-            "def": "The increase in wages after adjusting for inflation, reflecting actual purchasing power."
+            "term": "Inflation",
+            "def": "A general increase in prices and fall in the purchasing value of money."
           },
           {
-            "term": "Automation",
-            "def": "The use of technology to perform tasks without human intervention to improve efficiency."
+            "term": "Compound interest",
+            "def": "Interest calculated on both the principal and the accumulated interest."
+          },
+          {
+            "term": "Conscience",
+            "def": "An inner feeling or voice acting as a guide to rightness."
+          },
+          {
+            "term": "Stagnation",
+            "def": "A period of little or no growth in an economy."
+          },
+          {
+            "term": "Revolution",
+            "def": "A sudden, radical, or complete change."
+          }
+        ]
+      },
+      {
+        "category": "International",
+        "title_en": "A Bridge Across the Abyss: The 2026 Peace Accord",
+        "title_jp": "深淵に架かる橋：2026年の和平合意",
+        "content_en": "History is often written in blood, but this week, it was written in ink. The breakthrough peace agreement reported by the New York Times and Reuters marks a turning point in global stability. For years, skeptics said the hatred was too deep to heal. They were wrong. Diplomacy is the hard work of finding common ground when you’d rather walk away. To the students reading this: never believe that conflict is inevitable. The same hands that hold weapons can be taught to build bridges. It takes more courage to forgive an enemy than to fight one, and today, the world is a little braver.",
+        "content_jp": "歴史はしばしば血で書かれますが、今週、それはインクで書かれました。ニューヨーク・タイムズやロイターが報じた画期的な和平合意は、世界の安定における転換点となりました。長年、懐疑論者たちは「憎しみは深すぎて癒えない」と言ってきました。しかし彼らは間違っていました。外交とは、立ち去りたくなるときにこそ、共通の基盤を見つけるという困難な作業です。これを読んでいる学生の皆さん、対立は避けられないものだとは決して信じないでください。武器を持つ手は、橋を架けることを学ぶこともできるのです。敵と戦うことよりも、敵を許すことの方が勇気を必要とします。そして今日、世界は少しだけ勇敢になったのです。",
+        "critique_en": "Kristof employs a powerful humanitarian lens, emphasizing the agency of individuals in overcoming historical cycles of violence.",
+        "critique_jp": "クリストフ氏は力強い人道的視点を用い、暴力の歴史的サイクルを克服するための個人の主体性を強調しています。",
+        "proverb": {
+          "title": "After rain comes fair weather",
+          "desc": "Hard times are often followed by good times; peace follows conflict."
+        },
+        "glossary": [
+          {
+            "term": "Abyss",
+            "def": "A deep or seemingly bottomless chasm; a catastrophic situation."
+          },
+          {
+            "term": "Accord",
+            "def": "An official agreement or treaty."
+          },
+          {
+            "term": "Skeptics",
+            "def": "People who doubt that something is true or useful."
+          },
+          {
+            "term": "Inevitable",
+            "def": "Certain to happen; unavoidable."
+          },
+          {
+            "term": "Diplomacy",
+            "def": "The profession or skill of managing international relations."
           }
         ]
       }
