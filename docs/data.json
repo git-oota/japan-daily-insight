@@ -3,141 +3,152 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "The Empty Chairs of Noto: Two Years of Resilience",
-        "title_jp": "能登の空席：レジリエンスが試される二年間",
-        "content_en": "Two years have passed since the Noto Peninsula was shattered by the New Year’s earthquake of 2024. Today, in the quiet morning of Wajima, 18,000 people still wake up in temporary, prefabricated housing. It is a stark reminder that while the news cycle moves on, the recovery of a community’s soul is a slow, painstaking process. History teaches us that the measure of a nation is not how many skyscrapers it builds, but how it cares for its most vulnerable in the aftermath of tragedy. The Noto region is currently facing a double crisis: the physical scars of the quake and the creeping shadow of depopulation. Nearly 20% of young residents have left. If we want to save the 'Japan' we love, we must do more than send money; we must offer a vision of a future where these historical towns are worth staying in.",
-        "content_jp": "2024年の元日に能登半島を襲った震災から2年が経過しました。今朝、輪島市の静かな仮設住宅では、依然として1万8000人もの人々が朝を迎えています。世間の関心が他へ移っても、人々の心の復興には膨大な時間がかかるという厳しい現実がそこにあります。歴史が教えてくれるのは、国の価値は高層ビルの数ではなく、悲劇の後に最も弱い立場の人々をいかに支えるかで決まるということです。現在、能登は震災の傷跡と、忍び寄る「<span class=\"term\" onclick=\"openPanel('過疎化', 'ある地域の人口が極端に減ること。')\">過疎化</span>」という二重の危機に直面しています。若者の2割が去りました。私たちが愛する日本を守りたいのなら、ただ義援金を送るだけでなく、こうした歴史ある町が「住み続ける価値のある場所」であり続けるための未来のビジョンを提示しなければなりません。",
-        "critique_en": "Kristof often emphasizes that empathy must be followed by action. The crisis in Noto is a human rights issue—the right to live in one’s ancestral home with dignity. We must analyze why reconstruction is slower than expected and advocate for creative solutions like digital nomadic hubs to revitalize rural areas.",
-        "critique_jp": "クリストフ氏は、共感は行動を伴わなければならないと強調します。能登の危機は人権の問題、つまり「先祖伝来の土地で尊厳を持って生きる権利」の問題です。なぜ復興が想定より遅れているのかを分析し、デジタルノマドの拠点作りなど、地方を再興させる創造的な解決策を提言する必要があります。",
-        "proverb": {
-          "title": "Fall seven times, get up eight",
-          "desc": "七転び八起き (Nana korobi ya oki): The spirit of never giving up, no matter how many times disaster strikes."
+        "title_en": "The Quiet Loneliness of the New Year : Rebuilding the Human Connection",
+        "title_jp": "正月の静かな孤独 ： つながりの再構築",
+        "content_en": "As the echoes of the New Year bells fade, a stark reality remains in the rural corners of Japan. Two years after the Noto earthquake, the physical debris has largely cleared, but the invisible scars of isolation among the elderly have deepened. In my travels, I met an 82-year-old woman in Wajima who spent her first morning of 2026 alone. Her story is a poignant reminder that while we celebrate progress, the true measure of a society is how we care for those who feel forgotten. We must move beyond infrastructure and invest in the 'social glue' that binds us. Editor H.",
+        "content_jp": "除夜の鐘が止み、日本の地方には厳しい現実が残されています。能登半島地震から2年、物理的な<span class=\"term\" onclick=\"openPanel('瓦礫', '建物などが壊れたあとに残る石や瓦のくず。')\">瓦礫</span>は片付きましたが、高齢者の間に広がる「見えない<span class=\"term\" onclick=\"openPanel('孤立', '他者との関わりがなく、一人きりになっている状態。')\">孤立</span>」という傷跡は深まるばかりです。輪島市で出会った82歳の女性は、2026年の初日の出を一人で迎えました。彼女の物語は、私たちが進歩を祝う一方で、社会の真の価値は、忘れ去られた人々にどう寄り添うかにあることを教えてくれます。必要なのは<span class=\"term\" onclick=\"openPanel('インフラ', '社会や生活の基盤となる施設や設備。')\">インフラ</span>整備だけではありません。私たちを結びつける「心の絆」への投資なのです。 編集者H。",
+        "critique_en": "Kristof's lens forces us to confront the human dignity behind the statistics of an aging society.",
+        "critique_jp": "統計の裏側にある「人間の尊厳」に焦点を当て、少子高齢化社会の冷徹な現実に温かな光を当てています。",
+        "proverb_jp": {
+          "title": "袖振り合うも多生の縁",
+          "desc": "見知らぬ人と道で袖が触れ合うような些細な出来事も、前世からの深い縁によるものであるという意味。他者とのささやかな繋がりを大切にする精神を説いています。"
+        },
+        "proverb_en": {
+          "title": "No man is an island",
+          "desc": "No person is self-sufficient; everyone relies on others and is affected by what happens to others."
         },
         "glossary": [
           {
-            "term_en": "Resilience",
-            "def_en": "The capacity to recover quickly from difficulties; toughness.",
-            "term_jp": "レジリエンス",
-            "def_jp": "困難から立ち直る力、回復力。"
+            "term_en": "Isolation",
+            "def_en": "The state of being alone and lacking social contact.",
+            "term_jp": "孤立",
+            "def_jp": "他者との関わりがなく、一人きりになっている状態。"
           },
           {
-            "term_en": "Prefabricated",
-            "def_en": "Manufactured in advance in sections that can be easily shipped and assembled.",
-            "term_jp": "プレハブ（仮設）",
-            "def_jp": "あらかじめ工場で部品を作っておき、現場ですぐに組み立てられる建物。"
+            "term_en": "Poignant",
+            "def_en": "Evoking a keen sense of sadness or regret.",
+            "term_jp": "痛切な",
+            "def_jp": "強く心に感じて、悲しみや切実さを覚えること。"
           },
           {
-            "term_en": "Depopulation",
-            "def_en": "The reduction in the number of people living in a particular area.",
-            "term_jp": "過疎化",
-            "def_jp": "ある地域の人口が極端に減ること。"
+            "term_en": "Infrastructure",
+            "def_en": "The basic physical and organizational structures needed for the operation of a society.",
+            "term_jp": "インフラ",
+            "def_jp": "社会や生活の基盤となる施設や設備。"
           },
           {
-            "term_en": "Vulnerable",
-            "def_en": "Susceptible to physical or emotional attack or harm.",
-            "term_jp": "脆弱な（ぜいじゃくな）",
-            "def_jp": "弱くて、被害を受けやすい状態にあること。"
+            "term_en": "Debris",
+            "def_en": "Scattered fragments, typically of something destroyed.",
+            "term_jp": "瓦礫",
+            "def_jp": "建物などが壊れたあとに残る石や瓦のくず。"
           },
           {
-            "term_en": "Commemoration",
-            "def_en": "A ceremony or celebration in which a person or event is remembered.",
-            "term_jp": "追悼（ついとう）",
-            "def_jp": "亡くなった人を思い出し、悲しみを分かち合うこと。"
+            "term_en": "Social glue",
+            "def_en": "The shared values and relationships that hold a community together.",
+            "term_jp": "社会的な絆",
+            "def_jp": "コミュニティを一つにまとめ上げる、共有された価値観や人間関係。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "Beyond the Ticker: Investing in Your Future Self",
-        "title_jp": "株価の先にあるもの：未来の自分への投資",
-        "content_en": "As the Nikkei Stock Average climbs toward a record-breaking 55,000 in 2026, it is easy to see the world as just a series of green and red numbers. But behind the 'AI boom' and 'semiconductor growth' lies a profound human question: What kind of world are we funding? Under Prime Minister Takaichi’s aggressive policies, Japan is betting big on technology. For a junior high student, 'investment' isn't just about money—it's about choosing which companies get the power to shape the future of energy, medicine, and social equity. Investing is essentially a vote. When you save or invest, you are saying, 'I believe this technology can make people’s lives better.' Wealth should not be a wall that divides us, but a bridge that allows everyone to cross into a more prosperous tomorrow.",
-        "content_jp": "2026年、日経平均株価が5万5000円という記録的な高値を目指して上昇する中、世界をただの数字の羅列として捉えてしまいがちです。しかし、「AIブーム」や「<span class=\"term\" onclick=\"openPanel('半導体', 'コンピューターの脳にあたる電子回路に使われる材料。')\">半導体</span>成長」の裏には、「私たちはどのような世界にお金を出しているのか？」という深い問いが隠されています。高市首相の積極的な政策の下、日本は技術に大きな賭けをしています。中学生にとって「投資」とは、単にお金のことではありません。どの企業にエネルギー、医療、そして社会の平等の未来を形作る力を与えるかを選ぶことです。投資とは本質的に「投票」なのです。お金を貯めたり投資したりすることは、「この技術が人々の生活を良くすると信じている」と表明すること。富は人々を隔てる壁ではなく、全員が豊かな明日へと渡るための橋であるべきです。",
-        "critique_en": "A market hitting record highs is meaningless if the benefits don't reach the average family. We must analyze whether this growth is narrowing the wealth gap or widening it. True investment involves a 'moral portfolio' where profit aligns with the public good.",
-        "critique_jp": "市場が最高値を更新しても、その恩恵が一般の家庭に届かなければ意味がありません。この成長が格差を縮めているのか、それとも広げているのかを分析する必要があります。真の投資とは、利益が公共の利益と一致する「道徳的なポートフォリオ」を持つことです。",
-        "proverb": {
-          "title": "Even dust, when piled up, becomes a mountain",
-          "desc": "塵も積もれば山となる (Chiri mo tsumoreba yama to naru): Small efforts or investments lead to great results over time."
+        "title_en": "Investing with a Soul : Beyond the Profit Margins of Tokyo",
+        "title_jp": "魂を込めた投資 ： 東京の利益を超えて",
+        "content_en": "The Nikkei might be flirting with record highs this January, but the most exciting growth isn't happening on a spreadsheet in Otemachi. It's found in 'impact investing'—capital directed toward revitalizing dying towns and sustainable farming. For too long, we have treated investment as a cold calculation of risk and reward. As we enter 2026, the trend of 'moral capital' is proving that doing good and doing well are not mutually exclusive. When we invest in our neighbor’s potential, we secure our own future. Editor H.",
+        "content_jp": "1月の株価が史上最高値を伺う勢いを見せる中、真にエキサイティングな成長は大手町の<span class=\"term\" onclick=\"openPanel('表計算ソフト', 'データを集計・分析するために使われるコンピュータプログラム。')\">表計算ソフト</span>の上にはありません。それは、過疎化が進む町や持続可能な農業を<span class=\"term\" onclick=\"openPanel('再興', '一度衰えたものを、再び盛んにすること。')\">再興</span>する「<span class=\"term\" onclick=\"openPanel('インパクト投資', '経済的な利益だけでなく、社会や環境への貢献を目的とした投資。')\">インパクト投資</span>」の中にあります。長らく、投資はリスクとリターンの冷徹な計算とされてきました。しかし2026年、「道徳的な<span class=\"term\" onclick=\"openPanel('資本', '事業を行うための元手となるお金や資産。')\">資本</span>」という潮流は、善行と収益が両立することを証明しています。隣人の可能性に投資することこそが、私たち自身の未来を確かなものにするのです。 編集者H。",
+        "critique_en": "The analysis elegantly bridges the gap between cold capital and human empathy, redefining wealth.",
+        "critique_jp": "資本という冷たい道具と共感という温かい感情を橋渡しし、富の定義を再定義しています。",
+        "proverb_jp": {
+          "title": "情けは人のためならず",
+          "desc": "人に情けをかけることは、巡り巡って自分に良い報いが返ってくるという意味。自己犠牲ではなく、相互扶助の精神を表します。"
+        },
+        "proverb_en": {
+          "title": "A rising tide lifts all boats",
+          "desc": "An improvement in the general economy will benefit all the participants in that economy."
         },
         "glossary": [
           {
-            "term_en": "Ticker",
-            "def_en": "A scrolling display of stock prices and market information.",
-            "term_jp": "ティッカー",
-            "def_jp": "株価などの市場情報が絶えず表示される電光掲示板のようなもの。"
+            "term_en": "Impact investing",
+            "def_en": "Investments made with the intention to generate social and environmental impact alongside a financial return.",
+            "term_jp": "インパクト投資",
+            "def_jp": "経済的な利益だけでなく、社会や環境への貢献を目的とした投資。"
           },
           {
-            "term_en": "Semiconductor",
-            "def_en": "A substance used in electronic circuits (the 'brain' of computers).",
-            "term_jp": "半導体",
-            "def_jp": "コンピューターの脳にあたる電子回路に使われる材料。"
+            "term_en": "Revitalizing",
+            "def_en": "Imbuing something with new life and vitality.",
+            "term_jp": "再興",
+            "def_jp": "一度衰えたものを、再び盛んにすること。"
           },
           {
-            "term_en": "Prosperous",
-            "def_en": "Successful in material terms; flourishing financially.",
-            "term_jp": "繁栄した（はんえいした）",
-            "def_jp": "経済的に豊かで、栄えている様子。"
+            "term_en": "Mutually exclusive",
+            "def_en": "Two things that cannot happen or exist at the same time.",
+            "term_jp": "相容れない",
+            "def_jp": "両立することができず、一方が成立すればもう一方が排除されること。"
           },
           {
-            "term_en": "Aggressive",
-            "def_en": "Showing a readiness to act in a very forceful or determined way.",
-            "term_jp": "積極的な（せっきょくてきな）",
-            "def_jp": "強い意志を持って、思い切った行動をとる様子。"
+            "term_en": "Spreadsheet",
+            "def_en": "A computer program used for organization, analysis, and storage of data in tabular form.",
+            "term_jp": "表計算ソフト",
+            "def_jp": "データを集計・分析するために使われるコンピュータプログラム。"
           },
           {
-            "term_en": "Equity",
-            "def_en": "The quality of being fair and impartial; justice.",
-            "term_jp": "公平性（こうへいせい）",
-            "def_jp": "偏りがなく、正義にかなっていること。"
+            "term_en": "Capital",
+            "def_en": "Wealth in the form of money or other assets owned by a person or organization.",
+            "term_jp": "資本",
+            "def_jp": "事業を行うための元手となるお金や資産。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "A Fragile New Year: Empathy Across Borders",
-        "title_jp": "壊れやすい新年の幕開け：国境を越えた共感",
-        "content_en": "The new year arrived with both a bang and a whimper. In Switzerland, a tragic fire at a ski resort claimed 40 lives, reminding us that sorrow knows no borders. Meanwhile, the 'Trumpado' of geopolitics continues to shake old alliances. President Trump’s transactional approach to diplomacy has created breakthroughs in places like Gaza, yet it leaves many wondering about the future of global cooperation. As the Quad members—the U.S., Japan, India, and Australia—meet to discuss stability in East Asia, we must realize that our safety is interconnected. A trade policy in Washington or a security drill in the South China Sea affects the price of the food on your table and the peace in your neighborhood. In this volatile world, the most powerful weapon we have is not a missile, but our ability to see the humanity in a person halfway across the globe.",
-        "content_jp": "新しい年は、祝祭と悲しみが入り混じった幕開けとなりました。スイスのスキーリゾートで起きた40人の命を奪った火災は、悲しみに国境はないことを私たちに思い出させました。一方、<span class=\"term\" onclick=\"openPanel('地政学', '地理的な条件が国の政治や国際関係に与える影響を考える学問。')\">地政学</span>の世界では「トランプの嵐（トランプナード）」が旧来の同盟を揺さぶり続けています。トランプ大統領の「取引重視」の<span class=\"term\" onclick=\"openPanel('外交', '国と国との間で行われる話し合いや交渉。')\">外交</span>は、ガザなどで進展を生む一方で、国際的な協力の未来に不安を投げかけています。日米豪印（クアッド）が東アジアの安定を話し合う中、私たちの安全はすべて繋がっていることを自覚すべきです。ワシントンの貿易政策も、南シナ海の軍事演習も、皆さんの食卓に並ぶ食品の価格や地域の平和に影響します。この不安定な世界で、私たちが持つ最も強力な武器はミサイルではなく、地球の裏側にいる人の中に「自分と同じ人間性」を見出す能力なのです。",
-        "critique_en": "The shift toward 'transactional diplomacy' risks ignoring long-term human rights for short-term deals. We need to analyze whether these 'peace plans' provide lasting justice or merely temporary quiet. The tragedy in Switzerland also highlights the global need for stricter safety standards in our interconnected tourism industry.",
-        "critique_jp": "「取引型外交」へのシフトは、短期的な合意のために長期的な人権を無視するリスクがあります。これらの「和平案」が永続的な正義をもたらすのか、単なる一時的な静寂なのかを分析する必要があります。また、スイスの悲劇は、繋がりの深い観光産業における世界的な安全基準の必要性を浮き彫りにしています。",
-        "proverb": {
-          "title": "Learning from the past to know the future",
-          "desc": "温故知新 (On ko chi shin): Studying history to find a compass for the uncertain world ahead."
+        "title_en": "The Displaced Heart : Lessons from the Frontiers of Climate Change",
+        "title_jp": "避難民の心 ： 気候変動の最前線からの教訓",
+        "content_en": "From the sinking islands of the Pacific to the parched lands of the Sahel, 2026 begins with a global movement of people that statistics cannot capture. These are not just 'migrants'; they are parents seeking dry ground for their children. In a world increasingly fractured by borders, our shared vulnerability to a changing climate should be a bridge, not a barrier. We must recognize that the suffering of a family thousands of miles away is a reflection of our own choices. True global leadership is measured by empathy for the displaced. Editor H.",
+        "content_jp": "沈みゆく太平洋の島々からサヘルの渇いた大地まで、2026年は統計では捉えきれない規模の移動で幕を開けました。彼らは単なる「移民」ではありません。子供たちのために乾いた土地を求める親たちなのです。国境によって分断が深まる世界において、気候変動という共通の<span class=\"term\" onclick=\"openPanel('脆弱性', '攻撃や被害を受けやすい、もろい性質や状態。')\">脆弱性</span>は、障壁ではなく架け橋であるべきです。遠く離れた家族の苦しみは、私たち自身の選択の反映であると気づかねばなりません。真の国際的指導力とは、<span class=\"term\" onclick=\"openPanel('避難民', '戦争や災害などにより、故郷を追われた人々。')\">避難民</span>への<span class=\"term\" onclick=\"openPanel('共感', '他人の意見や感情にその通りだと感じること、またはその能力。')\">共感</span>によって測られるのです。 編集者H。",
+        "critique_en": "An urgent call to view global crises not as political debates, but as shared human experiences.",
+        "critique_jp": "国際危機を政治的な議論ではなく、人類共通の経験として捉え直すよう促す切実な訴えです。",
+        "proverb_jp": {
+          "title": "雨降って地固まる",
+          "desc": "揉め事の後は、かえって前より物事が安定し、良い状態になることの例え。困難を乗り越えた後の強さを説いています。"
+        },
+        "proverb_en": {
+          "title": "It is always darkest before the dawn",
+          "desc": "Things often seem at their worst right before they improve."
         },
         "glossary": [
           {
-            "term_en": "Geopolitics",
-            "def_en": "Politics, especially international relations, as influenced by geographical factors.",
-            "term_jp": "地政学",
-            "def_jp": "地理的な条件が国の政治や国際関係に与える影響を考える学問。"
+            "term_en": "Displaced",
+            "def_en": "Forced to leave their home, typically because of war, persecution, or natural disaster.",
+            "term_jp": "避難民",
+            "def_jp": "戦争や災害などにより、故郷を追われた人々。"
           },
           {
-            "term_en": "Transactional",
-            "def_en": "Relating to the exchange of goods, services, or favors (business-like).",
-            "term_jp": "取引的な（とりひきてきな）",
-            "def_jp": "お互いの利益を交換する「商売」のようなやり取り。"
+            "term_en": "Vulnerability",
+            "def_en": "The quality or state of being exposed to the possibility of being attacked or harmed.",
+            "term_jp": "脆弱性",
+            "def_jp": "攻撃や被害を受けやすい、もろい性質や状態。"
           },
           {
-            "term_en": "Interconnected",
-            "def_en": "Having all constituent parts linked or connected.",
-            "term_jp": "相互に連結した",
-            "def_jp": "バラバラではなく、すべてが繋がり合っていること。"
+            "term_en": "Fractured",
+            "def_en": "Broken or cracked; split into separate parts.",
+            "term_jp": "分断された",
+            "def_jp": "一つであったものが、ばらばらに切り離された状態。"
           },
           {
-            "term_en": "Volatile",
-            "def_en": "Liable to change rapidly and unpredictably, especially for the worse.",
-            "term_jp": "不安定な（ふあんていな）",
-            "def_jp": "状況が急激に変わりやすく、予測が難しい様子。"
+            "term_en": "Frontiers",
+            "def_en": "The extreme limit of settled land beyond which lies wilderness; the forefront of a movement.",
+            "term_jp": "最前線",
+            "def_jp": "活動や事象が最も活発に行われている場所。"
           },
           {
-            "term_en": "Diplomacy",
-            "def_en": "The profession, activity, or skill of managing international relations.",
-            "term_jp": "外交",
-            "def_jp": "国と国との間で行われる話し合いや交渉。"
+            "term_en": "Empathy",
+            "def_en": "The ability to understand and share the feelings of another.",
+            "term_jp": "共感",
+            "def_jp": "他人の意見や感情にその通りだと感じること、またはその能力。"
           }
         ]
       }
     ],
-    "sign_off": "Editor H (編集者H)",
     "date": "2026-01-02"
   }
 ]
