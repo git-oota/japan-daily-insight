@@ -3,140 +3,141 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "The White Blanket over Tokyo: Finding Warmth in a Lonely City",
-        "title_jp": "東京を覆う白い雪：孤独な街で見つける「心の温もり」",
-        "content_en": "As snow falls quietly over Tokyo this January 2nd, covering the neon lights in a soft white, it’s easy to focus only on the beauty. But look closer at the windows of the apartment blocks. Behind many of them sits an elderly person alone, watching the flakes fall with no one to share the view. Japan is entering 2026 with a paradox: we are more connected by technology than ever, yet the 'social coldness' of isolation remains our greatest challenge. Prime Minister Takaichi's government is pushing for modern reforms—even fighting for more ladies' toilets in parliament—to reflect a changing society. But true progress isn't just about infrastructure; it's about checking on the neighbor who hasn't been seen in days. As we mark the 100th year since the Showa era began, let’s remember that the strength of a nation isn't measured by its skyscrapers, but by the warmth it extends to its most vulnerable members.\n\nSign off: Editor H",
-        "content_jp": "2026年1月2日、東京に静かに雪が降り積もっています。ネオンを白く染める景色は美しいものですが、少し視点を変えて、立ち並ぶ団地の窓を見てみてください。その多くの窓の奥には、一人きりで雪を眺めているお年寄りがいます。今の日本は、技術でかつてないほど繋がっている一方で、心の距離が離れてしまう「孤独」という大きな課題に直面しています。高市政権は、議事堂の女性用トイレ増設など、時代に合わせた改革を進めています。しかし、本当の進歩とは設備を整えることだけではありません。何日も姿を見かけない隣人に声をかける、そんな「心のインフラ」を築くことです。昭和から数えて100年目を迎える今年、国の強さはビルの高さではなく、最も弱い立場の人々にどれだけ温もりを届けられるかで決まるのだと、私たちは思い出すべきでしょう。\n\n編集者Hより",
-        "critique_en": "Kristof often uses weather or small human details to highlight systemic neglect. This piece shifts the focus from 'policy' to 'empathy,' urging students to see social issues as personal responsibilities.",
-        "critique_jp": "クリストフ氏は、天候や小さな日常の断片から、社会が見落としている大きな問題を描き出します。この記事では、問題を「政策」として遠ざけるのではなく、「共感」として自分たちに引き寄せて考えるよう促しています。",
+        "title_en": "The Empty Chairs of Noto: Two Years of Resilience",
+        "title_jp": "能登の空席：レジリエンスが試される二年間",
+        "content_en": "Two years have passed since the Noto Peninsula was shattered by the New Year’s earthquake of 2024. Today, in the quiet morning of Wajima, 18,000 people still wake up in temporary, prefabricated housing. It is a stark reminder that while the news cycle moves on, the recovery of a community’s soul is a slow, painstaking process. History teaches us that the measure of a nation is not how many skyscrapers it builds, but how it cares for its most vulnerable in the aftermath of tragedy. The Noto region is currently facing a double crisis: the physical scars of the quake and the creeping shadow of depopulation. Nearly 20% of young residents have left. If we want to save the 'Japan' we love, we must do more than send money; we must offer a vision of a future where these historical towns are worth staying in.",
+        "content_jp": "2024年の元日に能登半島を襲った震災から2年が経過しました。今朝、輪島市の静かな仮設住宅では、依然として1万8000人もの人々が朝を迎えています。世間の関心が他へ移っても、人々の心の復興には膨大な時間がかかるという厳しい現実がそこにあります。歴史が教えてくれるのは、国の価値は高層ビルの数ではなく、悲劇の後に最も弱い立場の人々をいかに支えるかで決まるということです。現在、能登は震災の傷跡と、忍び寄る「<span class=\"term\" onclick=\"openPanel('過疎化', 'ある地域の人口が極端に減ること。')\">過疎化</span>」という二重の危機に直面しています。若者の2割が去りました。私たちが愛する日本を守りたいのなら、ただ義援金を送るだけでなく、こうした歴史ある町が「住み続ける価値のある場所」であり続けるための未来のビジョンを提示しなければなりません。",
+        "critique_en": "Kristof often emphasizes that empathy must be followed by action. The crisis in Noto is a human rights issue—the right to live in one’s ancestral home with dignity. We must analyze why reconstruction is slower than expected and advocate for creative solutions like digital nomadic hubs to revitalize rural areas.",
+        "critique_jp": "クリストフ氏は、共感は行動を伴わなければならないと強調します。能登の危機は人権の問題、つまり「先祖伝来の土地で尊厳を持って生きる権利」の問題です。なぜ復興が想定より遅れているのかを分析し、デジタルノマドの拠点作りなど、地方を再興させる創造的な解決策を提言する必要があります。",
         "proverb": {
-          "title": "A kindness done to others is a kindness done to yourself.",
-          "desc": "情けは人のためならず (Nagasake wa hito no tame narazu): Helping others eventually brings benefit back to you."
+          "title": "Fall seven times, get up eight",
+          "desc": "七転び八起き (Nana korobi ya oki): The spirit of never giving up, no matter how many times disaster strikes."
         },
         "glossary": [
           {
-            "term_en": "Isolation",
-            "def_en": "The state of being alone or disconnected from others.",
-            "term_jp": "孤独・孤立",
-            "def_jp": "他者との繋がりがなく、一人きりである状態。"
+            "term_en": "Resilience",
+            "def_en": "The capacity to recover quickly from difficulties; toughness.",
+            "term_jp": "レジリエンス",
+            "def_jp": "困難から立ち直る力、回復力。"
           },
           {
-            "term_en": "Paradox",
-            "def_en": "A situation that seems to contradict itself.",
-            "term_jp": "逆説（パラドックス）",
-            "def_jp": "一見矛盾しているように見える事柄。"
+            "term_en": "Prefabricated",
+            "def_en": "Manufactured in advance in sections that can be easily shipped and assembled.",
+            "term_jp": "プレハブ（仮設）",
+            "def_jp": "あらかじめ工場で部品を作っておき、現場ですぐに組み立てられる建物。"
           },
           {
-            "term_en": "Infrastructure",
-            "def_en": "The basic physical and organizational structures needed for a society.",
-            "term_jp": "社会基盤（インフラ）",
-            "def_jp": "生活や経済を支えるための基本的な施設や仕組み。"
+            "term_en": "Depopulation",
+            "def_en": "The reduction in the number of people living in a particular area.",
+            "term_jp": "過疎化",
+            "def_jp": "ある地域の人口が極端に減ること。"
           },
           {
             "term_en": "Vulnerable",
-            "def_en": "Easy to hurt or in a position of weakness.",
-            "term_jp": "脆弱（ぜいじゃく）な",
-            "def_jp": "弱く、傷つきやすい、または守りが必要な状態。"
+            "def_en": "Susceptible to physical or emotional attack or harm.",
+            "term_jp": "脆弱な（ぜいじゃくな）",
+            "def_jp": "弱くて、被害を受けやすい状態にあること。"
           },
           {
-            "term_en": "Showa Era",
-            "def_en": "The period of Japanese history corresponding to the reign of Emperor Hirohito (1926–1989).",
-            "term_jp": "昭和時代",
-            "def_jp": "1926年から1989年までの、激動と成長を経験した日本の時代。"
+            "term_en": "Commemoration",
+            "def_en": "A ceremony or celebration in which a person or event is remembered.",
+            "term_jp": "追悼（ついとう）",
+            "def_jp": "亡くなった人を思い出し、悲しみを分かち合うこと。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "The 122 Trillion Yen Question: Why Your Future is Part of the Budget",
-        "title_jp": "122兆円の問いかけ：君たちの未来が「予算」の一部である理由",
-        "content_en": "Imagine a credit card bill that grows every year, but instead of buying toys, you're buying the roads, schools, and hospitals for an entire country. That is the situation with Japan’s 122 trillion yen budget for 2026. For the first time, interest payments alone have crossed the 30 trillion yen mark. This sounds like boring math, but for you—the junior high students of today—it is a moral issue. We are investing heavily in 'strategic industries' like quantum computing and nuclear fusion to save the economy. But we are also handing you the bill. The stock market is booming, but wealth is becoming a wall that separates those who have it from those who don't. Investing isn't just about making money; it's about deciding what kind of future is worth paying for. Will your generation inherit a garden or a debt trap?\n\nSign off: Editor H",
-        "content_jp": "毎年増え続けるクレジットカードの請求書を想像してみてください。でも、それはおもちゃを買うためではなく、国全体の道路や学校、病院を維持するためのものです。これが、日本の2026年度<span class=\"term\" onclick=\"openPanel('予算', '一定期間の収入と支出の計画。')\">予算</span>122兆円の正体です。今年、借金の<span class=\"term\" onclick=\"openPanel('利払い', '借りたお金に対して支払う手数料（利子）。')\">利払い</span>費だけで初めて30兆円を超えました。つまらない算数の話に聞こえるかもしれませんが、今の中学生である君たちにとって、これは「正義」の問題です。政府は経済を救うために量子コンピューターや核融合などの「戦略分野」に投資していますが、その代金（請求書）を将来払うのは君たちです。株価は上がっていますが、富は持てる者と持たざる者を分ける壁になりつつあります。投資とは、単にお金を増やすことではなく、どんな未来に価値を置くかを選ぶことなのです。\n\n編集者Hより",
-        "critique_en": "This article adopts Kristof's 'moral clarity' approach, turning dry economic data into a narrative about intergenerational fairness and future stewardship.",
-        "critique_jp": "この記事では、退屈な経済データを「世代間の公平性」や「未来への責任」という物語に変える、クリストフ氏特有の道徳的視点を取り入れています。",
+        "title_en": "Beyond the Ticker: Investing in Your Future Self",
+        "title_jp": "株価の先にあるもの：未来の自分への投資",
+        "content_en": "As the Nikkei Stock Average climbs toward a record-breaking 55,000 in 2026, it is easy to see the world as just a series of green and red numbers. But behind the 'AI boom' and 'semiconductor growth' lies a profound human question: What kind of world are we funding? Under Prime Minister Takaichi’s aggressive policies, Japan is betting big on technology. For a junior high student, 'investment' isn't just about money—it's about choosing which companies get the power to shape the future of energy, medicine, and social equity. Investing is essentially a vote. When you save or invest, you are saying, 'I believe this technology can make people’s lives better.' Wealth should not be a wall that divides us, but a bridge that allows everyone to cross into a more prosperous tomorrow.",
+        "content_jp": "2026年、日経平均株価が5万5000円という記録的な高値を目指して上昇する中、世界をただの数字の羅列として捉えてしまいがちです。しかし、「AIブーム」や「<span class=\"term\" onclick=\"openPanel('半導体', 'コンピューターの脳にあたる電子回路に使われる材料。')\">半導体</span>成長」の裏には、「私たちはどのような世界にお金を出しているのか？」という深い問いが隠されています。高市首相の積極的な政策の下、日本は技術に大きな賭けをしています。中学生にとって「投資」とは、単にお金のことではありません。どの企業にエネルギー、医療、そして社会の平等の未来を形作る力を与えるかを選ぶことです。投資とは本質的に「投票」なのです。お金を貯めたり投資したりすることは、「この技術が人々の生活を良くすると信じている」と表明すること。富は人々を隔てる壁ではなく、全員が豊かな明日へと渡るための橋であるべきです。",
+        "critique_en": "A market hitting record highs is meaningless if the benefits don't reach the average family. We must analyze whether this growth is narrowing the wealth gap or widening it. True investment involves a 'moral portfolio' where profit aligns with the public good.",
+        "critique_jp": "市場が最高値を更新しても、その恩恵が一般の家庭に届かなければ意味がありません。この成長が格差を縮めているのか、それとも広げているのかを分析する必要があります。真の投資とは、利益が公共の利益と一致する「道徳的なポートフォリオ」を持つことです。",
         "proverb": {
-          "title": "A penny saved is a penny earned.",
-          "desc": "塵も積もれば山となる (Chiri mo tsumoreba yama to naru): Even small things, when accumulated, become significant."
+          "title": "Even dust, when piled up, becomes a mountain",
+          "desc": "塵も積もれば山となる (Chiri mo tsumoreba yama to naru): Small efforts or investments lead to great results over time."
         },
         "glossary": [
           {
-            "term_en": "Budget",
-            "def_en": "An estimate of income and spending for a set period of time.",
-            "term_jp": "予算",
-            "def_jp": "一定期間の収入と支出の計画。"
+            "term_en": "Ticker",
+            "def_en": "A scrolling display of stock prices and market information.",
+            "term_jp": "ティッカー",
+            "def_jp": "株価などの市場情報が絶えず表示される電光掲示板のようなもの。"
           },
           {
-            "term_en": "Interest Payment",
-            "def_en": "The amount paid for the use of borrowed money.",
-            "term_jp": "利払い",
-            "def_jp": "借りたお金に対して支払う手数料（利子）。"
+            "term_en": "Semiconductor",
+            "def_en": "A substance used in electronic circuits (the 'brain' of computers).",
+            "term_jp": "半導体",
+            "def_jp": "コンピューターの脳にあたる電子回路に使われる材料。"
           },
           {
-            "term_en": "Quantum Computing",
-            "def_en": "A field of computing based on the principles of quantum theory.",
-            "term_jp": "量子コンピューティング",
-            "def_jp": "非常に複雑な計算を高速で行う次世代のコンピューター技術。"
+            "term_en": "Prosperous",
+            "def_en": "Successful in material terms; flourishing financially.",
+            "term_jp": "繁栄した（はんえいした）",
+            "def_jp": "経済的に豊かで、栄えている様子。"
           },
           {
-            "term_en": "Inherit",
-            "def_en": "To receive something from those who came before.",
-            "term_jp": "受け継ぐ・継承する",
-            "def_jp": "前の世代から物や権利を引き継ぐこと。"
+            "term_en": "Aggressive",
+            "def_en": "Showing a readiness to act in a very forceful or determined way.",
+            "term_jp": "積極的な（せっきょくてきな）",
+            "def_jp": "強い意志を持って、思い切った行動をとる様子。"
           },
           {
-            "term_en": "Fiscal",
-            "def_en": "Relating to government revenue, especially taxes and spending.",
-            "term_jp": "財政の",
-            "def_jp": "国の経済や税金、使い道に関わること。"
+            "term_en": "Equity",
+            "def_en": "The quality of being fair and impartial; justice.",
+            "term_jp": "公平性（こうへいせい）",
+            "def_jp": "偏りがなく、正義にかなっていること。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "Chilly Winds and Handshakes: Can 2026 Be the Year of Peace?",
-        "title_jp": "冷たい風と握手：2026年は「平和の年」になれるか？",
-        "content_en": "In the grand halls of Beijing, leaders from China and South Korea are meeting to shake hands, while Japan watches from a distance with a mix of caution and concern. It feels like a high-stakes game of musical chairs. While global powers like the US and Russia argue over 'hegemony'—the power to rule over others—the people on the ground in Ukraine and Gaza are still waiting for a quiet night. History teaches us that peace isn't found in a perfect treaty signed by kings, but in the slow realization that we all breathe the same air and want the same safety for our children. As Japan navigates these 'chilly' diplomatic waters in 2026, the real challenge for the next generation is to build bridges where others see walls. Peace is not just the absence of war; it is the presence of courage to talk to those we fear.\n\nSign off: Editor H",
-        "content_jp": "北京の壮大なホールで、中国と韓国のリーダーが握手を交わしています。その様子を、日本は警戒と不安が入り混じった目で見守っています。まるで、椅子取りゲームのようです。アメリカやロシアのような大国が「覇権（他者を支配する力）」を争っている間、ウクライナやガザの人々は、今も静かな夜が来るのを待っています。歴史が教えてくれるのは、平和とは偉い人がサインする<span class=\"term\" onclick=\"openPanel('条約', '国同士で結ぶ正式な約束。')\">条約</span>の中にあるのではなく、「私たちは皆同じ空気を吸い、同じように子供の安全を願っている」という気づきの中にあるということです。2026年の冷え込んだ<span class=\"term\" onclick=\"openPanel('外交', '国と国との付き合いや、話し合いの技術。')\">外交</span>関係の中で、君たち次の世代の課題は、他人が「壁」を作るところに「橋」を架けることです。平和とは単に戦争がないことではなく、恐れている相手と対話する勇気を持つことなのです。\n\n編集者Hより",
-        "critique_en": "Kristof often looks past the 'Great Game' of geopolitics to focus on common humanity. This column challenges students to rethink peace as an active, courageous process.",
-        "critique_jp": "クリストフ氏は地政学的な「大国の駆け引き」の先にある、共通の人間性に焦点を当てます。この記事は、平和を単なる「状態」ではなく、勇気ある「行動」として捉え直すよう促しています。",
+        "title_en": "A Fragile New Year: Empathy Across Borders",
+        "title_jp": "壊れやすい新年の幕開け：国境を越えた共感",
+        "content_en": "The new year arrived with both a bang and a whimper. In Switzerland, a tragic fire at a ski resort claimed 40 lives, reminding us that sorrow knows no borders. Meanwhile, the 'Trumpado' of geopolitics continues to shake old alliances. President Trump’s transactional approach to diplomacy has created breakthroughs in places like Gaza, yet it leaves many wondering about the future of global cooperation. As the Quad members—the U.S., Japan, India, and Australia—meet to discuss stability in East Asia, we must realize that our safety is interconnected. A trade policy in Washington or a security drill in the South China Sea affects the price of the food on your table and the peace in your neighborhood. In this volatile world, the most powerful weapon we have is not a missile, but our ability to see the humanity in a person halfway across the globe.",
+        "content_jp": "新しい年は、祝祭と悲しみが入り混じった幕開けとなりました。スイスのスキーリゾートで起きた40人の命を奪った火災は、悲しみに国境はないことを私たちに思い出させました。一方、<span class=\"term\" onclick=\"openPanel('地政学', '地理的な条件が国の政治や国際関係に与える影響を考える学問。')\">地政学</span>の世界では「トランプの嵐（トランプナード）」が旧来の同盟を揺さぶり続けています。トランプ大統領の「取引重視」の<span class=\"term\" onclick=\"openPanel('外交', '国と国との間で行われる話し合いや交渉。')\">外交</span>は、ガザなどで進展を生む一方で、国際的な協力の未来に不安を投げかけています。日米豪印（クアッド）が東アジアの安定を話し合う中、私たちの安全はすべて繋がっていることを自覚すべきです。ワシントンの貿易政策も、南シナ海の軍事演習も、皆さんの食卓に並ぶ食品の価格や地域の平和に影響します。この不安定な世界で、私たちが持つ最も強力な武器はミサイルではなく、地球の裏側にいる人の中に「自分と同じ人間性」を見出す能力なのです。",
+        "critique_en": "The shift toward 'transactional diplomacy' risks ignoring long-term human rights for short-term deals. We need to analyze whether these 'peace plans' provide lasting justice or merely temporary quiet. The tragedy in Switzerland also highlights the global need for stricter safety standards in our interconnected tourism industry.",
+        "critique_jp": "「取引型外交」へのシフトは、短期的な合意のために長期的な人権を無視するリスクがあります。これらの「和平案」が永続的な正義をもたらすのか、単なる一時的な静寂なのかを分析する必要があります。また、スイスの悲劇は、繋がりの深い観光産業における世界的な安全基準の必要性を浮き彫りにしています。",
         "proverb": {
-          "title": "Even a journey of a thousand miles begins with a single step.",
-          "desc": "千里の道も一歩から (Senri no michi mo ippo kara): Large tasks start with small, simple beginnings."
+          "title": "Learning from the past to know the future",
+          "desc": "温故知新 (On ko chi shin): Studying history to find a compass for the uncertain world ahead."
         },
         "glossary": [
           {
-            "term_en": "Hegemony",
-            "def_en": "Leadership or dominance, especially by one country over others.",
-            "term_jp": "覇権（はけん）",
-            "def_jp": "他国を支配したり、中心的な立場になったりする強力な力。"
+            "term_en": "Geopolitics",
+            "def_en": "Politics, especially international relations, as influenced by geographical factors.",
+            "term_jp": "地政学",
+            "def_jp": "地理的な条件が国の政治や国際関係に与える影響を考える学問。"
+          },
+          {
+            "term_en": "Transactional",
+            "def_en": "Relating to the exchange of goods, services, or favors (business-like).",
+            "term_jp": "取引的な（とりひきてきな）",
+            "def_jp": "お互いの利益を交換する「商売」のようなやり取り。"
+          },
+          {
+            "term_en": "Interconnected",
+            "def_en": "Having all constituent parts linked or connected.",
+            "term_jp": "相互に連結した",
+            "def_jp": "バラバラではなく、すべてが繋がり合っていること。"
+          },
+          {
+            "term_en": "Volatile",
+            "def_en": "Liable to change rapidly and unpredictably, especially for the worse.",
+            "term_jp": "不安定な（ふあんていな）",
+            "def_jp": "状況が急激に変わりやすく、予測が難しい様子。"
           },
           {
             "term_en": "Diplomacy",
-            "def_en": "The profession or skill of managing international relations.",
+            "def_en": "The profession, activity, or skill of managing international relations.",
             "term_jp": "外交",
-            "def_jp": "国と国との付き合いや、話し合いの技術。"
-          },
-          {
-            "term_en": "Treaty",
-            "def_en": "A formally concluded and ratified agreement between countries.",
-            "term_jp": "条約",
-            "def_jp": "国同士で結ぶ正式な約束。"
-          },
-          {
-            "term_en": "Geopolitics",
-            "def_en": "Politics influenced by geographical factors.",
-            "term_jp": "地政学",
-            "def_jp": "地理的な条件が国の政治や外交にどう影響するかを考える学問。"
-          },
-          {
-            "term_en": "Sovereignty",
-            "def_en": "The authority of a state to govern itself.",
-            "term_jp": "主権",
-            "def_jp": "自分の国を自分たちで治める最高権力。"
+            "def_jp": "国と国との間で行われる話し合いや交渉。"
           }
         ]
       }
     ],
+    "sign_off": "Editor H (編集者H)",
     "date": "2026-01-02"
   }
 ]
