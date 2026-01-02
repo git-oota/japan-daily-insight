@@ -3,148 +3,148 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "Emperor’s New Year Greeting Draws Record Crowds ： A Symbol of Unity in an Age of Digital Isolation",
-        "title_jp": "皇居での新年一般参賀に過去最多の群衆 ： デジタル孤立時代における「絆」の再定義",
-        "content_en": "On January 2, 2026, the <span class=\"term\" onclick=\"openPanel('Imperial Palace', 'The primary residence of the Emperor of Japan located in Chiyoda, Tokyo.')\">Imperial Palace</span> in Tokyo welcomed a record-breaking number of visitors for the annual New Year's Greeting. Following years of phased restrictions, the full-scale return of this tradition signifies a 'post-post-pandemic' resilience in Japanese society. Emperor Naruhito, in his address, emphasized the importance of 'heart-to-heart connections' in an increasingly automated world. The event highlights a growing domestic trend: a yearning for physical presence and collective identity as Japan navigates the '2025 demographic cliff'—the year all baby boomers reached the age of 75 and older.",
-        "content_jp": "2026年1月2日、<span class=\"term\" onclick=\"openPanel('皇居', '東京都千代田区にある日本の天皇の公式な住居。')\">皇居</span>で行われた新年一般参賀には、過去最多の参賀者が詰めかけた。数年にわたる段階的な制限を経て、この伝統行事が完全な形で復活したことは、日本社会における「ポスト・ポストパンデミック」の回復力を象徴している。天皇陛下はお言葉の中で、自動化が進む世界における「心のつながり」の大切さを強調された。この出来事は、団塊の世代がすべて75歳以上の後期高齢者となった「<span class=\"term\" onclick=\"openPanel('2025年の崖', '団塊の世代がすべて75歳以上の後期高齢者となり、社会保障制度に大きな負荷がかかる問題。')\">2025年の崖</span>」を越えた日本において、物理的な臨場感や集団的アイデンティティを求める国内の潮流を浮き彫りにしている。",
-        "critique_en": "Editor H's Perspective: In an era where algorithms dictate our social interactions, the sight of thousands standing in the winter cold for a glimpse of the Imperial Family is more than just tradition. It is a quiet protest against digital atomization. As Japan grapples with being the world's most aged society, these moments of shared national ritual serve as the 'social glue' that policy alone cannot replicate. We are seeing a shift from mere economic survival to a search for communal meaning.",
-        "critique_jp": "編集者Hの視点：アルゴリズムが私たちの社会的交流を支配する時代において、皇族を一目見ようと冬の寒さの中で数千人が列をなす光景は、単なる伝統以上の意味を持つ。それはデジタル化による個の分断に対する、静かな抗議とも言える。世界で最も高齢化が進んだ社会として日本が苦闘する中、こうした共有される国民的儀式は、政策だけでは再現できない「社会的な接着剤」として機能している。私たちは今、単なる経済的生存から、共同体としての意味の探求へとシフトしているのだ。",
-        "proverb_en": {
-          "title": "Birds of a feather flock together",
-          "desc": "People of similar tastes or backgrounds will naturally congregate."
-        },
+        "title_en": "Japan Faces Critical Infrastructure Upgrade ： Digital Twins and AI Emerge as Rural Lifelines",
+        "title_jp": "日本の老朽化インフラ対策 ： デジタルツインとAIが拓く地方再生の活路",
+        "content_en": "As Japan welcomes the year 2026, the aging of its postwar infrastructure has reached a critical juncture. From tunnels to bridges, over 40% of national structures are now over 50 years old. In response, regional municipalities are turning to '<span class=\"term\" onclick=\"openPanel('Digital Twin', 'A virtual representation of an object or system that spans its lifecycle.')\">Digital Twin</span>s'—virtual replicas of physical assets—to predict structural failures before they occur. This technological shift is particularly vital in rural areas where the labor shortage makes manual inspections nearly impossible.",
+        "content_jp": "2026年の幕開けとともに、<span class=\"term\" onclick=\"openPanel('戦後', '戦争が終わった後の時期。ここでは特に第二次世界大戦後を指す。')\">戦後</span>日本の高度成長期を支えたインフラの老朽化が限界点を迎えています。全国の橋梁やトンネルの4割以上が築50年を超え、<span class=\"term\" onclick=\"openPanel('地方自治体', '市町村などの地方公共団体。')\">地方自治体</span>は「<span class=\"term\" onclick=\"openPanel('デジタルツイン', '現実世界の物体やシステムを仮想空間に再現する技術。')\">デジタルツイン</span>」と呼ばれる仮想空間でのシミュレーション技術を導入し、未然に崩落を防ぐ取り組みを本格化させています。人手不足が深刻な過疎地において、この技術は単なる効率化ではなく、住民の命を守る最後の砦となりつつあります。",
+        "critique_en": "Editor H's Perspective: While the reliance on AI and sensors seems like a technocratic fix, it is fundamentally a story of human dignity. We are seeing a transition from 'build and discard' to 'monitor and sustain.' The challenge lies not in the code, but in ensuring that the digital divide doesn't leave the most vulnerable elderly communities behind. Technology must serve as a bridge, not a barrier, to social equity.",
+        "critique_jp": "編集者Hの視点：AIやセンサーへの依存は一見すると技術偏重に思えるが、その本質は「人間の尊厳」を守る物語である。私たちは「造っては捨てる」時代から「見守り、維持する」時代への転換点に立っている。真の課題はプログラムの精度ではなく、デジタル格差によって地方の高齢者コミュニティが置き去りにされないことだ。技術は社会の公平性を保つための架け橋でなければならない。",
         "proverb_jp": {
-          "title": "類は友を呼ぶ",
-          "desc": "気の合った者や似通った者は自然と集まるものである。"
+          "title": "転ばぬ先の杖",
+          "desc": "失敗しないように、前もって準備をしておくことのたとえ。"
+        },
+        "proverb_en": {
+          "title": "Prevention is better than cure",
+          "desc": "It is easier to stop something happening in the first place than to repair the damage after it has happened."
         },
         "glossary": [
           {
-            "term_en": "2025 Demographic Cliff",
-            "def_en": "The year when all members of the post-war baby boom generation reached 75 or older, straining social systems.",
-            "term_jp": "2025年の崖",
-            "def_jp": "団塊の世代がすべて75歳以上の後期高齢者となり、社会保障制度に大きな負荷がかかる問題。"
+            "term_en": "Digital Twin",
+            "def_en": "A virtual representation of an object or system that spans its lifecycle.",
+            "term_jp": "デジタルツイン",
+            "def_jp": "現実世界の物体やシステムを仮想空間に再現する技術。"
           },
           {
-            "term_en": "Social Glue",
-            "def_en": "The shared values and norms that hold a society together.",
-            "term_jp": "社会的接着剤",
-            "def_jp": "社会を団結させる共通の価値観や規範。"
+            "term_en": "Infrastructure",
+            "def_en": "The basic physical and organizational structures needed for the operation of a society.",
+            "term_jp": "社会基盤（インフラ）",
+            "def_jp": "道路、橋、上下水道など、社会生活を支える基礎的な施設。"
           },
           {
-            "term_en": "Digital Atomization",
-            "def_en": "The phenomenon where individuals become isolated due to reliance on digital communication over physical interaction.",
-            "term_jp": "デジタル的原子化",
-            "def_jp": "身体的交流よりもデジタル通信に依存することで、個人が孤立していく現象。"
+            "term_en": "Postwar",
+            "def_en": "Occurring or existing after a war, specifically World War II in this context.",
+            "term_jp": "戦後",
+            "def_jp": "戦争が終わった後の時期。ここでは特に第二次世界大戦後を指す。"
           },
           {
-            "term_en": "Imperial Palace",
-            "def_en": "The primary residence of the Emperor of Japan located in Chiyoda, Tokyo.",
-            "term_jp": "皇居",
-            "def_jp": "東京都千代田区にある日本の天皇の公式な住居。"
+            "term_en": "Municipalities",
+            "def_en": "Cities or towns that have corporate status and local government.",
+            "term_jp": "地方自治体",
+            "def_jp": "市町村などの地方公共団体。"
           },
           {
-            "term_en": "Resilience",
-            "def_en": "The capacity to recover quickly from difficulties.",
-            "term_jp": "レジリエンス",
-            "def_jp": "困難から速やかに立ち直る回復力。"
+            "term_en": "Labor Shortage",
+            "def_en": "A situation where there are not enough workers to fill the available jobs.",
+            "term_jp": "労働力不足",
+            "def_jp": "仕事に対して働く人の数が足りない状態。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "Retail Investors Reshape the Tokyo Stock Exchange ： The Deepening Impact of the New NISA Regime",
-        "title_jp": "個人投資家が東証を変える ： 新NISA制度がもたらした構造的変化の深層",
-        "content_en": "Entering the third year of the revamped <span class=\"term\" onclick=\"openPanel('NISA', 'A tax-exempt investment account program in Japan designed to encourage long-term savings.')\">NISA</span> (Nippon Individual Savings Account), the Tokyo market is witnessing a structural shift. As of early 2026, domestic retail participation has reached levels unseen in decades, buoyed by the permanent tax-free status of the program. Corporate Japan has responded with aggressive dividend hikes and share buybacks to attract these long-term holders. The Nikkei 225 continues to benefit from this steady inflow of domestic capital, reducing the market's traditional over-reliance on volatile foreign 'hot money'.",
-        "content_jp": "抜本的に拡充された新<span class=\"term\" onclick=\"openPanel('NISA', '長期的な貯蓄を促すために設計された、日本の非課税投資口座制度。')\">NISA</span>（少額投資非課税制度）が3年目を迎え、東京市場は構造的な転換点にある。2026年初頭の時点で、恒久的な非課税枠に支えられた国内<span class=\"term\" onclick=\"openPanel('個人投資家', '個人の口座で有価証券の売買を行う投資家。')\">個人投資家</span>の参加比率は、ここ数十年にない水準に達した。日本企業は、これら長期保有層を惹きつけるため、積極的な<span class=\"term\" onclick=\"openPanel('増配', '企業が利益の中から株主に分配する配当金を増やすこと。')\">増配</span>や自社株買いで応えている。日経平均株価は、この安定した国内資本の流入の恩恵を受け続け、海外の投機的な「<span class=\"term\" onclick=\"openPanel('ホットマネー', '短期的な高収益を求めて国際金融市場を素早く移動する投機的資金。')\">ホットマネー</span>」への過度な依存から脱却しつつある。",
-        "critique_en": "Editor H's Perspective: For years, the Japanese household was labeled as 'risk-averse,' hoarding cash under mattresses. Today, that narrative is dead. The democratization of equity ownership is not just about wealth building; it's a fundamental change in the relationship between the citizen and the corporation. When people become owners, they demand transparency. This shift is doing more for corporate governance than any regulation ever could.",
-        "critique_jp": "編集者Hの視点：長年、日本の家庭は「リスク回避的」と評され、タンス預金に固執してきた。だが、そのナラティブはもはや過去のものだ。株式所有の民主化は、単なる資産形成にとどまらない。それは市民と企業の企業間の関係性の根本的な変化である。人々が「オーナー（所有者）」になれば、当然ながら透明性を求めるようになる。この変化は、いかなる規制よりもコーポレートガバナンス（企業統治）の向上に寄与している。",
-        "proverb_en": {
-          "title": "Strike while the iron is hot",
-          "desc": "Take advantage of an opportunity as soon as it exists."
-        },
+        "title_en": "Nikkei 225 Sustains Momentum in New Year ： Corporate Governance Reforms Lure Global Capital",
+        "title_jp": "日経平均、年初も堅調な滑り出し ： 企業統治改革が呼び込む海外マネー",
+        "content_en": "Following the historical highs of late 2025, the Tokyo Stock Exchange opened 2026 with continued optimism. Foreign institutional investors remain bullish on Japanese equities, driven by the structural shifts in capital efficiency. The 'New <span class=\"term\" onclick=\"openPanel('NISA', 'Nippon Individual Savings Account; a tax-exemption program for small investments.')\">NISA</span>' program has also entered a mature phase, with retail investors shifting from mere saving to proactive asset management, signaling a cultural shift in Japan's financial landscape.",
+        "content_jp": "2025年末の歴史的高値を受け、2026年の東京株式市場も楽観的なムードで幕を開けました。<span class=\"term\" onclick=\"openPanel('資本効率', '投下した資本に対して、どれだけ効率的に利益を上げられたかを示す指標。')\">資本効率</span>の改善を背景に、海外の<span class=\"term\" onclick=\"openPanel('機関投資家', '年金基金や保険会社など、多額の資金を運用する組織。')\">機関投資家</span>は日本株に対して依然として<span class=\"term\" onclick=\"openPanel('強気', '相場が上昇すると予測し、積極的に行動する姿勢。')\">強気</span>の姿勢を崩していません。また、新NISA制度が定着し、「貯蓄から投資へ」という個人の意識変化が本格化しており、日本の金融文化に構造的な変革が起きています。",
+        "critique_en": "Editor H's Perspective: Japan is no longer the 'value trap' of the past decade. The real transformation isn't just in the numbers, but in the mindset of the Japanese salaryman-turned-investor. However, as the market matures, the pressure on companies to deliver genuine innovation rather than just accounting adjustments will intensify. The true test of this bull market is whether it can fund the next generation of Japanese unicorns.",
+        "critique_jp": "編集者Hの視点：日本はもはや、かつてのような「割安なまま放置される罠」ではない。真の変革は数字だけでなく、投資家に転身した会社員たちのマインドセットに表れている。しかし、市場が成熟するにつれ、単なる会計上の調整ではなく、本物のイノベーションを求める圧力は強まるだろう。この強気相場が、次世代のユニコーン企業を育てる原動力になれるかが問われている。",
         "proverb_jp": {
-          "title": "鉄は熱いうちに打て",
-          "desc": "物事は好機を逃さず、熱意があるうちに行うべきだという教え。"
+          "title": "残り物には福がある",
+          "desc": "人が取ったあとの残り物の中に、思いがけず良いものがあるということ。"
+        },
+        "proverb_en": {
+          "title": "Fortune favors the bold",
+          "desc": "People who take chances and act bravely are more likely to succeed."
         },
         "glossary": [
-          {
-            "term_en": "Retail Investors",
-            "def_en": "Individual investors who buy and sell securities for their personal accounts.",
-            "term_jp": "個人投資家",
-            "def_jp": "個人の口座で有価証券の売買を行う投資家。"
-          },
-          {
-            "term_en": "NISA",
-            "def_en": "A tax-exempt investment account program in Japan designed to encourage long-term savings.",
-            "term_jp": "NISA",
-            "def_jp": "長期的な貯蓄を促すために設計された、日本の非課税投資口座制度。"
-          },
-          {
-            "term_en": "Dividend Hike",
-            "def_en": "An increase in the portion of earnings a company distributes to its shareholders.",
-            "term_jp": "増配",
-            "def_jp": "企業が利益の中から株主に分配する配当金を増やすこと。"
-          },
-          {
-            "term_en": "Hot Money",
-            "def_en": "Capital that moves quickly around international financial markets in search of high short-term returns.",
-            "term_jp": "ホットマネー",
-            "def_jp": "短期的な高収益を求めて国際金融市場を素早く移動する投機的資金。"
-          },
           {
             "term_en": "Corporate Governance",
             "def_en": "The system of rules, practices, and processes by which a firm is directed and controlled.",
             "term_jp": "コーポレートガバナンス",
-            "def_jp": "企業が適切に統治・管理されるための仕組みやプロセス。"
+            "def_jp": "企業統治。不祥事を防ぎ、中長期的な企業価値を高めるための仕組み。"
+          },
+          {
+            "term_en": "Bullish",
+            "def_en": "Feeling confident and positive about the future movement of a market.",
+            "term_jp": "強気",
+            "def_jp": "相場が上昇すると予測し、積極的に行動する姿勢。"
+          },
+          {
+            "term_en": "Capital Efficiency",
+            "def_en": "A measure of how effectively a company uses its capital to generate profit.",
+            "term_jp": "資本効率",
+            "def_jp": "投下した資本に対して、どれだけ効率的に利益を上げられたかを示す指標。"
+          },
+          {
+            "term_en": "NISA",
+            "def_en": "Nippon Individual Savings Account; a tax-exemption program for small investments.",
+            "term_jp": "少額投資非課税制度",
+            "def_jp": "投資による利益が非課税になる日本の制度。"
+          },
+          {
+            "term_en": "Institutional Investor",
+            "def_en": "An organization that invests money on behalf of its clients or members.",
+            "term_jp": "機関投資家",
+            "def_jp": "年金基金や保険会社など、多額の資金を運用する組織。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "Global AI Safety Accord Signed in Geneva ： Establishing Red Lines for Autonomous Systems",
-        "title_jp": "ジュネーブで「世界AI安全協定」が調印 ： 自律型システムの『レッドライン』を確立",
-        "content_en": "In a landmark diplomatic achievement, major powers including the US, EU, and China have signed the '2026 Geneva Accord on AI Safety'. The treaty establishes legally binding protocols for 'frontier models' that exhibit capabilities near human-level reasoning. Key provisions include a mandatory 'kill switch' for autonomous weapons and strict transparency requirements for algorithmic decision-making in public services. This moves global tech regulation from voluntary guidelines to a formal international legal framework, aimed at preventing existential risks posed by misaligned artificial intelligence.",
-        "content_jp": "画期的な外交的成果として、米国、EU、中国を含む主要国が「2026年ジュネーブAI安全協定」に署名した。この条約は、人間の推論能力に近い「<span class=\"term\" onclick=\"openPanel('フロンティア・モデル', '広範なタスクをこなし、AI開発の最前線を代表する大規模で高度な能力を持つモデル。')\">フロンティア・モデル</span>」に対し、法的<span class=\"term\" onclick=\"openPanel('拘束力のあるプロトコル', '当事者が法的に従うことを義務付けられる公式な規則一式。')\">拘束力のあるプロトコル</span>を確立するものである。主な規定には、自律型兵器に対する義務的な「<span class=\"term\" onclick=\"openPanel('キルスイッチ', '緊急時に装置やプログラムを強制停止・無効化するためのメカニズム。')\">キルスイッチ</span>」の設置や、公共サービスにおけるアルゴリズムによる意思決定の厳格な透明性確保が含まれる。これにより、世界のテック規制は自主的な指針から正式な国際法的枠組みへと移行し、人間の意図から逸脱したAIがもたらす存亡の危機を防ぐことを目指す。",
-        "critique_en": "Editor H's Perspective: This accord is the 'Nuclear Non-Proliferation Treaty' of our century. For the first time, humanity is collectively acknowledging that our creations could outpace our control. While some critics argue it hampers innovation, the reality is that trust is the ultimate currency of progress. By setting these boundaries, we aren't stopping the future; we are ensuring we are actually part of it. The real challenge, however, will be the enforcement in a world still divided by digital borders.",
-        "critique_jp": "編集者Hの視点：この協定は、今世紀における「核不拡散条約」に相当する。人類は初めて、自らの創造物が制御を超えてしまう可能性を共同で認めたのだ。イノベーションを阻害するという批判もあるが、現実には「信頼」こそが発展の究極の通貨である。境界線を引くことは未来を止めることではない。私たちが確実にその未来の一部であり続けるための措置だ。しかし、デジタルな境界線で依然として分断された世界において、真の課題はその実効性の確保にあるだろう。",
-        "proverb_en": {
-          "title": "Prevention is better than cure",
-          "desc": "It is easier to stop something from happening than to repair the damage after it has happened."
-        },
+        "title_en": "Global AI Treaty Enters Force ： A New Era of Algorithmic Diplomacy and Ethical Guardrails",
+        "title_jp": "世界AI条約が正式発効 ： アルゴリズム外交と倫理的防波堤の新時代",
+        "content_en": "On January 1, 2026, the International <span class=\"term\" onclick=\"openPanel('Treaty', 'A formally concluded and ratified agreement between countries.')\">Treaty</span> on Artificial Intelligence Oversight (ITAIO) officially took effect. Led by the UN and major tech powers, the treaty aims to ban autonomous lethal weapons and mandate transparency in generative models. While Silicon Valley argues that excessive regulation might stifle innovation, European and Asian leaders emphasize the necessity of human-centric safety to prevent societal destabilization.",
+        "content_jp": "2026年1月1日、国際AI監視<span class=\"term\" onclick=\"openPanel('条約', '国家間の合意に基づき、文書化された国際法上の約束。')\">条約</span>（ITAIO）が正式に発効しました。国連と主要技術国が主導するこの<span class=\"term\" onclick=\"openPanel('条約', '国家間の合意に基づき、文書化された国際法上の約束。')\">条約</span>は、<span class=\"term\" onclick=\"openPanel('自律型', '外部の指示を受けず、自分自身で判断して動くこと。')\">自律型</span>致死兵器の禁止や、<span class=\"term\" onclick=\"openPanel('生成モデル', 'テキストや画像などを新しく作り出すことができるAI技術。')\">生成モデル</span>の透明性確保を義務付けています。シリコンバレーからは過度な規制が革新を阻害するとの懸念も出ていますが、欧州やアジアの首脳陣は、社会の不安定化を防ぐための「人間中心」の安全策の必要性を強調しています。",
+        "critique_en": "Editor H's Perspective: We are witnessing the birth of a digital Westphalian system. Just as the world learned to manage nuclear energy, we are now attempting to harness the wildfire of AI. The challenge is that code moves faster than committees. The success of this treaty depends not on the ink on the paper, but on the willingness of tech giants to prioritize the collective good over the next quarter's earnings.",
+        "critique_jp": "編集者Hの視点：私たちは今、デジタル版「ウェストファリア体制」の誕生を目撃している。かつて人類が核エネルギーの管理を学んだように、今度はAIという野火を制御しようとしているのだ。課題は、コードの進化が委員会の審議よりも速いことにある。この条約の成否は、テック大手が次四半期の収益よりも「公共の利益」を優先できるかにかかっている。",
         "proverb_jp": {
-          "title": "転ばぬ先の杖",
-          "desc": "失敗しないように、前もって準備をしておくことのたとえ。"
+          "title": "覆水盆に返らず",
+          "desc": "一度起きてしまったことは、二度と元に戻すことはできないことのたとえ。"
+        },
+        "proverb_en": {
+          "title": "The genie is out of the bottle",
+          "desc": "Used to describe a situation where something has happened and its effects cannot be stopped or reversed."
         },
         "glossary": [
           {
-            "term_en": "Frontier Models",
-            "def_en": "Large-scale, highly capable AI models that can perform a wide variety of tasks and represent the cutting edge of AI development.",
-            "term_jp": "フロンティア・モデル",
-            "def_jp": "広範なタスクをこなし、AI開発の最前線を代表する大規模で高度な能力を持つモデル。"
+            "term_en": "Treaty",
+            "def_en": "A formally concluded and ratified agreement between countries.",
+            "term_jp": "条約",
+            "def_jp": "国家間の合意に基づき、文書化された国際法上の約束。"
           },
           {
-            "term_en": "Kill Switch",
-            "def_en": "A mechanism used to shut down or disable a device or program in an emergency.",
-            "term_jp": "キルスイッチ",
-            "def_jp": "緊急時に装置やプログラムを強制停止・無効化するためのメカニズム。"
+            "term_en": "Guardrails",
+            "def_en": "Rules or systems that prevent something from going out of control.",
+            "term_jp": "ガードレール（保護柵）",
+            "def_jp": "暴走を防ぐための制限や指針。"
           },
           {
-            "term_en": "Existential Risk",
-            "def_en": "A hypothetical future event with the potential to damage human well-being on a global scale, or even cause human extinction.",
-            "term_jp": "存亡的リスク",
-            "def_jp": "人類の福祉を地球規模で損なう、あるいは人類を絶滅させる可能性のある仮説上のリスク。"
+            "term_en": "Generative Models",
+            "def_en": "AI systems capable of generating text, images, or other media in response to prompts.",
+            "term_jp": "生成モデル",
+            "def_jp": "テキストや画像などを新しく作り出すことができるAI技術。"
           },
           {
-            "term_en": "Misaligned AI",
-            "def_en": "AI systems whose goals or actions do not match the intended objectives of their human creators.",
-            "term_jp": "アラインメントの取れていないAI",
-            "def_jp": "目標や行動が、製作者である人間の意図と一致していないAIシステム。"
+            "term_en": "Diplomacy",
+            "def_en": "The profession, activity, or skill of managing international relations.",
+            "term_jp": "外交",
+            "def_jp": "国と国との交渉や関係構築の活動。"
           },
           {
-            "term_en": "Binding Protocol",
-            "def_en": "A formal set of rules that parties are legally required to follow.",
-            "term_jp": "拘束力のあるプロトコル",
-            "def_jp": "当事者が法的に従うことを義務付けられる公式な規則一式。"
+            "term_en": "Autonomous",
+            "def_en": "Acting independently or having the freedom to do so.",
+            "term_jp": "自律型",
+            "def_jp": "外部の指示を受けず、自分自身で判断して動くこと。"
           }
         ]
       }
