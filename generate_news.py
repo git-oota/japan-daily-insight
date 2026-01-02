@@ -19,20 +19,25 @@ Today's date is {today_str}.
 Search for top news from Japan's 5 major newspapers and global news (BBC/Reuters).
 Select THREE topics: 1. Social (Japan), 2. Investment (Japan), 3. International (Global).
 
-Requirements:
+Requirements for TITLES:
+- Main Title: Must be a FACTUAL, STRAIGHT NEWS HEADLINE (e.g., "Nikkei Average Hits Record High", "Government Proposes New Tax Reform"). Clear and direct.
+- Sub Title: Provide a Kristof-style thematic insight or emotional hook.
+- Format: 'Main Title ： Sub Title' (Use FULL-WIDTH '：' for both languages to ensure consistent splitting).
+
+General Requirements:
 - Style: Nicholas Kristof (empathic, intellectual).
 - Sign-off: "Editor H" (編集者H).
-- Language: Provide both English and Japanese.
-- [NEW] Title Format: 'Main Title ： Sub Title' (Full-width '：' for JP, ' : ' for EN).
-- [NEW] Proverbs: JP version must use entirely Japanese proverbs and explanations.
-- [NEW] Glossary: Pick 5 terms used in each text and define them in both languages.
+- Language: Both English and Japanese.
+- Proverbs: JP version must use entirely Japanese proverbs and explanations.
+- Glossary: Pick 5 terms used in each text and define them.
 
 Output ONLY a raw JSON object:
 {{
   "articles": [
     {{
       "category": "Social",
-      "title_en": "Main : Sub", "title_jp": "メイン ： サブ",
+      "title_en": "Factual Headline ： Insightful Subtitle", 
+      "title_jp": "事実に基づいた見出し ： 洞察に満ちたサブタイトル",
       "content_en": "...", "content_jp": "...",
       "critique_en": "...", "critique_jp": "...",
       "proverb_jp": {{"title": "...", "desc": "..."}},
@@ -68,11 +73,9 @@ def generate():
     # 本文中の用語を自動的にタグ置換
     for article in data['articles']:
         for g in article['glossary']:
-            # 日本語置換
             t_jp, d_jp = g['term_jp'], g['def_jp'].replace("'", "\\'")
             tag_jp = f'<span class="term" onclick="openPanel(\'{t_jp}\', \'{d_jp}\')">{t_jp}</span>'
             article['content_jp'] = article['content_jp'].replace(t_jp, tag_jp)
-            # 英語置換
             t_en, d_en = g['term_en'], g['def_en'].replace("'", "\\'")
             tag_en = f'<span class="term" onclick="openPanel(\'{t_en}\', \'{d_en}\')">{t_en}</span>'
             article['content_en'] = article['content_en'].replace(t_en, tag_en)
@@ -92,7 +95,6 @@ def generate():
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
-    # テンプレート反映
     for t_name, out_name in [('template_article.html', f'docs/articles/{today_str}.html'), ('template_portal.html', 'docs/index.html')]:
         if os.path.exists(t_name):
             with open(t_name, 'r', encoding='utf-8') as f:
