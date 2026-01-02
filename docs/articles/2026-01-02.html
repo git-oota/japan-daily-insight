@@ -3,31 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE INSIGHT</title>
+    <title>東京を覆う白い雪：孤独な街で見つける「心の温もり」 | THE INSIGHT</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { --navy: #001f3f; --gold: #c5a059; }
-        body { font-family: 'Noto Serif JP', serif; margin: 0; line-height: 2; color: #333; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; line-height: 2; color: #333; background: #fff; }
         header { background: var(--navy); color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 4px solid var(--gold); }
-        .lang-btn { position: absolute; right: 20px; top: 25px; background: var(--gold); border: none; padding: 6px 12px; color: white; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        .lang-btn { position: absolute; right: 20px; top: 25px; background: var(--gold); border: none; padding: 6px 15px; color: white; cursor: pointer; border-radius: 4px; font-weight: bold; }
         
-        article { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        main { max-width: 800px; margin: 0 auto; padding: 20px; }
+        article { margin-bottom: 80px; }
         .category { color: var(--gold); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; line-height: 1.1; margin: 15px 0; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; line-height: 1.2; margin: 15px 0; }
         
-        /* 専門用語の装飾 */
-        .term { color: var(--navy); font-weight: bold; border-bottom: 2px dashed var(--gold); cursor: help; padding: 0 2px; }
-        
-        .author-box { margin-top: 40px; font-weight: bold; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
-        .critique-box { background: #fdfaf4; border-left: 5px solid var(--gold); padding: 25px; margin: 30px 0; }
+        /* 【重要】本文中の専門用語スタイル */
+        .term { 
+            color: var(--navy); 
+            font-weight: bold; 
+            border-bottom: 2px dashed var(--gold); 
+            cursor: pointer; 
+            transition: background 0.3s;
+        }
+        .term:hover { background: rgba(197, 160, 89, 0.1); }
+
+        .critique-box { background: #fdfaf4; border-left: 5px solid var(--gold); padding: 25px; margin: 30px 0; border-radius: 0 8px 8px 0; }
+        .author-box { margin-top: 40px; font-weight: bold; color: #888; border-top: 1px solid #eee; padding-top: 20px; text-align: right; }
 
         /* スライダパネル */
-        #glossary-panel { position: fixed; bottom: -100%; left: 0; width: 100%; background: white; box-shadow: 0 -10px 30px rgba(0,0,0,0.15); transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1000; padding: 30px; box-sizing: border-box; border-radius: 20px 20px 0 0; }
+        #glossary-panel { 
+            position: fixed; bottom: -100%; left: 0; width: 100%; 
+            background: white; box-shadow: 0 -10px 40px rgba(0,0,0,0.2); 
+            transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+            z-index: 1000; padding: 40px 30px; box-sizing: border-box; 
+            border-radius: 24px 24px 0 0; 
+        }
         #glossary-panel.active { bottom: 0; }
-        .panel-close { float: right; cursor: pointer; font-size: 1.5rem; color: #ccc; }
+        .panel-close { float: right; cursor: pointer; font-size: 1.8rem; color: #ccc; margin-top: -20px; }
+        #panel-term { color: var(--gold); margin: 0 0 10px 0; font-family: 'Playfair Display', serif; font-size: 1.5rem; }
 
         .en { display: none; }
-        @media (max-width: 600px) { h1 { font-size: 2rem; } }
+        @media (max-width: 600px) { h1 { font-size: 1.8rem; } }
     </style>
 </head>
 <body>
@@ -37,162 +52,78 @@
     <button class="lang-btn" onclick="toggleLang()">EN / JP</button>
 </header>
 
-<div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
-    <a href="../index.html" style="color: var(--gold); text-decoration: none;">← Home</a>
-</div>
+<main>
+    <div style="margin-bottom: 40px;"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Home</a></div>
 
+    
+    <article>
+        <div class="category">Social</div>
+        <h1 class="jp">東京を覆う白い雪：孤独な街で見つける「心の温もり」</h1>
+        <h1 class="en">The White Blanket over Tokyo: Finding Warmth in a Lonely City</h1>
 
-<article>
-    <div class="category">Social</div>
-    <h1 class="jp">能登の鼓動：土煙が収まった2年後の景色</h1>
-    <h1 class="en">The Heartbeat of Noto: Two Years After the Dust Settled</h1>
+        <div class="content jp">
+            2026年1月2日、東京に静かに雪が降り積もっています。ネオンを白く染める景色は美しいものですが、少し視点を変えて、立ち並ぶ団地の窓を見てみてください。その多くの窓の奥には、一人きりで雪を眺めているお年寄りがいます。今の日本は、技術でかつてないほど繋がっている一方で、心の距離が離れてしまう「孤独」という大きな課題に直面しています。高市政権は、議事堂の女性用トイレ増設など、時代に合わせた改革を進めています。しかし、本当の進歩とは設備を整えることだけではありません。何日も姿を見かけない隣人に声をかける、そんな「心のインフラ」を築くことです。昭和から数えて100年目を迎える今年、国の強さはビルの高さではなく、最も弱い立場の人々にどれだけ温もりを届けられるかで決まるのだと、私たちは思い出すべきでしょう。<br><br>編集者Hより
+            <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>クリストフ氏は、天候や小さな日常の断片から、社会が見落としている大きな問題を描き出します。この記事では、問題を「政策」として遠ざけるのではなく、「共感」として自分たちに引き寄せて考えるよう促しています。</div>
+            <p><strong>ことわざ:</strong> A kindness done to others is a kindness done to yourself. - 情けは人のためならず (Nagasake wa hito no tame narazu): Helping others eventually brings benefit back to you.</p>
+            <div class="author-box">作成: 編集者H</div>
+        </div>
 
-    <div class="content jp">
-        輪島市に住む14歳のケンジ君に会ってきました。2年前の昨日、彼の足元の地面は裂けました。能登半島地震から2年目の節目を迎えた今日、彼の近所は雪よりも静まり返っています。世界が先へ進む一方で、今も1万8000人が仮設住宅で暮らしています。悲劇は壊れた建物だけではありません。それは「静かな脱出」です。若い家族は都市へと去り、住民の半分が高齢者というコミュニティが残されました。私たちは「復興」という言葉を安易に使いがちですが、真の復興とは、冷え込む小屋で今も漆器を作り続けるおばあちゃんの姿にあります。もし日本の地方が空洞化するのを放置すれば、私たちは文化の魂そのものを失うことになります。私たちは問い直さなければなりません。私たちが再建しているのは単なる「家」なのか、それとも「希望」なのかを。
-        <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>クリストフ氏はしばしば、一人の物語を通じてシステム上の欠陥を浮き彫りにします。ここでは、高齢化と「静かな脱出（過疎化）」に焦点を当てることで、政府が掲げる復興の成功というナラティブに疑問を投げかけています。災害がもたらす感情的・文化的な代償を読者に直視させる内容です。</div>
-        <p><strong>今日のことわざ:</strong> Continual effort is the key. - Even a small stone, if moved every day, can build a mountain. Reconstruction is a marathon, not a sprint.</p>
-        <p style="background: #eee; padding: 10px; font-size: 0.9rem;">
-            注目の用語（タップで解説）: 
-            
-            <span class="term" onclick="openPanel('大量流出', '多くの人々が一斉にその場所を去ること。')">大量流出</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('仮設住宅', '被災者のために一時的に用意される住居。')">仮設住宅</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('回復力', '困難な状況から立ち直る力。')">回復力</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('漆器', '木などに漆を塗って仕上げた日本の伝統工芸品。')">漆器</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('空洞化', '中身や中心となる機能が失われること。')">空洞化</span>&nbsp;
-            
-        </p>
-        <div class="author-box">作成: 編集者H</div>
-    </div>
+        <div class="content en">
+            As snow falls quietly over Tokyo this January 2nd, covering the neon lights in a soft white, it’s easy to focus only on the beauty. But look closer at the windows of the apartment blocks. Behind many of them sits an elderly person alone, watching the flakes fall with no one to share the view. Japan is entering 2026 with a paradox: we are more connected by technology than ever, yet the 'social coldness' of isolation remains our greatest challenge. Prime Minister Takaichi's government is pushing for modern reforms—even fighting for more ladies' toilets in parliament—to reflect a changing society. But true progress isn't just about infrastructure; it's about checking on the neighbor who hasn't been seen in days. As we mark the 100th year since the Showa era began, let’s remember that the strength of a nation isn't measured by its skyscrapers, but by the warmth it extends to its most vulnerable members.<br><br>Sign off: Editor H
+            <div class="critique-box"><strong>Crimson Pen's View:</strong><br>Kristof often uses weather or small human details to highlight systemic neglect. This piece shifts the focus from 'policy' to 'empathy,' urging students to see social issues as personal responsibilities.</div>
+            <p><strong>Proverb:</strong> A kindness done to others is a kindness done to yourself. - 情けは人のためならず (Nagasake wa hito no tame narazu): Helping others eventually brings benefit back to you.</p>
+            <div class="author-box">Written by: Editor H</div>
+        </div>
+    </article>
+    <hr style="border:0; border-top: 1px solid #eee; margin: 80px 0;">
+    
+    <article>
+        <div class="category">Investment</div>
+        <h1 class="jp">122兆円の問いかけ：君たちの未来が「予算」の一部である理由</h1>
+        <h1 class="en">The 122 Trillion Yen Question: Why Your Future is Part of the Budget</h1>
 
-    <div class="content en">
-        Meet Kenji, a 14-year-old in Wajima. Two years ago yesterday, the ground beneath his feet tore open. Today, as Japan marks the second anniversary of the Noto Peninsula Earthquake, Kenji’s neighborhood is quieter than the snow. While the world moves on, 18,000 people still live in temporary housing. The tragedy isn't just the broken buildings; it's the 'quiet exodus.' Young families are leaving for cities, leaving behind a community where half the residents are seniors. We often talk about 'resilience' as a buzzword, but true resilience is the grandmother who still makes lacquerware in a drafty shed. If we allow rural Japan to hollow out, we lose the very soul of our culture. We must ask: are we rebuilding just houses, or are we rebuilding hope?
-        <div class="critique-box"><strong>Crimson Pen's View:</strong><br>Kristof often uses a single person's story to highlight systemic failures. Here, the focus on the aging population and the 'quiet exodus' (depopulation) challenges the government's narrative of successful reconstruction. It forces readers to see the emotional and cultural cost of disaster.</div>
-        <p><strong>Today's Proverb:</strong> Continual effort is the key. - Even a small stone, if moved every day, can build a mountain. Reconstruction is a marathon, not a sprint.</p>
-        <p style="background: #eee; padding: 10px; font-size: 0.9rem;">
-            Key Terms (Tap to explain): 
-            
-            <span class="term" onclick="openPanel('Exodus', 'A mass departure of people.')">Exodus</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Temporary housing', 'Emergency shelters provided for disaster victims.')">Temporary housing</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Resilience', 'The capacity to recover quickly from difficulties.')">Resilience</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Lacquerware', 'Traditional Japanese craft made of wood coated with lacquer.')">Lacquerware</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Hollow out', 'To lose the core or substance of something.')">Hollow out</span>&nbsp;
-            
-        </p>
-        <div class="author-box">Written by: Editor H</div>
-    </div>
-</article>
-<hr style="border:0; border-top: 1px solid #eee; margin: 60px 0;">
+        <div class="content jp">
+            毎年増え続けるクレジットカードの請求書を想像してみてください。でも、それはおもちゃを買うためではなく、国全体の道路や学校、病院を維持するためのものです。これが、日本の2026年度<span class="term" onclick="openPanel('予算', '一定期間の収入と支出の計画。')">予算</span>122兆円の正体です。今年、借金の<span class="term" onclick="openPanel('利払い', '借りたお金に対して支払う手数料（利子）。')">利払い</span>費だけで初めて30兆円を超えました。つまらない算数の話に聞こえるかもしれませんが、今の中学生である君たちにとって、これは「正義」の問題です。政府は経済を救うために量子コンピューターや核融合などの「戦略分野」に投資していますが、その代金（請求書）を将来払うのは君たちです。株価は上がっていますが、富は持てる者と持たざる者を分ける壁になりつつあります。投資とは、単にお金を増やすことではなく、どんな未来に価値を置くかを選ぶことなのです。<br><br>編集者Hより
+            <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>この記事では、退屈な経済データを「世代間の公平性」や「未来への責任」という物語に変える、クリストフ氏特有の道徳的視点を取り入れています。</div>
+            <p><strong>ことわざ:</strong> A penny saved is a penny earned. - 塵も積もれば山となる (Chiri mo tsumoreba yama to naru): Even small things, when accumulated, become significant.</p>
+            <div class="author-box">作成: 編集者H</div>
+        </div>
 
-<article>
-    <div class="category">Investment</div>
-    <h1 class="jp">日経平均5万円の衝撃：私たちが投資するのは『株』だけではない</h1>
-    <h1 class="en">Japan’s 50,000 Milestone: Investing in More Than Just Stocks</h1>
+        <div class="content en">
+            Imagine a credit card bill that grows every year, but instead of buying toys, you're buying the roads, schools, and hospitals for an entire country. That is the situation with Japan’s 122 trillion yen budget for 2026. For the first time, interest payments alone have crossed the 30 trillion yen mark. This sounds like boring math, but for you—the junior high students of today—it is a moral issue. We are investing heavily in 'strategic industries' like quantum computing and nuclear fusion to save the economy. But we are also handing you the bill. The stock market is booming, but wealth is becoming a wall that separates those who have it from those who don't. Investing isn't just about making money; it's about deciding what kind of future is worth paying for. Will your generation inherit a garden or a debt trap?<br><br>Sign off: Editor H
+            <div class="critique-box"><strong>Crimson Pen's View:</strong><br>This article adopts Kristof's 'moral clarity' approach, turning dry economic data into a narrative about intergenerational fairness and future stewardship.</div>
+            <p><strong>Proverb:</strong> A penny saved is a penny earned. - 塵も積もれば山となる (Chiri mo tsumoreba yama to naru): Even small things, when accumulated, become significant.</p>
+            <div class="author-box">Written by: Editor H</div>
+        </div>
+    </article>
+    <hr style="border:0; border-top: 1px solid #eee; margin: 80px 0;">
+    
+    <article>
+        <div class="category">International</div>
+        <h1 class="jp">冷たい風と握手：2026年は「平和の年」になれるか？</h1>
+        <h1 class="en">Chilly Winds and Handshakes: Can 2026 Be the Year of Peace?</h1>
 
-    <div class="content jp">
-        2026年の幕開けとともに、日経平均株価は歴史的な5万円の大台を突破しました。君たちの親の世代にとって、「貯金」とは金利ゼロの銀行口座にお金を隠しておくことでした。しかし、日本銀行がついに金利を0.75%まで引き上げたことで、「失われた数十年」は完全に過去のものとなりました。これはスーツを着た金持ちだけの数字ではありません。新NISA制度により、普通の学生や労働者が「未来のオーナー」になりつつあります。ただし、落とし穴もあります。円安のせいで、ラーメンやiPhoneの価格は上がっています。投資はもはや趣味ではなく、生き残るためのスキルです。でも忘れないでください。最高の投資先はハイテク企業ではなく、君たち自身の「教育」です。株は暴落することがありますが、君たちの思考力と適応力は、決して価値が下がらない通貨なのです。
-        <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>このコラムは、デフレからインフレへの心理的転換を利用して、複雑な経済概念を説明しています。教育を究極の「通貨」と位置づけることで、マクロ経済を中学生の個人的な生活に結びつけています。</div>
-        <p><strong>今日のことわざ:</strong> Don't put all your eggs in one basket. - In finance and life, variety is safety. Spread your risks to protect your future.</p>
-        <p style="background: #eee; padding: 10px; font-size: 0.9rem;">
-            注目の用語（タップで解説）: 
-            
-            <span class="term" onclick="openPanel('日経平均株価', '東京証券取引所の代表的な株価指標。')">日経平均株価</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('金利', 'お金を借りる際の手数料、または預ける際の利息。')">金利</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('デフレ', '物価が継続的に下落する現象。')">デフレ</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('少額投資非課税制度', '投資で得た利益に税金がかからない日本の制度。')">少額投資非課税制度</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('価値を下げる', 'ものの価値や重要性を低下させること。')">価値を下げる</span>&nbsp;
-            
-        </p>
-        <div class="author-box">作成: 編集者H</div>
-    </div>
+        <div class="content jp">
+            北京の壮大なホールで、中国と韓国のリーダーが握手を交わしています。その様子を、日本は警戒と不安が入り混じった目で見守っています。まるで、椅子取りゲームのようです。アメリカやロシアのような大国が「覇権（他者を支配する力）」を争っている間、ウクライナやガザの人々は、今も静かな夜が来るのを待っています。歴史が教えてくれるのは、平和とは偉い人がサインする<span class="term" onclick="openPanel('条約', '国同士で結ぶ正式な約束。')">条約</span>の中にあるのではなく、「私たちは皆同じ空気を吸い、同じように子供の安全を願っている」という気づきの中にあるということです。2026年の冷え込んだ<span class="term" onclick="openPanel('外交', '国と国との付き合いや、話し合いの技術。')">外交</span>関係の中で、君たち次の世代の課題は、他人が「壁」を作るところに「橋」を架けることです。平和とは単に戦争がないことではなく、恐れている相手と対話する勇気を持つことなのです。<br><br>編集者Hより
+            <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>クリストフ氏は地政学的な「大国の駆け引き」の先にある、共通の人間性に焦点を当てます。この記事は、平和を単なる「状態」ではなく、勇気ある「行動」として捉え直すよう促しています。</div>
+            <p><strong>ことわざ:</strong> Even a journey of a thousand miles begins with a single step. - 千里の道も一歩から (Senri no michi mo ippo kara): Large tasks start with small, simple beginnings.</p>
+            <div class="author-box">作成: 編集者H</div>
+        </div>
 
-    <div class="content en">
-        As 2026 begins, the Nikkei Stock Average has crossed a historic 50,000 mark. For your parents' generation, 'saving' meant hiding money in a bank account that earned zero interest. But with the Bank of Japan finally raising rates to 0.75%, the 'Lost Decades' are officially in the rearview mirror. This isn't just a number for rich people in suits. With the New NISA system, regular students and workers are becoming owners of the future. However, there is a catch: a weak yen makes your ramen and iPhone more expensive. Investing is no longer a hobby; it’s a survival skill. But remember, the best investment isn't in a tech company—it's in your own education. A stock can crash, but your ability to think and adapt is a currency that never devalues.
-        <div class="critique-box"><strong>Crimson Pen's View:</strong><br>This piece uses the psychological shift from deflation to inflation to explain a complex economic concept. By framing education as the ultimate 'currency,' it connects macroeconomics to the personal lives of junior high students.</div>
-        <p><strong>Today's Proverb:</strong> Don't put all your eggs in one basket. - In finance and life, variety is safety. Spread your risks to protect your future.</p>
-        <p style="background: #eee; padding: 10px; font-size: 0.9rem;">
-            Key Terms (Tap to explain): 
-            
-            <span class="term" onclick="openPanel('Nikkei Stock Average', 'A stock market index for the Tokyo Stock Exchange.')">Nikkei Stock Average</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Interest rate', 'The cost of borrowing money or the reward for saving it.')">Interest rate</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Deflation', 'A general decline in prices for goods and services.')">Deflation</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('NISA', 'A Japanese tax-free stock investment program.')">NISA</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Devalue', 'To reduce the worth or importance of something.')">Devalue</span>&nbsp;
-            
-        </p>
-        <div class="author-box">Written by: Editor H</div>
-    </div>
-</article>
-<hr style="border:0; border-top: 1px solid #eee; margin: 60px 0;">
-
-<article>
-    <div class="category">International</div>
-    <h1 class="jp">私たちが築く壁：新年の渡航禁止令が問いかけるもの</h1>
-    <h1 class="en">The Walls We Build: When a Travel Ban Marks the New Year</h1>
-
-    <div class="content jp">
-        「閉ざされた扉」とともに新年を迎えることを想像してみてください。昨日、アメリカで約40カ国（その多くはアフリカ諸国）を対象とした新たな入国禁止令が施行されました。この政策は「不法残留者」を防ぐのが目的ですが、その陰で起きている「副次的な被害」を直視すべきです。私はスーダンのハルツームにいる若い医師のことを考えます。激しい戦争を経て、ようやく現地の病院が再開し始めたところです。彼はアメリカで救命手術を学ぶための名誉ある奨学金を得ましたが、今は入国を拒まれています。統計に基づいて壁を築くとき、私たちはしばしば、地球規模の課題を解決するための「才能という架け橋」まで遮断してしまいます。歴史が示す通り、恐怖は強力な設計士ですが、安定した世界の土台としては不十分です。人の流れを止めれば、進歩の流れも止まってしまうのでしょうか。地球市民として、私たちは21世紀を「安全」の時代にするのか、それとも「排除」の時代にするのかを決めなければなりません。
-        <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>政治的な犠牲者を人間味のある存在として描くとき、クリストフ氏のスタイルは輝きを増します。「入国禁止令」と「医師の夢」を対比させることで、議論を国境警備から人間の可能性へと移しています。西側の政策によって遮られようとしているスーダンの病院再開という「希望の光」を描いています。</div>
-        <p><strong>今日のことわざ:</strong> A bridge is better than a wall. - Building connections leads to mutual growth; building barriers often leads to shared stagnation.</p>
-        <p style="background: #eee; padding: 10px; font-size: 0.9rem;">
-            注目の用語（タップで解説）: 
-            
-            <span class="term" onclick="openPanel('渡航禁止令', '特定の国の人々の入国を禁止する法律。')">渡航禁止令</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('副次的被害', '本来の目的以外に生じてしまった意図せぬ被害。')">副次的被害</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('特別研究員制度', '高度な研究を行うために与えられる地位や奨学金。')">特別研究員制度</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('統計', '集団の状態を数字で表したもの。')">統計</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('排除', '仲間に入れないこと、のけ者にすること。')">排除</span>&nbsp;
-            
-        </p>
-        <div class="author-box">作成: 編集者H</div>
-    </div>
-
-    <div class="content en">
-        Imagine starting your year with a closed door. Yesterday, a new U.S. travel ban took effect, targeting nearly 40 countries, many in Africa. The policy aims to stop 'overstayers,' but look closer at the collateral damage. I think of a young doctor in Khartoum, Sudan, where hospitals are finally reopening after a brutal war. He won a prestigious fellowship to study life-saving surgery in America, but now he is barred. When we build walls based on statistics, we often block the very bridges of talent that solve global problems. History shows that fear is a powerful architect, but it’s a poor foundation for a stable world. If we stop the flow of people, do we also stop the flow of progress? As global citizens, we must decide if the 21st century will be defined by security or by exclusion.
-        <div class="critique-box"><strong>Crimson Pen's View:</strong><br>Kristof's style shines when humanizing political victims. By contrasting a 'travel ban' with a 'doctor's dream,' the article moves the debate from border security to human potential. It uses the Sudanese hospital reopening as a beacon of hope that is being dimmed by Western policy.</div>
-        <p><strong>Today's Proverb:</strong> A bridge is better than a wall. - Building connections leads to mutual growth; building barriers often leads to shared stagnation.</p>
-        <p style="background: #eee; padding: 10px; font-size: 0.9rem;">
-            Key Terms (Tap to explain): 
-            
-            <span class="term" onclick="openPanel('Travel ban', 'A law that prevents people from certain countries from entering.')">Travel ban</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Collateral damage', 'Unintended harm caused to people or things.')">Collateral damage</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Fellowship', 'A position given to a person to do advanced research.')">Fellowship</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Statistics', 'Facts or data from a study of a large quantity of numerical data.')">Statistics</span>&nbsp;
-            
-            <span class="term" onclick="openPanel('Exclusion', 'The act of leaving someone or something out.')">Exclusion</span>&nbsp;
-            
-        </p>
-        <div class="author-box">Written by: Editor H</div>
-    </div>
-</article>
-<hr style="border:0; border-top: 1px solid #eee; margin: 60px 0;">
-
+        <div class="content en">
+            In the grand halls of Beijing, leaders from China and South Korea are meeting to shake hands, while Japan watches from a distance with a mix of caution and concern. It feels like a high-stakes game of musical chairs. While global powers like the US and Russia argue over 'hegemony'—the power to rule over others—the people on the ground in Ukraine and Gaza are still waiting for a quiet night. History teaches us that peace isn't found in a perfect treaty signed by kings, but in the slow realization that we all breathe the same air and want the same safety for our children. As Japan navigates these 'chilly' diplomatic waters in 2026, the real challenge for the next generation is to build bridges where others see walls. Peace is not just the absence of war; it is the presence of courage to talk to those we fear.<br><br>Sign off: Editor H
+            <div class="critique-box"><strong>Crimson Pen's View:</strong><br>Kristof often looks past the 'Great Game' of geopolitics to focus on common humanity. This column challenges students to rethink peace as an active, courageous process.</div>
+            <p><strong>Proverb:</strong> Even a journey of a thousand miles begins with a single step. - 千里の道も一歩から (Senri no michi mo ippo kara): Large tasks start with small, simple beginnings.</p>
+            <div class="author-box">Written by: Editor H</div>
+        </div>
+    </article>
+    <hr style="border:0; border-top: 1px solid #eee; margin: 80px 0;">
+    
+</main>
 
 <div id="glossary-panel">
     <span class="panel-close" onclick="closePanel()">×</span>
-    <h3 id="panel-term" style="color: var(--gold); margin-top: 0;">Term</h3>
+    <h3 id="panel-term">Term</h3>
     <p id="panel-def" style="font-size: 1.1rem; line-height: 1.6;">Definition</p>
 </div>
 
@@ -215,6 +146,14 @@
     function closePanel() {
         document.getElementById('glossary-panel').classList.remove('active');
     }
+
+    // パネルの外側をタップしても閉じるようにする
+    document.addEventListener('click', function(event) {
+        const panel = document.getElementById('glossary-panel');
+        if (!panel.contains(event.target) && !event.target.classList.contains('term')) {
+            closePanel();
+        }
+    });
 </script>
 
 </body>
