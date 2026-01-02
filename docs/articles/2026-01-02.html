@@ -8,6 +8,8 @@
     <style>
         :root { --navy: #001f3f; --gold: #c5a059; }
         body { font-family: 'Noto Serif JP', serif; margin: 0; line-height: 2.1; color: #333; background: #fff; }
+        
+        /* ヘッダー：重なり防止Flexbox */
         header { background: var(--navy); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
         .header-logo { font-family: 'Playfair Display'; font-size: 1.8rem; flex-grow: 1; text-align: center; margin-left: 80px; }
         .lang-btn { background: var(--gold); color: white; border: none; padding: 6px 15px; cursor: pointer; border-radius: 4px; font-weight: bold; white-space: nowrap; }
@@ -16,18 +18,19 @@
         article { margin-bottom: 100px; }
         .category { color: var(--gold); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
         
-        /* ニュース記事見出し：事実を大きく、洞察を金色で */
         .main-title { font-size: 2.8rem; line-height: 1.1; margin: 15px 0 5px 0; color: var(--navy); }
         .sub-title { font-size: 1.3rem; color: var(--gold); font-weight: normal; margin-bottom: 35px; line-height: 1.4; }
 
         .term { color: var(--navy); font-weight: bold; border-bottom: 2px dashed var(--gold); cursor: pointer; padding: 0 2px; }
+        
+        /* 視点ボックスの修正 */
         .critique-box { background: #fdfaf4; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; border-radius: 0 8px 8px 0; font-style: italic; }
-        .author-box { margin-top: 40px; font-weight: bold; color: #999; border-top: 1px solid #eee; padding-top: 20px; text-align: right; }
 
         #glossary-panel { position: fixed; bottom: -100%; left: 0; width: 100%; background: white; box-shadow: 0 -15px 40px rgba(0,0,0,0.2); transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); z-index: 1000; padding: 40px 30px; box-sizing: border-box; border-radius: 28px 28px 0 0; }
         #glossary-panel.active { bottom: 0; }
         .panel-close { float: right; cursor: pointer; font-size: 2rem; color: #ccc; margin-top: -20px; }
         #panel-term { color: var(--gold); margin: 0 0 10px 0; font-size: 1.6rem; }
+
         .en { display: none; }
         @media (max-width: 600px) { 
             header { flex-direction: column; padding: 10px; }
@@ -51,23 +54,21 @@
         <div class="category">Social</div>
         <div class="jp">
             
-            <h1 class="main-title">日本政府、地方創生に向けた「全国デジタル住民権」制度を開始 </h1>
-            <div class="sub-title"> 消えゆく故郷の鼓動と、デジタルが紡ぐ新しい絆の模索</div>
-            <div class="content">日本の地方部が直面する<span class="term" onclick="openPanel('過疎化', '人口が急激に減少し、地域社会の維持が困難になること。')">過疎化</span>という深刻な課題に対し、政府は「全国デジタル住民制度」を正式にスタートさせました。この制度は、<span class="term" onclick="openPanel('都市住民', '都会に住む人々。')">都市住民</span>が地方自治体に税を納め、ボランティア活動を行うことで、住民権や特典を得られる仕組みです。島根県の静かな過疎の町を歩くと、そこにあるのは空き家だけでなく、失われゆく地域の記憶そのものです。この政策は単なる税収の確保ではなく、<span class="term" onclick="openPanel('分断された社会', '人々やつながりがバラバラになった社会の状態。')">分断された社会</span>を再び結びつけようとする道徳的な試みと言えます。満員電車に揺られる東京の孤独と、人影のない山道の静寂。その両者をデジタルの架け橋が本当に癒せるのか、私たちは問われています。 編集者H。
-                <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>金銭的なインセンティブだけで地方が救われないことを、この制度は正しく認識しています。必要なのは、目的意識とコミュニティへの帰属意識です。</div>
-                <p><strong>今日のことわざ:</strong> 遠くの親類より近くの他人 - 疎遠な親族よりも、近所に住む縁のない人の方がいざという時に頼りになるということ。デジタル住民という「新しい隣人」の重要性を説いています。</p>
-                <div class="author-box">作成: 編集者H</div>
-            </div>
+            <h1 class="main-title">日本の脆い再生 </h1>
+            <div class="sub-title"> 繁栄と人口減少のパラドックスを歩む</div>
+            <div class="content">2026年の幕開けとともに、高市早苗首相の年頭所感は日本社会の大きな転換点を示唆した。人口減少という深淵に直面する中、政府は今月「<span class="term" onclick="openPanel('外国人材に関する基本方針', '2026年初頭に策定される、外国人労働者の受け入れと社会統合を管理するための新たな行政枠組み。')">外国人材に関する基本方針</span>」を策定する予定だ。この方針は、高齢化する経済を維持するために不可欠な労働力を受け入れる一方で、社会の結束や土地保全に対する国内の不安にも配慮するという、繊細な均衡を求めている。一方、<span class="term" onclick="openPanel('能登半島地震', '2024年1月1日に発生したマグニチュード7.6の地震。2026年の震災復興の基準点となっている。')">能登半島地震</span>から2年を迎え、変動する大地の上で国を維持するために必要な「強靭さ」を改めて問い直す静かな節目となった。
+                <div class="critique-box"><strong>編集者Hの視点:</strong><br>編集者Hの視点：高市首相が掲げる「強く豊かな日本」というビジョンは、単なる修辞ではなく、もはや「強制的な進化」である。閉鎖的なメンタリティから外国人材の構造的な統合へと舵を切ることは、明治維新以来の社会OSのアップデートと言える。しかし、真の試練は、彼らを単なる「経済の埋め合わせ」としてではなく、社会の一員として「帰属意識」を育めるかにある。2026年の真の繁栄は、人口統計データよりも人間の尊厳を重んじる新たな社会契約にかかっている。</div>
+                <p><strong>今日のことわざ:</strong> 類は友を呼ぶ - 多様な背景を持ちながらも、共通の志を持つ人々が集まり、共生社会を築くことの重要性を示唆。</p>
+                </div>
         </div>
         <div class="en">
             
-            <h1 class="main-title">Japan Launches National 'Rural Revitalization' Digital Residency Program</h1>
-            <div class="sub-title">The search for belonging in an age of shrinking villages and expanding screens</div>
-            <div class="content">In a bold move to counter the hollowing out of its countryside, Japan has officially inaugurated the 'Digital Regional Residency' initiative. This program allows urbanites to contribute taxes and volunteer time to rural villages in exchange for residency rights and local perks. As I walk through the quiet streets of a depopulated town in Shimane, I see more than just empty houses; I see a loss of cultural memory. This policy is not merely about tax revenue; it is a moral attempt to reconnect a fragmented society. We must ask ourselves if a digital bridge can truly heal the isolation felt in both the crowded Tokyo subway and the silent mountain path. Editor H.
-                <div class="critique-box"><strong>Crimson Pen's View:</strong><br>The initiative correctly identifies that financial incentives alone won't save rural Japan; it requires a sense of purpose and community belonging.</div>
-                <p><strong>Today's Proverb:</strong> A stitch in time saves nine - Taking small actions now to address rural decline prevents a total collapse of regional infrastructure later.</p>
-                <div class="author-box">Written by: Editor H</div>
-            </div>
+            <h1 class="main-title">Japan’s Fragile Renewal</h1>
+            <div class="sub-title">Navigating the Paradox of Prosperity and Depopulation</div>
+            <div class="content">As the sun rises on 2026, Prime Minister Sanae Takaichi’s New Year address has signaled a watershed moment for Japanese society. Confronting a demographic abyss, the government is set to finalize a '<span class="term" onclick="openPanel('Basic Policy on Foreign National Issues', 'A new administrative framework to be established in early 2026 to manage the integration of foreign workers.')">Basic Policy on Foreign National Issues</span>' this month. This policy seeks a delicate equilibrium: welcoming essential labor to sustain the graying economy while addressing domestic anxieties regarding social cohesion and land security. Meanwhile, the nation marked the second anniversary of the Noto Peninsula earthquake, a somber reminder of the resilience required to maintain a nation on shifting ground.
+                <div class="critique-box"><strong>Editor H's Perspective:</strong><br>Editor H's Perspective: Takaichi’s vision for a 'strong and prosperous' Japan is more than mere rhetoric; it is a forced evolution. The shift from a closed-door mentality to a structured integration of foreign talent represents the most significant cultural software update since the Meiji era. However, the true test lies in whether Japan can cultivate a sense of belonging for its newcomers, moving beyond viewing them as mere economic fillers. Real prosperity in 2026 depends on a social contract that values human dignity over demographic data.</div>
+                <p><strong>Today's Proverb:</strong> Birds of a feather flock together. - Used here to emphasize the need for social cohesion despite diverse backgrounds.</p>
+                </div>
         </div>
     </article>
     <hr style="border:0; border-top: 1px solid #eee; margin: 100px 0;">
@@ -76,23 +77,21 @@
         <div class="category">Investment</div>
         <div class="jp">
             
-            <h1 class="main-title">日経平均株価が史上初の5万円台を突破、企業統治改革が奏功 </h1>
-            <div class="sub-title"> 単なる数字の記録を超え、眠れる巨人が自信を取り戻す瞬間</div>
-            <div class="content">東京株式市場は今日、日経平均株価が5万円の大台を突破するという歴史的な節目を迎えました。懐疑派は世界的なインフレの影響を指摘しますが、真の物語は日本企業の取締役会で起きた静かな革命にあります。長年、日本は「怠慢な」資本効率を批判されてきましたが、<span class="term" onclick="openPanel('株主還元', '企業が利益を配当金や自社株買いなどで株主に返すこと。')">株主還元</span>と<span class="term" onclick="openPanel('透明性', '経営実態などが外部から見て明快であること。')">透明性</span>の向上により、今や世界中の投資家が注目する存在となりました。しかし、この利益に老後の尊厳を託している数百万人の引退者の存在を忘れてはなりません。これは単なる投資ファンドの勝利ではなく、一般市民の誇りと経済的安定の回復なのです。 編集者H。
-                <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>この株価上昇が持続可能であるためには、富裕層への配当だけでなく、労働者層の賃金上昇に結びつく必要があります。</div>
-                <p><strong>今日のことわざ:</strong> 継続は力なり - 小さなことでも根気よく続けていけば、後で大きな成果が得られるということ。長年の企業改革が実を結んだことを表します。</p>
-                <div class="author-box">作成: 編集者H</div>
-            </div>
+            <h1 class="main-title">日出ずる国の強気相場 </h1>
+            <div class="sub-title"> 2026年の株価急騰を読み解く</div>
+            <div class="content">日経平均株価は、財政拡大と厳格なコーポレートガバナンス改革を組み合わせた「<span class="term" onclick="openPanel('サナエノミクス', '高市早苗首相の経済政策。AIや半導体への戦略的投資を柱とする。')">サナエノミクス</span>」に後押しされ、前人未到の5万5000円台を目前に2026年を迎えた。実質賃金の伸びがようやくインフレを追い越し、国内消費の好循環が生まれるとの楽観論が投資家の間に広がっている。しかし、<span class="term" onclick="openPanel('金融正常化', '金利を引き上げ、緩和策を縮小して、標準的な金融環境に戻すプロセス。')">金融正常化</span>の影は色濃い。日銀が政策金利1.0%を視野に入れる中、「フリーマネー」の時代は決定的に終焉した。市場は今、指数追随型から、個別の企業ファンダメンタルズやAIによる生産性向上へと、その焦点を鋭く移している。
+                <div class="critique-box"><strong>編集者Hの視点:</strong><br>編集者Hの視点：これは「かつての日経平均」ではない。この上昇は、資本効率がもはや選択肢ではなく「責務」となった根本的な構造変化を反映している。しかし、問わねばならないのは「サナエ・トレード」が完璧すぎるシナリオを織り込みすぎてはいないか、ということだ。金利が上昇するにつれ、過去30年間の「ゾンビ企業」はついに年貢の納め時を迎えるだろう。2026年の勝者は、記録的な内部留保を単なる株主還元ではなく、人的資本やフロンティア技術へと再投資できる企業である。</div>
+                <p><strong>今日のことわざ:</strong> 上げ潮はすべての舟を浮かす - 市場全体の好況があらゆるセクターに恩恵をもたらすが、潮が引く際のリスクも暗示。</p>
+                </div>
         </div>
         <div class="en">
             
-            <h1 class="main-title">Nikkei 225 Exceeds 50,000 Points Amid Corporate Governance Reform</h1>
-            <div class="sub-title">More than a bull market, it is the slow awakening of a sleeping economic giant</div>
-            <div class="content">The Tokyo Stock Exchange reached a historic milestone today as the Nikkei 225 surpassed the 50,000-point mark. While skeptics point to global inflation, the real story lies in the quiet revolution of Japanese corporate boardrooms. For years, Japan was criticized for its 'lazy' capital; today, focus on shareholder returns and transparency has transformed the island nation into a global investment darling. However, let us not forget the millions of Japanese retirees whose dignity depends on these returns. This isn't just a win for hedge funds; it’s a restoration of national pride and economic security for the common citizen. Editor H.
-                <div class="critique-box"><strong>Crimson Pen's View:</strong><br>The rally is sustainable only if it translates into wage growth for the working class, not just dividends for the wealthy.</div>
-                <p><strong>Today's Proverb:</strong> Fortune favors the bold - Success comes to those who take risks and implement structural changes rather than maintaining the status quo.</p>
-                <div class="author-box">Written by: Editor H</div>
-            </div>
+            <h1 class="main-title">The Bull Market of the Rising Sun</h1>
+            <div class="sub-title">Deciphering the 2026 Equity Surge</div>
+            <div class="content">The Nikkei 225 has entered 2026 on the cusp of an unprecedented 55,000 level, fueled by '<span class="term" onclick="openPanel('Sanaenomics', 'The economic policies of PM Sanae Takaichi, focusing on strategic investment in AI and semiconductors.')">Sanaenomics</span>'—a blend of fiscal expansion and rigorous corporate governance reform. Investors are optimistic that real wage growth will finally outpace inflation, creating a virtuous cycle of domestic consumption. However, the shadow of monetary normalization looms large; with the Bank of Japan eyeing a policy rate of 1.0%, the era of 'free money' is decisively over. Markets are now pivoting from broad index tracking to a laser focus on individual corporate fundamentals and AI-driven productivity gains.
+                <div class="critique-box"><strong>Editor H's Perspective:</strong><br>Editor H's Perspective: This is not your grandfather's Nikkei. The rally reflects a fundamental structural shift where capital efficiency is no longer an option but a mandate. Yet, we must ask: is the 'Sanae Trade' pricing in too much perfection? As interest rates climb, the 'zombie' firms of the past three decades will finally face their reckoning. The winners of 2026 will be those who reinvest their record cash piles into human capital and frontier tech, rather than merely satisfying short-term shareholder appetites.</div>
+                <p><strong>Today's Proverb:</strong> A rising tide lifts all boats. - Used to describe how the overall market rally benefits various sectors, but warns of the receding tide.</p>
+                </div>
         </div>
     </article>
     <hr style="border:0; border-top: 1px solid #eee; margin: 100px 0;">
@@ -101,23 +100,21 @@
         <div class="category">International</div>
         <div class="jp">
             
-            <h1 class="main-title">2040年までに使い捨てプラスチック廃止、国連で歴史的条約が調印 </h1>
-            <div class="sub-title"> 環境という冷徹な現実に、人類の良心がようやく追いついた日</div>
-            <div class="content">国連の歴史的な会合において、193カ国の代表が2040年までに<span class="term" onclick="openPanel('使い捨てプラスチック', '一度使用しただけで捨てられるプラスチック製品。')">使い捨てプラスチック</span>を廃止する<span class="term" onclick="openPanel('法的拘束力', '法律によって、その内容を守る義務が生じること。')">法的拘束力</span>のある条約に署名しました。数十年にわたり、私たちの海は人類の<span class="term" onclick="openPanel('怠慢', 'なすべきことを怠ること、注意を払わないこと。')">怠慢</span>の証拠となり、最深の海溝から人里離れた島々にまでプラスチックの破片が散乱してきました。この合意は、<span class="term" onclick="openPanel('分断された世界', '国々や人々が対立し、協力が難しい世界情勢。')">分断された世界</span>における国際協力の稀有な勝利です。国境や思想で隔てられていても、吸う空気や命を支える水において私たちは一つであることを思い出させてくれます。実施への道は険しいでしょうが、今日、私たちは利便性よりも生存を選んだのです。 編集者H。
-                <div class="critique-box"><strong>クリムゾン・ペンの視点:</strong><br>条約の成否は、監視体制の強化と、産業転換を迫られる途上国への支援が十分に行われるかにかかっています。</div>
-                <p><strong>今日のことわざ:</strong> 情けは人のためならず - 人に対して情けを掛けておけば、巡り巡って自分に良い報いが来るということ。環境保護は結局、人類全体の利益になります。</p>
-                <div class="author-box">作成: 編集者H</div>
-            </div>
+            <h1 class="main-title">パクス・アメリカーナの落日 </h1>
+            <div class="sub-title"> 欧州が模索する「第3の道」</div>
+            <div class="content">2026年の幕開けとともに、ドイツのフリードリヒ・メルツ首相による毅然とした指導力と、第2次トランプ政権の極端な内向き政策「リバレーション・デイ（解放の日）」によって、国際秩序が再編されている。欧州は、米国の安全保障への依存と中国のサプライチェーンへの依存を同時に減らす「<span class="term" onclick="openPanel('戦略的自律', '他国に過度に依存することなく、自国の利益を追求できる能力。現在の欧州の重要戦略。')">戦略的自律</span>」へと大きく舵を切った。台湾周辺の緊張感やウクライナでの消耗戦が続く中、世界は<span class="term" onclick="openPanel('多極化', '複数の国や地域が力と影響力を持ち、並立している世界の情勢。')">多極化</span>という現実に直面している。一方、元旦のブルガリアのユーロ圏加盟は、分断の時代における稀有な欧州統合の瞬間となった。
+                <div class="critique-box"><strong>編集者Hの視点:</strong><br>編集者Hの視点：私たちは戦後コンセンサスの終焉の中にいる。かつての「パクス・アメリカーナ」は、国家がもはや安全保障のために価値観を犠牲にしない「荒々しいリアリズム」に取って代わられつつある。欧州にとっての課題は、この新たな「自律」が結束したブロックを生むのか、それとも競合する保護主義の集まりに終わるのかだ。2026年の悲劇は、自立を求めるあまり、1世紀にわたる地球規模の衝突を防いできた「制度」そのものを解体してしまうことにある。</div>
+                <p><strong>今日のことわざ:</strong> 各々其の志を遂げよ - 各国が自国の利益を最優先する現在の多極化・自国第一主義のトレンドを反映。</p>
+                </div>
         </div>
         <div class="en">
             
-            <h1 class="main-title">Global Leaders Sign Treaty to Eliminate Single-Use Plastics by 2040</h1>
-            <div class="sub-title">A fragile planet breathes a sigh of relief as policy finally catches up to environmental reality</div>
-            <div class="content">In a historic session at the United Nations, representatives from 193 nations have committed to a legally binding treaty to eliminate single-use plastics by the year 2040. For decades, our oceans have been a testament to our negligence, with plastic debris found in the deepest trenches and the most remote islands. This agreement is a rare victory for global cooperation in a fractured world. It reminds us that while we are divided by borders and ideologies, we are united by the air we breathe and the water that sustains us. The path to implementation will be difficult, but today, we chose survival over convenience. Editor H.
-                <div class="critique-box"><strong>Crimson Pen's View:</strong><br>The treaty's success depends entirely on the enforcement mechanisms and support for developing nations to transition their industries.</div>
-                <p><strong>Today's Proverb:</strong> Actions speak louder than words - Signing a treaty is a promise, but the actual reduction of plastic waste is the only metric of success.</p>
-                <div class="author-box">Written by: Editor H</div>
-            </div>
+            <h1 class="main-title">The Sunset of Pax Americana</h1>
+            <div class="sub-title">Europe’s Search for a Third Path</div>
+            <div class="content">As 2026 begins, the global order is being reshaped by the assertive leadership of Germany’s Friedrich Merz and the inward-looking 'Liberation Day' policies of the second Trump administration. Europe is pivotally moving toward '<span class="term" onclick="openPanel('Strategic Autonomy', 'The ability of a state or union to pursue its own national interests without being overly dependent on others.')">Strategic Autonomy</span>,' reducing its reliance on both U.S. security guarantees and Chinese supply chains. Amidst heightened tensions around Taiwan and the ongoing attrition in Ukraine, the world is witnessing the rise of a multipolar reality. Meanwhile, Bulgaria’s entry into the Eurozone on New Year's Day marks a rare moment of European integration in an era of fragmentation.
+                <div class="critique-box"><strong>Editor H's Perspective:</strong><br>Editor H's Perspective: We are living through the end of the post-war consensus. The old 'Pax Americana' is being replaced by a gritty realism where nations no longer trade values for security. For Europe, the challenge is whether its new-found autonomy will lead to a cohesive bloc or a collection of competing protectionisms. The tragedy of 2026 would be if, in the quest for self-reliance, we dismantle the very institutions that prevented a century of global conflict.</div>
+                <p><strong>Today's Proverb:</strong> Every man for himself. - Reflects the current global trend of nations prioritizing their own interests above international cooperation.</p>
+                </div>
         </div>
     </article>
     <hr style="border:0; border-top: 1px solid #eee; margin: 100px 0;">
