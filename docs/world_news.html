@@ -9,13 +9,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap');
         :root { --navy: #001f3f; --gold: #c5a059; }
-        body { font-family: 'Noto Sans JP', sans-serif; background-color: #FDFBF7; color: #334155; transition: background 0.3s; }
+        body { font-family: 'Noto Sans JP', sans-serif; background-color: #FDFBF7; color: #334155; }
         .serif { font-family: 'Noto Serif JP', serif; }
         .chart-container { position: relative; width: 100%; height: 300px; margin-top: 20px; }
         .card-hover { transition: all 0.3s ease; border: 1px solid #e2e8f0; background: white; }
         .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: var(--gold); }
-        .lang-btn { background: var(--gold); color: white; border: none; padding: 6px 12px; cursor: pointer; border-radius: 4px; font-weight: bold; transition: 0.3s; }
-        .lang-btn:hover { opacity: 0.8; transform: scale(1.05); }
+        .lang-btn { background: var(--gold); color: white; border: none; padding: 6px 12px; cursor: pointer; border-radius: 4px; font-weight: bold; }
         .fade-in { animation: fadeIn 0.4s ease-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         [data-lang] { display: none; }
@@ -29,33 +28,26 @@
     <header class="bg-[#001f3f] text-white py-4 px-6 sticky top-0 z-50 border-b-4 border-[#c5a059] shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <a href="index.html" class="text-xs sm:text-sm font-bold bg-[#c5a059] px-3 py-1.5 rounded hover:bg-white hover:text-[#001f3f] transition-all">
-                    <span data-lang="jp">← デイリーニュース</span>
-                    <span data-lang="en">← Daily News</span>
+                <a href="index.html" class="text-xs sm:text-sm font-bold bg-[#c5a059] px-3 py-1.5 rounded hover:bg-white hover:text-[#001f3f]">
+                    <span data-lang="jp">← デイリーニュース</span><span data-lang="en">← Daily News</span>
                 </a>
                 <div class="cursor-pointer hidden sm:block" onclick="app.showHome()">
                     <h1 class="text-xl font-bold tracking-widest serif">THE INSIGHT</h1>
                 </div>
             </div>
-            
-            <div class="flex items-center gap-4">
-                <span class="text-xs opacity-60 hidden md:block">GeoGuide 2026</span>
-                <button onclick="app.toggleLang()" class="lang-btn">EN / JP</button>
-            </div>
+            <button onclick="app.toggleLang()" class="lang-btn">EN / JP</button>
         </div>
     </header>
 
     <main id="app-container" class="flex-grow max-w-7xl mx-auto px-4 py-10 w-full">
-        
         <div id="view-dashboard" class="fade-in">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-slate-800 mb-4 serif">
-                    <span data-lang="jp">世界を読み解く10の視点</span>
-                    <span data-lang="en">10 Perspectives on the World</span>
+                    <span data-lang="jp">世界を読み解く10の視点</span><span data-lang="en">10 Geopolitical Perspectives</span>
                 </h2>
                 <p class="text-slate-600">
                     <span data-lang="jp">対立の歴史と背景を、中学生にもわかる論理で解説します</span>
-                    <span data-lang="en">Explaining history and conflicts with logic accessible to everyone.</span>
+                    <span data-lang="en">Understanding global conflicts through clear, logical analysis.</span>
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="topic-grid"></div>
@@ -63,57 +55,38 @@
 
         <div id="view-detail" class="hidden fade-in">
             <button onclick="app.showHome()" class="mb-8 text-slate-500 hover:text-[#001f3f] flex items-center font-bold">
-                <span class="mr-2">←</span> 
-                <span data-lang="jp">解説一覧に戻る</span><span data-lang="en">Back to List</span>
+                <span class="mr-2">←</span> <span data-lang="jp">一覧に戻る</span><span data-lang="en">Back to List</span>
             </button>
-
             <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 mb-10">
                 <span id="detail-category" class="text-[#c5a059] font-bold text-sm tracking-widest mb-2 block uppercase"></span>
-                <h2 id="detail-title" class="text-3xl md:text-4xl font-bold text-slate-800 mb-4 serif"></h2>
-                <h3 id="detail-subtitle" class="text-lg text-slate-500 mb-8 pb-6 border-b border-slate-100"></h3>
-                
+                <h2 id="detail-title" class="text-3xl font-bold text-slate-800 mb-2 serif"></h2>
+                <h3 id="detail-subtitle" class="text-lg text-slate-500 mb-8 border-b pb-6"></h3>
                 <div class="bg-slate-50 p-6 rounded-2xl border-l-8 border-[#c5a059]">
                     <h4 class="font-bold text-slate-700 mb-2">
-                        <span data-lang="jp">⚡ 1分でわかる！対立のポイント</span>
-                        <span data-lang="en">⚡ 1-Minute Summary</span>
+                        <span data-lang="jp">⚡ 1分でわかる！対立のポイント</span><span data-lang="en">⚡ 1-Minute Summary</span>
                     </h4>
                     <p id="detail-summary" class="text-slate-700 leading-relaxed"></p>
                 </div>
             </div>
-
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 <div class="lg:col-span-2 space-y-10">
-                    <section class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
+                    <section class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm">
                         <h3 class="text-xl font-bold text-slate-800 mb-8 border-b pb-2 inline-block border-[#c5a059]">
-                            <span data-lang="jp">なぜ対立しているの？</span>
-                            <span data-lang="en">Why the Conflict?</span>
+                            <span data-lang="jp">なぜ対立しているの？</span><span data-lang="en">Core of the Conflict</span>
                         </h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                            <div class="bg-red-50 p-6 rounded-2xl border border-red-100">
-                                <h4 id="party-a-name" class="font-bold text-red-800 mb-3"></h4>
-                                <p id="party-a-view" class="text-sm text-slate-700 leading-relaxed"></p>
-                            </div>
-                            <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                                <h4 id="party-b-name" class="font-bold text-blue-800 mb-3"></h4>
-                                <p id="party-b-view" class="text-sm text-slate-700 leading-relaxed"></p>
-                            </div>
-                        </div>
-                        <div id="detail-history-text" class="text-slate-700 leading-8 text-md space-y-4"></div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8" id="party-container"></div>
+                        <div id="detail-history-text" class="text-slate-700 leading-8 space-y-4"></div>
                     </section>
                 </div>
-
                 <div class="space-y-10">
-                    <section class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
+                    <section class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm">
                         <h3 class="text-lg font-bold text-slate-800 mb-6 border-b pb-2 border-[#c5a059]">
-                            <span data-lang="jp">世界の反応・関係</span>
-                            <span data-lang="en">Global Perspectives</span>
+                            <span data-lang="jp">世界の反応</span><span data-lang="en">Global Views</span>
                         </h3>
                         <div id="global-perspectives" class="space-y-4"></div>
                     </section>
-                    <section class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
-                        <h3 class="text-lg font-bold text-slate-800 mb-4 serif">
-                            <span data-lang="jp">データ・指標</span><span data-lang="en">Data Insights</span>
-                        </h3>
+                    <section class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm">
+                        <h3 class="text-lg font-bold text-slate-800 mb-4 serif">Data</h3>
                         <div class="chart-container"><canvas id="topicChart"></canvas></div>
                     </section>
                 </div>
@@ -121,94 +94,59 @@
         </div>
     </main>
 
-    <footer class="bg-[#001f3f] text-white py-12 border-t-4 border-[#c5a059]">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="serif text-xl mb-4">THE INSIGHT</p>
-            <p class="text-xs opacity-50">© 2026 Editor H - GeoGuide 2026 Series</p>
-        </div>
+    <footer class="bg-[#001f3f] text-white py-12 text-center border-t-4 border-[#c5a059]">
+        <p class="serif text-xl mb-2">THE INSIGHT</p>
+        <p class="text-xs opacity-50">© 2026 GeoGuide Series</p>
     </footer>
 
     <script>
         const topics = [
-            {
-                id: "israel", 
-                category: { jp: "中東", en: "Middle East" },
-                title: { jp: "ハマスとイスラエル", en: "Hamas and Israel" },
-                subtitle: { jp: "パレスチナ・イスラエル紛争：歴史の断絶と人道的危機の混迷", en: "Palestine-Israel Conflict: Historical Rifts and Humanitarian Crisis" },
-                summary: { jp: "同じ土地を故郷と信じる2つの民族の、100年に及ぶ争いです。", en: "A century-long struggle between two peoples claiming the same land as their home." },
-                parties: {
-                    a: { name: { jp: "イスラエルの主張", en: "Israel's View" }, view: { jp: "歴史的な故郷に戻り、自国民の安全を守る権利がある。", en: "The right to return to a historical homeland and ensure national security." } },
-                    b: { name: { jp: "パレスチナ（ハマス）", en: "Palestine (Hamas)" }, view: { jp: "イスラエルによる土地の占領と封鎖に対する抵抗である。", en: "Resistance against Israeli land occupation and blockade." } }
-                },
-                historyDesc: { jp: "1948年の建国以来、何度も戦争が起き、土地の帰属を巡る対立が続いています。", en: "Since the 1948 founding, multiple wars have occurred over land sovereignty." },
-                global: [
-                    { country: { jp: "日本", en: "Japan" }, stance: { jp: "二国家解決を支持。", en: "Supports a two-state solution." } },
-                    { country: { jp: "米国", en: "USA" }, stance: { jp: "イスラエルを軍事支援。", en: "Provides military aid to Israel." } }
-                ],
-                chartLabels: { jp: ['イスラエル軍', 'ハマス等'], en: ['Israel IDF', 'Hamas etc.'] }
-            },
-            {
-                id: "senkaku",
-                category: { jp: "東アジア", en: "East Asia" },
-                title: { jp: "尖閣諸島の問題", en: "Senkaku Islands" },
-                subtitle: { jp: "尖閣諸島：東シナ海を巡る領有権の主張と日中間の安全保障", en: "Senkaku Islands: Claims in East China Sea and Security" },
-                summary: { jp: "日本が有効に支配している島に対し、中国が領有権を主張している問題です。", en: "A territorial dispute where China claims islands currently under Japanese administration." },
-                parties: {
-                    a: { name: { jp: "日本の主張", en: "Japan's View" }, view: { jp: "歴史的にも国際法上も日本固有の領土であり、領土問題は存在しない。", en: "Sovereign Japanese territory historically and legally; no dispute exists." } },
-                    b: { name: { jp: "中国の主張", view: { jp: "古くから中国の領土であり、日本に不当に奪われたと主張。", en: "Claims the islands are ancient Chinese territory wrongfully taken by Japan." }, en: "China's View" } }
-                },
-                historyDesc: { jp: "1970年代に海底資源が見つかってから中国が主張を開始。現在は緊張が続いています。", en: "China began its claims in the 1970s after subsea resources were discovered." },
-                global: [{ country: { jp: "米国", en: "USA" }, stance: { jp: "日米安保条約の対象と明言。", en: "States the islands fall under the US-Japan Security Treaty." } }],
-                chartLabels: { jp: ['2010', '2015', '2020', '2025'], en: ['2010', '2015', '2020', '2025'] }
-            }
-            // ... 他の8トピックも同様の構造で追加 ...
+            { id: "israel", category: {jp:"中東", en:"Middle East"}, title: {jp:"ハマスとイスラエル", en:"Israel and Hamas"}, subtitle: {jp:"パレスチナ紛争：歴史の断絶と危機の混迷", en:"Palestine Conflict: History and Crisis"}, summary: {jp:"同じ土地を故郷と信じる2民族の、100年の争いです。", en:"A century-long struggle over the same homeland."}, partyA: {n:{jp:"イスラエル",en:"Israel"}, v:{jp:"自国の安全と生存権を主張。",en:"Right to safety and existence."}}, partyB: {n:{jp:"ハマス",en:"Hamas"}, v:{jp:"占領に対する抵抗と解放を主張。",en:"Resistance against occupation."}}, history: {jp:"1948年の建国以来、土地を巡る対立が続いています。",en:"Territorial disputes since 1948 founding."}, chart:[90,10] },
+            { id: "senkaku", category: {jp:"東アジア", en:"East Asia"}, title: {jp:"尖閣諸島の問題", en:"Senkaku Islands"}, subtitle: {jp:"東シナ海を巡る領有権と安全保障", en:"Sovereignty and Security in E. China Sea"}, summary: {jp:"日本が支配する島に対し、中国が領有権を主張しています。", en:"China claims islands under Japanese administration."}, partyA: {n:{jp:"日本",en:"Japan"}, v:{jp:"歴史的にも国際法上も固有の領土。",en:"Historically and legally Japanese."}}, partyB: {n:{jp:"中国",en:"China"}, v:{jp:"古来より中国の領土と主張。",en:"Ancient Chinese territory."}}, history: {jp:"1970年代の資源発見を機に中国が主張を開始しました。",en:"China began claims after resource discovery in 70s."}, chart:[50,300] },
+            { id: "takeshima", category: {jp:"東アジア", en:"East Asia"}, title: {jp:"竹島問題", en:"Takeshima / Dokdo"}, subtitle: {jp:"日韓関係の法的・政治的摩擦", en:"Legal and Political Friction"}, summary: {jp:"韓国が実力で占拠している日本固有の領土の問題です。", en:"Territorial dispute over islands occupied by S. Korea."}, partyA: {n:{jp:"日本",en:"Japan"}, v:{jp:"不当な不法占拠であり解決を求める。",en:"Illegal occupation; seeking resolution."}}, partyB: {n:{jp:"韓国",en:"S. Korea"}, v:{jp:"歴史的背景から譲れない領土と主張。",en:"Sovereignty based on historical context."}}, history: {jp:"戦後の混乱期に韓国が一方的に占拠を開始しました。",en:"South Korea took control during post-war chaos."}, chart:[100,0] },
+            { id: "ukraine", category: {jp:"欧州", en:"Europe"}, title: {jp:"ウクライナとロシア", en:"Ukraine and Russia"}, subtitle: {jp:"国家主権と国際秩序を巡る攻防", en:"Sovereignty and Global Order"}, summary: {jp:"ロシアの侵攻により、国際ルールが脅かされています。", en:"Russian invasion threatens international rules."}, partyA: {n:{jp:"ウクライナ",en:"Ukraine"}, v:{jp:"自由な国として自ら道を選ぶ権利。",en:"Right to choose its own democratic path."}}, partyB: {n:{jp:"ロシア",en:"Russia"}, v:{jp:"NATO拡大は安全保障上の脅威。",en:"NATO expansion is a security threat."}, history: {jp:"欧米寄りになるウクライナをロシアが武力で制止しました。",en:"Russia used force to stop Ukraine's pro-Western shift."}, chart:[100,5] },
+            { id: "canals", category: {jp:"物流", en:"Logistics"}, title: {jp:"スエズとパナマ運河", en:"Suez and Panama Canals"}, subtitle: {jp:"地政学的リスクと物流の生命線", en:"Geopolitical Risks and Supply Lines"}, summary: {jp:"世界の近道が戦争や気象で塞がれ、経済に影響しています。", en:"Global shortcuts blocked by war and climate."}, partyA: {n:{jp:"スエズ",en:"Suez"}, v:{jp:"攻撃リスクによる航路変更の増加。",en:"Increased rerouting due to attack risks."}}, partyB: {n:{jp:"パナマ",en:"Panama"}, v:{jp:"深刻な水不足による通航制限。",en:"Passage restricted due to water shortage."}, history: {jp:"運河は世界を繋ぐ急所であり、止まるとインフレを招きます。",en:"Canals are vital; blockages cause global inflation."}, chart:[40,20] },
+            { id: "iran", category: {jp:"中東", en:"Middle East"}, title: {jp:"イランとイスラエル", en:"Iran and Israel"}, subtitle: {jp:"中東の覇権争いと『影の戦争』", en:"Hegemony and Shadow War"}, summary: {jp:"核開発を巡り、中東の二大国が激しく対立しています。", en:"Rivalry between two powers over nuclear issues."}, partyA: {n:{jp:"イスラエル",en:"Israel"}, v:{jp:"イランの核保有は死活的な脅威。",en:"Nuclear Iran is an existential threat."}}, partyB: {n:{jp:"イラン",en:"Iran"}, v:{jp:"イスラエル排除と地域の自立を主張。",en:"Resisting Israel and Western influence."}, history: {jp:"1979年の革命後、一転して敵対関係となりました。",en:"Relations soured after the 1979 Revolution."}, chart:[80,90] },
+            { id: "taiwan", category: {jp:"東アジア", en:"Taiwan Strait"}, title: {jp:"中国と台湾の問題", en:"China and Taiwan"}, subtitle: {jp:"一つの中国と民主主義の衝突", en:"One China vs. Democracy"}, summary: {jp:"中国の統一圧力と、台湾の自律が対立しています。", en:"Clash between China's unification and Taiwan's autonomy."}, partyA: {n:{jp:"中国",en:"China"}, v:{jp:"台湾は不可分な領土、統一は必須。",en:"Taiwan is part of China; unification is a must."}}, partyB: {n:{jp:"台湾",en:"Taiwan"}, v:{jp:"自由な現状の維持こそが民意。",en:"Maintaining the free status quo is the will."}, history: {jp:"1949年の分断以来、体制の違いが深まっています。",en:"Diverging systems since the 1949 split."}, chart:[70,20] },
+            { id: "uschina", category: {jp:"グローバル", en:"Global"}, title: {jp:"米中対立", en:"US-China Rivalry"}, subtitle: {jp:"覇権争いと技術・関税競争", en:"Hegemony and Trade War"}, summary: {jp:"世界1・2位の経済大国による、次世代の主導権争いです。", en:"The world's top economies vying for leadership."}, partyA: {n:{jp:"米国",en:"USA"}, v:{jp:"自由な秩序と自国の優位を保護。",en:"Protecting free order and US leadership."}}, partyB: {n:{jp:"中国",en:"China"}, v:{jp:"米国の抑え込みを排除し成長を目指す。",en:"Aiming for growth without US containment."}, history: {jp:"経済・軍事・技術の全分野で「新冷戦」と言われる状態です。",en:"A 'New Cold War' across trade and technology."}, chart:[20,15] },
+            { id: "chips", category: {jp:"技術", en:"Technology"}, title: {jp:"AI・半導体供給網", en:"AI and Semiconductors"}, subtitle: {jp:"経済安全保障と技術覇権", en:"Economic Security and Tech Dominance"}, summary: {jp:"AIの頭脳である半導体の製造能力を奪い合っています。", en:"A battle over the manufacturing capacity of AI chips."}, partyA: {n:{jp:"米国連合",en:"US Alliance"}, v:{jp:"中国への先端技術流出を厳しく制限。",en:"Restricting high-tech leaks to China."}}, partyB: {n:{jp:"中国",en:"China"}, v:{jp:"技術の国産化で対抗しようとしている。",en:"Striving for domestic tech independence."}, history: {jp:"半導体は兵器性能も決めるため、安全保障の要です。",en:"Semiconductors are the key to modern national security."}, chart:[60,10] },
+            { id: "india", category: {jp:"南アジア", en:"India"}, title: {jp:"インドの外交", en:"India's Diplomacy"}, subtitle: {jp:"東西のバランスと戦略的自律", en:"Balance and Strategic Autonomy"}, summary: {jp:"人口1位のインドが、東西どちらにも属さず動いています。", en:"World's largest population following its own path."}, partyA: {n:{jp:"インド",en:"India"}, v:{jp:"自国の国益のために全方位と付き合う。",en:"Diplomacy based solely on national interest."}}, partyB: {n:{jp:"主要国",en:"Major Powers"}, v:{jp:"インドを仲間にしたいが制御は困難。",en:"Trying to woo India but hard to control."}, history: {jp:"非同盟の伝統を継ぎ、グローバルサウスを代表しています。",en:"Leading the Global South with non-aligned tradition."}, chart:[14,13] }
         ];
 
         const app = {
-            currentChart: null,
-            currentLang: 'jp',
-            init() { 
-                this.renderDashboard(); 
-            },
+            currentChart: null, currentLang: 'jp',
+            init() { this.renderDashboard(); },
             toggleLang() {
                 this.currentLang = this.currentLang === 'jp' ? 'en' : 'jp';
                 document.body.className = `min-h-screen flex flex-col lang-${this.currentLang}`;
-                const viewDashboard = document.getElementById('view-dashboard');
-                if (!viewDashboard.classList.contains('hidden')) {
-                    this.renderDashboard();
-                } else {
-                    // 現在詳細表示中なら再描画
-                    const currentId = document.getElementById('detail-title').getAttribute('data-id');
-                    if (currentId) this.showDetail(currentId);
-                }
+                const detailView = document.getElementById('view-detail');
+                if (detailView.classList.contains('hidden')) { this.renderDashboard(); } 
+                else { this.showDetail(document.getElementById('detail-title').getAttribute('data-id')); }
             },
             showHome() {
                 document.getElementById('view-detail').classList.add('hidden');
                 document.getElementById('view-dashboard').classList.remove('hidden');
                 this.renderDashboard();
+                window.scrollTo(0,0);
             },
             showDetail(id) {
-                const t = topics.find(topic => topic.id === id);
-                if (!t) return;
+                const t = topics.find(topic => topic.id === id); if(!t) return;
                 const L = this.currentLang;
-                document.getElementById('detail-title').setAttribute('data-id', id);
-                document.getElementById('detail-category').innerText = t.category[L];
-                document.getElementById('detail-title').innerText = t.title[L];
-                document.getElementById('detail-subtitle').innerText = t.subtitle[L];
-                document.getElementById('detail-summary').innerText = t.summary[L];
-                document.getElementById('party-a-name').innerText = t.parties.a.name[L];
-                document.getElementById('party-a-view').innerText = t.parties.a.view[L];
-                document.getElementById('party-b-name').innerText = t.parties.b.name[L];
-                document.getElementById('party-b-view').innerText = t.parties.b.view[L];
-                document.getElementById('detail-history-text').innerText = t.historyDesc[L];
-                
-                const gCont = document.getElementById('global-perspectives');
-                gCont.innerHTML = t.global.map(g => `<div class="p-4 bg-slate-50 rounded-xl text-sm border border-slate-100"><strong>${g.country[L]}:</strong> ${g.stance[L]}</div>`).join('');
-                
-                document.getElementById('view-dashboard').classList.add('hidden');
-                document.getElementById('view-detail').classList.remove('hidden');
+                const d = document;
+                d.getElementById('detail-title').setAttribute('data-id', id);
+                d.getElementById('detail-category').innerText = t.category[L];
+                d.getElementById('detail-title').innerText = t.title[L];
+                d.getElementById('detail-subtitle').innerText = t.subtitle[L];
+                d.getElementById('detail-summary').innerText = t.summary[L];
+                d.getElementById('party-container').innerHTML = `
+                    <div class="bg-red-50 p-6 rounded-2xl border border-red-100"><h4 class="font-bold text-red-800 mb-2">${t.partyA.n[L]}</h4><p class="text-sm">${t.partyA.v[L]}</p></div>
+                    <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100"><h4 class="font-bold text-blue-800 mb-2">${t.partyB.n[L]}</h4><p class="text-sm">${t.partyB.v[L]}</p></div>
+                `;
+                d.getElementById('detail-history-text').innerText = t.history[L];
+                d.getElementById('view-dashboard').classList.add('hidden');
+                d.getElementById('view-detail').classList.remove('hidden');
                 this.renderChart(t);
-                window.scrollTo(0, 0);
+                window.scrollTo(0,0);
             },
             renderDashboard() {
                 const L = this.currentLang;
@@ -217,23 +155,17 @@
                     <div onclick="app.showDetail('${t.id}')" class="bg-white rounded-2xl p-6 card-hover cursor-pointer">
                         <div class="text-xs font-bold text-[#c5a059] mb-2 uppercase tracking-widest">${t.category[L]}</div>
                         <h3 class="text-xl font-bold mb-2 serif text-[#001f3f]">${t.title[L]}</h3>
-                        <p class="text-sm text-slate-500 line-clamp-2 leading-relaxed">${t.subtitle[L]}</p>
+                        <p class="text-sm text-slate-500 line-clamp-2">${t.subtitle[L]}</p>
                     </div>
                 `).join('');
             },
             renderChart(t) {
-                const L = this.currentLang;
                 const ctx = document.getElementById('topicChart').getContext('2d');
                 if (this.currentChart) this.currentChart.destroy();
-                // 簡易的なデータセット（トピックごとの固有値）
-                const data = t.id === 'israel' ? [95, 10] : [50, 200, 300, 350];
                 this.currentChart = new Chart(ctx, { 
-                    type: t.id === 'israel' ? 'bar' : 'line', 
-                    data: {
-                        labels: t.chartLabels[L],
-                        datasets: [{ label: L === 'jp' ? '指標' : 'Index', data: data, backgroundColor: '#c5a059', borderColor: '#001f3f' }]
-                    },
-                    options: { responsive: true, maintainAspectRatio: false } 
+                    type: 'bar', 
+                    data: { labels: [t.partyA.n[this.currentLang], t.partyB.n[this.currentLang]], datasets: [{ label: 'Index', data: t.chart, backgroundColor: ['#EF4444', '#3B82F6'] }] },
+                    options: { responsive: true, maintainAspectRatio: false }
                 });
             }
         };
