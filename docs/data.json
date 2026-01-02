@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "articles": [
+      {
+        "category": "Social",
+        "title_en": "The Quiet Resilience of a Graying Pioneer",
+        "title_jp": "老いゆく先駆者が見せる、静かなる強さ",
+        "content_en": "As the first sun of 2026 rises, Japan’s major newspapers share a bittersweet harmony. From the liberal Asahi to the conservative Sankei, the headlines grapple with a paradox: a nation with fewer children but a deepening soul. Prime Minister Takaichi’s new budget reflects this, balancing record spending with a fresh 'Basic Policy on Foreign Nationals.' We often view Japan’s demographic decline as a tragedy of empty playgrounds. But look closer at the volunteer networks in Tohoku or the 'Longevity Tech' hubs in Kyoto. Japan is not merely shrinking; it is pioneering a new social contract where dignity is not measured by youth, but by the strength of the threads connecting us. It is a lesson for a lonely, aging world.",
+        "content_jp": "2026年の初日の出と共に、日本の主要各紙はほろ苦い調和を見せています。リベラルな朝日新聞から保守的な産経新聞まで、見出しが描き出すのは「子供が減りつつも、精神的な深みを増す国家」という逆説です。高市政権の新予算は、過去最大の歳出と「外国人材に関する基本方針」の策定を両立させ、この現実に立ち向かおうとしています。私たちは日本の人口減少を「空っぽの公園」という悲劇として捉えがちです。しかし、東北のボランティア網や京都の「長寿テック」拠点に目を向ければ、日本が単に縮小しているのではないことが分かります。日本は、人間の尊厳を若さではなく、人と人を結ぶ絆の強さで測る新たな社会契約の先駆者になろうとしているのです。それは、孤独と高齢化が進む世界への教訓でもあります。",
+        "critique_en": "While the focus on national identity remains strong, the true story of 2026 is Japan’s struggle to remain 'open' without losing its 'heart.' The empathy found in local communities is the only real buffer against the isolation of a shrinking population.",
+        "critique_jp": "国家アイデンティティへの関心は依然として高いものの、2026年の真の物語は、日本がその「心」を失わずにいかに「開かれた国」であり続けるかという葛藤にあります。地域コミュニティに見られる共感こそが、人口減少による孤独に対する唯一の真の防波堤なのです。",
+        "proverb": {
+          "title": "On-ko-chi-shin (温故知新)",
+          "desc": "Learning from the past to develop new ideas for the future."
+        },
+        "glossary": [
+          {
+            "term": "Demographic decline",
+            "def": "A decrease in a population's size, often due to low birth rates."
+          },
+          {
+            "term": "Social contract",
+            "def": "The unwritten agreement between people and their government about rights and duties."
+          }
+        ]
+      },
+      {
+        "category": "Investment",
+        "title_en": "The 50,000 Threshold: Investing in Human Efficiency",
+        "title_jp": "日経平均5万円の壁：人間効率への投資",
+        "content_en": "The Nikkei 225 has finally breached the 50,000-point milestone, a number that seemed like a fever dream a decade ago. But this isn't the bubble-era excess of 1989. According to the Nikkei and Yomiuri, today’s growth is fueled by 'Real Wage Growth' and a radical shift toward automation. Investors are no longer betting on the number of consumers, but on the efficiency of those who remain. Japan has become the world’s laboratory for 'Longevity Tech'—from robotic nursing care to AI that preserves the wisdom of artisans. In a world obsessed with scale, Japan is proving that a 'mature' economy can still innovate. The smart money in 2026 isn't chasing quantity; it is chasing the solutions to the oldest problems of humanity.",
+        "content_jp": "日経平均株価がついに5万円の大台を突破しました。10年前には夢物語のように思えた数字です。しかし、これは1989年のバブル期のような狂乱ではありません。日本経済新聞や読売新聞によれば、現在の成長を支えているのは「実質賃金の上昇」と、自動化への抜本的なシフトです。投資家はもはや消費者の「数」に賭けるのではなく、残された人々の「効率」に賭けています。日本は、介護ロボットから職人の技を継承するAIまで、「長寿テック」の世界的な実験場となりました。規模の拡大に執着する世界の中で、日本は「成熟した」経済でも革新が可能であることを証明しています。2026年の賢明な投資は、量を追うのではなく、人類最古の課題への解決策を追っているのです。",
+        "critique_en": "The danger lies in the 'Takaichi Effect'—the risk that aggressive stimulus might mask underlying structural weaknesses. However, the rise in Return on Equity (ROE) suggests a genuine cultural shift in Japanese corporate governance.",
+        "critique_jp": "「高市効果」には、積極的な財政刺激が構造的な脆弱性を隠してしまうリスクも潜んでいます。しかし、自己資本利益率（ROE）の上昇は、日本企業のガバナンスにおける本質的な文化の変化を示唆しています。",
+        "proverb": {
+          "title": "Isogaba-maware (急がば回れ)",
+          "desc": "More haste, less speed; taking the steady path is often the fastest way."
+        },
+        "glossary": [
+          {
+            "term": "Real Wage Growth",
+            "def": "The increase in wages after adjusting for inflation, reflecting actual purchasing power."
+          },
+          {
+            "term": "Automation",
+            "def": "The use of technology to perform tasks without human intervention to improve efficiency."
+          }
+        ]
+      }
+    ],
+    "date": "2026-01-02"
+  }
+]

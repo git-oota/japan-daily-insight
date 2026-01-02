@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE INSIGHT</title>
+    <link href="[https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap)" rel="stylesheet">
+    <style>
+        :root { --navy: #001f3f; --gold: #c5a059; --bg: #fdfdfb; }
+        body { font-family: 'Noto Serif JP', serif; background: var(--bg); color: #2c3e50; margin: 0; }
+        header { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: white; border-bottom: 1px solid #eee; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 5rem; letter-spacing: 10px; color: var(--navy); margin: 0; }
+        .date-hero { font-family: 'Playfair Display', serif; color: var(--gold); letter-spacing: 4px; margin-bottom: 20px; }
+        
+        .main-grid { max-width: 1100px; margin: -100px auto 100px; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 0 20px; }
+        .card { background: white; padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); transition: 0.5s; text-decoration: none; color: inherit; }
+        .card:hover { transform: translateY(-10px); }
+        .category { color: var(--gold); font-weight: bold; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
+        .title { font-size: 2.2rem; margin: 20px 0; color: var(--navy); line-height: 1.2; }
+        
+        .archives { border-top: 1px solid #ddd; padding-top: 20px; }
+        .archive-item { display: block; padding: 15px 0; border-bottom: 1px solid #eee; text-decoration: none; color: #666; font-size: 0.9rem; }
+        .archive-item:hover { color: var(--gold); }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="date-hero">2026-01-02</span>
+        <h1>THE INSIGHT</h1>
+        <p>A Perspective That Shapes the Future</p>
+    </header>
+
+    <div class="main-grid">
+        <main>
+            
+            <a href="articles/2026-01-02.html" class="card" style="display: block; margin-bottom: 30px;">
+                <span class="category">Social</span>
+                <h2 class="title">老いゆく先駆者が見せる、静かなる強さ</h2>
+                <p style="color: #888;">2026年の初日の出と共に、日本の主要各紙はほろ苦い調和を見せています。リベラルな朝日新聞から保守的な産経新聞まで、見出しが描き出すのは「子供が減りつつも、精神的な深みを増す国家」という逆説です。高市...</p>
+            </a>
+            
+            <a href="articles/2026-01-02.html" class="card" style="display: block; margin-bottom: 30px;">
+                <span class="category">Investment</span>
+                <h2 class="title">日経平均5万円の壁：人間効率への投資</h2>
+                <p style="color: #888;">日経平均株価がついに5万円の大台を突破しました。10年前には夢物語のように思えた数字です。しかし、これは1989年のバブル期のような狂乱ではありません。日本経済新聞や読売新聞によれば、現在の成長を支え...</p>
+            </a>
+            
+        </main>
+        <aside>
+            <div class="archives">
+                <h3 style="font-family: 'Playfair Display'; color: var(--navy);">Archives</h3>
+                
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
