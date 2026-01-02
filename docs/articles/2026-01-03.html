@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article | THE INSIGHT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --navy: #001f3f; --gold: #c5a059; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; line-height: 2.1; color: #333; background: #fff; }
+        
+        /* ヘッダー：重なり防止Flexbox */
+        header { background: var(--navy); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
+        .header-logo { font-family: 'Playfair Display'; font-size: 1.8rem; flex-grow: 1; text-align: center; margin-left: 80px; }
+        .lang-btn { background: var(--gold); color: white; border: none; padding: 6px 15px; cursor: pointer; border-radius: 4px; font-weight: bold; white-space: nowrap; }
+
+        main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        article { margin-bottom: 100px; }
+        .category { color: var(--gold); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .main-title { font-size: 2.8rem; line-height: 1.1; margin: 15px 0 5px 0; color: var(--navy); }
+        .sub-title { font-size: 1.3rem; color: var(--gold); font-weight: normal; margin-bottom: 35px; line-height: 1.4; }
+
+        .term { color: var(--navy); font-weight: bold; border-bottom: 2px dashed var(--gold); cursor: pointer; padding: 0 2px; }
+        
+        /* 視点ボックスの修正 */
+        .critique-box { background: #fdfaf4; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; border-radius: 0 8px 8px 0; font-style: italic; }
+
+        #glossary-panel { position: fixed; bottom: -100%; left: 0; width: 100%; background: white; box-shadow: 0 -15px 40px rgba(0,0,0,0.2); transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); z-index: 1000; padding: 40px 30px; box-sizing: border-box; border-radius: 28px 28px 0 0; }
+        #glossary-panel.active { bottom: 0; }
+        .panel-close { float: right; cursor: pointer; font-size: 2rem; color: #ccc; margin-top: -20px; }
+        #panel-term { color: var(--gold); margin: 0 0 10px 0; font-size: 1.6rem; }
+
+        .en { display: none; }
+        @media (max-width: 600px) { 
+            header { flex-direction: column; padding: 10px; }
+            .header-logo { margin-left: 0; font-size: 1.4rem; }
+            .lang-btn { margin-top: 10px; }
+            .main-title { font-size: 1.8rem; } .sub-title { font-size: 1rem; } 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-logo">THE INSIGHT</div>
+    <button class="lang-btn" onclick="toggleLang()">EN / JP</button>
+</header>
+
+<main>
+    <div style="margin-bottom: 40px;"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Home</a></div>
+    
+    <article>
+        <div class="category">Social</div>
+        <div class="jp">
+            
+            <h1 class="main-title">地方医療の限界点 </h1>
+            <div class="sub-title"> 「2026年問題」とデジタル生存戦略の本格始動</div>
+            <div class="content">2026年を迎え、団塊の世代全員が75歳以上となる「<span class="term" onclick="openPanel('2026年問題', '団塊の世代が全員75歳以上となり、社会保障制度が極限まで逼迫する社会問題。')">2026年問題</span>」が、地方の医療資源に深刻な枯渇を招いています。国内主要紙の報道によれば、<span class="term" onclick="openPanel('後継者不足', '事業や家業を引き継ぐべき人材が確保できず、廃業を余儀なくされる状況。')">後継者不足</span>を理由とした北海道や九州での診療所閉鎖が過去最多を記録しました。これを受け、厚生労働省はAI診断ツールや遠隔監視システムの規制緩和を加速させています。労働力不足の中でも医療の質を維持するため、「ヒューマン・ライト（人員最小化）」な医療インフラの構築が急務となっています。
+                <div class="critique-box"><strong>編集者Hの視点:</strong><br>編集者Hの視点：私たちは今、地方における伝統的な「かかりつけ医」モデルの終焉を目の当たりにしています。対面診療の親密さが失われることを嘆く声もありますが、私たちはAIが提供する「アルゴリズムによる共感」を受け入れざるを得ない段階にいます。課題は技術的なものだけでなく、心理的なものでもあります。私たちは、機械に高齢者のケアを託せるのでしょうか。100歳以上の人口が小国の市民数より多いこの国で、テクノロジーはもはや贅沢品ではなく、尊厳ある老後を守るための唯一の命綱なのです。</div>
+                <p><strong>今日のことわざ:</strong> 転ばぬ先の杖 - 失敗しないように、前もって準備を整えておくことのたとえ。</p>
+                </div>
+        </div>
+        <div class="en">
+            
+            <h1 class="main-title">The Breaking Point of Rural Healthcare</h1>
+            <div class="sub-title">The '2026 Problem' and the Digital Survival Strategy</div>
+            <div class="content">As Japan enters 2026, the '<span class="term" onclick="openPanel('2026 Problem', 'The social crisis expected when all baby boomers reach the age of 75, straining social security.')">2026 Problem</span>'—where the entire baby boomer generation surpasses the age of 75—has triggered a critical shortage in rural healthcare resources. Major Japanese newspapers report a record number of clinic closures in Hokkaido and Kyushu due to the lack of successors. In response, the Ministry of Health, Labour and Welfare has accelerated the deregulation of AI-driven diagnostic tools and remote monitoring systems. The goal is to create a 'human-lite' medical infrastructure that maintains quality of care despite a dwindling workforce.
+                <div class="critique-box"><strong>Editor H's Perspective:</strong><br>Editor H's Perspective: We are witnessing the end of the traditional 'family doctor' model in rural Japan. While some mourn the loss of face-to-face intimacy, we must embrace the 'algorithmic empathy' that AI offers. The challenge is not just technological, but psychological—can we trust a machine to care for our elders? In a country with more centenarians than many small nations have citizens, technology is no longer a luxury; it is our only lifeline for dignity in aging.</div>
+                <p><strong>Today's Proverb:</strong> Prevention is better than cure - It is easier to stop a problem from happening than to stop or correct it after it has started.</p>
+                </div>
+        </div>
+    </article>
+    <hr style="border:0; border-top: 1px solid #eee; margin: 100px 0;">
+    
+    <article>
+        <div class="category">Investment</div>
+        <div class="jp">
+            
+            <h1 class="main-title">「ローカル・リクイディティ」の台頭 </h1>
+            <div class="sub-title"> 地方銀行が挑むベンチャー投資と地域再生</div>
+            <div class="content">2026年の年始取引において日経平均株価は安定していますが、真の注目点は<span class="term" onclick="openPanel('地方銀行', '特定の都道府県を中心に営業活動を行う金融機関。')">地方銀行</span>にあります。金利上昇局面で低<span class="term" onclick="openPanel('利回り', '投資金額に対する収益の割合。')">利回り</span>の国債から脱却し、<span class="term" onclick="openPanel('地方銀行', '特定の都道府県を中心に営業活動を行う金融機関。')">地方銀行</span>は<span class="term" onclick="openPanel('アグリテック', '農業とテクノロジーを組み合わせ、収穫量や効率を改善する技術。')">アグリテック</span>やクリーンエネルギー分野の地元スタートアップを支援する独自のVCファンドを相次いで設立しています。日本経済新聞の報道によれば、この「ローカル・リクイディティ（地方流動性）」の動きは、飽和した東京市場以外でリターンを求める投資家の関心を集め、忘れ去られた工業地帯に新たな息吹を吹き込んでいます。
+                <div class="critique-box"><strong>編集者Hの視点:</strong><br>編集者Hの視点：数十年にわたり、日本の資本は東京へと向かう一方通行でした。しかし、この新たな潮流は、遅きに失した感さえある「富の分散」を示唆しています。地方のイノベーションに賭けることで、地銀は単に利益を追っているのではなく、自らの存続をかけて戦っているのです。これは、慎重な融資から先見性のある投資への転換を求める、リスクの高い賭けです。もし成功すれば、真に均衡のとれた国家再生の触媒となるでしょう。</div>
+                <p><strong>今日のことわざ:</strong> 残り物には福がある - 人が取り残したものの中に、思いがけず良いものがあるということ。</p>
+                </div>
+        </div>
+        <div class="en">
+            
+            <h1 class="main-title">The Rise of 'Local Liquidity'</h1>
+            <div class="sub-title">Regional Banks Pivot to Venture Capital to Save Local Economies</div>
+            <div class="content">In the early trading days of 2026, the Nikkei has shown stability, but the real story lies in Japan's regional banks. Shifting away from low-yield government bonds in a rising interest rate environment, regional lenders are increasingly launching their own VC funds to support local startups in agritech and green energy. Reports from the Nikkei Shimbun suggest that this 'Local Liquidity' movement is breathing new life into forgotten industrial hubs, as investors seek returns outside the saturated Tokyo market.
+                <div class="critique-box"><strong>Editor H's Perspective:</strong><br>Editor H's Perspective: For decades, Japan's capital has been a one-way street leading to Tokyo. This new trend suggests a 'Decentralization of Wealth' that is long overdue. By betting on local innovation, regional banks are not just chasing profits; they are fighting for their own survival. It's a high-stakes gamble that requires a shift from cautious lending to visionary investing. If successful, this could be the catalyst for a truly balanced national recovery.</div>
+                <p><strong>Today's Proverb:</strong> The best is saved for last - Used to say that the final thing or part of something is the best one.</p>
+                </div>
+        </div>
+    </article>
+    <hr style="border:0; border-top: 1px solid #eee; margin: 100px 0;">
+    
+    <article>
+        <div class="category">International</div>
+        <div class="jp">
+            
+            <h1 class="main-title">インド太平洋ピボット 2.0 </h1>
+            <div class="sub-title"> 「ジャスト・イン・ケース」型供給網が再定義する新通商同盟</div>
+            <div class="content">ロイター通信とBBCの報道によると、今週、ASEAN主要国、インド、オーストラリアを含む「インド太平洋<span class="term" onclick="openPanel('レジリエンス', '困難な状況から素早く立ち直る力。回復力、強靭性。')">レジリエンス</span>協定（IPRP）」が正式に発足しました。この同盟は、2020年代半ばの供給網混乱で露呈した「<span class="term" onclick="openPanel('ジャスト・イン・タイム', '必要なものを、必要な時に、必要な量だけ生産・供給する生産管理方式。')">ジャスト・イン・タイム</span>」型の製造モデルからの脱却を目指しています。この協定は「<span class="term" onclick="openPanel('フレンド・ショアリング', '供給網を、政治的・経済的に信頼できる同盟国や友好国に限定する動き。')">フレンド・ショアリング</span>」を通じて原材料や<span class="term" onclick="openPanel('半導体', '電子機器に不可欠な素材であり、しばしば国際貿易紛争の中心となる戦略物資。')">半導体</span>を確保することに重点を置いており、特定の地域における地政学的緊張が世界経済を麻痺させないようにすることを目指しています。
+                <div class="critique-box"><strong>編集者Hの視点:</strong><br>編集者Hの視点：私たちは今、「要塞経済」の時代に入ろうとしています。国境のないグローバル市場という夢は、信頼こそが最も価値のある商品であるという現実に取って代わられました。この新しい通商ブロックは、不安定さを増す世界に対する現実的な生存メカニズムです。しかし、「フレンド・ショアリング」は安全をもたらす一方で、競合するサイロへと世界を断片化させるリスクも孕んでいます。真のレジリエンスとは、これらのブロックが新たな鉄のカーテンにならないよう、対話の道を残し続けることにかかっています。</div>
+                <p><strong>今日のことわざ:</strong> 遠くの親類より近くの他（他人） - 遠くに離れている親類よりも、近所に住んでいる他人の方が、いざという時には頼りになるということ。</p>
+                </div>
+        </div>
+        <div class="en">
+            
+            <h1 class="main-title">The Indo-Pacific Pivot 2.0</h1>
+            <div class="sub-title">New Trade Alliance Redefines 'Just-in-Case' Supply Chains</div>
+            <div class="content">Reuters and the BBC report the formalization of the 'Indo-Pacific <span class="term" onclick="openPanel('Resilience', 'The capacity to recover quickly from difficulties; toughness.')">Resilience</span> Pact' (IPRP) this week, a new trade agreement involving key ASEAN nations, India, and Australia. This alliance aims to move away from the '<span class="term" onclick="openPanel('Just-in-Time', 'An inventory management method in which goods are received from suppliers only as they are needed.')">Just-in-Time</span>' manufacturing model that failed during the mid-2020s supply chain shocks. The pact focuses on securing raw materials and semiconductors through a network of 'friend-shoring,' ensuring that geopolitical tensions in any single region do not cripple the global economy.
+                <div class="critique-box"><strong>Editor H's Perspective:</strong><br>Editor H's Perspective: We are entering an era of 'Fortress Economics.' The dream of a borderless global market has been replaced by a reality where trust is the most valuable commodity. This new trade bloc is a pragmatic survival mechanism against an increasingly volatile world. However, while 'friend-shoring' provides security, it also risks creating a fragmented world of competing silos. True resilience will require finding a way to keep these blocs from turning into new iron curtains.</div>
+                <p><strong>Today's Proverb:</strong> A close neighbor is better than a far-off relative - People who are near you are more likely to be helpful in an emergency than family members who live far away.</p>
+                </div>
+        </div>
+    </article>
+    <hr style="border:0; border-top: 1px solid #eee; margin: 100px 0;">
+    
+</main>
+
+<div id="glossary-panel"><span class="panel-close" onclick="closePanel()">×</span><h3 id="panel-term">用語</h3><p id="panel-def">解説</p></div>
+
+<script>
+    function toggleLang() {
+        const jps = document.querySelectorAll('.jp');
+        const ens = document.querySelectorAll('.en');
+        const isJp = jps[0].style.display !== 'none';
+        jps.forEach(el => el.style.display = isJp ? 'none' : 'block');
+        ens.forEach(el => el.style.display = isJp ? 'block' : 'none');
+        closePanel();
+    }
+    function openPanel(term, def) {
+        document.getElementById('panel-term').innerText = term;
+        document.getElementById('panel-def').innerText = def;
+        document.getElementById('glossary-panel').classList.add('active');
+    }
+    function closePanel() { document.getElementById('glossary-panel').classList.remove('active'); }
+    document.addEventListener('click', function(e) {
+        const panel = document.getElementById('glossary-panel');
+        if (!panel.contains(e.target) && !e.target.classList.contains('term')) { closePanel(); }
+    });
+</script>
+</body>
+</html>
