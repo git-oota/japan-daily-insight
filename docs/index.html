@@ -9,58 +9,30 @@
         :root { --navy: #001f3f; --gold: #c5a059; }
         body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; color: #333; }
         
-        /* --- 修正：重ならないヘッダー --- */
-        header { 
-            background: var(--navy); 
-            color: white; 
-            padding: 15px 25px; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            position: sticky; 
-            top: 0; 
-            z-index: 100; 
-            border-bottom: 5px solid var(--gold); 
-        }
-        .header-logo { 
-            font-family: 'Playfair Display'; 
-            font-size: 2rem; 
-            letter-spacing: 3px; 
-            flex-grow: 1; 
-            text-align: center; 
-            margin-left: 70px; /* ボタンの幅分ロゴを左に寄せて中央を維持 */
-        }
-        .lang-btn { 
-            background: var(--gold); 
-            color: white; 
-            border: none; 
-            padding: 8px 16px; 
-            cursor: pointer; 
-            border-radius: 4px; 
-            font-weight: bold; 
-            white-space: nowrap; 
-            transition: 0.3s;
-        }
-        .lang-btn:hover { opacity: 0.8; }
-
-        @media (max-width: 700px) {
-            header { flex-direction: column; padding: 10px; }
-            .header-logo { margin-left: 0; font-size: 1.5rem; }
-            .lang-btn { margin-top: 10px; font-size: 0.8rem; }
-        }
-        /* --- ヘッダー修正ここまで --- */
+        /* ヘッダー改善：重なり防止 */
+        header { background: var(--navy); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
+        .header-logo { font-family: 'Playfair Display'; font-size: 2.2rem; letter-spacing: 3px; flex-grow: 1; text-align: center; margin-left: 80px; }
+        .lang-btn { background: var(--gold); color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; white-space: nowrap; }
 
         .container { display: grid; grid-template-columns: 1fr 350px; max-width: 1200px; margin: 40px auto; gap: 50px; padding: 0 20px; }
         .category { color: var(--gold); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; }
-        .main-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin: 10px 0 5px 0; line-height: 1.1; font-weight: 700; }
-        .sub-title { font-size: 1.1rem; color: #666; font-weight: normal; margin-bottom: 15px; line-height: 1.4; }
-        .excerpt { line-height: 1.8; color: #444; font-size: 1.05rem; }
+        
+        /* ニュースらしいタイトル階層 */
+        .main-title { font-size: 1.8rem; margin: 10px 0 5px 0; line-height: 1.2; font-weight: 700; color: var(--navy); }
+        .sub-title { font-size: 1rem; color: #666; font-weight: normal; margin-bottom: 15px; }
+        
         .read-more { display: inline-block; margin-top: 15px; color: var(--navy); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--gold); }
         .side-col h3 { border-bottom: 2px solid var(--navy); padding-bottom: 10px; font-family: 'Playfair Display'; }
         .archive-item { margin-bottom: 25px; list-style: none; }
         .archive-item a { text-decoration: none; color: #555; font-size: 0.95rem; }
+
         .en { display: none; }
-        @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+        @media (max-width: 800px) { 
+            header { flex-direction: column; padding: 10px; }
+            .header-logo { margin-left: 0; font-size: 1.5rem; }
+            .lang-btn { margin-top: 10px; }
+            .container { grid-template-columns: 1fr; } 
+        }
     </style>
 </head>
 <body>
@@ -77,16 +49,16 @@
             <div class="category">Social</div>
             <div class="jp">
                 
-                <div class="main-title">正月の静かな孤独 </div>
-                <div class="sub-title"> つながりの再構築</div>
-                <div class="excerpt">除夜の鐘が止み、日本の地方には厳しい現実が残されています。能登半島地震から2年、物理的な<span class="term" onclick="openPanel('瓦礫', '建物などが壊れたあとに残る石や瓦のくず。')">瓦礫</span>は片付きましたが、高齢者の間に広がる「見えない<span class="term" onclick="openPanel('孤立', '他者との関わりがなく、一人きりになっている状態。')">孤立</span>」という傷跡は深まるばかりです。輪島市で出会った82歳の女性は、2026年の初日の出を一人で迎えました。彼女の物語は、私たちが進歩を祝う一方で、社会の真の価値は、忘れ去られた人々にどう寄り添うかにあることを教えてくれます。必要なのは<span class="term" onclick="openPanel('インフラ', '社会や生活の基盤となる施設や設備。')">インフラ</span>整備だけではありません。私たちを結びつける「心の絆」への投資なのです。 編集者H。</div>
+                <div class="main-title">日本政府、地方創生に向けた「全国デジタル住民権」制度を開始 </div>
+                <div class="sub-title"> 消えゆく故郷の鼓動と、デジタルが紡ぐ新しい絆の模索</div>
+                <div class="excerpt">日本の地方部が直面する<span class="term" onclick="openPanel('過疎化',...</div>
                 <a href="articles/2026-01-02.html" class="read-more">記事を読む</a>
             </div>
             <div class="en">
                 
-                <div class="main-title">The Quiet Loneliness of the New Year</div>
-                <div class="sub-title">Rebuilding the Human Connection</div>
-                <div class="excerpt">As the echoes of the New Year bells fade, a stark reality remains in the rural corners of Japan. Two years after the Noto earthquake, the physical debris has largely cleared, but the invisible scars of isolation among the elderly have deepened. In my travels, I met an 82-year-old woman in Wajima who spent her first morning of 2026 alone. Her story is a poignant reminder that while we celebrate progress, the true measure of a society is how we care for those who feel forgotten. We must move beyond infrastructure and invest in the 'social glue' that binds us. Editor H.</div>
+                <div class="main-title">Japan Launches National 'Rural Revitalization' Digital Residency Program</div>
+                <div class="sub-title">The search for belonging in an age of shrinking villages and expanding screens</div>
+                <div class="excerpt">In a bold move to counter the hollowing out of its countryside, Japan has officially inaugurated the 'Digital Regional Residency' initiative. This...</div>
                 <a href="articles/2026-01-02.html" class="read-more">Read More</a>
             </div>
         </article>
@@ -95,16 +67,16 @@
             <div class="category">Investment</div>
             <div class="jp">
                 
-                <div class="main-title">魂を込めた投資 </div>
-                <div class="sub-title"> 東京の利益を超えて</div>
-                <div class="excerpt">1月の株価が史上最高値を伺う勢いを見せる中、真にエキサイティングな成長は大手町の<span class="term" onclick="openPanel('表計算ソフト', 'データを集計・分析するために使われるコンピュータプログラム。')">表計算ソフト</span>の上にはありません。それは、過疎化が進む町や持続可能な農業を<span class="term" onclick="openPanel('再興', '一度衰えたものを、再び盛んにすること。')">再興</span>する「<span class="term" onclick="openPanel('インパクト投資', '経済的な利益だけでなく、社会や環境への貢献を目的とした投資。')">インパクト投資</span>」の中にあります。長らく、投資はリスクとリターンの冷徹な計算とされてきました。しかし2026年、「道徳的な<span class="term" onclick="openPanel('資本', '事業を行うための元手となるお金や資産。')">資本</span>」という潮流は、善行と収益が両立することを証明しています。隣人の可能性に投資することこそが、私たち自身の未来を確かなものにするのです。 編集者H。</div>
+                <div class="main-title">日経平均株価が史上初の5万円台を突破、企業統治改革が奏功 </div>
+                <div class="sub-title"> 単なる数字の記録を超え、眠れる巨人が自信を取り戻す瞬間</div>
+                <div class="excerpt">東京株式市場は今日、日経平均株価が5万円の大台を突破するという歴史的な節目を迎えました。懐疑派は世界的なインフレの影響を指摘しますが、真の物語は日本企業の取締役会で起きた静かな革命にあります。長年、日本は「怠慢な」資本効率を批判されてきましたが、<span class="term"...</div>
                 <a href="articles/2026-01-02.html" class="read-more">記事を読む</a>
             </div>
             <div class="en">
                 
-                <div class="main-title">Investing with a Soul</div>
-                <div class="sub-title">Beyond the Profit Margins of Tokyo</div>
-                <div class="excerpt">The Nikkei might be flirting with record highs this January, but the most exciting growth isn't happening on a spreadsheet in Otemachi. It's found in 'impact investing'—capital directed toward revitalizing dying towns and sustainable farming. For too long, we have treated investment as a cold calculation of risk and reward. As we enter 2026, the trend of 'moral capital' is proving that doing good and doing well are not mutually exclusive. When we invest in our neighbor’s potential, we secure our own future. Editor H.</div>
+                <div class="main-title">Nikkei 225 Exceeds 50,000 Points Amid Corporate Governance Reform</div>
+                <div class="sub-title">More than a bull market, it is the slow awakening of a sleeping economic giant</div>
+                <div class="excerpt">The Tokyo Stock Exchange reached a historic milestone today as the Nikkei 225 surpassed the 50,000-point mark. While skeptics point to global...</div>
                 <a href="articles/2026-01-02.html" class="read-more">Read More</a>
             </div>
         </article>
@@ -113,16 +85,16 @@
             <div class="category">International</div>
             <div class="jp">
                 
-                <div class="main-title">避難民の心 </div>
-                <div class="sub-title"> 気候変動の最前線からの教訓</div>
-                <div class="excerpt">沈みゆく太平洋の島々からサヘルの渇いた大地まで、2026年は統計では捉えきれない規模の移動で幕を開けました。彼らは単なる「移民」ではありません。子供たちのために乾いた土地を求める親たちなのです。国境によって分断が深まる世界において、気候変動という共通の<span class="term" onclick="openPanel('脆弱性', '攻撃や被害を受けやすい、もろい性質や状態。')">脆弱性</span>は、障壁ではなく架け橋であるべきです。遠く離れた家族の苦しみは、私たち自身の選択の反映であると気づかねばなりません。真の国際的指導力とは、<span class="term" onclick="openPanel('避難民', '戦争や災害などにより、故郷を追われた人々。')">避難民</span>への<span class="term" onclick="openPanel('共感', '他人の意見や感情にその通りだと感じること、またはその能力。')">共感</span>によって測られるのです。 編集者H。</div>
+                <div class="main-title">2040年までに使い捨てプラスチック廃止、国連で歴史的条約が調印 </div>
+                <div class="sub-title"> 環境という冷徹な現実に、人類の良心がようやく追いついた日</div>
+                <div class="excerpt">国連の歴史的な会合において、193カ国の代表が2040年までに<span class="term" onclick="openPanel('使い捨てプラスチック', '一度使用しただけで捨てられるプラスチック製品。')">使い捨てプラスチック</span>を廃止する<span...</div>
                 <a href="articles/2026-01-02.html" class="read-more">記事を読む</a>
             </div>
             <div class="en">
                 
-                <div class="main-title">The Displaced Heart</div>
-                <div class="sub-title">Lessons from the Frontiers of Climate Change</div>
-                <div class="excerpt">From the sinking islands of the Pacific to the parched lands of the Sahel, 2026 begins with a global movement of people that statistics cannot capture. These are not just 'migrants'; they are parents seeking dry ground for their children. In a world increasingly fractured by borders, our shared vulnerability to a changing climate should be a bridge, not a barrier. We must recognize that the suffering of a family thousands of miles away is a reflection of our own choices. True global leadership is measured by empathy for the displaced. Editor H.</div>
+                <div class="main-title">Global Leaders Sign Treaty to Eliminate Single-Use Plastics by 2040</div>
+                <div class="sub-title">A fragile planet breathes a sigh of relief as policy finally catches up to environmental reality</div>
+                <div class="excerpt">In a historic session at the United Nations, representatives from 193 nations have committed to a legally binding treaty to eliminate single-use...</div>
                 <a href="articles/2026-01-02.html" class="read-more">Read More</a>
             </div>
         </article>
@@ -136,7 +108,7 @@
             <li class="archive-item">
                 <a href="articles/2026-01-02.html">
                     <small style="color: var(--gold);">2026-01-02</small><br>
-                    <strong>正月の静かな孤独 </strong>
+                    <strong>日本政府、地方創生に向けた「全国デジタル住民権」制度を開始 </strong>
                 </a>
             </li>
             

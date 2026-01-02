@@ -3,148 +3,148 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "The Quiet Loneliness of the New Year : Rebuilding the Human Connection",
-        "title_jp": "正月の静かな孤独 ： つながりの再構築",
-        "content_en": "As the echoes of the New Year bells fade, a stark reality remains in the rural corners of Japan. Two years after the Noto earthquake, the physical debris has largely cleared, but the invisible scars of isolation among the elderly have deepened. In my travels, I met an 82-year-old woman in Wajima who spent her first morning of 2026 alone. Her story is a poignant reminder that while we celebrate progress, the true measure of a society is how we care for those who feel forgotten. We must move beyond infrastructure and invest in the 'social glue' that binds us. Editor H.",
-        "content_jp": "除夜の鐘が止み、日本の地方には厳しい現実が残されています。能登半島地震から2年、物理的な<span class=\"term\" onclick=\"openPanel('瓦礫', '建物などが壊れたあとに残る石や瓦のくず。')\">瓦礫</span>は片付きましたが、高齢者の間に広がる「見えない<span class=\"term\" onclick=\"openPanel('孤立', '他者との関わりがなく、一人きりになっている状態。')\">孤立</span>」という傷跡は深まるばかりです。輪島市で出会った82歳の女性は、2026年の初日の出を一人で迎えました。彼女の物語は、私たちが進歩を祝う一方で、社会の真の価値は、忘れ去られた人々にどう寄り添うかにあることを教えてくれます。必要なのは<span class=\"term\" onclick=\"openPanel('インフラ', '社会や生活の基盤となる施設や設備。')\">インフラ</span>整備だけではありません。私たちを結びつける「心の絆」への投資なのです。 編集者H。",
-        "critique_en": "Kristof's lens forces us to confront the human dignity behind the statistics of an aging society.",
-        "critique_jp": "統計の裏側にある「人間の尊厳」に焦点を当て、少子高齢化社会の冷徹な現実に温かな光を当てています。",
+        "title_en": "Japan Launches National 'Rural Revitalization' Digital Residency Program ： The search for belonging in an age of shrinking villages and expanding screens",
+        "title_jp": "日本政府、地方創生に向けた「全国デジタル住民権」制度を開始 ： 消えゆく故郷の鼓動と、デジタルが紡ぐ新しい絆の模索",
+        "content_en": "In a bold move to counter the hollowing out of its countryside, Japan has officially inaugurated the 'Digital Regional Residency' initiative. This program allows urbanites to contribute taxes and volunteer time to rural villages in exchange for residency rights and local perks. As I walk through the quiet streets of a depopulated town in Shimane, I see more than just empty houses; I see a loss of cultural memory. This policy is not merely about tax revenue; it is a moral attempt to reconnect a fragmented society. We must ask ourselves if a digital bridge can truly heal the isolation felt in both the crowded Tokyo subway and the silent mountain path. Editor H.",
+        "content_jp": "日本の地方部が直面する<span class=\"term\" onclick=\"openPanel('過疎化', '人口が急激に減少し、地域社会の維持が困難になること。')\">過疎化</span>という深刻な課題に対し、政府は「全国デジタル住民制度」を正式にスタートさせました。この制度は、<span class=\"term\" onclick=\"openPanel('都市住民', '都会に住む人々。')\">都市住民</span>が地方自治体に税を納め、ボランティア活動を行うことで、住民権や特典を得られる仕組みです。島根県の静かな過疎の町を歩くと、そこにあるのは空き家だけでなく、失われゆく地域の記憶そのものです。この政策は単なる税収の確保ではなく、<span class=\"term\" onclick=\"openPanel('分断された社会', '人々やつながりがバラバラになった社会の状態。')\">分断された社会</span>を再び結びつけようとする道徳的な試みと言えます。満員電車に揺られる東京の孤独と、人影のない山道の静寂。その両者をデジタルの架け橋が本当に癒せるのか、私たちは問われています。 編集者H。",
+        "critique_en": "The initiative correctly identifies that financial incentives alone won't save rural Japan; it requires a sense of purpose and community belonging.",
+        "critique_jp": "金銭的なインセンティブだけで地方が救われないことを、この制度は正しく認識しています。必要なのは、目的意識とコミュニティへの帰属意識です。",
         "proverb_jp": {
-          "title": "袖振り合うも多生の縁",
-          "desc": "見知らぬ人と道で袖が触れ合うような些細な出来事も、前世からの深い縁によるものであるという意味。他者とのささやかな繋がりを大切にする精神を説いています。"
+          "title": "遠くの親類より近くの他人",
+          "desc": "疎遠な親族よりも、近所に住む縁のない人の方がいざという時に頼りになるということ。デジタル住民という「新しい隣人」の重要性を説いています。"
         },
         "proverb_en": {
-          "title": "No man is an island",
-          "desc": "No person is self-sufficient; everyone relies on others and is affected by what happens to others."
+          "title": "A stitch in time saves nine",
+          "desc": "Taking small actions now to address rural decline prevents a total collapse of regional infrastructure later."
         },
         "glossary": [
           {
-            "term_en": "Isolation",
-            "def_en": "The state of being alone and lacking social contact.",
-            "term_jp": "孤立",
-            "def_jp": "他者との関わりがなく、一人きりになっている状態。"
+            "term_en": "Hollowing out",
+            "def_en": "The deterioration of a country's manufacturing sector or regional population.",
+            "term_jp": "空洞化",
+            "def_jp": "産業や地域の人口が減少し、機能が失われること。"
           },
           {
-            "term_en": "Poignant",
-            "def_en": "Evoking a keen sense of sadness or regret.",
-            "term_jp": "痛切な",
-            "def_jp": "強く心に感じて、悲しみや切実さを覚えること。"
+            "term_en": "Depopulated",
+            "def_en": "Having a significantly reduced population.",
+            "term_jp": "過疎化",
+            "def_jp": "人口が急激に減少し、地域社会の維持が困難になること。"
           },
           {
-            "term_en": "Infrastructure",
-            "def_en": "The basic physical and organizational structures needed for the operation of a society.",
-            "term_jp": "インフラ",
-            "def_jp": "社会や生活の基盤となる施設や設備。"
+            "term_en": "Urbanites",
+            "def_en": "People who live in a city or town.",
+            "term_jp": "都市住民",
+            "def_jp": "都会に住む人々。"
           },
           {
-            "term_en": "Debris",
-            "def_en": "Scattered fragments, typically of something destroyed.",
-            "term_jp": "瓦礫",
-            "def_jp": "建物などが壊れたあとに残る石や瓦のくず。"
+            "term_en": "Regional Revitalization",
+            "def_en": "Policies aimed at boosting the economy and population of rural areas.",
+            "term_jp": "地方創生",
+            "def_jp": "地域の経済や人口を活性化させようとする取り組み。"
           },
           {
-            "term_en": "Social glue",
-            "def_en": "The shared values and relationships that hold a community together.",
-            "term_jp": "社会的な絆",
-            "def_jp": "コミュニティを一つにまとめ上げる、共有された価値観や人間関係。"
+            "term_en": "Fragmented society",
+            "def_en": "A society broken into small, disconnected groups.",
+            "term_jp": "分断された社会",
+            "def_jp": "人々やつながりがバラバラになった社会の状態。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "Investing with a Soul : Beyond the Profit Margins of Tokyo",
-        "title_jp": "魂を込めた投資 ： 東京の利益を超えて",
-        "content_en": "The Nikkei might be flirting with record highs this January, but the most exciting growth isn't happening on a spreadsheet in Otemachi. It's found in 'impact investing'—capital directed toward revitalizing dying towns and sustainable farming. For too long, we have treated investment as a cold calculation of risk and reward. As we enter 2026, the trend of 'moral capital' is proving that doing good and doing well are not mutually exclusive. When we invest in our neighbor’s potential, we secure our own future. Editor H.",
-        "content_jp": "1月の株価が史上最高値を伺う勢いを見せる中、真にエキサイティングな成長は大手町の<span class=\"term\" onclick=\"openPanel('表計算ソフト', 'データを集計・分析するために使われるコンピュータプログラム。')\">表計算ソフト</span>の上にはありません。それは、過疎化が進む町や持続可能な農業を<span class=\"term\" onclick=\"openPanel('再興', '一度衰えたものを、再び盛んにすること。')\">再興</span>する「<span class=\"term\" onclick=\"openPanel('インパクト投資', '経済的な利益だけでなく、社会や環境への貢献を目的とした投資。')\">インパクト投資</span>」の中にあります。長らく、投資はリスクとリターンの冷徹な計算とされてきました。しかし2026年、「道徳的な<span class=\"term\" onclick=\"openPanel('資本', '事業を行うための元手となるお金や資産。')\">資本</span>」という潮流は、善行と収益が両立することを証明しています。隣人の可能性に投資することこそが、私たち自身の未来を確かなものにするのです。 編集者H。",
-        "critique_en": "The analysis elegantly bridges the gap between cold capital and human empathy, redefining wealth.",
-        "critique_jp": "資本という冷たい道具と共感という温かい感情を橋渡しし、富の定義を再定義しています。",
+        "title_en": "Nikkei 225 Exceeds 50,000 Points Amid Corporate Governance Reform ： More than a bull market, it is the slow awakening of a sleeping economic giant",
+        "title_jp": "日経平均株価が史上初の5万円台を突破、企業統治改革が奏功 ： 単なる数字の記録を超え、眠れる巨人が自信を取り戻す瞬間",
+        "content_en": "The Tokyo Stock Exchange reached a historic milestone today as the Nikkei 225 surpassed the 50,000-point mark. While skeptics point to global inflation, the real story lies in the quiet revolution of Japanese corporate boardrooms. For years, Japan was criticized for its 'lazy' capital; today, focus on shareholder returns and transparency has transformed the island nation into a global investment darling. However, let us not forget the millions of Japanese retirees whose dignity depends on these returns. This isn't just a win for hedge funds; it’s a restoration of national pride and economic security for the common citizen. Editor H.",
+        "content_jp": "東京株式市場は今日、日経平均株価が5万円の大台を突破するという歴史的な節目を迎えました。懐疑派は世界的なインフレの影響を指摘しますが、真の物語は日本企業の取締役会で起きた静かな革命にあります。長年、日本は「怠慢な」資本効率を批判されてきましたが、<span class=\"term\" onclick=\"openPanel('株主還元', '企業が利益を配当金や自社株買いなどで株主に返すこと。')\">株主還元</span>と<span class=\"term\" onclick=\"openPanel('透明性', '経営実態などが外部から見て明快であること。')\">透明性</span>の向上により、今や世界中の投資家が注目する存在となりました。しかし、この利益に老後の尊厳を託している数百万人の引退者の存在を忘れてはなりません。これは単なる投資ファンドの勝利ではなく、一般市民の誇りと経済的安定の回復なのです。 編集者H。",
+        "critique_en": "The rally is sustainable only if it translates into wage growth for the working class, not just dividends for the wealthy.",
+        "critique_jp": "この株価上昇が持続可能であるためには、富裕層への配当だけでなく、労働者層の賃金上昇に結びつく必要があります。",
         "proverb_jp": {
-          "title": "情けは人のためならず",
-          "desc": "人に情けをかけることは、巡り巡って自分に良い報いが返ってくるという意味。自己犠牲ではなく、相互扶助の精神を表します。"
+          "title": "継続は力なり",
+          "desc": "小さなことでも根気よく続けていけば、後で大きな成果が得られるということ。長年の企業改革が実を結んだことを表します。"
         },
         "proverb_en": {
-          "title": "A rising tide lifts all boats",
-          "desc": "An improvement in the general economy will benefit all the participants in that economy."
+          "title": "Fortune favors the bold",
+          "desc": "Success comes to those who take risks and implement structural changes rather than maintaining the status quo."
         },
         "glossary": [
           {
-            "term_en": "Impact investing",
-            "def_en": "Investments made with the intention to generate social and environmental impact alongside a financial return.",
-            "term_jp": "インパクト投資",
-            "def_jp": "経済的な利益だけでなく、社会や環境への貢献を目的とした投資。"
+            "term_en": "Corporate Governance",
+            "def_en": "The system of rules, practices, and processes by which a firm is directed.",
+            "term_jp": "コーポレート・ガバナンス",
+            "def_jp": "企業が不祥事を防ぎ、効率的に運営されるための管理体制。"
           },
           {
-            "term_en": "Revitalizing",
-            "def_en": "Imbuing something with new life and vitality.",
-            "term_jp": "再興",
-            "def_jp": "一度衰えたものを、再び盛んにすること。"
+            "term_en": "Bull market",
+            "def_en": "A market in which share prices are rising, encouraging buying.",
+            "term_jp": "強気相場",
+            "def_jp": "株価が上昇傾向にある市場のこと。"
           },
           {
-            "term_en": "Mutually exclusive",
-            "def_en": "Two things that cannot happen or exist at the same time.",
-            "term_jp": "相容れない",
-            "def_jp": "両立することができず、一方が成立すればもう一方が排除されること。"
+            "term_en": "Shareholder returns",
+            "def_en": "The distribution of profits to shareholders via dividends or buybacks.",
+            "term_jp": "株主還元",
+            "def_jp": "企業が利益を配当金や自社株買いなどで株主に返すこと。"
           },
           {
-            "term_en": "Spreadsheet",
-            "def_en": "A computer program used for organization, analysis, and storage of data in tabular form.",
-            "term_jp": "表計算ソフト",
-            "def_jp": "データを集計・分析するために使われるコンピュータプログラム。"
+            "term_en": "Transparency",
+            "def_en": "The quality of being open and honest about business operations.",
+            "term_jp": "透明性",
+            "def_jp": "経営実態などが外部から見て明快であること。"
           },
           {
-            "term_en": "Capital",
-            "def_en": "Wealth in the form of money or other assets owned by a person or organization.",
-            "term_jp": "資本",
-            "def_jp": "事業を行うための元手となるお金や資産。"
+            "term_en": "Historical milestone",
+            "def_en": "A significant point in history or development.",
+            "term_jp": "歴史的節目",
+            "def_jp": "歴史の中で非常に重要な意味を持つ地点。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "The Displaced Heart : Lessons from the Frontiers of Climate Change",
-        "title_jp": "避難民の心 ： 気候変動の最前線からの教訓",
-        "content_en": "From the sinking islands of the Pacific to the parched lands of the Sahel, 2026 begins with a global movement of people that statistics cannot capture. These are not just 'migrants'; they are parents seeking dry ground for their children. In a world increasingly fractured by borders, our shared vulnerability to a changing climate should be a bridge, not a barrier. We must recognize that the suffering of a family thousands of miles away is a reflection of our own choices. True global leadership is measured by empathy for the displaced. Editor H.",
-        "content_jp": "沈みゆく太平洋の島々からサヘルの渇いた大地まで、2026年は統計では捉えきれない規模の移動で幕を開けました。彼らは単なる「移民」ではありません。子供たちのために乾いた土地を求める親たちなのです。国境によって分断が深まる世界において、気候変動という共通の<span class=\"term\" onclick=\"openPanel('脆弱性', '攻撃や被害を受けやすい、もろい性質や状態。')\">脆弱性</span>は、障壁ではなく架け橋であるべきです。遠く離れた家族の苦しみは、私たち自身の選択の反映であると気づかねばなりません。真の国際的指導力とは、<span class=\"term\" onclick=\"openPanel('避難民', '戦争や災害などにより、故郷を追われた人々。')\">避難民</span>への<span class=\"term\" onclick=\"openPanel('共感', '他人の意見や感情にその通りだと感じること、またはその能力。')\">共感</span>によって測られるのです。 編集者H。",
-        "critique_en": "An urgent call to view global crises not as political debates, but as shared human experiences.",
-        "critique_jp": "国際危機を政治的な議論ではなく、人類共通の経験として捉え直すよう促す切実な訴えです。",
+        "title_en": "Global Leaders Sign Treaty to Eliminate Single-Use Plastics by 2040 ： A fragile planet breathes a sigh of relief as policy finally catches up to environmental reality",
+        "title_jp": "2040年までに使い捨てプラスチック廃止、国連で歴史的条約が調印 ： 環境という冷徹な現実に、人類の良心がようやく追いついた日",
+        "content_en": "In a historic session at the United Nations, representatives from 193 nations have committed to a legally binding treaty to eliminate single-use plastics by the year 2040. For decades, our oceans have been a testament to our negligence, with plastic debris found in the deepest trenches and the most remote islands. This agreement is a rare victory for global cooperation in a fractured world. It reminds us that while we are divided by borders and ideologies, we are united by the air we breathe and the water that sustains us. The path to implementation will be difficult, but today, we chose survival over convenience. Editor H.",
+        "content_jp": "国連の歴史的な会合において、193カ国の代表が2040年までに<span class=\"term\" onclick=\"openPanel('使い捨てプラスチック', '一度使用しただけで捨てられるプラスチック製品。')\">使い捨てプラスチック</span>を廃止する<span class=\"term\" onclick=\"openPanel('法的拘束力', '法律によって、その内容を守る義務が生じること。')\">法的拘束力</span>のある条約に署名しました。数十年にわたり、私たちの海は人類の<span class=\"term\" onclick=\"openPanel('怠慢', 'なすべきことを怠ること、注意を払わないこと。')\">怠慢</span>の証拠となり、最深の海溝から人里離れた島々にまでプラスチックの破片が散乱してきました。この合意は、<span class=\"term\" onclick=\"openPanel('分断された世界', '国々や人々が対立し、協力が難しい世界情勢。')\">分断された世界</span>における国際協力の稀有な勝利です。国境や思想で隔てられていても、吸う空気や命を支える水において私たちは一つであることを思い出させてくれます。実施への道は険しいでしょうが、今日、私たちは利便性よりも生存を選んだのです。 編集者H。",
+        "critique_en": "The treaty's success depends entirely on the enforcement mechanisms and support for developing nations to transition their industries.",
+        "critique_jp": "条約の成否は、監視体制の強化と、産業転換を迫られる途上国への支援が十分に行われるかにかかっています。",
         "proverb_jp": {
-          "title": "雨降って地固まる",
-          "desc": "揉め事の後は、かえって前より物事が安定し、良い状態になることの例え。困難を乗り越えた後の強さを説いています。"
+          "title": "情けは人のためならず",
+          "desc": "人に対して情けを掛けておけば、巡り巡って自分に良い報いが来るということ。環境保護は結局、人類全体の利益になります。"
         },
         "proverb_en": {
-          "title": "It is always darkest before the dawn",
-          "desc": "Things often seem at their worst right before they improve."
+          "title": "Actions speak louder than words",
+          "desc": "Signing a treaty is a promise, but the actual reduction of plastic waste is the only metric of success."
         },
         "glossary": [
           {
-            "term_en": "Displaced",
-            "def_en": "Forced to leave their home, typically because of war, persecution, or natural disaster.",
-            "term_jp": "避難民",
-            "def_jp": "戦争や災害などにより、故郷を追われた人々。"
+            "term_en": "Legally binding",
+            "def_en": "An agreement that must be obeyed according to the law.",
+            "term_jp": "法的拘束力",
+            "def_jp": "法律によって、その内容を守る義務が生じること。"
           },
           {
-            "term_en": "Vulnerability",
-            "def_en": "The quality or state of being exposed to the possibility of being attacked or harmed.",
-            "term_jp": "脆弱性",
-            "def_jp": "攻撃や被害を受けやすい、もろい性質や状態。"
+            "term_en": "Single-use plastics",
+            "def_en": "Plastic items intended to be used only once before they are thrown away.",
+            "term_jp": "使い捨てプラスチック",
+            "def_jp": "一度使用しただけで捨てられるプラスチック製品。"
           },
           {
-            "term_en": "Fractured",
-            "def_en": "Broken or cracked; split into separate parts.",
-            "term_jp": "分断された",
-            "def_jp": "一つであったものが、ばらばらに切り離された状態。"
+            "term_en": "Negligence",
+            "def_en": "Failure to take proper care in doing something.",
+            "term_jp": "怠慢",
+            "def_jp": "なすべきことを怠ること、注意を払わないこと。"
           },
           {
-            "term_en": "Frontiers",
-            "def_en": "The extreme limit of settled land beyond which lies wilderness; the forefront of a movement.",
-            "term_jp": "最前線",
-            "def_jp": "活動や事象が最も活発に行われている場所。"
+            "term_en": "Fractured world",
+            "def_en": "A global state characterized by division and conflict.",
+            "term_jp": "分断された世界",
+            "def_jp": "国々や人々が対立し、協力が難しい世界情勢。"
           },
           {
-            "term_en": "Empathy",
-            "def_en": "The ability to understand and share the feelings of another.",
-            "term_jp": "共感",
-            "def_jp": "他人の意見や感情にその通りだと感じること、またはその能力。"
+            "term_en": "Enforcement",
+            "def_en": "The act of compelling observance of or compliance with a law or rule.",
+            "term_jp": "執行・実施",
+            "def_jp": "法律や規則を実際に守らせること。"
           }
         ]
       }
