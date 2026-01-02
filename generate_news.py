@@ -20,32 +20,29 @@ Search for top news from Japan's 5 major newspapers and global news (BBC/Reuters
 Select THREE topics: 1. Social (Japan), 2. Investment (Japan), 3. International (Global).
 
 Requirements for TITLES:
-- Main Title: Must be a FACTUAL, STRAIGHT NEWS HEADLINE (e.g., "Nikkei Average Hits Record High", "Government Proposes New Tax Reform"). Clear and direct.
-- Sub Title: Provide a Kristof-style thematic insight or emotional hook.
-- Format: 'Main Title ： Sub Title' (Use FULL-WIDTH '：' for both languages to ensure consistent splitting).
+- Main Title: Factual, straight news headline.
+- Sub Title: Insightful sub-headline.
+- Format: 'Main Title ： Sub Title' (Full-width '：').
 
-General Requirements:
-- Style: Nicholas Kristof (empathic, intellectual).
-- Sign-off: "Editor H" (編集者H).
+Requirements for CONTENT:
+- Perspective: Write the critique section as "Editor H's Perspective" (編集者Hの視点).
+- Tone: Intellectual yet accessible (Kristof-style).
+- Sign-off: DO NOT add a signature like "Editor H" at the very end of the text.
 - Language: Both English and Japanese.
-- Proverbs: JP version must use entirely Japanese proverbs and explanations.
-- Glossary: Pick 5 terms used in each text and define them.
+- Glossary: Define 5 key terms used in the text for the sliding panel.
 
 Output ONLY a raw JSON object:
 {{
   "articles": [
     {{
       "category": "Social",
-      "title_en": "Factual Headline ： Insightful Subtitle", 
-      "title_jp": "事実に基づいた見出し ： 洞察に満ちたサブタイトル",
+      "title_en": "Main ： Sub", "title_jp": "メイン ： サブ",
       "content_en": "...", "content_jp": "...",
       "critique_en": "...", "critique_jp": "...",
       "proverb_jp": {{"title": "...", "desc": "..."}},
       "proverb_en": {{"title": "...", "desc": "..."}},
       "glossary": [{{"term_en": "...", "def_en": "...", "term_jp": "...", "def_jp": "..."}}]
-    }},
-    {{ "category": "Investment", ... }},
-    {{ "category": "International", ... }}
+    }}
   ]
 }}
 """
@@ -70,15 +67,13 @@ def generate():
     
     if not data: return
 
-    # 本文中の用語を自動的にタグ置換
+    # 本文中の用語を自動的にスライド解説用タグに置換
     for article in data['articles']:
         for g in article['glossary']:
             t_jp, d_jp = g['term_jp'], g['def_jp'].replace("'", "\\'")
-            tag_jp = f'<span class="term" onclick="openPanel(\'{t_jp}\', \'{d_jp}\')">{t_jp}</span>'
-            article['content_jp'] = article['content_jp'].replace(t_jp, tag_jp)
+            article['content_jp'] = article['content_jp'].replace(t_jp, f'<span class="term" onclick="openPanel(\'{t_jp}\', \'{d_jp}\')">{t_jp}</span>')
             t_en, d_en = g['term_en'], g['def_en'].replace("'", "\\'")
-            tag_en = f'<span class="term" onclick="openPanel(\'{t_en}\', \'{d_en}\')">{t_en}</span>'
-            article['content_en'] = article['content_en'].replace(t_en, tag_en)
+            article['content_en'] = article['content_en'].replace(t_en, f'<span class="term" onclick="openPanel(\'{t_en}\', \'{d_en}\')">{t_en}</span>')
 
     data['date'] = today_str
     data_path = 'docs/data.json'
