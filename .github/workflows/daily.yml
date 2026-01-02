@@ -26,7 +26,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          # 変更がない場合にエラーにならないようにする
-          git commit -m "Daily update: $(date +'%Y-%m-%d')" || exit 0
-          git pull --rebase origin main
-          git push origin main
+          git commit -m "Force update: $(date +'%Y-%m-%d')" || exit 0
+          # 強制的にリモートを上書きする設定
+          git push origin main --force
