@@ -53,31 +53,49 @@ Output ONLY a raw JSON object. No markdown, no preamble.
 }}
 """
 
+# --- 修正後のモデル設定部分 ---
 def generate():
     print(f"Starting generation for {today_str}...")
     
-    # 4. AIによる記事生成（リトライ・JSON抽出強化）
+    # 複数のモデル候補を試す（環境によって名称が異なる場合があるため）
+    model_names = ['models/gemini-1.5-flash', 'gemini-1.5-flash', 'models/gemini-pro']
     data = None
-    for attempt in range(3):
-        try:
-            response = model.generate_content(PROMPT)
-            res_text = response.text.strip()
-            
-            # 文字列からJSON部分のみを抽出
-            start_idx = res_text.find('{')
-            end_idx = res_text.rfind('}') + 1
-            if start_idx != -1 and end_idx != -1:
-                data = json.loads(res_text[start_idx:end_idx])
-                print("Successfully generated and parsed JSON.")
-                break
-            else:
-                print(f"JSON marker not found in attempt {attempt+1}.")
-        except Exception as e:
-            print(f"Attempt {attempt+1} failed: {e}")
-            time.sleep(30)
     
+    for m_name in model_names:
+        if data: break # 生成に成功していれば抜ける
+        print(f"Trying model: {m_name}")
+        
+        # モデルオブジェクトの初期化
+        try:
+            model = genai.GenerativeModel(
+                model_name=m_name,
+                tools=[{'google_search_retrieval': {}}]
+            )
+            
+            # AIによる記事生成
+            for attempt in range(2): # 各モデルで2回リトライ
+                try:
+                    response = model.generate_content(PROMPT)
+                    res_text = response.text.strip()
+                    
+                    # JSONの抽出処理
+                    start_idx = res_text.find('{')
+                    end_idx = res_text.rfind('}') + 1
+                    if start_idx != -1 and end_idx != -1:
+                        data = json.loads(res_text[start_idx:end_idx])
+                        print(f"Successfully generated with {m_name}")
+                        break
+                except Exception as e:
+                    print(f"Attempt failed for {m_name}: {e}")
+                    time.sleep(10)
+        except Exception as e:
+            print(f"Model {m_name} is not available: {e}")
+            continue
+
     if not data:
-        raise Exception("Failed to generate content after 3 attempts.")
+        raise Exception("Could not find a valid model or generate content.")
+# --- 以下、保存・反映ロジック ---
+    
 
     # 5. データの保存準備
     data['date'] = today_str
