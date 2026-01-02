@@ -15,23 +15,22 @@ jst = timezone(timedelta(hours=+9), 'JST')
 now = datetime.datetime.now(jst)
 today_str = now.strftime("%Y-%m-%d")
 
-# 3. プロンプト設定（社会・投資・国際の3カテゴリ）
+# 3. プロンプト設定
 PROMPT = f"""
 Today's date is {today_str}. 
 Search for the TOP NEWS from:
 1. Japan's 5 major newspapers (Asahi, Yomiuri, Mainichi, Nikkei, Sankei).
 2. Global news (NYT, BBC, Reuters).
 
-Select THREE different main topics: 
-1. Social Issue (Japan context)
-2. Investment/Economy (Japan context)
-3. International (Global top story)
+Select THREE main topics: 
+1. Social Issue (Japan), 2. Investment/Economy (Japan), 3. International (Global).
 
 Rewrite each as a Nicholas Kristof-style column for junior high school students.
 Requirements:
 - Empathic, historical perspective, and deep analysis.
 - Provide both English and Japanese text.
-- For each, pick 5-10 difficult terms for the glossary.
+- For EACH article, pick 5 difficult terms and provide short definitions in both JP and EN.
+- Sign off as "Editor H" (編集者H).
 
 Output ONLY a raw JSON object:
 {{
@@ -42,7 +41,9 @@ Output ONLY a raw JSON object:
       "content_en": "...", "content_jp": "...",
       "critique_en": "...", "critique_jp": "...",
       "proverb": {{"title": "...", "desc": "..."}},
-      "glossary": [{{"term": "...", "def": "..."}}]
+      "glossary": [
+        {{"term_en": "...", "def_en": "...", "term_jp": "...", "def_jp": "..."}}
+      ]
     }},
     {{ "category": "Investment", ... }},
     {{ "category": "International", ... }}
@@ -82,11 +83,9 @@ def generate():
 
     history = [e for e in history if e.get('date') != today_str]
     history.insert(0, data)
-        
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
-    # テンプレート反映
     for t_name, out_name in [('template_article.html', f'docs/articles/{today_str}.html'), ('template_portal.html', 'docs/index.html')]:
         if os.path.exists(t_name):
             with open(t_name, 'r', encoding='utf-8') as f:
