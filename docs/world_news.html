@@ -22,10 +22,21 @@
 
     <header class="bg-[#001f3f] text-white py-4 px-6 sticky top-0 z-50 border-b-4 border-[#c5a059] shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="cursor-pointer" onclick="app.showHome()">
-                <h1 class="text-xl font-bold tracking-widest serif">THE INSIGHT <span class="text-sm font-normal ml-2 opacity-80">GeoGuide 2026</span></h1>
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="text-xs sm:text-sm font-bold bg-[#c5a059] px-3 py-1.5 rounded hover:bg-white hover:text-[#001f3f] transition-all">
+                    ← デイリーニュース
+                </a>
+                <div class="cursor-pointer hidden sm:block" onclick="app.showHome()">
+                    <h1 class="text-xl font-bold tracking-widest serif">THE INSIGHT</h1>
+                </div>
             </div>
-            <button onclick="app.showHome()" class="bg-[#c5a059] px-4 py-1 rounded font-bold text-sm">HOME</button>
+            
+            <div class="flex items-center gap-2">
+                <span class="text-xs opacity-60 hidden md:block">GeoGuide 2026</span>
+                <button onclick="app.showHome()" class="text-white hover:text-[#c5a059] font-bold text-sm ml-4">
+                    解説一覧
+                </button>
+            </div>
         </div>
     </header>
 
@@ -34,7 +45,7 @@
         <div id="view-dashboard" class="fade-in">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-slate-800 mb-4 serif">世界を読み解く10の視点</h2>
-                <p class="text-slate-600">対立の歴史と背景を、中学生にもわかる論理で解説します</p>
+                <p class="text-slate-600">中学生にもわかる、世界の対立と背景の論理的解説</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="topic-grid">
                 <p class="text-center col-span-full py-10 text-slate-400">読み込み中...</p>
@@ -42,8 +53,8 @@
         </div>
 
         <div id="view-detail" class="hidden fade-in">
-            <button onclick="app.showHome()" class="mb-8 text-slate-500 hover:text-navy flex items-center font-bold">
-                <span class="mr-2">←</span> 一覧に戻る
+            <button onclick="app.showHome()" class="mb-8 text-slate-500 hover:text-[#001f3f] flex items-center font-bold">
+                <span class="mr-2">←</span> 解説一覧に戻る
             </button>
 
             <div class="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 mb-10">
@@ -52,7 +63,7 @@
                 <h3 id="detail-subtitle" class="text-lg text-slate-500 mb-8 pb-6 border-b border-slate-100"></h3>
                 
                 <div class="bg-slate-50 p-6 rounded-2xl border-l-8 border-[#c5a059]">
-                    <h4 class="font-bold text-slate-800 mb-2">⚡ 1分でわかる！対立のポイント</h4>
+                    <h4 class="font-bold text-slate-700 mb-2">⚡ 1分でわかる！対立のポイント</h4>
                     <p id="detail-summary" class="text-slate-700 leading-relaxed"></p>
                 </div>
             </div>
@@ -89,10 +100,13 @@
         </div>
     </main>
 
-    <footer class="bg-[#001f3f] text-white py-10 mt-20 border-t-4 border-[#c5a059]">
+    <footer class="bg-[#001f3f] text-white py-12 border-t-4 border-[#c5a059]">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="serif text-lg mb-2">THE INSIGHT</p>
-            <p class="text-xs opacity-60">© 2026 編集者H - 地政学解説シリーズ</p>
+            <p class="serif text-xl mb-4">THE INSIGHT</p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="index.html" class="text-sm border-b border-[#c5a059] pb-1 hover:text-[#c5a059]">デイリーニュースへ戻る</a>
+            </div>
+            <p class="text-xs opacity-50">© 2026 編集者H - GeoGuide 2026 シリーズ</p>
         </div>
     </footer>
 
@@ -106,7 +120,7 @@
                     a: { name: "イスラエルの主張", view: "ユダヤ人は歴史的にこの地に国を持っていた。迫害の歴史を経て、自分たちの安全な国を守る権利がある。" },
                     b: { name: "パレスチナ（ハマス）", view: "もともと住んでいたのは自分たち。イスラエルが強引に国を作り、自分たちは土地を奪われ、不当に閉じ込められている。" }
                 },
-                historyDesc: "19世紀末、欧州で差別されたユダヤ人が故郷パレスチナへ戻る運動を開始。1948年のイスラエル建国後、何度も戦争になり、現在は高い壁で仕切られた地域で生活しています。",
+                historyDesc: "19世紀末、欧州で差別されたユダヤ人が故郷パレスチナへ戻る運動を開始。1948年のイスラエル建国後、何度も戦争になり、現在は高い壁で仕切られた地域で生活しています。なぜ食い違うのか？ それは両者にとって譲れない宗教的・歴史的な聖地が重なっているからです。",
                 global: [
                     { country: "日本", stance: "二国家解決を支持し、人道支援を継続。" },
                     { country: "米国", stance: "イスラエルを軍事支援。一方で民間人保護も強く求める。" },
@@ -123,7 +137,7 @@
                     a: { name: "日本の主張", view: "1895年に、どこの国の領土でもないことを確認して編入した。歴史的にも国際法上も日本の領土。" },
                     b: { name: "中国の主張", view: "古くから中国の領土だったが、日清戦争の混乱で日本に奪われた。返還されるべきだ。" }
                 },
-                historyDesc: "1970年代に周辺海域に石油資源の可能性が見つかるまで、中国は異議を唱えていませんでした。現在は中国公船が頻繁に周辺を航行し、緊張が続いています。",
+                historyDesc: "1970年代に周辺海域に石油資源の可能性が見つかるまで、中国は異議を唱えていませんでした。現在は中国公船が頻繁に周辺を航行し、実効支配を揺るがそうとする動きが続いています。",
                 global: [
                     { country: "米国", stance: "日本の施政下にあると認め、日米安保条約の対象と明言。" },
                     { country: "日本", stance: "領土問題は存在しないという立場で、毅然と対応。" }
@@ -139,7 +153,7 @@
                     a: { name: "日本の主張", view: "1905年に領土編入。韓国の占拠は不当。国際司法裁判所で解決すべき。" },
                     b: { name: "韓国の主張", view: "歴史的に韓国の領土。日本による植民地支配の反省として、一歩も引けない。" }
                 },
-                historyDesc: "第二次世界大戦後、韓国が一方的に境界線を引き実効支配を開始。日本は話し合いを求めていますが、韓国はそれに応じず実効支配を強めています。",
+                historyDesc: "第二次世界大戦後、韓国が一方的に境界線を引き実効支配を開始。日本は話し合いによる解決を求めていますが、韓国はそれに応じず実効支配を強めています。",
                 global: [{ country: "米国", stance: "日韓両国の友好を優先し中立。平和解決を促す。" }],
                 chartType: "pie",
                 chartConfig: { labels: ['韓国の実効支配', '日本の施政権'], datasets: [{ data: [100, 0], backgroundColor: ['#3B82F6', '#CBD5E1'] }] }
@@ -152,10 +166,10 @@
                     a: { name: "ウクライナ", view: "自由な国としてEUやNATOに入りたい。他国が私たちの道を決めるな。" },
                     b: { name: "ロシア", view: "ウクライナのNATO加盟はロシアの安全にとって許せない。" }
                 },
-                historyDesc: "独立後のウクライナが欧米寄りの民主主義を目指したことにロシアが不満を持ち、2022年から全面的な戦争に発展しています。",
+                historyDesc: "独立後のウクライナが欧州寄りの民主主義を目指したことにロシアが不満を持ち、2022年から全面的な戦争に発展。欧州の安全保障体制が根本から揺らいでいます。",
                 global: [
                     { country: "欧米", stance: "ウクライナに武器を支援し、ロシアを制裁。" },
-                    { country: "日本", stance: "力による現状変更を許さない立場から支援。" }
+                    { country: "日本", stance: "力による現状変更を許さない立場から人道・経済支援。" }
                 ],
                 chartType: "bar",
                 chartConfig: { labels: ['欧米支援国', 'ロシア支援国'], datasets: [{ label: '経済規模比較', data: [100, 5], backgroundColor: ['#3B82F6', '#EF4444'] }] }
@@ -165,23 +179,23 @@
                 subtitle: "世界の急所：運河を巡る地政学的リスクとグローバル物流の生命線",
                 summary: "世界の貿易の通り道である運河が、紛争や異常気象で塞がれそうになっています。",
                 parties: {
-                    a: { name: "スエズ運河", view: "周辺紛争で攻撃リスクがあり、遠回りルートへの変更が増えている。" },
+                    a: { name: "スエズ運河", view: "周辺紛争での攻撃リスクにより、アフリカ南回りの遠回りルートへの変更が増加。" },
                     b: { name: "パナマ運河", view: "深刻な水不足で水位が下がり、通れる船の数が制限されている。" }
                 },
-                historyDesc: "運河は世界を繋ぐ生命線です。ここが止まると身の回りのモノの値段が上がり、経済が止まってしまいます。",
-                global: [{ country: "世界経済", stance: "輸送コストの上昇を価格に転嫁せざるを得ない。" }],
+                historyDesc: "運河は世界を繋ぐ生命線です。ここが滞ると輸送費が上がり、結果として私たちの身の回りのモノの値段が上がる『インフレ』の原因になります。",
+                global: [{ country: "世界経済", stance: "輸送コストの上昇を価格に転嫁せざるを得ないジレンマ。" }],
                 chartType: "bar",
                 chartConfig: { labels: ['正常時', '現在'], datasets: [{ label: '一日通航船数', data: [40, 25], backgroundColor: ['#10B981', '#F59E0B'] }] }
             },
             {
                 id: "iran", category: "中東", title: "イランとイスラエル",
                 subtitle: "イラン・イスラエル対立：中東の覇権争いと『影の戦争』の激化",
-                summary: "中東の主導権を巡る対立。核開発問題も絡み、非常に危険な状態が続いています。",
+                summary: "中東の主導権を巡る激しい対立。核開発問題も絡み、一触即発の状態が続いています。",
                 parties: {
                     a: { name: "イスラエル", view: "イランが核兵器を持てば、私たちの国は滅ぼされる。絶対に阻止する。" },
                     b: { name: "イラン", view: "イスラエルはパレスチナを苦しめる侵略者。地域から排除すべきだ。" }
                 },
-                historyDesc: "イラン革命後、宗教的な指導者が国を治めるようになってから激しく敵対するようになりました。",
+                historyDesc: "イラン革命後、反米・反イスラエルを掲げる指導者が国を治めるようになってから、かつての友好関係は一変し、激しく敵対するようになりました。",
                 global: [{ country: "サウジ", stance: "イランを警戒。イスラエルとの接近も模索。" }],
                 chartType: "radar",
                 chartConfig: { labels: ['核開発', '空軍', 'ミサイル', '代理勢力'], datasets: [{ label: 'イラン', data: [70, 30, 90, 100], borderColor: '#EF4444' }, { label: 'イスラエル', data: [90, 100, 70, 20], borderColor: '#3B82F6' }] }
@@ -189,26 +203,26 @@
             {
                 id: "taiwan", category: "東アジア", title: "中国と台湾の問題",
                 subtitle: "台湾海峡情勢：『一つの中国』原則と民主主義アイデンティティの衝突",
-                summary: "中国が台湾を吸収しようとし、台湾が自立を守ろうとしている問題です。",
+                summary: "中国が台湾を統合しようとし、台湾が自立した民主主義を守ろうとしている問題です。",
                 parties: {
-                    a: { name: "中国の主張", view: "台湾は中国の一部。いつかは必ず一つに戻る。外国の干渉は許さない。" },
-                    b: { name: "台湾の主張", view: "自分たちは民主主義社会。今の自由な生活を壊されたくない。" }
+                    a: { name: "中国の主張", view: "台湾は中国の一部。いつかは必ず一つに戻る。外国の干渉は内政干渉だ。" },
+                    b: { name: "台湾の主張", view: "自分たちは選挙で選ばれた政府を持つ民主社会。今の自由を壊されたくない。" }
                 },
-                historyDesc: "内戦後、別々の道を歩んできましたが、現在は半導体産業などで世界に不可欠な場所になっています。",
-                global: [{ country: "米国", stance: "台湾の自衛を助けるが、公式な国家とは認めない曖昧な立場。" }],
+                historyDesc: "内戦後に別々の道を歩みましたが、現在は世界の半導体の9割を生産する『経済の心臓』として、その安定が世界中に影響します。",
+                global: [{ country: "米国", stance: "台湾の自衛を助けるが、公式な国家とは認めない複雑な立場。" }],
                 chartType: "pie",
                 chartConfig: { labels: ['現状維持', '統一', '独立'], datasets: [{ data: [70, 10, 20], backgroundColor: ['#64748B', '#EF4444', '#10B981'] }] }
             },
             {
                 id: "uschina", category: "グローバル", title: "米中対立",
                 subtitle: "米中覇権争い：第2次トランプ政権下の関税・安全保障・技術競争",
-                summary: "世界最強の2つの国が、リーダーの座を巡ってあらゆる面で競い合っています。",
+                summary: "世界最強の2つの国が、誰がリーダーになるか、経済や技術で競い合っています。",
                 parties: {
-                    a: { name: "米国の主張", view: "中国が不公正な方法で力をつけ、地位を脅かしている。技術は渡さない。" },
-                    b: { name: "中国の主張", view: "米国は中国の発展を邪魔している。自分たちの力で世界一を目指す。" }
+                    a: { name: "米国の主張", view: "中国が不公正な方法で力をつけ、私たちの地位を脅かしている。先端技術は守る。" },
+                    b: { name: "中国の主張", view: "米国は中国の発展を抑え込もうとしている。自分たちの力で世界一を目指す。" }
                 },
-                historyDesc: "経済パートナーから、現在は「新冷戦」とも呼ばれるライバル関係に変化しました。",
-                global: [{ country: "東南アジア", stance: "どちらにもつきたくない。両方とうまくやりたい。" }],
+                historyDesc: "蜜月時代から一転、現在は『デカップリング（切り離し）』が進むなど、世界経済を二分する『新冷戦』の状態にあります。",
+                global: [{ country: "東南アジア", stance: "板挟み。どちらにもつきたくないのが本音。" }],
                 chartType: "line",
                 chartConfig: { labels: ['2000', '2010', '2020', '2030'], datasets: [{ label: '米国GDP', data: [10, 15, 21, 28], borderColor: '#3B82F6' }, { label: '中国GDP', data: [1, 6, 15, 25], borderColor: '#EF4444' }] }
             },
@@ -217,11 +231,11 @@
                 subtitle: "AI・半導体供給網の地政学：技術覇権と『経済安全保障の循環』",
                 summary: "AIの頭脳である半導体を、どの国が作り、どの国が持てるかの奪い合いです。",
                 parties: {
-                    a: { name: "米国の戦略", view: "最新技術を中国に渡さない。製造装置などの輸出も制限する。" },
-                    b: { name: "中国の戦略", view: "外国に頼らず、自分たちだけで作れるように巨額の投資をする。" }
+                    a: { name: "米国の戦略", view: "最新技術を中国に渡さない。製造装置の輸出も制限し、優位を保つ。" },
+                    b: { name: "中国の戦略", view: "外国に頼らず、自分たちだけで最新半導体を作れるよう国を挙げて投資。" }
                 },
-                historyDesc: "半導体はミサイルやAIの性能を左右するため、国家安全保障の最重要課題です。",
-                global: [{ country: "台湾", stance: "TSMCが世界の先端品のほとんどを生産する重要拠点。" }],
+                historyDesc: "半導体は現代の兵器や経済の性能を左右するため、もはやビジネスではなく『国家の安全保障』の最前線です。",
+                global: [{ country: "台湾", stance: "TSMCが世界の先端品のほとんどを生産。地政学的リスクの中心。" }],
                 chartType: "doughnut",
                 chartConfig: { labels: ['台湾', '韓国', '中国', '米国', '日本'], datasets: [{ data: [60, 15, 10, 10, 5], backgroundColor: ['#10B981', '#3B82F6', '#F59E0B', '#6366F1', '#EF4444'] }] }
             },
@@ -230,10 +244,10 @@
                 subtitle: "インドの多角的外交：東西のパワーバランスと『戦略的自律』の行方",
                 summary: "人口世界一のインドが、どの陣営にも属さず自分たちの利益を最優先する外交です。",
                 parties: {
-                    a: { name: "インドの立ち位置", view: "米国もロシアも大事。自国の成長のためにあらゆる国と付き合う。" },
-                    b: { name: "他国の視点", view: "巨大市場を持つインドを仲間にしたいが、なかなか言うことを聞かない。" }
+                    a: { name: "インドの立場", view: "米国もロシアも大事。自国の成長のためにあらゆる国とドライに付き合う。" },
+                    b: { name: "他国の視点", view: "巨大市場を持つインドを仲間にしたいが、インドは自分の道を行く。" }
                 },
-                historyDesc: "冷戦時代から「非同盟」を掲げ、現在は「グローバルサウス」のリーダーを目指しています。",
+                historyDesc: "冷戦時代から「非同盟」を掲げ、現在は新興国「グローバルサウス」のリーダーとしての地位を固めています。",
                 global: [{ country: "ロシア", stance: "古くからの友人。武器や石油を安く売る関係。" }],
                 chartType: "line",
                 chartConfig: { labels: ['2000', '2010', '2023', '2050'], datasets: [{ label: 'インド人口', data: [10, 12, 14, 16], borderColor: '#F59E0B' }, { label: '中国人口', data: [12, 13, 14, 13], borderColor: '#EF4444' }] }
@@ -274,9 +288,9 @@
                 const grid = document.getElementById('topic-grid');
                 grid.innerHTML = topics.map(t => `
                     <div onclick="app.showDetail('${t.id}')" class="bg-white rounded-2xl p-6 card-hover cursor-pointer">
-                        <div class="text-xs font-bold text-[#c5a059] mb-2 uppercase">${t.category}</div>
-                        <h3 class="text-xl font-bold mb-2 serif text-navy">${t.title}</h3>
-                        <p class="text-sm text-slate-500 line-clamp-2">${t.subtitle}</p>
+                        <div class="text-xs font-bold text-[#c5a059] mb-2 uppercase tracking-widest">${t.category}</div>
+                        <h3 class="text-xl font-bold mb-2 serif text-[#001f3f]">${t.title}</h3>
+                        <p class="text-sm text-slate-500 line-clamp-2 leading-relaxed">${t.subtitle}</p>
                         <div class="mt-4 text-xs font-bold text-slate-400">詳しく読む →</div>
                     </div>
                 `).join('');
@@ -290,7 +304,7 @@
                     options: { 
                         responsive: true, 
                         maintainAspectRatio: false,
-                        plugins: { legend: { position: 'bottom' } }
+                        plugins: { legend: { position: 'bottom', labels: { boxWidth: 12 } } }
                     } 
                 });
             }
