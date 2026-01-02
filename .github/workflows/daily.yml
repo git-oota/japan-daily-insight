@@ -25,7 +25,14 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Force update: $(date +'%Y-%m-%d')" || exit 0
-          # 強制的にリモートを上書きする設定
-          git push origin main --force
+          
+          # 一旦最新のリモート情報を取得
+          git fetch origin main
+          
+          git add docs/
+          # 変更がある場合のみコミット
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update Insight: $(date +'%Y-%m-%d')"
+          
+          # 強制的にリモートの最新に自分の成果を重ねてPush
+          git push origin main
+          
