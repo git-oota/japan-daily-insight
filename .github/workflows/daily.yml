@@ -16,8 +16,7 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: |
-          pip install -U google-generativeai jinja2
-          # ライブラリのバージョンを強制的に最新にして 404 を回避
+          pip install -U google-genai jinja2
       - name: Generate News
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
