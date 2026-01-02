@@ -3,148 +3,148 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "Japan’s Economic Divide Deepens in 2026 ： Food relief queues expose the fragility of the social safety net",
-        "title_jp": "2026年、深まる日本の経済格差 ： 炊き出しの列が物語るセーフティネットの脆さ",
-        "content_en": "As 2026 begins, a stark contrast has emerged in the streets of Tokyo. While the government speaks of a 'strong and prosperous' archipelago, the reality at food distribution sites in Shinjuku and Ikebukuro tells a different story. Long queues, including an increasing number of young 'gig workers' and single mothers, have become a fixture of the New Year period. Following the Takaichi administration's decision to scale back cash subsidies in late 2025, many vulnerable citizens are finding that rising rice prices and stagnant support have pushed them to the brink. This struggle is compounded by a growing sense of social isolation, as the Cabinet Office warns that 'lonely deaths' are no longer an issue reserved only for the elderly.",
-        "content_jp": "2026年の幕開けとともに、東京の路上には鮮明なコントラストが浮かび上がっています。政府が「強靭で豊かな日本」を掲げる一方で、新宿や池袋の食料配布現場には、政府の言葉とは異なる現実が広がっています。若年層の<span class=\"term\" onclick=\"openPanel('ギグワーカー', 'インターネット上のプラットフォームを介して単発の仕事請け負う労働者。福利厚生が不十分な場合が多い。')\">ギグワーカー</span>やシングルマザーを含む長い列は、いまや正月の恒例行事となってしまいました。2025年末の石破政権から高市政権への移行期に行われた現金給付の縮小により、米価の高騰と支援の停滞が多くの社会的弱者を追い詰めています。内閣府が「<span class=\"term\" onclick=\"openPanel('孤独死', '誰にも看取られることなく一人で亡くなり、死後相当期間が経過してから発見されること。')\">孤独死</span>」はもはや高齢者だけの問題ではないと警鐘を鳴らす中、経済的な困窮と<span class=\"term\" onclick=\"openPanel('社会的孤立', '個人が家族や地域社会との交流を断絶し、客観的に見て社会との繋がりがない状態。')\">社会的孤立</span>が複雑に絡み合っています。",
-        "critique_en": "Editor H's Perspective: We often measure progress through GDP or stock indices, yet the true health of a nation is reflected in the length of the lines at its soup kitchens. The current administration’s focus on 'bold reforms' must not come at the cost of the basic dignity of its citizens. When a 75-year-old man must spend his New Year's Day traveling an hour just to secure a single meal, it is a sign that our social fabric is fraying. Policy must move beyond mere numbers to foster genuine community resilience and empathy.",
-        "critique_jp": "編集者Hの視点：私たちは往々にしてGDPや株価指数で進歩を測りがちですが、国家の真の健康状態は炊き出しに並ぶ列の長さにこそ現れます。現政権が掲げる「大胆な改革」が、市民の基本的な尊厳を犠牲にしてはなりません。75歳の男性がたった一食のために元旦から1時間も移動しなければならない現状は、社会の絆がほころび始めている兆候です。政策は単なる数字の操作を超え、真のコミュニティの回復力と共感を育むものであるべきです。",
+        "title_en": "Japan’s Digital New Year Shifting Traditions ： Balancing Ancient Rituals with a Shrinking Workforce",
+        "title_jp": "日本のデジタル初詣が変える伝統 ： 人口減少社会における儀式と効率の共存",
+        "content_en": "As 2026 begins, major shrines across Japan, including Meiji Jingu and Ise Grand Shrine, have implemented advanced digital crowd management and QR-based '<span class=\"term\" onclick=\"openPanel('Saisen', 'Monetary offerings given to deities at shrines or temples.')\">Saisen</span>' (offering) systems. Faced with a chronic shortage of shrine maidens and staff, religious institutions are turning to automation to maintain the influx of millions of visitors. While some traditionalists argue that digital offerings diminish the spiritual weight of the act, the necessity of technology to preserve cultural heritage in a hyper-aged society has become a central theme of this year's festivities.",
+        "content_jp": "2026年の幕開けとともに、明治神宮や伊勢神宮を含む全国の主要な神社では、高度なデジタル混雑管理システムやQRコードによる「<span class=\"term\" onclick=\"openPanel('お賽銭', '祈願成就の感謝として、あるいは神仏への供え物として捧げる金銭。')\">お賽銭</span>」システムが導入されました。巫女や運営スタッフの慢性的な不足に直面し、宗教施設は数百万人規模の参拝客を維持するために自動化へと舵を切っています。一部の保守層からは、デジタル化が儀式の精神的な重みを損なうとの声も上がっていますが、<span class=\"term\" onclick=\"openPanel('超高齢社会', '65歳以上の人口が全人口の21%を超えた社会。')\">超高齢社会</span>において文化遺産を継承するためのテクノロジーの必要性は、今年の年始を象徴するテーマとなっています。",
+        "critique_en": "Editor H's Perspective: The digitization of the 'Hatsumode' is more than a convenience; it is a mirror reflecting Japan's demographic reality. We are witnessing the 'pragmatic evolution' of Shintoism. The challenge is not whether we use technology, but whether we can retain the 'Ma'—the sacred space and timing—when the physical friction of tradition is smoothed over by software. It is a poignant reminder that for a culture to survive, it must sometimes change its form to save its soul.",
+        "critique_jp": "編集者Hの視点：初詣のデジタル化は、単なる利便性の向上ではなく、日本の人口動態の現実を映し出す鏡です。私たちは今、神道の「実用的進化」を目の当たりにしています。課題はテクノロジーを使うか否かではなく、伝統の持つ物理的な摩擦がソフトウェアによって平滑化されたとき、神聖な「間」を維持できるかどうかにあります。文化が生き残るためには、その魂を守るために形を変えなければならないこともあるという、切実な教訓を提示しています。",
         "proverb_en": {
-          "title": "A stranger nearby is better than a relative far away",
-          "desc": "In times of crisis, local community ties and immediate mutual aid often prove more vital than distant official support."
+          "title": "Continuity in Change",
+          "desc": "The only way to keep things the same is to change everything."
         },
         "proverb_jp": {
-          "title": "遠くの親類より近くの他人",
-          "desc": "いざという時には、遠くにいる親戚よりも近所の人々との助け合いや絆こそが最も頼りになるという意味。"
+          "title": "不易流行",
+          "desc": "いつまでも変化しない本質的なものを忘れない中にも、新しく変化を重ねていくこと。"
         },
         "glossary": [
           {
-            "term_en": "Gini Index",
-            "def_en": "A statistical measure of distribution intended to represent the income inequality within a nation.",
-            "term_jp": "ジニ係数",
-            "def_jp": "社会における所得の不平等さを測るための指標。数値が1に近いほど格差が大きいことを示す。"
+            "term_en": "Hatsumode",
+            "def_en": "The first Shinto shrine or Buddhist temple visit of the Japanese New Year.",
+            "term_jp": "初詣",
+            "def_jp": "年が明けて初めて神社や寺院に参拝し、一年の無事と平安を祈る行事。"
           },
           {
-            "term_en": "Gig Worker",
-            "def_en": "Individuals who work short-term, flexible jobs, often through digital platforms, lacking traditional employment benefits.",
-            "term_jp": "ギグワーカー",
-            "def_jp": "インターネット上のプラットフォームを介して単発の仕事請け負う労働者。福利厚生が不十分な場合が多い。"
+            "term_en": "Saisen",
+            "def_en": "Monetary offerings given to deities at shrines or temples.",
+            "term_jp": "お賽銭",
+            "def_jp": "祈願成就の感謝として、あるいは神仏への供え物として捧げる金銭。"
           },
           {
-            "term_en": "Safety Net",
-            "def_en": "A collection of services and support provided by the state to prevent citizens from falling into extreme poverty.",
-            "term_jp": "セーフティネット",
-            "def_jp": "国民が深刻な貧困に陥るのを防ぐための公的な扶助や社会保障制度の総称。"
+            "term_en": "Demographic Reality",
+            "def_en": "The actual state of a population's size, growth, and age distribution.",
+            "term_jp": "人口動態の現実",
+            "def_jp": "人口の規模、成長、年齢構成などの実際の状態。"
           },
           {
-            "term_en": "Social Isolation",
-            "def_en": "A state of complete or near-complete lack of contact between an individual and society.",
-            "term_jp": "社会的孤立",
-            "def_jp": "個人が家族や地域社会との交流を断絶し、客観的に見て社会との繋がりがない状態。"
+            "term_en": "Hyper-aged Society",
+            "def_en": "A society where more than 21% of the population is aged 65 or older.",
+            "term_jp": "超高齢社会",
+            "def_jp": "65歳以上の人口が全人口の21%を超えた社会。"
           },
           {
-            "term_en": "Lonely Death (Kodokushi)",
-            "def_en": "A Japanese phenomenon where people die alone and remain undiscovered for a long period.",
-            "term_jp": "孤独死",
-            "def_jp": "誰にも看取られることなく一人で亡くなり、死後相当期間が経過してから発見されること。"
+            "term_en": "Pragmatic Evolution",
+            "def_en": "The process of adapting based on practical considerations rather than purely theoretical ones.",
+            "term_jp": "実用的進化",
+            "def_jp": "理論よりも現実的な必要性に基づいて適応していく過程。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "Nikkei 225 Eyes 55,000 Milestone in 2026 ： The shift from speculative currency plays to human capital integrity",
-        "title_jp": "日経平均、2026年に5万5千円到達を射程 ： 通貨投機から「人的資本」の質を問う時代へ",
-        "content_en": "Following the Bank of Japan's December 2025 rate hike to 0.75%, the Japanese equity market has entered a new era of normalization. Analysts are forecasting the Nikkei 225 to test the 55,000 mark by the end of 2026, driven not by a weak yen, but by fundamental corporate restructuring. The revised 2026 Corporate Governance Code now mandates stricter disclosures on human capital management, forcing firms to prove they are investing in talent rather than merely hoarding cash. Overseas investors, previously cautious about Japan’s deflationary mindset, are increasingly viewing Tokyo as a resilient hub for AI, robotics, and advanced manufacturing.",
-        "content_jp": "2025年12月に日本銀行が政策金利を0.75%まで引き上げたことを受け、日本の株式市場は正常化という新たな局面を迎えました。アナリストは、2026年末までに日経平均株価が5万5000円の大台を試すと予測しています。これは円安による押し上げではなく、企業の根本的な体質改善によるものです。2026年に改訂されたコーポレートガバナンス・コードは、<span class=\"term\" onclick=\"openPanel('人的資本', '労働者が持つ知識、技能、経験などの能力を、企業の成長を支える「資本」として捉える考え方。')\">人的資本</span>経営の開示をさらに厳格化し、企業に対して単なる現金の蓄積ではなく人材への投資を証明するよう求めています。デフレ脱却を確信した海外投資家は、日本をAI、ロボティクス、先端製造業の強靭な拠点として再評価しています。",
-        "critique_en": "Editor H's Perspective: For years, Japan was the world's bargain bin—a place to buy cheap assets fueled by a depreciating currency. Now, we are witnessing a more intellectual form of investment. By placing 'people' at the center of valuation, Japan is finally addressing its productivity crisis. However, the true test for investors in 2026 will be discerning which companies are genuinely transforming their culture versus those merely performing 'box-ticking' compliance. Prosperity must be sustainable, not just a numerical achievement.",
-        "critique_jp": "編集者Hの視点：長年、日本は「世界のバーゲンセール会場」であり、通貨安に支えられた割安な資産を買う場所でした。しかし今、私たちはより知的な投資の形を目の当たりにしています。「人」を企業価値の中心に据えることで、日本はついに生産性の危機に向き合い始めました。2026年の投資家にとっての真の試練は、どの企業が本気で組織文化を変革しようとしているのか、あるいは単なる「形式的な対応」に終始しているのかを見極めることにあります。豊かさは数値上の達成ではなく、持続可能なものでなければなりません。",
+        "title_en": "Nikkei 225 Eyes New Heights in 2026 ： Corporate Governance Reforms Driving Global Capital Inflow",
+        "title_jp": "2026年の日経平均は新高値を模索 ： コーポレートガバナンス改革が呼び込む世界資本",
+        "content_en": "Following a robust 2025, Japanese equities are starting 2026 with strong momentum. The Tokyo Stock Exchange’s ongoing pressure on companies to improve capital efficiency and increase <span class=\"term\" onclick=\"openPanel('PBR (Price-to-Book Ratio)', 'A financial ratio used to compare a company\\'s current market price to its book value.')\">PBR (Price-to-Book Ratio)</span> is finally yielding results that resonate with global institutional investors. Analysts suggest that the 'Japan Premium' is returning, as geopolitical stability and structural reforms make the Tokyo market a preferred destination over other volatile Asian markets. Retail participation via the expanded <span class=\"term\" onclick=\"openPanel('NISA', 'Nippon Individual Savings Account; a tax-exemption scheme for retail investors in Japan.')\">NISA</span> system also provides a steady floor for domestic valuations.",
+        "content_jp": "堅調な2025年を引き継ぎ、2026年の日本株は強い勢いでスタートしました。東京証券取引所による資本効率の改善と<span class=\"term\" onclick=\"openPanel('PBR（株価純資産倍率）', '株価が1株当たりの純資産の何倍まで買われているかを示す指標。')\">PBR（株価純資産倍率）</span>の向上を求める継続的な圧力は、ようやく世界の<span class=\"term\" onclick=\"openPanel('機関投資家', '多額の資金を運用する銀行、保険会社、年金基金などの組織投資家。')\">機関投資家</span>に響く成果を上げ始めています。地政学的な安定性と構造改革により、東京市場が他の変動の激しいアジア市場よりも優先的な投資先となる中、アナリストは「ジャパン・プレミアム」の復活を示唆しています。拡充された<span class=\"term\" onclick=\"openPanel('NISA', '日本国内の個人投資家を対象とした少額投資非課税制度。')\">NISA</span>制度を通じた個人投資家の参画も、国内のバリュエーションを安定的に支えています。",
+        "critique_en": "Editor H's Perspective: Japan is no longer the 'value trap' of the lost decades. We are seeing a fundamental shift where 'capital efficiency' has moved from a buzzword to a boardroom mandate. However, the true test for 2026 will be whether these profits translate into significant wage growth. Real investment sustainability depends not just on stock charts, but on the purchasing power of the people behind those companies. The bull market needs a human foundation to endure.",
+        "critique_jp": "編集者Hの視点：日本はもはや「失われた数十年」のバリュートラップ（割安の罠）ではありません。「資本効率」が単なる流行語から、取締役会の必須課題へと根本的に変化したのです。しかし、2026年の真の試練は、これらの利益が大幅な賃金上昇に結びつくかどうかにあります。投資の真の持続可能性は、株価チャートだけでなく、企業を支える人々の購買力に依存します。強気相場が持続するためには、人間中心の基盤が必要なのです。",
         "proverb_en": {
-          "title": "Perseverance prevails",
-          "desc": "Just as the 'Takaichi Rally' and corporate reforms took years to mature, long-term patience often leads to the greatest rewards in the market."
+          "title": "Strike while the iron is hot",
+          "desc": "Take advantage of an opportunity as soon as it exists."
         },
         "proverb_jp": {
-          "title": "石の上にも三年",
-          "desc": "冷たい石でも3年も座り続ければ温まるように、忍耐強く努力を続ければ、やがて相場でも報われるという意味。"
+          "title": "好機逸すべからず",
+          "desc": "絶好の機会を逃してはならない。チャンスが来たら即座に行動すべきであること。"
         },
         "glossary": [
           {
-            "term_en": "Human Capital",
-            "def_en": "The economic value of a worker's experience and skills, viewed as an asset for corporate growth.",
-            "term_jp": "人的資本",
-            "def_jp": "労働者が持つ知識、技能、経験などの能力を、企業の成長を支える「資本」として捉える考え方。"
+            "term_en": "Corporate Governance",
+            "def_en": "The system of rules, practices, and processes by which a firm is directed and controlled.",
+            "term_jp": "コーポレートガバナンス",
+            "def_jp": "企業経営を監視・規律するための仕組み（企業統治）。"
           },
           {
-            "term_en": "Normalizing Interest Rates",
-            "def_en": "The process of returning interest rates to levels typical for an economy with stable growth and inflation.",
-            "term_jp": "金利の正常化",
-            "def_jp": "景気回復やインフレに合わせて、超低金利やマイナス金利などの非伝統的な金融政策を解除し、通常の水準に戻すこと。"
+            "term_en": "PBR (Price-to-Book Ratio)",
+            "def_en": "A financial ratio used to compare a company's current market price to its book value.",
+            "term_jp": "PBR（株価純資産倍率）",
+            "def_jp": "株価が1株当たりの純資産の何倍まで買われているかを示す指標。"
           },
           {
-            "term_en": "Stewardship Code",
-            "def_en": "A set of principles for institutional investors to promote the sustainable growth of companies through engagement.",
-            "term_jp": "スチュワードシップ・コード",
-            "def_jp": "機関投資家が、対話を通じて企業の持続的な成長を促すために遵守すべき行動規範。"
+            "term_en": "Institutional Investors",
+            "def_en": "Large organizations, such as banks or insurance companies, that invest large sums of money.",
+            "term_jp": "機関投資家",
+            "def_jp": "多額の資金を運用する銀行、保険会社、年金基金などの組織投資家。"
           },
           {
-            "term_en": "Cross-shareholding",
-            "def_en": "A practice where companies hold shares in each other to protect management and maintain business ties.",
-            "term_jp": "政策保有株式（持ち合い株）",
-            "def_jp": "企業同士が取引関係の維持などを目的に、互いの株式を保有し合うこと。現在は解消の動きが進んでいる。"
+            "term_en": "NISA",
+            "def_en": "Nippon Individual Savings Account; a tax-exemption scheme for retail investors in Japan.",
+            "term_jp": "NISA",
+            "def_jp": "日本国内の個人投資家を対象とした少額投資非課税制度。"
           },
           {
-            "term_en": "Reflationary Phase",
-            "def_en": "An economic state where prices begin to rise again after a period of deflation, supported by policy and demand.",
-            "term_jp": "リフレーション局面",
-            "def_jp": "デフレから脱却し、緩やかに物価が上昇し始める、景気回復に向けた中間の状態。"
+            "term_en": "Value Trap",
+            "def_en": "A stock that appears cheap but continues to trade at low levels due to underlying problems.",
+            "term_jp": "バリュートラップ",
+            "def_jp": "指標面で割安に見えるが、成長性の欠如などにより株価が低迷し続ける銘柄。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "Global Unrest Clouds the New Year ： Economic protests in Iran meet the tragic echoes of the Swiss Alps",
-        "title_jp": "世界を覆う不穏な新年の影 ： イランの経済デモとスイス・アルプスの悲劇",
-        "content_en": "The dawn of 2026 has been marred by a series of global crises. In Iran, mass demonstrations against crippling inflation and currency devaluation have entered their sixth day, leading to violent clashes with security forces. U.S. President Donald Trump has issued a stern warning of intervention, heightening Middle Eastern tensions. Meanwhile, Europe's celebrations were silenced by a catastrophic fire at a Swiss ski resort bar in Crans-Montana, claiming at least 46 lives. Despite these shadows, the Eurozone expanded as Bulgaria officially adopted the euro on January 1, signaling a fragile but persistent commitment to European integration.",
-        "content_jp": "2026年の幕開けは、一連の世界的な危機によって影を落とされています。イランでは、激しいインフレと通貨暴落に対する大規模な抗議デモが6日目に突入し、治安部隊との衝突で犠牲者が出ています。ドナルド・トランプ米大統領は介入を示唆する厳しい警告を発し、中東の緊張は最高潮に達しています。一方、欧州ではスイス・アルプスのスキーリゾート、クラン＝モンタナのバーで発生した大火災が46人以上の命を奪い、祝祭ムードを沈黙させました。こうした暗雲の中でも、1月1日にブルガリアが正式にユーロを導入し、欧州統合に向けた脆くも粘り強い歩みは続いています。",
-        "critique_en": "Editor H's Perspective: We are living in a paradox where digital interconnectivity grows while physical and geopolitical stability erodes. The tragedy in Switzerland reminds us of the fragility of human life in our most cherished moments of joy. In contrast, the rage in the streets of Tehran reflects a global failure to manage economic inequality within authoritarian structures. As leaders navigate these crises, they must remember that the most powerful currency is not the dollar or the euro, but the trust and safety of the people they serve.",
-        "critique_jp": "編集者Hの視点：私たちは、デジタルな相互接続が進む一方で、物理的・地政学的な安定が損なわれるというパラドックスの中に生きています。スイスの悲劇は、最も輝かしい祝祭の瞬間であっても、人の命はいかに脆いものであるかを痛感させます。対照的に、テヘランの路上に溢れる怒りは、権威主義的な体制下で経済的不平等を管理しきれなかった世界の失敗を映し出しています。指導者たちがこれらの危機に立ち向かう際、最も強力な通貨はドルでもユーロでもなく、人々の「信頼」と「安全」であることを忘れてはなりません。",
+        "title_en": "Global Energy Transition Reaches Critical Juncture ： Decoupling from Fossil Fuels Amidst Geopolitical Fractures",
+        "title_jp": "世界のエネルギー転換が岐路に ： 地政学的分断の中で進む化石燃料からの脱却",
+        "content_en": "Reports from Reuters and the BBC highlight a pivotal year for the global energy landscape. As of early 2026, renewable energy capacity has surpassed initial 2030 projections in several European and Nordic nations. However, tension remains high as resource-rich nations in the <span class=\"term\" onclick=\"openPanel('Global South', 'A term used to describe developing and emerging nations, primarily in the Southern Hemisphere.')\">Global South</span> demand 'climate justice' and technological transfers in exchange for critical minerals. With supply chains increasingly fragmented by national security concerns, the transition is becoming as much a race for sovereignty as it is a battle for the environment.",
+        "content_jp": "ロイターやBBCの報道は、世界のエネルギー情勢にとって極めて重要な1年であることを強調しています。2026年初頭の時点で、欧州や北欧の数カ国では再生可能エネルギーの設備容量が当初の2030年予測を上回りました。しかし、<span class=\"term\" onclick=\"openPanel('グローバル・サウス', '主に南半球に位置する発展途上国や新興国の総称。')\">グローバル・サウス</span>の資源大国が、<span class=\"term\" onclick=\"openPanel('重要鉱物', 'リチウムやコバルトなど、経済や安全保障に不可欠で代替が困難な鉱物資源。')\">重要鉱物</span>との引き換えに「<span class=\"term\" onclick=\"openPanel('気候正義', '地球温暖化を単なる環境問題ではなく、倫理的、政治的な公正さの観点から捉える考え方。')\">気候正義</span>」と技術移転を要求しており、緊張が高まっています。国家安全保障上の懸念からサプライチェーンの分断が進む中、エネルギー転換は環境保護のための戦いであると同時に、<span class=\"term\" onclick=\"openPanel('主権', '国家が他国からの干渉を受けず、自国の意思で統治を行う権利。')\">主権</span>をめぐる争いにもなっています。",
+        "critique_en": "Editor H's Perspective: We are moving from the era of 'Resource Diplomacy' to 'Electron Diplomacy.' The world is discovering that the path to a green future is paved with messy geopolitical realities. While the technology to save our planet exists, the political will to share it remains scarce. The danger is that the energy transition could create a new class of 'energy-rich' and 'energy-poor' nations, replacing old oil dependencies with new mineral monopolies. True progress requires a bridge, not just a battery.",
+        "critique_jp": "編集者Hの視点：私たちは今、「資源外交」から「電子外交」の時代へと移行しています。緑の未来への道は、複雑な地政学的現実に直面していることが明らかになりました。地球を救う技術は存在しますが、それを共有するための政治的意志は依然として不足しています。危険なのは、エネルギー転換によって新たな「エネルギー富国」と「エネルギー貧国」が生まれ、かつての石油依存が新たな鉱物独占に置き換わってしまうことです。真の進歩には、バッテリーだけでなく、国家間の橋渡しが必要です。",
         "proverb_en": {
-          "title": "Fortune and misfortune are like a twisted rope",
-          "desc": "Global events often present a mix of progress and tragedy, reminding us that stability is never permanent and luck can turn in an instant."
+          "title": "A house divided against itself cannot stand",
+          "desc": "A group that is divided by internal disagreement will not be able to succeed."
         },
         "proverb_jp": {
-          "title": "禍福は糾える縄のごとし",
-          "desc": "幸福と不幸は、より合わせた縄のように表裏一体であり、交互にやってくるものであるという例え。"
+          "title": "内憂外患",
+          "desc": "国内の心配事と、外国から受ける困難な事柄。内にも外にも悩みがあること。"
         },
         "glossary": [
           {
-            "term_en": "Eurozone Expansion",
-            "def_en": "The process of more EU member states adopting the euro as their sole legal tender.",
-            "term_jp": "ユーロ圏の拡大",
-            "def_jp": "欧州連合（EU）の加盟国が、自国の法定通貨をユーロへと切り替え、単一通貨圏に加わること。"
+            "term_en": "Global South",
+            "def_en": "A term used to describe developing and emerging nations, primarily in the Southern Hemisphere.",
+            "term_jp": "グローバル・サウス",
+            "def_jp": "主に南半球に位置する発展途上国や新興国の総称。"
           },
           {
-            "term_en": "Geopolitical Risk",
-            "def_en": "The risk that political instability or conflict in a specific region will affect global markets and security.",
-            "term_jp": "地政学リスク",
-            "def_jp": "特定の地域における政治的な不安定さや軍事衝突が、世界経済や安全保障に悪影響を及ぼすリスク。"
+            "term_en": "Climate Justice",
+            "def_en": "The framing of global warming as an ethical and political issue, rather than just environmental.",
+            "term_jp": "気候正義",
+            "def_jp": "地球温暖化を単なる環境問題ではなく、倫理的、政治的な公正さの観点から捉える考え方。"
           },
           {
-            "term_en": "Flashover",
-            "def_en": "A sudden, simultaneous ignition of all combustible material in an enclosed area during a fire.",
-            "term_jp": "フラッシュオーバー",
-            "def_jp": "室内での火災時、熱が一定の限界を超えた瞬間に可燃物が一斉に発火し、爆発的に燃え広がる現象。"
+            "term_en": "Critical Minerals",
+            "def_en": "Non-fuel minerals essential to the economy and national security, such as lithium and cobalt.",
+            "term_jp": "重要鉱物",
+            "def_jp": "リチウムやコバルトなど、経済や安全保障に不可欠で代替が困難な鉱物資源。"
           },
           {
-            "term_en": "Authoritarian Structure",
-            "def_en": "A political system characterized by strong central power and limited political freedoms.",
-            "term_jp": "権威主義的体制",
-            "def_jp": "中央政府に権力が集中し、個人の政治的自由が制限されている統治システム。"
+            "term_en": "Decoupling",
+            "def_en": "The process of separating two entities, such as economic growth from environmental degradation.",
+            "term_jp": "デカップリング（切り離し）",
+            "def_jp": "二つの事象が連動しなくなること。ここでは経済成長と環境負荷の分離などを指す。"
           },
           {
-            "term_en": "Currency Devaluation",
-            "def_en": "The deliberate downward adjustment of the value of a country's money relative to another currency.",
-            "term_jp": "通貨切り下げ（暴落）",
-            "def_jp": "他国の通貨に対して、自国通貨の価値が大幅に下落すること、あるいは政策的に下げること。"
+            "term_en": "Sovereignty",
+            "def_en": "The authority of a state to govern itself or another state.",
+            "term_jp": "主権",
+            "def_jp": "国家が他国からの干渉を受けず、自国の意思で統治を行う権利。"
           }
         ]
       }
