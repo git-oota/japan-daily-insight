@@ -3,148 +3,148 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "Japan to Formalize Basic Policy on Foreign Labor in January 2026 ： Takaichi Administration Balances Labor Shortage with Public Anxiety and Strict Compliance",
-        "title_jp": "政府、2026年1月に「外国人材基本方針」を策定へ ： 高市政権、深刻な人手不足と国民の不安払拭の間で揺れる舵取り",
-        "content_en": "As Japan rings in 2026, the administration of Prime Minister Sanae Takaichi is set to finalize a landmark 'Basic Policy on Foreign National Issues.' This policy comes as the country faces an unprecedented labor shortage, particularly in essential sectors like healthcare and logistics, while simultaneously grappling with rising public concern regarding social integration and land acquisition. Recent data indicates that Japan's foreign resident population has surpassed 3.9 million. The new framework aims to replace the criticized Technical Intern Training Program with a more transparent '<span class=\"term\" onclick=\"openPanel('Employment for Skill Development', 'The new Japanese labor framework replacing the Technical Intern Training Program to encourage skill acquisition and long-term residency.')\">Employment for Skill Development</span>' system, while mandating stricter compliance and language proficiency for long-term residency. However, social welfare organizations report that many residents, both domestic and foreign, are struggling with record-high inequality as Gini index figures reach new peaks.",
-        "content_jp": "2026年の幕開けとともに、高市早苗政権は歴史的な「外国人材に関する基本方針」の策定を急いでいる。この方針は、医療や物流といった不可欠な部門での深刻な<span class=\"term\" onclick=\"openPanel('人手不足', '労働市場において、求人数に対して働き手が不足している状態。')\">人手不足</span>に直面する一方で、社会統合や外国人による土地取得に対する国民の不安が高まっていることを背景としている。最新のデータでは、日本の外国人住民数は390万人を超えた。新枠組みでは、批判の多かった技能実習制度をより透明性の高い「<span class=\"term\" onclick=\"openPanel('育成就労制度', '技能実習制度に代わり、人材確保と育成を目的として導入された新たな外国人就労枠組み。')\">育成就労制度</span>」へと移行させ、長期在留には厳格な法令遵守と日本語能力を求める。その一方で、福祉団体からは、<span class=\"term\" onclick=\"openPanel('ジニ係数', '社会における所得分配の不平等さを測る指標。数値が高いほど格差が大きいことを示す。')\">ジニ係数</span>が過去最高を記録するなど、国内外の住民が格差拡大と物価高に苦しんでいる現状も報告されている。",
-        "critique_en": "Editor H's Perspective: Japan is attempting a delicate tightrope walk that many Western nations have struggled with for decades. The Takaichi administration is trying to brand this not as 'immigration' but as 'managed coexistence.' By emphasizing 'strict compliance' and 'order,' the government seeks to appease a conservative base while keeping the economic engine running. However, the real test of this policy won't be in the vetting of visas, but in the streets of cities like Oizumi or Kawaguchi. If Japan fails to address the widening wealth gap and the 'social invisibility' of its essential workers, it risks creating the very social friction it aims to prevent. True harmony requires more than just rules; it requires a shared sense of belonging.",
-        "critique_jp": "編集者Hの視点：日本は今、欧米諸国が数十年にわたり苦心してきた繊細な綱渡りに挑もうとしています。高市政権はこれを「移民政策」ではなく「秩序ある共生」と定義することで、保守層の支持を繋ぎ止めつつ、経済のエンジンを回し続けようとしています。しかし、この政策の真価が問われるのは、ビザの審査基準ではなく、大泉町や川口市といった現場の街角です。格差の拡大やエッセンシャルワーカーの「社会的な不可視化」を放置すれば、政府が最も恐れる社会摩擦を自ら招くことになりかねません。真の共生には、規則だけでなく、共にこの社会を支えているという「帰属意識」の共有が不可欠です。",
+        "title_en": "Japan’s Economic Divide Deepens in 2026 ： Food relief queues expose the fragility of the social safety net",
+        "title_jp": "2026年、深まる日本の経済格差 ： 炊き出しの列が物語るセーフティネットの脆さ",
+        "content_en": "As 2026 begins, a stark contrast has emerged in the streets of Tokyo. While the government speaks of a 'strong and prosperous' archipelago, the reality at food distribution sites in Shinjuku and Ikebukuro tells a different story. Long queues, including an increasing number of young 'gig workers' and single mothers, have become a fixture of the New Year period. Following the Takaichi administration's decision to scale back cash subsidies in late 2025, many vulnerable citizens are finding that rising rice prices and stagnant support have pushed them to the brink. This struggle is compounded by a growing sense of social isolation, as the Cabinet Office warns that 'lonely deaths' are no longer an issue reserved only for the elderly.",
+        "content_jp": "2026年の幕開けとともに、東京の路上には鮮明なコントラストが浮かび上がっています。政府が「強靭で豊かな日本」を掲げる一方で、新宿や池袋の食料配布現場には、政府の言葉とは異なる現実が広がっています。若年層の<span class=\"term\" onclick=\"openPanel('ギグワーカー', 'インターネット上のプラットフォームを介して単発の仕事請け負う労働者。福利厚生が不十分な場合が多い。')\">ギグワーカー</span>やシングルマザーを含む長い列は、いまや正月の恒例行事となってしまいました。2025年末の石破政権から高市政権への移行期に行われた現金給付の縮小により、米価の高騰と支援の停滞が多くの社会的弱者を追い詰めています。内閣府が「<span class=\"term\" onclick=\"openPanel('孤独死', '誰にも看取られることなく一人で亡くなり、死後相当期間が経過してから発見されること。')\">孤独死</span>」はもはや高齢者だけの問題ではないと警鐘を鳴らす中、経済的な困窮と<span class=\"term\" onclick=\"openPanel('社会的孤立', '個人が家族や地域社会との交流を断絶し、客観的に見て社会との繋がりがない状態。')\">社会的孤立</span>が複雑に絡み合っています。",
+        "critique_en": "Editor H's Perspective: We often measure progress through GDP or stock indices, yet the true health of a nation is reflected in the length of the lines at its soup kitchens. The current administration’s focus on 'bold reforms' must not come at the cost of the basic dignity of its citizens. When a 75-year-old man must spend his New Year's Day traveling an hour just to secure a single meal, it is a sign that our social fabric is fraying. Policy must move beyond mere numbers to foster genuine community resilience and empathy.",
+        "critique_jp": "編集者Hの視点：私たちは往々にしてGDPや株価指数で進歩を測りがちですが、国家の真の健康状態は炊き出しに並ぶ列の長さにこそ現れます。現政権が掲げる「大胆な改革」が、市民の基本的な尊厳を犠牲にしてはなりません。75歳の男性がたった一食のために元旦から1時間も移動しなければならない現状は、社会の絆がほころび始めている兆候です。政策は単なる数字の操作を超え、真のコミュニティの回復力と共感を育むものであるべきです。",
         "proverb_en": {
-          "title": "A single arrow is easily broken, but three arrows together are not.",
-          "desc": "Emphasizes that unity and cooperation provide strength that individuals cannot achieve alone."
+          "title": "A stranger nearby is better than a relative far away",
+          "desc": "In times of crisis, local community ties and immediate mutual aid often prove more vital than distant official support."
         },
         "proverb_jp": {
-          "title": "三本の矢",
-          "desc": "一人の力は弱くても、協力し合えば強固な力になることの例え。社会統合の重要性を示唆します。"
+          "title": "遠くの親類より近くの他人",
+          "desc": "いざという時には、遠くにいる親戚よりも近所の人々との助け合いや絆こそが最も頼りになるという意味。"
         },
         "glossary": [
           {
-            "term_en": "Employment for Skill Development",
-            "def_en": "The new Japanese labor framework replacing the Technical Intern Training Program to encourage skill acquisition and long-term residency.",
-            "term_jp": "育成就労制度",
-            "def_jp": "技能実習制度に代わり、人材確保と育成を目的として導入された新たな外国人就労枠組み。"
-          },
-          {
             "term_en": "Gini Index",
-            "def_en": "A statistical measure of distribution intended to represent the income or wealth inequality within a nation.",
+            "def_en": "A statistical measure of distribution intended to represent the income inequality within a nation.",
             "term_jp": "ジニ係数",
-            "def_jp": "社会における所得分配の不平等さを測る指標。数値が高いほど格差が大きいことを示す。"
+            "def_jp": "社会における所得の不平等さを測るための指標。数値が1に近いほど格差が大きいことを示す。"
           },
           {
-            "term_en": "Social Coexistence",
-            "def_en": "The state of living together in harmony despite differences in culture or nationality.",
-            "term_jp": "多文化共生",
-            "def_jp": "国籍や民族などの異なる人々が、互いの文化的違いを認め合い、対等な関係を築こうとすること。"
+            "term_en": "Gig Worker",
+            "def_en": "Individuals who work short-term, flexible jobs, often through digital platforms, lacking traditional employment benefits.",
+            "term_jp": "ギグワーカー",
+            "def_jp": "インターネット上のプラットフォームを介して単発の仕事請け負う労働者。福利厚生が不十分な場合が多い。"
           },
           {
-            "term_en": "Labor Shortage",
-            "def_en": "An economic condition in which there are insufficient qualified workers to fill available jobs.",
-            "term_jp": "人手不足",
-            "def_jp": "労働市場において、求人数に対して働き手が不足している状態。"
+            "term_en": "Safety Net",
+            "def_en": "A collection of services and support provided by the state to prevent citizens from falling into extreme poverty.",
+            "term_jp": "セーフティネット",
+            "def_jp": "国民が深刻な貧困に陥るのを防ぐための公的な扶助や社会保障制度の総称。"
           },
           {
-            "term_en": "Compliance",
-            "def_en": "The action or fact of complying with a wish or command, often referring to legal or regulatory requirements.",
-            "term_jp": "コンプライアンス",
-            "def_jp": "法令遵守。特に企業や個人が社会規範や法律に従って行動すること。"
+            "term_en": "Social Isolation",
+            "def_en": "A state of complete or near-complete lack of contact between an individual and society.",
+            "term_jp": "社会的孤立",
+            "def_jp": "個人が家族や地域社会との交流を断絶し、客観的に見て社会との繋がりがない状態。"
+          },
+          {
+            "term_en": "Lonely Death (Kodokushi)",
+            "def_en": "A Japanese phenomenon where people die alone and remain undiscovered for a long period.",
+            "term_jp": "孤独死",
+            "def_jp": "誰にも看取られることなく一人で亡くなり、死後相当期間が経過してから発見されること。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "NISA Expansion Reaches New Milestone with Removal of Age Limits ： Record Foreign Capital Inflows Propel Nikkei Above 50,000 as Structural Shift Continues",
-        "title_jp": "NISA拡充、年齢制限撤廃で新たな局面へ ： 記録的な海外資金流入が日経平均5万円台を支える構造的変化",
-        "content_en": "Entering 2026, the Japanese investment landscape has undergone a profound transformation. The government’s decision to abolish age restrictions for the NISA 'tsumitate' (installment) quota has signaled a new era where asset building begins from infancy, managed by guardians. This reform, combined with a renewed push for 'strong wage momentum' by the Keidanren, has fueled optimism. On the institutional side, foreign investors have poured a record 13.5 trillion yen into Japanese equities, driving the Nikkei 225 past the psychological 50,000 mark. Analysts credit this surge to ongoing corporate governance reforms and the Bank of Japan's cautious normalization of interest rates, which has finally begun to attract capital back into yen-denominated assets.",
-        "content_jp": "2026年を迎え、日本の投資環境は劇的な変貌を遂げた。政府がNISAの「つみたて投資枠」の年齢制限撤廃を決定したことで、乳幼児期から保護者が資産形成を管理できる「一生涯の投資」時代が到来した。この改革と、経団連による「強い賃上げモメンタム」の継続が相まって、市場に楽観論が広がっている。機関投資家側では、海外勢が13.5兆円という記録的な資金を日本株に投じ、日経平均株価は<span class=\"term\" onclick=\"openPanel('心理的節目', '株価などで、投資家が意識しやすい「きりの良い数字」などの重要な水準。')\">心理的節目</span>である5万円を突破した。この急騰の背景には、継続的な<span class=\"term\" onclick=\"openPanel('コーポレートガバナンス', '企業統治。不祥事を防ぎ、中長期的な企業価値を高めるための経営監視の仕組み。')\">コーポレートガバナンス</span>改革と、円資産への資金回帰を促した日銀の慎重な金利正常化プロセスがあると分析されている。",
-        "critique_en": "Editor H's Perspective: The milestone of Nikkei 50,000 is more than just a number; it is a validation of the decade-long effort to turn Japan from a nation of savers into a nation of investors. However, we must remain vigilant. The 'NISA for Minors' introduces a generational wealth-building tool, but it also risks widening the gap between those with capital to spare and those living paycheck to paycheck. As the market reaches these heady heights, the focus should shift from 'growth at any cost' to 'resilient returns.' Investors should remember that while the tide is high, the underlying economic fundamentals—particularly the pressure from US tariffs and energy costs—remain volatile.",
-        "critique_jp": "編集者Hの視点：日経平均5万円という大台は単なる数字ではありません。「貯蓄から投資へ」という、日本が10年以上かけて進めてきた構造改革が結実しつつあることの証明です。しかし、手放しでの楽観は禁物です。「未成年向けNISA」は世代を超えた資産形成を可能にしますが、余剰資金のある層と日々の生活で手一杯の層との格差を固定化させるリスクも孕んでいます。市場が熱狂に包まれる今こそ、投資家は「いかなるコストを払ってでも成長」ではなく「強靭なリターン」を重視すべきです。潮目が変わる予兆、特に米国の関税圧力やエネルギー価格の変動といった地政学的リスクを、常に注視しておく必要があります。",
+        "title_en": "Nikkei 225 Eyes 55,000 Milestone in 2026 ： The shift from speculative currency plays to human capital integrity",
+        "title_jp": "日経平均、2026年に5万5千円到達を射程 ： 通貨投機から「人的資本」の質を問う時代へ",
+        "content_en": "Following the Bank of Japan's December 2025 rate hike to 0.75%, the Japanese equity market has entered a new era of normalization. Analysts are forecasting the Nikkei 225 to test the 55,000 mark by the end of 2026, driven not by a weak yen, but by fundamental corporate restructuring. The revised 2026 Corporate Governance Code now mandates stricter disclosures on human capital management, forcing firms to prove they are investing in talent rather than merely hoarding cash. Overseas investors, previously cautious about Japan’s deflationary mindset, are increasingly viewing Tokyo as a resilient hub for AI, robotics, and advanced manufacturing.",
+        "content_jp": "2025年12月に日本銀行が政策金利を0.75%まで引き上げたことを受け、日本の株式市場は正常化という新たな局面を迎えました。アナリストは、2026年末までに日経平均株価が5万5000円の大台を試すと予測しています。これは円安による押し上げではなく、企業の根本的な体質改善によるものです。2026年に改訂されたコーポレートガバナンス・コードは、<span class=\"term\" onclick=\"openPanel('人的資本', '労働者が持つ知識、技能、経験などの能力を、企業の成長を支える「資本」として捉える考え方。')\">人的資本</span>経営の開示をさらに厳格化し、企業に対して単なる現金の蓄積ではなく人材への投資を証明するよう求めています。デフレ脱却を確信した海外投資家は、日本をAI、ロボティクス、先端製造業の強靭な拠点として再評価しています。",
+        "critique_en": "Editor H's Perspective: For years, Japan was the world's bargain bin—a place to buy cheap assets fueled by a depreciating currency. Now, we are witnessing a more intellectual form of investment. By placing 'people' at the center of valuation, Japan is finally addressing its productivity crisis. However, the true test for investors in 2026 will be discerning which companies are genuinely transforming their culture versus those merely performing 'box-ticking' compliance. Prosperity must be sustainable, not just a numerical achievement.",
+        "critique_jp": "編集者Hの視点：長年、日本は「世界のバーゲンセール会場」であり、通貨安に支えられた割安な資産を買う場所でした。しかし今、私たちはより知的な投資の形を目の当たりにしています。「人」を企業価値の中心に据えることで、日本はついに生産性の危機に向き合い始めました。2026年の投資家にとっての真の試練は、どの企業が本気で組織文化を変革しようとしているのか、あるいは単なる「形式的な対応」に終始しているのかを見極めることにあります。豊かさは数値上の達成ではなく、持続可能なものでなければなりません。",
         "proverb_en": {
-          "title": "Strike while the iron is hot.",
-          "desc": "Act quickly while the opportunity is available and the conditions are favorable."
+          "title": "Perseverance prevails",
+          "desc": "Just as the 'Takaichi Rally' and corporate reforms took years to mature, long-term patience often leads to the greatest rewards in the market."
         },
         "proverb_jp": {
-          "title": "鉄は熱いうちに打て",
-          "desc": "機会を逃さず、好条件のうちに行動せよという教え。現在の投資ブームへの機敏な対応を示唆します。"
+          "title": "石の上にも三年",
+          "desc": "冷たい石でも3年も座り続ければ温まるように、忍耐強く努力を続ければ、やがて相場でも報われるという意味。"
         },
         "glossary": [
           {
-            "term_en": "Tsumitate NISA",
-            "def_en": "An installment-type tax-exempt individual savings account in Japan designed for long-term small-amount investments.",
-            "term_jp": "つみたてNISA",
-            "def_jp": "長期・積立・分散投資を支援するための、非課税の少額投資非課税制度。"
+            "term_en": "Human Capital",
+            "def_en": "The economic value of a worker's experience and skills, viewed as an asset for corporate growth.",
+            "term_jp": "人的資本",
+            "def_jp": "労働者が持つ知識、技能、経験などの能力を、企業の成長を支える「資本」として捉える考え方。"
           },
           {
-            "term_en": "Normalization of Interest Rates",
-            "def_en": "The process where a central bank moves interest rates back to a more typical level after a period of extreme easing.",
+            "term_en": "Normalizing Interest Rates",
+            "def_en": "The process of returning interest rates to levels typical for an economy with stable growth and inflation.",
             "term_jp": "金利の正常化",
-            "def_jp": "中央銀行が極端な金融緩和を止め、政策金利を経済実態に見合った水準に戻していく過程。"
+            "def_jp": "景気回復やインフレに合わせて、超低金利やマイナス金利などの非伝統的な金融政策を解除し、通常の水準に戻すこと。"
           },
           {
-            "term_en": "Corporate Governance",
-            "def_en": "The system of rules, practices, and processes by which a firm is directed and controlled.",
-            "term_jp": "コーポレートガバナンス",
-            "def_jp": "企業統治。不祥事を防ぎ、中長期的な企業価値を高めるための経営監視の仕組み。"
+            "term_en": "Stewardship Code",
+            "def_en": "A set of principles for institutional investors to promote the sustainable growth of companies through engagement.",
+            "term_jp": "スチュワードシップ・コード",
+            "def_jp": "機関投資家が、対話を通じて企業の持続的な成長を促すために遵守すべき行動規範。"
           },
           {
-            "term_en": "Psychological Barrier",
-            "def_en": "A significant round number in a stock index that investors view as a resistance or support level.",
-            "term_jp": "心理的節目",
-            "def_jp": "株価などで、投資家が意識しやすい「きりの良い数字」などの重要な水準。"
+            "term_en": "Cross-shareholding",
+            "def_en": "A practice where companies hold shares in each other to protect management and maintain business ties.",
+            "term_jp": "政策保有株式（持ち合い株）",
+            "def_jp": "企業同士が取引関係の維持などを目的に、互いの株式を保有し合うこと。現在は解消の動きが進んでいる。"
           },
           {
-            "term_en": "Retail Investor",
-            "def_en": "An individual who purchases securities for their own personal account rather than for an organization.",
-            "term_jp": "個人投資家",
-            "def_jp": "機関投資家ではなく、個人の資金で有価証券の売買を行う投資家。"
+            "term_en": "Reflationary Phase",
+            "def_en": "An economic state where prices begin to rise again after a period of deflation, supported by policy and demand.",
+            "term_jp": "リフレーション局面",
+            "def_jp": "デフレから脱却し、緩やかに物価が上昇し始める、景気回復に向けた中間の状態。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "Switzerland Mourns 46 Victims of New Year Bar Inferno in Crans-Montana ： Tragedy Amidst Europe’s Economic and Geopolitical Realignments",
-        "title_jp": "スイス、クラン＝モンタナの新年パーティー火災で46人死亡 ： 欧州の経済・地政学的再編の中で起きた悲劇",
-        "content_en": "A devastating fire at the 'Le Constellation' bar in the Swiss ski resort of Crans-Montana has left at least 46 dead and over 100 injured, casting a somber shadow over the start of 2026. The blaze, suspected to have been triggered by indoor pyrotechnics during New Year celebrations, trapped hundreds of young revelers in a basement inferno. This tragedy occurs as Europe undergoes significant shifts: Bulgaria officially adopted the Euro as its currency on January 1, becoming the 21st member of the eurozone. Meanwhile, geopolitics remains tense with ongoing protests in Iran over economic conditions and a new US travel ban affecting 40 countries coming into force, reflecting a global trend toward stricter border controls.",
-        "content_jp": "スイスのスキーリゾート、クラン＝モンタナにあるバー「ル・コンステラシオン」で発生した凄惨な火災により、少なくとも46人が死亡、100人以上が負傷し、2026年の幕開けに暗い影を落とした。新年の祝宴中に使用された屋内花火が原因とみられる火災は、地下にいた数百人の若者たちを飲み込んだ。この悲劇の一方で、欧州は大きな変革期にある。1月1日、ブルガリアが正式にユーロを導入し、ユーロ圏21番目の加盟国となった。一方、地政学的にはイランで経済難への抗議デモが続くほか、米国で40カ国を対象とした新たな<span class=\"term\" onclick=\"openPanel('入国禁止措置', '特定の国や地域からの渡航者の入国を、政府が法令によって制限・禁止すること。')\">入国禁止措置</span>が施行されるなど、国境管理の厳格化という世界的な潮流が鮮明になっている。",
-        "critique_en": "Editor H's Perspective: The contrast between the festive lights of Crans-Montana and the subsequent inferno serves as a haunting metaphor for our current global state—fragile joy amidst systemic risks. While Europe celebrates the expansion of the Eurozone with Bulgaria's entry, symbolizing a push for unity, the world simultaneously feels more divided than ever. The new US travel bans and the crackdowns in Iran remind us that 'security' is increasingly being used as a justification for exclusion. As we mourn the young lives lost in a moment of celebration, we must ask if our global frameworks are keeping pace with the risks—be they the safety of a crowded bar or the stability of an interconnected economy.",
-        "critique_jp": "編集者Hの視点：クラン＝モンタナの華やかな祝祭の光と、その後に起きた業火のコントラストは、現代の世界情勢を象徴する痛烈なメタファーです。つまり、システム上のリスクに囲まれた中での「脆い喜び」です。ブルガリアのユーロ導入が欧州の統合に向けた前進を象徴する一方で、世界はかつてないほど分断されているようにも感じられます。米国の入国禁止措置やイランの弾圧は、「安全」が排除の正当化に使われる現実を突きつけています。祝祭の場で失われた若き命を悼むとともに、私たちは自問しなければなりません。混雑したバーの安全基準から、相互接続された経済の安定性に至るまで、私たちの社会システムは進化するリスクに追いついているのでしょうか。",
+        "title_en": "Global Unrest Clouds the New Year ： Economic protests in Iran meet the tragic echoes of the Swiss Alps",
+        "title_jp": "世界を覆う不穏な新年の影 ： イランの経済デモとスイス・アルプスの悲劇",
+        "content_en": "The dawn of 2026 has been marred by a series of global crises. In Iran, mass demonstrations against crippling inflation and currency devaluation have entered their sixth day, leading to violent clashes with security forces. U.S. President Donald Trump has issued a stern warning of intervention, heightening Middle Eastern tensions. Meanwhile, Europe's celebrations were silenced by a catastrophic fire at a Swiss ski resort bar in Crans-Montana, claiming at least 46 lives. Despite these shadows, the Eurozone expanded as Bulgaria officially adopted the euro on January 1, signaling a fragile but persistent commitment to European integration.",
+        "content_jp": "2026年の幕開けは、一連の世界的な危機によって影を落とされています。イランでは、激しいインフレと通貨暴落に対する大規模な抗議デモが6日目に突入し、治安部隊との衝突で犠牲者が出ています。ドナルド・トランプ米大統領は介入を示唆する厳しい警告を発し、中東の緊張は最高潮に達しています。一方、欧州ではスイス・アルプスのスキーリゾート、クラン＝モンタナのバーで発生した大火災が46人以上の命を奪い、祝祭ムードを沈黙させました。こうした暗雲の中でも、1月1日にブルガリアが正式にユーロを導入し、欧州統合に向けた脆くも粘り強い歩みは続いています。",
+        "critique_en": "Editor H's Perspective: We are living in a paradox where digital interconnectivity grows while physical and geopolitical stability erodes. The tragedy in Switzerland reminds us of the fragility of human life in our most cherished moments of joy. In contrast, the rage in the streets of Tehran reflects a global failure to manage economic inequality within authoritarian structures. As leaders navigate these crises, they must remember that the most powerful currency is not the dollar or the euro, but the trust and safety of the people they serve.",
+        "critique_jp": "編集者Hの視点：私たちは、デジタルな相互接続が進む一方で、物理的・地政学的な安定が損なわれるというパラドックスの中に生きています。スイスの悲劇は、最も輝かしい祝祭の瞬間であっても、人の命はいかに脆いものであるかを痛感させます。対照的に、テヘランの路上に溢れる怒りは、権威主義的な体制下で経済的不平等を管理しきれなかった世界の失敗を映し出しています。指導者たちがこれらの危機に立ち向かう際、最も強力な通貨はドルでもユーロでもなく、人々の「信頼」と「安全」であることを忘れてはなりません。",
         "proverb_en": {
-          "title": "Disaster strikes when you least expect it.",
-          "desc": "A reminder to always be prepared and cautious, as misfortune often occurs during moments of complacency."
+          "title": "Fortune and misfortune are like a twisted rope",
+          "desc": "Global events often present a mix of progress and tragedy, reminding us that stability is never permanent and luck can turn in an instant."
         },
         "proverb_jp": {
-          "title": "天災は忘れた頃にやってくる",
-          "desc": "惨事は油断しているときに起こるという戒め。新年の祝いの場での悲劇を教訓とすべきです。"
+          "title": "禍福は糾える縄のごとし",
+          "desc": "幸福と不幸は、より合わせた縄のように表裏一体であり、交互にやってくるものであるという例え。"
         },
         "glossary": [
           {
             "term_en": "Eurozone Expansion",
-            "def_en": "The process of European Union member states adopting the euro as their official currency.",
+            "def_en": "The process of more EU member states adopting the euro as their sole legal tender.",
             "term_jp": "ユーロ圏の拡大",
-            "def_jp": "EU加盟国が法定通貨としてユーロを導入し、ユーロ圏に加わること。ブルガリアが21番目となった。"
+            "def_jp": "欧州連合（EU）の加盟国が、自国の法定通貨をユーロへと切り替え、単一通貨圏に加わること。"
           },
           {
-            "term_en": "Pyrotechnics",
-            "def_en": "The art and science of using fire and explosives for entertainment, such as fireworks.",
-            "term_jp": "パイロテクニクス（演出用火工品）",
-            "def_jp": "イベントや舞台で使われる特殊効果用の花火や火薬演出。"
+            "term_en": "Geopolitical Risk",
+            "def_en": "The risk that political instability or conflict in a specific region will affect global markets and security.",
+            "term_jp": "地政学リスク",
+            "def_jp": "特定の地域における政治的な不安定さや軍事衝突が、世界経済や安全保障に悪影響を及ぼすリスク。"
           },
           {
-            "term_en": "Travel Ban",
-            "def_en": "A legal restriction imposed by a government to prevent people from certain countries from entering.",
-            "term_jp": "入国禁止措置",
-            "def_jp": "特定の国や地域からの渡航者の入国を、政府が法令によって制限・禁止すること。"
+            "term_en": "Flashover",
+            "def_en": "A sudden, simultaneous ignition of all combustible material in an enclosed area during a fire.",
+            "term_jp": "フラッシュオーバー",
+            "def_jp": "室内での火災時、熱が一定の限界を超えた瞬間に可燃物が一斉に発火し、爆発的に燃え広がる現象。"
           },
           {
-            "term_en": "Geopolitical Tension",
-            "def_en": "Strain and conflict between countries based on political and geographic factors.",
-            "term_jp": "地政学的緊張",
-            "def_jp": "地理的条件が政治・軍事・経済に与える影響を背景とした、国家間の対立や緊張状態。"
+            "term_en": "Authoritarian Structure",
+            "def_en": "A political system characterized by strong central power and limited political freedoms.",
+            "term_jp": "権威主義的体制",
+            "def_jp": "中央政府に権力が集中し、個人の政治的自由が制限されている統治システム。"
           },
           {
-            "term_en": "Inferno",
-            "def_en": "A large fire that is dangerously out of control.",
-            "term_jp": "インフェルノ（大火災）",
-            "def_jp": "制御不能に陥った巨大な火災、または地獄のような惨状。"
+            "term_en": "Currency Devaluation",
+            "def_en": "The deliberate downward adjustment of the value of a country's money relative to another currency.",
+            "term_jp": "通貨切り下げ（暴落）",
+            "def_jp": "他国の通貨に対して、自国通貨の価値が大幅に下落すること、あるいは政策的に下げること。"
           }
         ]
       }
