@@ -6,41 +6,38 @@ from datetime import timedelta, timezone
 from google import genai
 from google.genai import types
 from jinja2 import Template
-import re
 
-# 1. API設定
+# 1. API・時間設定
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-
-# 2. 日本時間(JST)の設定
 jst = timezone(timedelta(hours=+9), 'JST')
 now = datetime.datetime.now(jst)
 today_str = now.strftime("%Y-%m-%d")
 
-# 3. プロンプト設定
+# 2. プロンプト設定
 PROMPT = f"""
 Today's date is {today_str}. 
 Search for top news from Japan's 5 major newspapers and global news (BBC/Reuters).
-Select THREE main topics: 1. Social, 2. Investment, 3. International.
+Select THREE topics: 1. Social (Japan), 2. Investment (Japan), 3. International (Global).
 
-Rewrite each as a Nicholas Kristof-style column for junior high school students.
 Requirements:
-- Empathic, historical perspective, and deep analysis.
-- Provide both English and Japanese text.
-- For EACH article, pick 5 difficult terms used in the text and provide short definitions in both JP and EN.
-- Sign off as "Editor H" (編集者H).
+- Style: Nicholas Kristof (empathic, intellectual).
+- Sign-off: "Editor H" (編集者H).
+- Language: Provide both English and Japanese.
+- [NEW] Title Format: 'Main Title ： Sub Title' (Full-width '：' for JP, ' : ' for EN).
+- [NEW] Proverbs: JP version must use entirely Japanese proverbs and explanations.
+- [NEW] Glossary: Pick 5 terms used in each text and define them in both languages.
 
 Output ONLY a raw JSON object:
 {{
   "articles": [
     {{
       "category": "Social",
-      "title_en": "...", "title_jp": "...",
+      "title_en": "Main : Sub", "title_jp": "メイン ： サブ",
       "content_en": "...", "content_jp": "...",
       "critique_en": "...", "critique_jp": "...",
-      "proverb": {{"title": "...", "desc": "..."}},
-      "glossary": [
-        {{"term_en": "...", "def_en": "...", "term_jp": "...", "def_jp": "..."}}
-      ]
+      "proverb_jp": {{"title": "...", "desc": "..."}},
+      "proverb_en": {{"title": "...", "desc": "..."}},
+      "glossary": [{{"term_en": "...", "def_en": "...", "term_jp": "...", "def_jp": "..."}}]
     }},
     {{ "category": "Investment", ... }},
     {{ "category": "International", ... }}
@@ -68,20 +65,17 @@ def generate():
     
     if not data: return
 
-    # --- 【新機能】本文中の用語を自動的にタグ置換するロジック ---
+    # 本文中の用語を自動的にタグ置換
     for article in data['articles']:
         for g in article['glossary']:
-            # 日本語: 用語を <span class="term"> で囲む
-            t_jp = g['term_jp']
-            d_jp = g['def_jp'].replace("'", "\\'") # JSエラー防止のクォート処理
-            replace_jp = f'<span class="term" onclick="openPanel(\'{t_jp}\', \'{d_jp}\')">{t_jp}</span>'
-            article['content_jp'] = article['content_jp'].replace(t_jp, replace_jp)
-            
-            # 英語: 用語を <span class="term"> で囲む
-            t_en = g['term_en']
-            d_en = g['def_en'].replace("'", "\\'")
-            replace_en = f'<span class="term" onclick="openPanel(\'{t_en}\', \'{d_en}\')">{t_en}</span>'
-            article['content_en'] = article['content_en'].replace(t_en, replace_en)
+            # 日本語置換
+            t_jp, d_jp = g['term_jp'], g['def_jp'].replace("'", "\\'")
+            tag_jp = f'<span class="term" onclick="openPanel(\'{t_jp}\', \'{d_jp}\')">{t_jp}</span>'
+            article['content_jp'] = article['content_jp'].replace(t_jp, tag_jp)
+            # 英語置換
+            t_en, d_en = g['term_en'], g['def_en'].replace("'", "\\'")
+            tag_en = f'<span class="term" onclick="openPanel(\'{t_en}\', \'{d_en}\')">{t_en}</span>'
+            article['content_en'] = article['content_en'].replace(t_en, tag_en)
 
     data['date'] = today_str
     data_path = 'docs/data.json'
