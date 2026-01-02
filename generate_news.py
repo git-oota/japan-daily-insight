@@ -7,19 +7,17 @@ import google.generativeai as genai
 from jinja2 import Template
 
 # 1. API設定
-# 環境変数からAPIキーを取得
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
-# 2. 日本時間(JST)の厳密な設定
+# 2. 日本時間(JST)の設定
 jst = timezone(timedelta(hours=+9), 'JST')
 now = datetime.datetime.now(jst)
 today_str = now.strftime("%Y-%m-%d")
 
-# 3. モデルの初期化（404エラーを回避する最も安定した指定方法）
-# 'models/' を付けず、ライブラリのデフォルト挙動（v1）を利用します
+# 3. モデルの初期化（最新の google_search ツール形式に修正）
 model = genai.GenerativeModel(
     model_name='gemini-3-flash-preview',
-    tools=[{'google_search_retrieval': {}}]
+    tools=[{'google_search': {}}]  # ← ここを修正しました
 )
 
 # 4. プロンプト設定
@@ -59,15 +57,22 @@ Output ONLY a raw JSON object. No markdown blocks, no preamble.
 def generate():
     print(f"Starting generation for {today_str} (JST)...")
     
-    # 5. AIによる記事生成（リトライ・JSON抽出処理）
     data = None
+    # 5. AIによる記事生成
     for attempt in range(3):
         try:
             print(f"Attempt {attempt+1}...")
+            # 検索ツールを呼び出す
             response = model.generate_content(PROMPT)
+            
+            # レスポンスが取得できたか確認
+            if not response.text:
+                print("Empty response, retrying...")
+                continue
+                
             res_text = response.text.strip()
             
-            # 文字列からJSON部分を抽出（Markdownタグがあっても対応可能にする）
+            # JSON部分を抽出
             start_idx = res_text.find('{')
             end_idx = res_text.rfind('}') + 1
             if start_idx != -1 and end_idx != -1:
@@ -76,15 +81,12 @@ def generate():
                 break
         except Exception as e:
             print(f"Error in attempt {attempt+1}: {e}")
-            if "429" in str(e): # クォータ制限の場合は長めに待機
-                time.sleep(60)
-            else:
-                time.sleep(20)
+            time.sleep(20)
     
     if not data:
         raise Exception("Failed to generate content after all attempts.")
 
-    # 6. データの保存とディレクトリ管理
+    # 6. データの保存
     data['date'] = today_str
     data_path = 'docs/data.json'
     os.makedirs('docs/articles', exist_ok=True)
@@ -97,15 +99,14 @@ def generate():
             except:
                 history = []
 
-    # 上書き許可ロジック（同日のデータがあれば差し替え）
+    # 上書き許可
     history = [e for e in history if e.get('date') != today_str]
     history.insert(0, data)
         
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
-    # 7. HTMLテンプレートへの反映
-    # テンプレートはリポジトリのルート（docsの外）にある前提です
+    # 7. HTML反映
     templates = [
         ('template_portal.html', 'docs/index.html'),
         ('template_article.html', f'docs/articles/{today_str}.html')
