@@ -3,24 +3,19 @@ import json
 import datetime
 import time
 from datetime import timedelta, timezone
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from jinja2 import Template
 
-# 1. API設定
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+# 1. API設定 (最新SDKの初期化方法)
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 # 2. 日本時間(JST)の設定
 jst = timezone(timedelta(hours=+9), 'JST')
 now = datetime.datetime.now(jst)
 today_str = now.strftime("%Y-%m-%d")
 
-# 3. モデルの初期化（最新の google_search ツール形式に修正）
-model = genai.GenerativeModel(
-    model_name='gemini-3-flash-preview',
-    tools=[{'google_search': {}}]  # ← ここを修正しました
-)
-
-# 4. プロンプト設定
+# 3. プロンプト設定
 PROMPT = f"""
 Today's date is {today_str}. 
 Search for the TOP NEWS from Japan's 5 major newspapers: Asahi, Yomiuri, Mainichi, Nikkei, and Sankei.
@@ -55,30 +50,34 @@ Output ONLY a raw JSON object. No markdown blocks, no preamble.
 """
 
 def generate():
-    print(f"Starting generation for {today_str} (JST)...")
+    print(f"Starting generation for {today_str} (JST) using Google Gen AI SDK...")
     
     data = None
-    # 5. AIによる記事生成
+    # 4. AIによる記事生成 (最新の検索ツール指定)
     for attempt in range(3):
         try:
             print(f"Attempt {attempt+1}...")
-            # 検索ツールを呼び出す
-            response = model.generate_content(PROMPT)
+            response = client.models.generate_content(
+                model='gemini-3-flash-preview', # または 'gemini-3-flash-preview'
+                contents=PROMPT,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearchRetrieval())],
+                    response_mime_type='application/json' # 強制的にJSONで出力させる
+                )
+            )
             
-            # レスポンスが取得できたか確認
-            if not response.text:
-                print("Empty response, retrying...")
-                continue
-                
-            res_text = response.text.strip()
-            
-            # JSON部分を抽出
-            start_idx = res_text.find('{')
-            end_idx = res_text.rfind('}') + 1
-            if start_idx != -1 and end_idx != -1:
+            # SDKが自動的にパースしたオブジェクトを辞書に変換
+            if response.parsed:
+                data = response.parsed
+            else:
+                # パースに失敗した場合はテキストから抽出
+                res_text = response.text
+                start_idx = res_text.find('{')
+                end_idx = res_text.rfind('}') + 1
                 data = json.loads(res_text[start_idx:end_idx])
-                print("Successfully generated and parsed JSON.")
-                break
+            
+            print("Successfully generated and parsed JSON.")
+            break
         except Exception as e:
             print(f"Error in attempt {attempt+1}: {e}")
             time.sleep(20)
@@ -86,7 +85,7 @@ def generate():
     if not data:
         raise Exception("Failed to generate content after all attempts.")
 
-    # 6. データの保存
+    # 5. データの保存・テンプレート反映
     data['date'] = today_str
     data_path = 'docs/data.json'
     os.makedirs('docs/articles', exist_ok=True)
@@ -99,14 +98,12 @@ def generate():
             except:
                 history = []
 
-    # 上書き許可
     history = [e for e in history if e.get('date') != today_str]
     history.insert(0, data)
         
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
-    # 7. HTML反映
     templates = [
         ('template_portal.html', 'docs/index.html'),
         ('template_article.html', f'docs/articles/{today_str}.html')
@@ -119,8 +116,6 @@ def generate():
             with open(out_name, 'w', encoding='utf-8') as f:
                 f.write(tmpl.render(items=history, item=data))
             print(f"Successfully rendered: {out_name}")
-        else:
-            print(f"Warning: Template {t_name} NOT FOUND.")
 
 if __name__ == "__main__":
     generate()
