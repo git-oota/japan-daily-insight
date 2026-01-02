@@ -6,6 +6,7 @@ from datetime import timedelta, timezone
 from google import genai
 from google.genai import types
 from jinja2 import Template
+import re
 
 # 1. API設定
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
@@ -18,18 +19,14 @@ today_str = now.strftime("%Y-%m-%d")
 # 3. プロンプト設定
 PROMPT = f"""
 Today's date is {today_str}. 
-Search for the TOP NEWS from:
-1. Japan's 5 major newspapers (Asahi, Yomiuri, Mainichi, Nikkei, Sankei).
-2. Global news (NYT, BBC, Reuters).
-
-Select THREE main topics: 
-1. Social Issue (Japan), 2. Investment/Economy (Japan), 3. International (Global).
+Search for top news from Japan's 5 major newspapers and global news (BBC/Reuters).
+Select THREE main topics: 1. Social, 2. Investment, 3. International.
 
 Rewrite each as a Nicholas Kristof-style column for junior high school students.
 Requirements:
 - Empathic, historical perspective, and deep analysis.
 - Provide both English and Japanese text.
-- For EACH article, pick 5 difficult terms and provide short definitions in both JP and EN.
+- For EACH article, pick 5 difficult terms used in the text and provide short definitions in both JP and EN.
 - Sign off as "Editor H" (編集者H).
 
 Output ONLY a raw JSON object:
@@ -71,6 +68,21 @@ def generate():
     
     if not data: return
 
+    # --- 【新機能】本文中の用語を自動的にタグ置換するロジック ---
+    for article in data['articles']:
+        for g in article['glossary']:
+            # 日本語: 用語を <span class="term"> で囲む
+            t_jp = g['term_jp']
+            d_jp = g['def_jp'].replace("'", "\\'") # JSエラー防止のクォート処理
+            replace_jp = f'<span class="term" onclick="openPanel(\'{t_jp}\', \'{d_jp}\')">{t_jp}</span>'
+            article['content_jp'] = article['content_jp'].replace(t_jp, replace_jp)
+            
+            # 英語: 用語を <span class="term"> で囲む
+            t_en = g['term_en']
+            d_en = g['def_en'].replace("'", "\\'")
+            replace_en = f'<span class="term" onclick="openPanel(\'{t_en}\', \'{d_en}\')">{t_en}</span>'
+            article['content_en'] = article['content_en'].replace(t_en, replace_en)
+
     data['date'] = today_str
     data_path = 'docs/data.json'
     os.makedirs('docs/articles', exist_ok=True)
@@ -86,6 +98,7 @@ def generate():
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
+    # テンプレート反映
     for t_name, out_name in [('template_article.html', f'docs/articles/{today_str}.html'), ('template_portal.html', 'docs/index.html')]:
         if os.path.exists(t_name):
             with open(t_name, 'r', encoding='utf-8') as f:
