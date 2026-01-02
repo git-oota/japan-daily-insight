@@ -16,7 +16,7 @@ today_str = now.strftime("%Y-%m-%d")
 
 # モデル設定 (最新の安定版を使用)
 model = genai.GenerativeModel(
-    model_name='gemini-1.5-flash',
+    model_name='gemini-3-flash-preview',
     tools=[{'google_search_retrieval': {}}]
 )
 
