@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE INSIGHT | Daily News</title>
+    <title>THE INSIGHT</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --navy: #001f3f; --gold: #c5a059; --bg: #ffffff; }
-        body { font-family: 'Noto Serif JP', serif; margin: 0; background: var(--bg); color: #333; }
-        header { background: var(--navy); color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 4px solid var(--gold); }
-        .lang-btn { position: absolute; right: 20px; top: 25px; background: var(--gold); color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; }
+        :root { --navy: #001f3f; --gold: #c5a059; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; color: #333; }
+        header { background: var(--navy); color: white; padding: 25px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
+        .lang-btn { position: absolute; right: 20px; top: 30px; background: var(--gold); color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; }
         
-        .container { display: grid; grid-template-columns: 1fr 350px; max-width: 1200px; margin: 40px auto; gap: 40px; padding: 0 20px; }
-        .main-col article { margin-bottom: 60px; padding-bottom: 40px; border-bottom: 1px solid #eee; }
-        .category { color: var(--gold); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
-        h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin: 10px 0; line-height: 1.2; }
-        .excerpt { line-height: 1.8; color: #555; font-size: 1.1rem; }
+        .container { display: grid; grid-template-columns: 1fr 350px; max-width: 1200px; margin: 40px auto; gap: 50px; padding: 0 20px; }
+        .category { color: var(--gold); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; }
+        
+        /* タイトル分割スタイル */
+        .main-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; margin: 10px 0 5px 0; line-height: 1.1; font-weight: 700; }
+        .sub-title { font-size: 1.1rem; color: #666; font-weight: normal; margin-bottom: 15px; line-height: 1.4; }
+        
+        .excerpt { line-height: 1.8; color: #444; font-size: 1.05rem; }
         .read-more { display: inline-block; margin-top: 15px; color: var(--navy); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--gold); }
         
-        .side-col h3 { border-bottom: 2px solid var(--navy); padding-bottom: 10px; }
-        .archive-list { list-style: none; padding: 0; }
-        .archive-item { margin-bottom: 20px; font-size: 0.9rem; }
-        .archive-item a { text-decoration: none; color: #666; }
+        .side-col h3 { border-bottom: 2px solid var(--navy); padding-bottom: 10px; font-family: 'Playfair Display'; }
+        .archive-item { margin-bottom: 25px; list-style: none; }
+        .archive-item a { text-decoration: none; color: #555; font-size: 0.95rem; }
 
         .en { display: none; }
         @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
@@ -30,38 +32,48 @@
 <body>
 
 <header>
-    <div style="font-family: 'Playfair Display'; font-size: 2rem;">THE INSIGHT</div>
+    <div style="font-family: 'Playfair Display'; font-size: 2.2rem; letter-spacing: 3px;">THE INSIGHT</div>
     <button class="lang-btn" onclick="toggleLang()">EN / JP</button>
 </header>
 
 <div class="container">
     <div class="main-col">
         {% for art in item.articles %}
-        <article>
+        <article style="margin-bottom: 60px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
             <div class="category">{{ art.category }}</div>
-            <h2 class="jp">{{ art.title_jp }}</h2>
-            <h2 class="en">{{ art.title_en }}</h2>
-            <div class="excerpt jp">{{ art.content_jp[:150] }}...</div>
-            <div class="excerpt en">{{ art.content_en[:150] }}...</div>
-            <a href="articles/{{ item.date }}.html" class="read-more jp">記事を読む</a>
-            <a href="articles/{{ item.date }}.html" class="read-more en">Read More</a>
+            
+            <div class="jp">
+                {% set parts = art.title_jp.split('：') %}
+                <div class="main-title">{{ parts[0] }}</div>
+                {% if parts|length > 1 %}<div class="sub-title">{{ parts[1] }}</div>{% endif %}
+                <div class="excerpt">{{ art.content_jp[:150] | safe }}...</div>
+                <a href="articles/{{ item.date }}.html" class="read-more">記事を読む</a>
+            </div>
+
+            <div class="en">
+                {% set parts_en = art.title_en.split(' : ') %}
+                <div class="main-title">{{ parts_en[0] }}</div>
+                {% if parts_en|length > 1 %}<div class="sub-title">{{ parts_en[1] }}</div>{% endif %}
+                <div class="excerpt">{{ art.content_en[:150] | safe }}...</div>
+                <a href="articles/{{ item.date }}.html" class="read-more">Read More</a>
+            </div>
         </article>
         {% endfor %}
     </div>
 
-    <div class="side-col">
+    <aside class="side-col">
         <h3>BACK NUMBERS</h3>
-        <ul class="archive-list">
+        <ul style="padding: 0;">
             {% for entry in items %}
             <li class="archive-item">
                 <a href="articles/{{ entry.date }}.html">
-                    <small>{{ entry.date }}</small><br>
-                    <strong>{{ entry.articles[0].title_jp }}</strong>
+                    <small style="color: var(--gold);">{{ entry.date }}</small><br>
+                    <strong>{{ entry.articles[0].title_jp.split('：')[0] }}</strong>
                 </a>
             </li>
             {% endfor %}
         </ul>
-    </div>
+    </aside>
 </div>
 
 <script>
