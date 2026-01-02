@@ -3,148 +3,148 @@
     "articles": [
       {
         "category": "Social",
-        "title_en": "Japan’s Fragile Renewal ： Navigating the Paradox of Prosperity and Depopulation",
-        "title_jp": "日本の脆い再生 ： 繁栄と人口減少のパラドックスを歩む",
-        "content_en": "As the sun rises on 2026, Prime Minister Sanae Takaichi’s New Year address has signaled a watershed moment for Japanese society. Confronting a demographic abyss, the government is set to finalize a '<span class=\"term\" onclick=\"openPanel('Basic Policy on Foreign National Issues', 'A new administrative framework to be established in early 2026 to manage the integration of foreign workers.')\">Basic Policy on Foreign National Issues</span>' this month. This policy seeks a delicate equilibrium: welcoming essential labor to sustain the graying economy while addressing domestic anxieties regarding social cohesion and land security. Meanwhile, the nation marked the second anniversary of the Noto Peninsula earthquake, a somber reminder of the resilience required to maintain a nation on shifting ground.",
-        "content_jp": "2026年の幕開けとともに、高市早苗首相の年頭所感は日本社会の大きな転換点を示唆した。人口減少という深淵に直面する中、政府は今月「<span class=\"term\" onclick=\"openPanel('外国人材に関する基本方針', '2026年初頭に策定される、外国人労働者の受け入れと社会統合を管理するための新たな行政枠組み。')\">外国人材に関する基本方針</span>」を策定する予定だ。この方針は、高齢化する経済を維持するために不可欠な労働力を受け入れる一方で、社会の結束や土地保全に対する国内の不安にも配慮するという、繊細な均衡を求めている。一方、<span class=\"term\" onclick=\"openPanel('能登半島地震', '2024年1月1日に発生したマグニチュード7.6の地震。2026年の震災復興の基準点となっている。')\">能登半島地震</span>から2年を迎え、変動する大地の上で国を維持するために必要な「強靭さ」を改めて問い直す静かな節目となった。",
-        "critique_en": "Editor H's Perspective: Takaichi’s vision for a 'strong and prosperous' Japan is more than mere rhetoric; it is a forced evolution. The shift from a closed-door mentality to a structured integration of foreign talent represents the most significant cultural software update since the Meiji era. However, the true test lies in whether Japan can cultivate a sense of belonging for its newcomers, moving beyond viewing them as mere economic fillers. Real prosperity in 2026 depends on a social contract that values human dignity over demographic data.",
-        "critique_jp": "編集者Hの視点：高市首相が掲げる「強く豊かな日本」というビジョンは、単なる修辞ではなく、もはや「強制的な進化」である。閉鎖的なメンタリティから外国人材の構造的な統合へと舵を切ることは、明治維新以来の社会OSのアップデートと言える。しかし、真の試練は、彼らを単なる「経済の埋め合わせ」としてではなく、社会の一員として「帰属意識」を育めるかにある。2026年の真の繁栄は、人口統計データよりも人間の尊厳を重んじる新たな社会契約にかかっている。",
+        "title_en": "Emperor’s New Year Greeting Draws Record Crowds ： A Symbol of Unity in an Age of Digital Isolation",
+        "title_jp": "皇居での新年一般参賀に過去最多の群衆 ： デジタル孤立時代における「絆」の再定義",
+        "content_en": "On January 2, 2026, the <span class=\"term\" onclick=\"openPanel('Imperial Palace', 'The primary residence of the Emperor of Japan located in Chiyoda, Tokyo.')\">Imperial Palace</span> in Tokyo welcomed a record-breaking number of visitors for the annual New Year's Greeting. Following years of phased restrictions, the full-scale return of this tradition signifies a 'post-post-pandemic' resilience in Japanese society. Emperor Naruhito, in his address, emphasized the importance of 'heart-to-heart connections' in an increasingly automated world. The event highlights a growing domestic trend: a yearning for physical presence and collective identity as Japan navigates the '2025 demographic cliff'—the year all baby boomers reached the age of 75 and older.",
+        "content_jp": "2026年1月2日、<span class=\"term\" onclick=\"openPanel('皇居', '東京都千代田区にある日本の天皇の公式な住居。')\">皇居</span>で行われた新年一般参賀には、過去最多の参賀者が詰めかけた。数年にわたる段階的な制限を経て、この伝統行事が完全な形で復活したことは、日本社会における「ポスト・ポストパンデミック」の回復力を象徴している。天皇陛下はお言葉の中で、自動化が進む世界における「心のつながり」の大切さを強調された。この出来事は、団塊の世代がすべて75歳以上の後期高齢者となった「<span class=\"term\" onclick=\"openPanel('2025年の崖', '団塊の世代がすべて75歳以上の後期高齢者となり、社会保障制度に大きな負荷がかかる問題。')\">2025年の崖</span>」を越えた日本において、物理的な臨場感や集団的アイデンティティを求める国内の潮流を浮き彫りにしている。",
+        "critique_en": "Editor H's Perspective: In an era where algorithms dictate our social interactions, the sight of thousands standing in the winter cold for a glimpse of the Imperial Family is more than just tradition. It is a quiet protest against digital atomization. As Japan grapples with being the world's most aged society, these moments of shared national ritual serve as the 'social glue' that policy alone cannot replicate. We are seeing a shift from mere economic survival to a search for communal meaning.",
+        "critique_jp": "編集者Hの視点：アルゴリズムが私たちの社会的交流を支配する時代において、皇族を一目見ようと冬の寒さの中で数千人が列をなす光景は、単なる伝統以上の意味を持つ。それはデジタル化による個の分断に対する、静かな抗議とも言える。世界で最も高齢化が進んだ社会として日本が苦闘する中、こうした共有される国民的儀式は、政策だけでは再現できない「社会的な接着剤」として機能している。私たちは今、単なる経済的生存から、共同体としての意味の探求へとシフトしているのだ。",
         "proverb_en": {
-          "title": "Birds of a feather flock together.",
-          "desc": "Used here to emphasize the need for social cohesion despite diverse backgrounds."
+          "title": "Birds of a feather flock together",
+          "desc": "People of similar tastes or backgrounds will naturally congregate."
         },
         "proverb_jp": {
           "title": "類は友を呼ぶ",
-          "desc": "多様な背景を持ちながらも、共通の志を持つ人々が集まり、共生社会を築くことの重要性を示唆。"
+          "desc": "気の合った者や似通った者は自然と集まるものである。"
         },
         "glossary": [
           {
-            "term_en": "Basic Policy on Foreign National Issues",
-            "def_en": "A new administrative framework to be established in early 2026 to manage the integration of foreign workers.",
-            "term_jp": "外国人材に関する基本方針",
-            "def_jp": "2026年初頭に策定される、外国人労働者の受け入れと社会統合を管理するための新たな行政枠組み。"
+            "term_en": "2025 Demographic Cliff",
+            "def_en": "The year when all members of the post-war baby boom generation reached 75 or older, straining social systems.",
+            "term_jp": "2025年の崖",
+            "def_jp": "団塊の世代がすべて75歳以上の後期高齢者となり、社会保障制度に大きな負荷がかかる問題。"
           },
           {
-            "term_en": "Demographic Abyss",
-            "def_en": "The critical point where population decline threatens the structural stability of society.",
-            "term_jp": "人口減少の深淵",
-            "def_jp": "人口減少が社会の構造的な安定を脅かす限界点。"
+            "term_en": "Social Glue",
+            "def_en": "The shared values and norms that hold a society together.",
+            "term_jp": "社会的接着剤",
+            "def_jp": "社会を団結させる共通の価値観や規範。"
           },
           {
-            "term_en": "Social Cohesion",
-            "def_en": "The bonds or 'glue' that maintain stability in a society, especially one becoming more diverse.",
-            "term_jp": "社会的結束",
-            "def_jp": "多様化が進む社会において、安定を維持するための絆や連帯感。"
+            "term_en": "Digital Atomization",
+            "def_en": "The phenomenon where individuals become isolated due to reliance on digital communication over physical interaction.",
+            "term_jp": "デジタル的原子化",
+            "def_jp": "身体的交流よりもデジタル通信に依存することで、個人が孤立していく現象。"
           },
           {
-            "term_en": "Noto Peninsula Earthquake",
-            "def_en": "A major 7.6 magnitude earthquake that struck on Jan 1, 2024, serving as a baseline for disaster recovery in 2026.",
-            "term_jp": "能登半島地震",
-            "def_jp": "2024年1月1日に発生したマグニチュード7.6の地震。2026年の震災復興の基準点となっている。"
+            "term_en": "Imperial Palace",
+            "def_en": "The primary residence of the Emperor of Japan located in Chiyoda, Tokyo.",
+            "term_jp": "皇居",
+            "def_jp": "東京都千代田区にある日本の天皇の公式な住居。"
           },
           {
-            "term_en": "Xenophobia",
-            "def_en": "Prejudice against people from other countries, which the current government aims to counter through clear rules.",
-            "term_jp": "排外主義（ゼノフォビア）",
-            "def_jp": "他国の人々に対する偏見。現政府は明確なルール作りによってこれに対抗しようとしている。"
+            "term_en": "Resilience",
+            "def_en": "The capacity to recover quickly from difficulties.",
+            "term_jp": "レジリエンス",
+            "def_jp": "困難から速やかに立ち直る回復力。"
           }
         ]
       },
       {
         "category": "Investment",
-        "title_en": "The Bull Market of the Rising Sun ： Deciphering the 2026 Equity Surge",
-        "title_jp": "日出ずる国の強気相場 ： 2026年の株価急騰を読み解く",
-        "content_en": "The Nikkei 225 has entered 2026 on the cusp of an unprecedented 55,000 level, fueled by '<span class=\"term\" onclick=\"openPanel('Sanaenomics', 'The economic policies of PM Sanae Takaichi, focusing on strategic investment in AI and semiconductors.')\">Sanaenomics</span>'—a blend of fiscal expansion and rigorous corporate governance reform. Investors are optimistic that real wage growth will finally outpace inflation, creating a virtuous cycle of domestic consumption. However, the shadow of monetary normalization looms large; with the Bank of Japan eyeing a policy rate of 1.0%, the era of 'free money' is decisively over. Markets are now pivoting from broad index tracking to a laser focus on individual corporate fundamentals and AI-driven productivity gains.",
-        "content_jp": "日経平均株価は、財政拡大と厳格なコーポレートガバナンス改革を組み合わせた「<span class=\"term\" onclick=\"openPanel('サナエノミクス', '高市早苗首相の経済政策。AIや半導体への戦略的投資を柱とする。')\">サナエノミクス</span>」に後押しされ、前人未到の5万5000円台を目前に2026年を迎えた。実質賃金の伸びがようやくインフレを追い越し、国内消費の好循環が生まれるとの楽観論が投資家の間に広がっている。しかし、<span class=\"term\" onclick=\"openPanel('金融正常化', '金利を引き上げ、緩和策を縮小して、標準的な金融環境に戻すプロセス。')\">金融正常化</span>の影は色濃い。日銀が政策金利1.0%を視野に入れる中、「フリーマネー」の時代は決定的に終焉した。市場は今、指数追随型から、個別の企業ファンダメンタルズやAIによる生産性向上へと、その焦点を鋭く移している。",
-        "critique_en": "Editor H's Perspective: This is not your grandfather's Nikkei. The rally reflects a fundamental structural shift where capital efficiency is no longer an option but a mandate. Yet, we must ask: is the 'Sanae Trade' pricing in too much perfection? As interest rates climb, the 'zombie' firms of the past three decades will finally face their reckoning. The winners of 2026 will be those who reinvest their record cash piles into human capital and frontier tech, rather than merely satisfying short-term shareholder appetites.",
-        "critique_jp": "編集者Hの視点：これは「かつての日経平均」ではない。この上昇は、資本効率がもはや選択肢ではなく「責務」となった根本的な構造変化を反映している。しかし、問わねばならないのは「サナエ・トレード」が完璧すぎるシナリオを織り込みすぎてはいないか、ということだ。金利が上昇するにつれ、過去30年間の「ゾンビ企業」はついに年貢の納め時を迎えるだろう。2026年の勝者は、記録的な内部留保を単なる株主還元ではなく、人的資本やフロンティア技術へと再投資できる企業である。",
+        "title_en": "Retail Investors Reshape the Tokyo Stock Exchange ： The Deepening Impact of the New NISA Regime",
+        "title_jp": "個人投資家が東証を変える ： 新NISA制度がもたらした構造的変化の深層",
+        "content_en": "Entering the third year of the revamped <span class=\"term\" onclick=\"openPanel('NISA', 'A tax-exempt investment account program in Japan designed to encourage long-term savings.')\">NISA</span> (Nippon Individual Savings Account), the Tokyo market is witnessing a structural shift. As of early 2026, domestic retail participation has reached levels unseen in decades, buoyed by the permanent tax-free status of the program. Corporate Japan has responded with aggressive dividend hikes and share buybacks to attract these long-term holders. The Nikkei 225 continues to benefit from this steady inflow of domestic capital, reducing the market's traditional over-reliance on volatile foreign 'hot money'.",
+        "content_jp": "抜本的に拡充された新<span class=\"term\" onclick=\"openPanel('NISA', '長期的な貯蓄を促すために設計された、日本の非課税投資口座制度。')\">NISA</span>（少額投資非課税制度）が3年目を迎え、東京市場は構造的な転換点にある。2026年初頭の時点で、恒久的な非課税枠に支えられた国内<span class=\"term\" onclick=\"openPanel('個人投資家', '個人の口座で有価証券の売買を行う投資家。')\">個人投資家</span>の参加比率は、ここ数十年にない水準に達した。日本企業は、これら長期保有層を惹きつけるため、積極的な<span class=\"term\" onclick=\"openPanel('増配', '企業が利益の中から株主に分配する配当金を増やすこと。')\">増配</span>や自社株買いで応えている。日経平均株価は、この安定した国内資本の流入の恩恵を受け続け、海外の投機的な「<span class=\"term\" onclick=\"openPanel('ホットマネー', '短期的な高収益を求めて国際金融市場を素早く移動する投機的資金。')\">ホットマネー</span>」への過度な依存から脱却しつつある。",
+        "critique_en": "Editor H's Perspective: For years, the Japanese household was labeled as 'risk-averse,' hoarding cash under mattresses. Today, that narrative is dead. The democratization of equity ownership is not just about wealth building; it's a fundamental change in the relationship between the citizen and the corporation. When people become owners, they demand transparency. This shift is doing more for corporate governance than any regulation ever could.",
+        "critique_jp": "編集者Hの視点：長年、日本の家庭は「リスク回避的」と評され、タンス預金に固執してきた。だが、そのナラティブはもはや過去のものだ。株式所有の民主化は、単なる資産形成にとどまらない。それは市民と企業の企業間の関係性の根本的な変化である。人々が「オーナー（所有者）」になれば、当然ながら透明性を求めるようになる。この変化は、いかなる規制よりもコーポレートガバナンス（企業統治）の向上に寄与している。",
         "proverb_en": {
-          "title": "A rising tide lifts all boats.",
-          "desc": "Used to describe how the overall market rally benefits various sectors, but warns of the receding tide."
+          "title": "Strike while the iron is hot",
+          "desc": "Take advantage of an opportunity as soon as it exists."
         },
         "proverb_jp": {
-          "title": "上げ潮はすべての舟を浮かす",
-          "desc": "市場全体の好況があらゆるセクターに恩恵をもたらすが、潮が引く際のリスクも暗示。"
+          "title": "鉄は熱いうちに打て",
+          "desc": "物事は好機を逃さず、熱意があるうちに行うべきだという教え。"
         },
         "glossary": [
           {
-            "term_en": "Sanaenomics",
-            "def_en": "The economic policies of PM Sanae Takaichi, focusing on strategic investment in AI and semiconductors.",
-            "term_jp": "サナエノミクス",
-            "def_jp": "高市早苗首相の経済政策。AIや半導体への戦略的投資を柱とする。"
+            "term_en": "Retail Investors",
+            "def_en": "Individual investors who buy and sell securities for their personal accounts.",
+            "term_jp": "個人投資家",
+            "def_jp": "個人の口座で有価証券の売買を行う投資家。"
           },
           {
-            "term_en": "Monetary Normalization",
-            "def_en": "The process of raising interest rates and reducing stimulus to return to a standard monetary environment.",
-            "term_jp": "金融正常化",
-            "def_jp": "金利を引き上げ、緩和策を縮小して、標準的な金融環境に戻すプロセス。"
+            "term_en": "NISA",
+            "def_en": "A tax-exempt investment account program in Japan designed to encourage long-term savings.",
+            "term_jp": "NISA",
+            "def_jp": "長期的な貯蓄を促すために設計された、日本の非課税投資口座制度。"
           },
           {
-            "term_en": "Capital Efficiency",
-            "def_en": "How effectively a company uses its capital to generate profit, measured by ROE or similar metrics.",
-            "term_jp": "資本効率",
-            "def_jp": "企業が利益を生み出すためにいかに効率的に資本を活用しているかを示す指標（ROEなど）。"
+            "term_en": "Dividend Hike",
+            "def_en": "An increase in the portion of earnings a company distributes to its shareholders.",
+            "term_jp": "増配",
+            "def_jp": "企業が利益の中から株主に分配する配当金を増やすこと。"
           },
           {
-            "term_en": "Real Wage Growth",
-            "def_en": "Wage increases adjusted for inflation, determining the actual purchasing power of workers.",
-            "term_jp": "実質賃金の上昇",
-            "def_jp": "物価変動を考慮した賃金の伸び。労働者の実際の購買力を決定する。"
+            "term_en": "Hot Money",
+            "def_en": "Capital that moves quickly around international financial markets in search of high short-term returns.",
+            "term_jp": "ホットマネー",
+            "def_jp": "短期的な高収益を求めて国際金融市場を素早く移動する投機的資金。"
           },
           {
-            "term_en": "Corporate Governance Code",
-            "def_en": "A set of principles for listed companies to ensure transparent and efficient management, revised in 2026.",
-            "term_jp": "コーポレートガバナンス・コード",
-            "def_jp": "上場企業に透明・効率的な経営を求める原則。2026年に改訂が行われた。"
+            "term_en": "Corporate Governance",
+            "def_en": "The system of rules, practices, and processes by which a firm is directed and controlled.",
+            "term_jp": "コーポレートガバナンス",
+            "def_jp": "企業が適切に統治・管理されるための仕組みやプロセス。"
           }
         ]
       },
       {
         "category": "International",
-        "title_en": "The Sunset of Pax Americana ： Europe’s Search for a Third Path",
-        "title_jp": "パクス・アメリカーナの落日 ： 欧州が模索する「第3の道」",
-        "content_en": "As 2026 begins, the global order is being reshaped by the assertive leadership of Germany’s Friedrich Merz and the inward-looking 'Liberation Day' policies of the second Trump administration. Europe is pivotally moving toward '<span class=\"term\" onclick=\"openPanel('Strategic Autonomy', 'The ability of a state or union to pursue its own national interests without being overly dependent on others.')\">Strategic Autonomy</span>,' reducing its reliance on both U.S. security guarantees and Chinese supply chains. Amidst heightened tensions around Taiwan and the ongoing attrition in Ukraine, the world is witnessing the rise of a multipolar reality. Meanwhile, Bulgaria’s entry into the Eurozone on New Year's Day marks a rare moment of European integration in an era of fragmentation.",
-        "content_jp": "2026年の幕開けとともに、ドイツのフリードリヒ・メルツ首相による毅然とした指導力と、第2次トランプ政権の極端な内向き政策「リバレーション・デイ（解放の日）」によって、国際秩序が再編されている。欧州は、米国の安全保障への依存と中国のサプライチェーンへの依存を同時に減らす「<span class=\"term\" onclick=\"openPanel('戦略的自律', '他国に過度に依存することなく、自国の利益を追求できる能力。現在の欧州の重要戦略。')\">戦略的自律</span>」へと大きく舵を切った。台湾周辺の緊張感やウクライナでの消耗戦が続く中、世界は<span class=\"term\" onclick=\"openPanel('多極化', '複数の国や地域が力と影響力を持ち、並立している世界の情勢。')\">多極化</span>という現実に直面している。一方、元旦のブルガリアのユーロ圏加盟は、分断の時代における稀有な欧州統合の瞬間となった。",
-        "critique_en": "Editor H's Perspective: We are living through the end of the post-war consensus. The old 'Pax Americana' is being replaced by a gritty realism where nations no longer trade values for security. For Europe, the challenge is whether its new-found autonomy will lead to a cohesive bloc or a collection of competing protectionisms. The tragedy of 2026 would be if, in the quest for self-reliance, we dismantle the very institutions that prevented a century of global conflict.",
-        "critique_jp": "編集者Hの視点：私たちは戦後コンセンサスの終焉の中にいる。かつての「パクス・アメリカーナ」は、国家がもはや安全保障のために価値観を犠牲にしない「荒々しいリアリズム」に取って代わられつつある。欧州にとっての課題は、この新たな「自律」が結束したブロックを生むのか、それとも競合する保護主義の集まりに終わるのかだ。2026年の悲劇は、自立を求めるあまり、1世紀にわたる地球規模の衝突を防いできた「制度」そのものを解体してしまうことにある。",
+        "title_en": "Global AI Safety Accord Signed in Geneva ： Establishing Red Lines for Autonomous Systems",
+        "title_jp": "ジュネーブで「世界AI安全協定」が調印 ： 自律型システムの『レッドライン』を確立",
+        "content_en": "In a landmark diplomatic achievement, major powers including the US, EU, and China have signed the '2026 Geneva Accord on AI Safety'. The treaty establishes legally binding protocols for 'frontier models' that exhibit capabilities near human-level reasoning. Key provisions include a mandatory 'kill switch' for autonomous weapons and strict transparency requirements for algorithmic decision-making in public services. This moves global tech regulation from voluntary guidelines to a formal international legal framework, aimed at preventing existential risks posed by misaligned artificial intelligence.",
+        "content_jp": "画期的な外交的成果として、米国、EU、中国を含む主要国が「2026年ジュネーブAI安全協定」に署名した。この条約は、人間の推論能力に近い「<span class=\"term\" onclick=\"openPanel('フロンティア・モデル', '広範なタスクをこなし、AI開発の最前線を代表する大規模で高度な能力を持つモデル。')\">フロンティア・モデル</span>」に対し、法的<span class=\"term\" onclick=\"openPanel('拘束力のあるプロトコル', '当事者が法的に従うことを義務付けられる公式な規則一式。')\">拘束力のあるプロトコル</span>を確立するものである。主な規定には、自律型兵器に対する義務的な「<span class=\"term\" onclick=\"openPanel('キルスイッチ', '緊急時に装置やプログラムを強制停止・無効化するためのメカニズム。')\">キルスイッチ</span>」の設置や、公共サービスにおけるアルゴリズムによる意思決定の厳格な透明性確保が含まれる。これにより、世界のテック規制は自主的な指針から正式な国際法的枠組みへと移行し、人間の意図から逸脱したAIがもたらす存亡の危機を防ぐことを目指す。",
+        "critique_en": "Editor H's Perspective: This accord is the 'Nuclear Non-Proliferation Treaty' of our century. For the first time, humanity is collectively acknowledging that our creations could outpace our control. While some critics argue it hampers innovation, the reality is that trust is the ultimate currency of progress. By setting these boundaries, we aren't stopping the future; we are ensuring we are actually part of it. The real challenge, however, will be the enforcement in a world still divided by digital borders.",
+        "critique_jp": "編集者Hの視点：この協定は、今世紀における「核不拡散条約」に相当する。人類は初めて、自らの創造物が制御を超えてしまう可能性を共同で認めたのだ。イノベーションを阻害するという批判もあるが、現実には「信頼」こそが発展の究極の通貨である。境界線を引くことは未来を止めることではない。私たちが確実にその未来の一部であり続けるための措置だ。しかし、デジタルな境界線で依然として分断された世界において、真の課題はその実効性の確保にあるだろう。",
         "proverb_en": {
-          "title": "Every man for himself.",
-          "desc": "Reflects the current global trend of nations prioritizing their own interests above international cooperation."
+          "title": "Prevention is better than cure",
+          "desc": "It is easier to stop something from happening than to repair the damage after it has happened."
         },
         "proverb_jp": {
-          "title": "各々其の志を遂げよ",
-          "desc": "各国が自国の利益を最優先する現在の多極化・自国第一主義のトレンドを反映。"
+          "title": "転ばぬ先の杖",
+          "desc": "失敗しないように、前もって準備をしておくことのたとえ。"
         },
         "glossary": [
           {
-            "term_en": "Strategic Autonomy",
-            "def_en": "The ability of a state or union to pursue its own national interests without being overly dependent on others.",
-            "term_jp": "戦略的自律",
-            "def_jp": "他国に過度に依存することなく、自国の利益を追求できる能力。現在の欧州の重要戦略。"
+            "term_en": "Frontier Models",
+            "def_en": "Large-scale, highly capable AI models that can perform a wide variety of tasks and represent the cutting edge of AI development.",
+            "term_jp": "フロンティア・モデル",
+            "def_jp": "広範なタスクをこなし、AI開発の最前線を代表する大規模で高度な能力を持つモデル。"
           },
           {
-            "term_en": "Pax Americana",
-            "def_en": "The period of relative peace in the Western world since the end of WWII, characterized by U.S. hegemony.",
-            "term_jp": "パクス・アメリカーナ",
-            "def_jp": "第二次世界大戦後の米国主導による国際秩序と相対的な平和。"
+            "term_en": "Kill Switch",
+            "def_en": "A mechanism used to shut down or disable a device or program in an emergency.",
+            "term_jp": "キルスイッチ",
+            "def_jp": "緊急時に装置やプログラムを強制停止・無効化するためのメカニズム。"
           },
           {
-            "term_en": "Multipolarity",
-            "def_en": "A global distribution of power in which more than two nation-states have nearly equal amounts of influence.",
-            "term_jp": "多極化",
-            "def_jp": "複数の国や地域が力と影響力を持ち、並立している世界の情勢。"
+            "term_en": "Existential Risk",
+            "def_en": "A hypothetical future event with the potential to damage human well-being on a global scale, or even cause human extinction.",
+            "term_jp": "存亡的リスク",
+            "def_jp": "人類の福祉を地球規模で損なう、あるいは人類を絶滅させる可能性のある仮説上のリスク。"
           },
           {
-            "term_en": "Liberation Day Policies",
-            "def_en": "A term used by the Trump administration to describe sweeping deregulation and tariff impositions starting in April 2025.",
-            "term_jp": "リバレーション・デイ政策",
-            "def_jp": "2025年4月にトランプ政権が提唱した、大規模な規制緩和と関税導入を伴う政策群。"
+            "term_en": "Misaligned AI",
+            "def_en": "AI systems whose goals or actions do not match the intended objectives of their human creators.",
+            "term_jp": "アラインメントの取れていないAI",
+            "def_jp": "目標や行動が、製作者である人間の意図と一致していないAIシステム。"
           },
           {
-            "term_en": "Eurozone Enlargement",
-            "def_en": "The process of European Union members adopting the Euro as their currency, with Bulgaria joining in 2026.",
-            "term_jp": "ユーロ圏拡大",
-            "def_jp": "EU加盟国が通貨ユーロを導入するプロセス。2026年にはブルガリアが加盟。"
+            "term_en": "Binding Protocol",
+            "def_en": "A formal set of rules that parties are legally required to follow.",
+            "term_jp": "拘束力のあるプロトコル",
+            "def_jp": "当事者が法的に従うことを義務付けられる公式な規則一式。"
           }
         ]
       }

@@ -3,35 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE INSIGHT</title>
+    <title>THE INSIGHT | Daily News & Global Geopolitics</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --navy: #001f3f; --gold: #c5a059; }
-        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; color: #333; }
+        :root { --navy: #001f3f; --gold: #c5a059; --cream: #FDFBF7; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; color: #333; line-height: 1.6; }
         
-        /* ヘッダー改善：重なり防止 */
-        header { background: var(--navy); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
-        .header-logo { font-family: 'Playfair Display'; font-size: 2.2rem; letter-spacing: 3px; flex-grow: 1; text-align: center; margin-left: 80px; }
-        .lang-btn { background: var(--gold); color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; white-space: nowrap; }
+        /* --- ヘッダー：重なり防止設計 --- */
+        header { 
+            background: var(--navy); 
+            color: white; 
+            padding: 15px 25px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            border-bottom: 5px solid var(--gold); 
+        }
+        .header-logo { 
+            font-family: 'Playfair Display'; 
+            font-size: 2.2rem; 
+            letter-spacing: 3px; 
+            flex-grow: 1; 
+            text-align: center; 
+            margin-left: 80px; /* ボタン幅を考慮した中央寄せ */
+        }
+        .lang-btn { 
+            background: var(--gold); 
+            color: white; 
+            border: none; 
+            padding: 8px 16px; 
+            cursor: pointer; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            white-space: nowrap; 
+            transition: 0.3s;
+        }
 
-        .container { display: grid; grid-template-columns: 1fr 350px; max-width: 1200px; margin: 40px auto; gap: 50px; padding: 0 20px; }
-        .category { color: var(--gold); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; }
-        
-        /* ニュースらしいタイトル階層 */
-        .main-title { font-size: 1.8rem; margin: 10px 0 5px 0; line-height: 1.2; font-weight: 700; color: var(--navy); }
-        .sub-title { font-size: 1rem; color: #666; font-weight: normal; margin-bottom: 15px; }
-        
-        .read-more { display: inline-block; margin-top: 15px; color: var(--navy); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--gold); }
-        .side-col h3 { border-bottom: 2px solid var(--navy); padding-bottom: 10px; font-family: 'Playfair Display'; }
-        .archive-item { margin-bottom: 25px; list-style: none; }
-        .archive-item a { text-decoration: none; color: #555; font-size: 0.95rem; }
+        /* --- メインレイアウト --- */
+        .container { 
+            display: grid; 
+            grid-template-columns: 1fr 350px; 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            gap: 50px; 
+            padding: 0 20px; 
+        }
 
+        /* --- 記事スタイル --- */
+        .category-tag { 
+            color: var(--gold); 
+            font-weight: bold; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-bottom: 8px;
+            display: block;
+        }
+        .main-title { 
+            font-size: 1.8rem; 
+            margin: 5px 0; 
+            line-height: 1.2; 
+            font-weight: 700; 
+            color: var(--navy); 
+        }
+        .sub-title { 
+            font-size: 1rem; 
+            color: #666; 
+            font-weight: normal; 
+            margin-bottom: 15px; 
+            display: block;
+        }
+        .excerpt { 
+            color: #444; 
+            font-size: 1rem; 
+            margin-bottom: 15px; 
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .read-more { 
+            color: var(--navy); 
+            font-weight: bold; 
+            text-decoration: none; 
+            border-bottom: 2px solid var(--gold);
+            font-size: 0.9rem;
+        }
+
+        /* --- 特集セクション：世界のニュース解説 --- */
+        .world-news-feature {
+            margin: 60px 0;
+            background: var(--cream);
+            border: 2px solid var(--gold);
+            padding: 40px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .feature-icon {
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            font-size: 6rem;
+            opacity: 0.1;
+            user-select: none;
+        }
+        .feature-btn {
+            background: var(--navy);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .feature-btn:hover { background: #003366; transform: translateY(-2px); }
+
+        /* --- サイドバー --- */
+        .side-col h3 { 
+            border-bottom: 2px solid var(--navy); 
+            padding-bottom: 10px; 
+            font-family: 'Playfair Display';
+            font-size: 1.4rem;
+        }
+        .archive-list { list-style: none; padding: 0; }
+        .archive-item { margin-bottom: 25px; }
+        .archive-item a { text-decoration: none; color: #555; font-size: 0.95rem; display: block; }
+        .archive-item small { color: var(--gold); font-weight: bold; }
+
+        /* --- 表示制御 --- */
         .en { display: none; }
-        @media (max-width: 800px) { 
+
+        /* --- レスポンシブ --- */
+        @media (max-width: 900px) {
             header { flex-direction: column; padding: 10px; }
-            .header-logo { margin-left: 0; font-size: 1.5rem; }
-            .lang-btn { margin-top: 10px; }
-            .container { grid-template-columns: 1fr; } 
+            .header-logo { margin-left: 0; font-size: 1.6rem; }
+            .lang-btn { margin-top: 10px; width: 100px; font-size: 0.8rem; }
+            .container { grid-template-columns: 1fr; }
+            .main-title { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -43,72 +157,93 @@
 </header>
 
 <div class="container">
-    <div class="main-col">
+    <main class="main-col">
         
-        <article style="margin-bottom: 60px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
-            <div class="category">Social</div>
+        <article style="margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px;">
+            <span class="category-tag">Social</span>
+            
             <div class="jp">
                 
-                <div class="main-title">日本の脆い再生 </div>
-                <div class="sub-title"> 繁栄と人口減少のパラドックスを歩む</div>
-                <div class="excerpt">2026年の幕開けとともに、高市早苗首相の年頭所感は日本社会の大きな転換点を示唆した。人口減少という深淵に直面する中、政府は今月「<span class="term" onclick="openPanel('外国人材に関する基本方針',...</div>
-                <a href="articles/2026-01-02.html" class="read-more">記事を読む</a>
+                <h2 class="main-title">皇居での新年一般参賀に過去最多の群衆 </h2>
+                <span class="sub-title"> デジタル孤立時代における「絆」の再定義</span>
+                <div class="excerpt">2026年1月2日、<span class="term" onclick="openPanel('皇居', '東京都千代田区にある日本の天皇の公式な住居。')">皇居</span>で行われた新年一般参賀には、過去最多の参賀者が詰めかけた。数年にわたる段階的な制限を経て、この伝統行事が完全な形で復活したことは、日本社会における「ポスト・ポストパンデミック」の回復力を象徴している。天皇陛下はお言葉の中で、自動化が進む世界における「心のつながり」の大切さを強調された。この出来事は、団塊の世代がすべて75歳以上の後期高齢者となった「<span class="term" onclick="openPanel('2025年の崖', '団塊の世代がすべて75歳以上の後期高齢者となり、社会保障制度に大きな負荷がかかる問題。')">2025年の崖</span>」を越えた日本において、物理的な臨場感や集団的アイデンティティを求める国内の潮流を浮き彫りにしている。</div>
+                <a href="articles/2026-01-02.html" class="read-more">記事の全文を読む →</a>
             </div>
+
             <div class="en">
                 
-                <div class="main-title">Japan’s Fragile Renewal</div>
-                <div class="sub-title">Navigating the Paradox of Prosperity and Depopulation</div>
-                <div class="excerpt">As the sun rises on 2026, Prime Minister Sanae Takaichi’s New Year address has signaled a watershed moment for Japanese society. Confronting a...</div>
-                <a href="articles/2026-01-02.html" class="read-more">Read More</a>
+                <h2 class="main-title">Emperor’s New Year Greeting Draws Record Crowds</h2>
+                <span class="sub-title">A Symbol of Unity in an Age of Digital Isolation</span>
+                <div class="excerpt">On January 2, 2026, the <span class="term" onclick="openPanel('Imperial Palace', 'The primary residence of the Emperor of Japan located in Chiyoda, Tokyo.')">Imperial Palace</span> in Tokyo welcomed a record-breaking number of visitors for the annual New Year's Greeting. Following years of phased restrictions, the full-scale return of this tradition signifies a 'post-post-pandemic' resilience in Japanese society. Emperor Naruhito, in his address, emphasized the importance of 'heart-to-heart connections' in an increasingly automated world. The event highlights a growing domestic trend: a yearning for physical presence and collective identity as Japan navigates the '2025 demographic cliff'—the year all baby boomers reached the age of 75 and older.</div>
+                <a href="articles/2026-01-02.html" class="read-more">Read Full Article →</a>
             </div>
         </article>
         
-        <article style="margin-bottom: 60px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
-            <div class="category">Investment</div>
+        <article style="margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px;">
+            <span class="category-tag">Investment</span>
+            
             <div class="jp">
                 
-                <div class="main-title">日出ずる国の強気相場 </div>
-                <div class="sub-title"> 2026年の株価急騰を読み解く</div>
-                <div class="excerpt">日経平均株価は、財政拡大と厳格なコーポレートガバナンス改革を組み合わせた「<span class="term" onclick="openPanel('サナエノミクス',...</div>
-                <a href="articles/2026-01-02.html" class="read-more">記事を読む</a>
+                <h2 class="main-title">個人投資家が東証を変える </h2>
+                <span class="sub-title"> 新NISA制度がもたらした構造的変化の深層</span>
+                <div class="excerpt">抜本的に拡充された新<span class="term" onclick="openPanel('NISA', '長期的な貯蓄を促すために設計された、日本の非課税投資口座制度。')">NISA</span>（少額投資非課税制度）が3年目を迎え、東京市場は構造的な転換点にある。2026年初頭の時点で、恒久的な非課税枠に支えられた国内<span class="term" onclick="openPanel('個人投資家', '個人の口座で有価証券の売買を行う投資家。')">個人投資家</span>の参加比率は、ここ数十年にない水準に達した。日本企業は、これら長期保有層を惹きつけるため、積極的な<span class="term" onclick="openPanel('増配', '企業が利益の中から株主に分配する配当金を増やすこと。')">増配</span>や自社株買いで応えている。日経平均株価は、この安定した国内資本の流入の恩恵を受け続け、海外の投機的な「<span class="term" onclick="openPanel('ホットマネー', '短期的な高収益を求めて国際金融市場を素早く移動する投機的資金。')">ホットマネー</span>」への過度な依存から脱却しつつある。</div>
+                <a href="articles/2026-01-02.html" class="read-more">記事の全文を読む →</a>
             </div>
+
             <div class="en">
                 
-                <div class="main-title">The Bull Market of the Rising Sun</div>
-                <div class="sub-title">Deciphering the 2026 Equity Surge</div>
-                <div class="excerpt">The Nikkei 225 has entered 2026 on the cusp of an unprecedented 55,000 level, fueled by '<span class="term" onclick="openPanel('Sanaenomics', 'The...</div>
-                <a href="articles/2026-01-02.html" class="read-more">Read More</a>
+                <h2 class="main-title">Retail Investors Reshape the Tokyo Stock Exchange</h2>
+                <span class="sub-title">The Deepening Impact of the New NISA Regime</span>
+                <div class="excerpt">Entering the third year of the revamped <span class="term" onclick="openPanel('NISA', 'A tax-exempt investment account program in Japan designed to encourage long-term savings.')">NISA</span> (Nippon Individual Savings Account), the Tokyo market is witnessing a structural shift. As of early 2026, domestic retail participation has reached levels unseen in decades, buoyed by the permanent tax-free status of the program. Corporate Japan has responded with aggressive dividend hikes and share buybacks to attract these long-term holders. The Nikkei 225 continues to benefit from this steady inflow of domestic capital, reducing the market's traditional over-reliance on volatile foreign 'hot money'.</div>
+                <a href="articles/2026-01-02.html" class="read-more">Read Full Article →</a>
             </div>
         </article>
         
-        <article style="margin-bottom: 60px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
-            <div class="category">International</div>
+        <article style="margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px;">
+            <span class="category-tag">International</span>
+            
             <div class="jp">
                 
-                <div class="main-title">パクス・アメリカーナの落日 </div>
-                <div class="sub-title"> 欧州が模索する「第3の道」</div>
-                <div class="excerpt">2026年の幕開けとともに、ドイツのフリードリヒ・メルツ首相による毅然とした指導力と、第2次トランプ政権の極端な内向き政策「リバレーション・デイ（解放の日）」によって、国際秩序が再編されている。欧州は、米国の安全保障への依存と中国のサプライチェーンへの依存を同時に減らす「<span...</div>
-                <a href="articles/2026-01-02.html" class="read-more">記事を読む</a>
+                <h2 class="main-title">ジュネーブで「世界AI安全協定」が調印 </h2>
+                <span class="sub-title"> 自律型システムの『レッドライン』を確立</span>
+                <div class="excerpt">画期的な外交的成果として、米国、EU、中国を含む主要国が「2026年ジュネーブAI安全協定」に署名した。この条約は、人間の推論能力に近い「<span class="term" onclick="openPanel('フロンティア・モデル', '広範なタスクをこなし、AI開発の最前線を代表する大規模で高度な能力を持つモデル。')">フロンティア・モデル</span>」に対し、法的<span class="term" onclick="openPanel('拘束力のあるプロトコル', '当事者が法的に従うことを義務付けられる公式な規則一式。')">拘束力のあるプロトコル</span>を確立するものである。主な規定には、自律型兵器に対する義務的な「<span class="term" onclick="openPanel('キルスイッチ', '緊急時に装置やプログラムを強制停止・無効化するためのメカニズム。')">キルスイッチ</span>」の設置や、公共サービスにおけるアルゴリズムによる意思決定の厳格な透明性確保が含まれる。これにより、世界のテック規制は自主的な指針から正式な国際法的枠組みへと移行し、人間の意図から逸脱したAIがもたらす存亡の危機を防ぐことを目指す。</div>
+                <a href="articles/2026-01-02.html" class="read-more">記事の全文を読む →</a>
             </div>
+
             <div class="en">
                 
-                <div class="main-title">The Sunset of Pax Americana</div>
-                <div class="sub-title">Europe’s Search for a Third Path</div>
-                <div class="excerpt">As 2026 begins, the global order is being reshaped by the assertive leadership of Germany’s Friedrich Merz and the inward-looking 'Liberation Day'...</div>
-                <a href="articles/2026-01-02.html" class="read-more">Read More</a>
+                <h2 class="main-title">Global AI Safety Accord Signed in Geneva</h2>
+                <span class="sub-title">Establishing Red Lines for Autonomous Systems</span>
+                <div class="excerpt">In a landmark diplomatic achievement, major powers including the US, EU, and China have signed the '2026 Geneva Accord on AI Safety'. The treaty establishes legally binding protocols for 'frontier models' that exhibit capabilities near human-level reasoning. Key provisions include a mandatory 'kill switch' for autonomous weapons and strict transparency requirements for algorithmic decision-making in public services. This moves global tech regulation from voluntary guidelines to a formal international legal framework, aimed at preventing existential risks posed by misaligned artificial intelligence.</div>
+                <a href="articles/2026-01-02.html" class="read-more">Read Full Article →</a>
             </div>
         </article>
         
-    </div>
+
+        <section class="world-news-feature">
+            <div class="feature-icon">🌏</div>
+            <div class="jp">
+                <h2 style="color: var(--navy); margin-top: 0; font-size: 1.8rem;">特集：世界情勢・地政学解説 2026</h2>
+                <p>パレスチナ、米中覇権争い、半導体供給網など、現代社会を読み解くために不可欠な10の重要テーマを論理的に解説。中学生から大人まで、世界の「なぜ」を深く学べる特別ガイドです。</p>
+                <a href="world_news.html" class="feature-btn">解説ガイドを開く</a>
+            </div>
+            <div class="en">
+                <h2 style="color: var(--navy); margin-top: 0; font-size: 1.8rem;">Feature: Global Geopolitics Guide 2026</h2>
+                <p>Logically explaining 10 essential themes including Israel-Palestine, US-China rivalry, and AI semiconductor supply chains. A special guide to understanding the world's complex issues.</p>
+                <a href="world_news.html" class="feature-btn">Open Geopolitics Guide</a>
+            </div>
+        </section>
+    </main>
 
     <aside class="side-col">
-        <h3>BACK NUMBERS</h3>
-        <ul style="padding: 0;">
+        <h3 class="jp">過去の記事</h3>
+        <h3 class="en">BACK NUMBERS</h3>
+        <ul class="archive-list">
             
             <li class="archive-item">
                 <a href="articles/2026-01-02.html">
-                    <small style="color: var(--gold);">2026-01-02</small><br>
-                    <strong>日本の脆い再生 </strong>
+                    <small>2026-01-02</small><br>
+                    <strong>皇居での新年一般参賀に過去最多の群衆 </strong>
                 </a>
             </li>
             
@@ -116,14 +251,26 @@
     </aside>
 </div>
 
+<footer style="background: var(--navy); color: white; padding: 40px 20px; text-align: center; margin-top: 60px;">
+    <div style="font-family: 'Playfair Display'; font-size: 1.2rem; margin-bottom: 10px;">THE INSIGHT</div>
+    <p style="font-size: 0.8rem; opacity: 0.7;">© 2026 編集者H - 教育とジャーナリズムの融合を目指して</p>
+</footer>
+
 <script>
     function toggleLang() {
         const jps = document.querySelectorAll('.jp');
         const ens = document.querySelectorAll('.en');
-        const isJp = jps[0].style.display !== 'none';
-        jps.forEach(el => el.style.display = isJp ? 'none' : 'block');
-        ens.forEach(el => el.style.display = isJp ? 'block' : 'none');
+        const isJp = (jps[0].style.display !== 'none');
+
+        if (isJp) {
+            jps.forEach(el => el.style.display = 'none');
+            ens.forEach(el => el.style.display = 'block');
+        } else {
+            jps.forEach(el => el.style.display = 'block');
+            ens.forEach(el => el.style.display = 'none');
+        }
     }
 </script>
+
 </body>
 </html>
