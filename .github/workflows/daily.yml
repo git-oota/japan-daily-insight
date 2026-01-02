@@ -26,13 +26,12 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 一旦最新のリモート情報を取得
-          git fetch origin main
+          # 変更をステージング
+          git add .
           
-          git add docs/
-          # 変更がある場合のみコミット
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update Insight: $(date +'%Y-%m-%d')"
+          # 変更がある場合のみコミットし、なければ終了
+          git commit -m "Update Insight: $(date +'%Y-%m-%d')" || exit 0
           
-          # 強制的にリモートの最新に自分の成果を重ねてPush
-          git push origin main
+          # 【解決策】強制的にPushして、リモートとの衝突を解消する
+          git push origin main --force
           
