@@ -4,69 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article | THE INSIGHT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Serif JP', serif; line-height: 2; background: #fff; margin: 0; padding-bottom: 100px; }
-        .nav { padding: 40px; border-bottom: 1px solid #eee; }
-        article { max-width: 750px; margin: 60px auto; padding: 0 20px; }
-        h1 { font-size: 3rem; color: #001f3f; line-height: 1.2; }
-        .critique-box { background: #fdfaf4; padding: 40px; border-left: 5px solid #c5a059; margin: 60px 0; font-style: italic; }
-        .proverb-box { background: #001f3f; color: #fff; padding: 40px; border-radius: 8px; text-align: center; }
+        :root { --navy: #001f3f; --gold: #c5a059; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; line-height: 2; }
+        header { background: var(--navy); color: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        .lang-btn { position: absolute; right: 20px; top: 20px; background: var(--gold); border: none; padding: 5px 12px; color: white; cursor: pointer; border-radius: 4px; }
         
-        /* ポップアップUI */
-        .term-hl { border-bottom: 2px solid #c5a059; cursor: pointer; transition: 0.3s; }
-        .term-hl:hover { background: #fdfaf4; }
-        #popup { position: fixed; bottom: -100%; left: 0; width: 100%; background: #001f3f; color: white; padding: 30px; transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1); z-index: 1000; box-sizing: border-box; box-shadow: 0 -10px 30px rgba(0,0,0,0.3); }
-        #popup.active { bottom: 0; }
-        #popup h4 { color: #c5a059; margin: 0 0 10px 0; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; }
+        article { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        .category { color: var(--gold); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; line-height: 1.1; margin: 20px 0; }
+        
+        .critique-box { background: #f9f6f0; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; font-style: italic; }
+        .term { color: var(--navy); font-weight: bold; border-bottom: 2px dashed var(--gold); cursor: pointer; }
+
+        /* スライダパネル */
+        #panel { position: fixed; bottom: -100%; left: 0; width: 100%; background: white; box-shadow: 0 -10px 30px rgba(0,0,0,0.2); transition: 0.4s ease-in-out; z-index: 1000; padding: 30px; box-sizing: border-box; border-radius: 20px 20px 0 0; }
+        #panel.active { bottom: 0; }
+        .close-btn { float: right; cursor: pointer; font-size: 1.5rem; color: #999; }
+
+        .en { display: none; }
     </style>
 </head>
 <body>
-    <div class="nav"><a href="../index.html" style="text-decoration: none; color: #c5a059;">← BACK TO JOURNAL</a></div>
 
-    {% for art in item.articles %}
-    <article>
-        <span style="color: #c5a059; font-weight: bold;">{{ art.category }}</span>
-        <h1>{{ art.title_jp }}</h1>
-        <div class="content" id="content-{{ loop.index0 }}">
-            {{ art.content_jp | replace('\n', '<br>') }}
-        </div>
+<header>
+    <div style="font-family: 'Playfair Display'; font-size: 1.5rem;">THE INSIGHT</div>
+    <button class="lang-btn" onclick="toggleLang()">EN / JP</button>
+</header>
 
-        <div class="critique-box">
-            <h3 style="margin-top: 0;">Crimson Pen's View</h3>
-            {{ art.critique_jp }}
-        </div>
+<div class="nav" style="padding: 20px; max-width: 800px; margin: 0 auto;"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Back</a></div>
 
-        <div class="proverb-box">
-            <h3 style="color: #c5a059; margin-top: 0;">Today's Proverb</h3>
-            <div style="font-size: 1.5rem; margin-bottom: 10px;">{{ art.proverb.title }}</div>
-            <p style="opacity: 0.8; margin: 0;">{{ art.proverb.desc }}</p>
-        </div>
-    </article>
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 100px 0;">
-    {% endfor %}
+{% for art in item.articles %}
+<article>
+    <div class="category">{{ art.category }}</div>
+    
+    <h1 class="jp">{{ art.title_jp }}</h1>
+    <h1 class="en">{{ art.title_en }}</h1>
 
-    <div id="popup"><h4 id="p-term">Definition</h4><div id="p-def"></div></div>
+    <div class="content jp">
+        {{ art.content_jp | replace('\n', '<br>') }}
+        <div class="critique-box"><strong>Critique:</strong><br>{{ art.critique_jp }}</div>
+        <p><strong>ことわざ:</strong> {{ art.proverb.title }} - {{ art.proverb.desc }}</p>
+        <p><strong>Key Terms:</strong> 
+            {% for g in art.glossary %}
+            <span class="term" onclick="showPanel('{{ g.term }}', '{{ g.def }}')">{{ g.term }}</span>&nbsp;
+            {% endfor %}
+        </p>
+    </div>
 
-    <script>
-        const articles = {{ item.articles | tojson }};
-        function showPop(t, d) {
-            document.getElementById('p-term').innerText = t;
-            document.getElementById('p-def').innerText = d;
-            const p = document.getElementById('popup');
-            p.classList.add('active');
-            setTimeout(() => { p.classList.remove('active'); }, 6000);
-        }
+    <div class="content en">
+        {{ art.content_en | replace('\n', '<br>') }}
+        <div class="critique-box"><strong>Critique:</strong><br>{{ art.critique_en }}</div>
+        <p><strong>Proverb:</strong> {{ art.proverb.title }} - {{ art.proverb.desc }}</p>
+    </div>
+</article>
+<hr style="border: 0; border-top: 1px solid #eee; margin: 80px 0;">
+{% endfor %}
 
-        articles.forEach((art, idx) => {
-            const container = document.getElementById('content-' + idx);
-            let html = container.innerHTML;
-            art.glossary.forEach(g => {
-                const regex = new RegExp(g.term, 'g');
-                html = html.replace(regex, `<span class="term-hl" onclick="showPop('${g.term}','${g.def}')">${g.term}</span>`);
-            });
-            container.innerHTML = html;
-        });
-        document.getElementById('popup').onclick = () => { document.getElementById('popup').classList.remove('active'); };
-    </script>
+<div id="panel">
+    <span class="close-btn" onclick="closePanel()">×</span>
+    <h3 id="panel-term" style="color: var(--gold); margin-top: 0;">Term</h3>
+    <p id="panel-def">Definition</p>
+</div>
+
+<script>
+    function toggleLang() {
+        const jps = document.querySelectorAll('.jp');
+        const ens = document.querySelectorAll('.en');
+        const isJp = jps[0].style.display !== 'none';
+        jps.forEach(el => el.style.display = isJp ? 'none' : 'block');
+        ens.forEach(el => el.style.display = isJp ? 'block' : 'none');
+    }
+
+    function showPanel(term, def) {
+        document.getElementById('panel-term').innerText = term;
+        document.getElementById('panel-def').innerText = def;
+        document.getElementById('panel').classList.add('active');
+    }
+
+    function closePanel() {
+        document.getElementById('panel').classList.remove('active');
+    }
+</script>
 </body>
 </html>
