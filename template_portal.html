@@ -3,35 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE INSIGHT</title>
+    <title>THE INSIGHT | Daily News & Global Geopolitics</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --navy: #001f3f; --gold: #c5a059; }
-        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; color: #333; }
+        :root { --navy: #001f3f; --gold: #c5a059; --cream: #FDFBF7; }
+        body { font-family: 'Noto Serif JP', serif; margin: 0; background: #fff; color: #333; line-height: 1.6; }
         
-        /* ヘッダー改善：重なり防止 */
-        header { background: var(--navy); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
-        .header-logo { font-family: 'Playfair Display'; font-size: 2.2rem; letter-spacing: 3px; flex-grow: 1; text-align: center; margin-left: 80px; }
-        .lang-btn { background: var(--gold); color: white; border: none; padding: 8px 16px; cursor: pointer; border-radius: 4px; font-weight: bold; white-space: nowrap; }
+        /* --- ヘッダー：重なり防止設計 --- */
+        header { 
+            background: var(--navy); 
+            color: white; 
+            padding: 15px 25px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            border-bottom: 5px solid var(--gold); 
+        }
+        .header-logo { 
+            font-family: 'Playfair Display'; 
+            font-size: 2.2rem; 
+            letter-spacing: 3px; 
+            flex-grow: 1; 
+            text-align: center; 
+            margin-left: 80px; /* ボタン幅を考慮した中央寄せ */
+        }
+        .lang-btn { 
+            background: var(--gold); 
+            color: white; 
+            border: none; 
+            padding: 8px 16px; 
+            cursor: pointer; 
+            border-radius: 4px; 
+            font-weight: bold; 
+            white-space: nowrap; 
+            transition: 0.3s;
+        }
 
-        .container { display: grid; grid-template-columns: 1fr 350px; max-width: 1200px; margin: 40px auto; gap: 50px; padding: 0 20px; }
-        .category { color: var(--gold); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; }
-        
-        /* ニュースらしいタイトル階層 */
-        .main-title { font-size: 1.8rem; margin: 10px 0 5px 0; line-height: 1.2; font-weight: 700; color: var(--navy); }
-        .sub-title { font-size: 1rem; color: #666; font-weight: normal; margin-bottom: 15px; }
-        
-        .read-more { display: inline-block; margin-top: 15px; color: var(--navy); font-weight: bold; text-decoration: none; border-bottom: 2px solid var(--gold); }
-        .side-col h3 { border-bottom: 2px solid var(--navy); padding-bottom: 10px; font-family: 'Playfair Display'; }
-        .archive-item { margin-bottom: 25px; list-style: none; }
-        .archive-item a { text-decoration: none; color: #555; font-size: 0.95rem; }
+        /* --- メインレイアウト --- */
+        .container { 
+            display: grid; 
+            grid-template-columns: 1fr 350px; 
+            max-width: 1200px; 
+            margin: 40px auto; 
+            gap: 50px; 
+            padding: 0 20px; 
+        }
 
+        /* --- 記事スタイル --- */
+        .category-tag { 
+            color: var(--gold); 
+            font-weight: bold; 
+            font-size: 0.85rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            margin-bottom: 8px;
+            display: block;
+        }
+        .main-title { 
+            font-size: 1.8rem; 
+            margin: 5px 0; 
+            line-height: 1.2; 
+            font-weight: 700; 
+            color: var(--navy); 
+        }
+        .sub-title { 
+            font-size: 1rem; 
+            color: #666; 
+            font-weight: normal; 
+            margin-bottom: 15px; 
+            display: block;
+        }
+        .excerpt { 
+            color: #444; 
+            font-size: 1rem; 
+            margin-bottom: 15px; 
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .read-more { 
+            color: var(--navy); 
+            font-weight: bold; 
+            text-decoration: none; 
+            border-bottom: 2px solid var(--gold);
+            font-size: 0.9rem;
+        }
+
+        /* --- 特集セクション：世界のニュース解説 --- */
+        .world-news-feature {
+            margin: 60px 0;
+            background: var(--cream);
+            border: 2px solid var(--gold);
+            padding: 40px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .feature-icon {
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            font-size: 6rem;
+            opacity: 0.1;
+            user-select: none;
+        }
+        .feature-btn {
+            background: var(--navy);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .feature-btn:hover { background: #003366; transform: translateY(-2px); }
+
+        /* --- サイドバー --- */
+        .side-col h3 { 
+            border-bottom: 2px solid var(--navy); 
+            padding-bottom: 10px; 
+            font-family: 'Playfair Display';
+            font-size: 1.4rem;
+        }
+        .archive-list { list-style: none; padding: 0; }
+        .archive-item { margin-bottom: 25px; }
+        .archive-item a { text-decoration: none; color: #555; font-size: 0.95rem; display: block; }
+        .archive-item small { color: var(--gold); font-weight: bold; }
+
+        /* --- 表示制御 --- */
         .en { display: none; }
-        @media (max-width: 800px) { 
+
+        /* --- レスポンシブ --- */
+        @media (max-width: 900px) {
             header { flex-direction: column; padding: 10px; }
-            .header-logo { margin-left: 0; font-size: 1.5rem; }
-            .lang-btn { margin-top: 10px; }
-            .container { grid-template-columns: 1fr; } 
+            .header-logo { margin-left: 0; font-size: 1.6rem; }
+            .lang-btn { margin-top: 10px; width: 100px; font-size: 0.8rem; }
+            .container { grid-template-columns: 1fr; }
+            .main-title { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -43,35 +157,52 @@
 </header>
 
 <div class="container">
-    <div class="main-col">
+    <main class="main-col">
         {% for art in item.articles %}
-        <article style="margin-bottom: 60px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
-            <div class="category">{{ art.category }}</div>
+        <article style="margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 30px;">
+            <span class="category-tag">{{ art.category }}</span>
+            
             <div class="jp">
                 {% set parts = art.title_jp.split('：') %}
-                <div class="main-title">{{ parts[0] }}</div>
-                {% if parts|length > 1 %}<div class="sub-title">{{ parts[1] }}</div>{% endif %}
-                <div class="excerpt">{{ art.content_jp | safe | truncate(150) }}</div>
-                <a href="articles/{{ item.date }}.html" class="read-more">記事を読む</a>
+                <h2 class="main-title">{{ parts[0] }}</h2>
+                {% if parts|length > 1 %}<span class="sub-title">{{ parts[1] }}</span>{% endif %}
+                <div class="excerpt">{{ art.content_jp | safe }}</div>
+                <a href="articles/{{ item.date }}.html" class="read-more">記事の全文を読む →</a>
             </div>
+
             <div class="en">
                 {% set parts_en = art.title_en.split(' ： ') %}
-                <div class="main-title">{{ parts_en[0] }}</div>
-                {% if parts_en|length > 1 %}<div class="sub-title">{{ parts_en[1] }}</div>{% endif %}
-                <div class="excerpt">{{ art.content_en | safe | truncate(150) }}</div>
-                <a href="articles/{{ item.date }}.html" class="read-more">Read More</a>
+                <h2 class="main-title">{{ parts_en[0] }}</h2>
+                {% if parts_en|length > 1 %}<span class="sub-title">{{ parts_en[1] }}</span>{% endif %}
+                <div class="excerpt">{{ art.content_en | safe }}</div>
+                <a href="articles/{{ item.date }}.html" class="read-more">Read Full Article →</a>
             </div>
         </article>
         {% endfor %}
-    </div>
+
+        <section class="world-news-feature">
+            <div class="feature-icon">🌏</div>
+            <div class="jp">
+                <h2 style="color: var(--navy); margin-top: 0; font-size: 1.8rem;">特集：世界情勢・地政学解説 2026</h2>
+                <p>パレスチナ、米中覇権争い、半導体供給網など、現代社会を読み解くために不可欠な10の重要テーマを論理的に解説。中学生から大人まで、世界の「なぜ」を深く学べる特別ガイドです。</p>
+                <a href="world_news.html" class="feature-btn">解説ガイドを開く</a>
+            </div>
+            <div class="en">
+                <h2 style="color: var(--navy); margin-top: 0; font-size: 1.8rem;">Feature: Global Geopolitics Guide 2026</h2>
+                <p>Logically explaining 10 essential themes including Israel-Palestine, US-China rivalry, and AI semiconductor supply chains. A special guide to understanding the world's complex issues.</p>
+                <a href="world_news.html" class="feature-btn">Open Geopolitics Guide</a>
+            </div>
+        </section>
+    </main>
 
     <aside class="side-col">
-        <h3>BACK NUMBERS</h3>
-        <ul style="padding: 0;">
+        <h3 class="jp">過去の記事</h3>
+        <h3 class="en">BACK NUMBERS</h3>
+        <ul class="archive-list">
             {% for entry in items %}
             <li class="archive-item">
                 <a href="articles/{{ entry.date }}.html">
-                    <small style="color: var(--gold);">{{ entry.date }}</small><br>
+                    <small>{{ entry.date }}</small><br>
                     <strong>{{ entry.articles[0].title_jp.split('：')[0] }}</strong>
                 </a>
             </li>
@@ -80,14 +211,26 @@
     </aside>
 </div>
 
+<footer style="background: var(--navy); color: white; padding: 40px 20px; text-align: center; margin-top: 60px;">
+    <div style="font-family: 'Playfair Display'; font-size: 1.2rem; margin-bottom: 10px;">THE INSIGHT</div>
+    <p style="font-size: 0.8rem; opacity: 0.7;">© 2026 編集者H - 教育とジャーナリズムの融合を目指して</p>
+</footer>
+
 <script>
     function toggleLang() {
         const jps = document.querySelectorAll('.jp');
         const ens = document.querySelectorAll('.en');
-        const isJp = jps[0].style.display !== 'none';
-        jps.forEach(el => el.style.display = isJp ? 'none' : 'block');
-        ens.forEach(el => el.style.display = isJp ? 'block' : 'none');
+        const isJp = (jps[0].style.display !== 'none');
+
+        if (isJp) {
+            jps.forEach(el => el.style.display = 'none');
+            ens.forEach(el => el.style.display = 'block');
+        } else {
+            jps.forEach(el => el.style.display = 'block');
+            ens.forEach(el => el.style.display = 'none');
+        }
     }
 </script>
+
 </body>
 </html>
