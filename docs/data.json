@@ -3,6 +3,158 @@
     "articles": [
       {
         "category": "Social",
+        "title_en": "Japan's New Year Tradition Faces a Labor Reset ： The Search for 'Symbiosis' as Foreign Workers Sustain Heritage Industries",
+        "title_jp": "労働力不足が変える日本の新春 ： 伝統産業を支える外国人労働者への「共生」の模索",
+        "content_en": "As 2026 opens, Japan's traditional industries are navigating a profound transformation. In the fishing ports of Chiba and the workshops of Kyoto, the New Year's bustle is now powered largely by foreign hands. With the government’s new 'Employment for Skill Development' (ESD) program set to fully replace the controversial trainee system by 2027, this year marks a critical transition. Small-scale businesses are no longer looking for temporary labor but for long-term neighbors who can help preserve local heritage in the face of a shrinking population.",
+        "content_jp": "2026年の幕開けとともに、日本の<span class=\"term\" onclick=\"openPanel('伝統産業', '古くから受け継がれてきた技術や文化に基づき、地域の資源を活用して行われる産業。')\">伝統産業</span>は深刻な変革期を迎えています。千葉の漁港から京都の工房に至るまで、新春の活気を支えているのは今や多くの外国人労働者です。政府が「<span class=\"term\" onclick=\"openPanel('育成就労制度', '技能実習制度に代わり、人材確保と育成を目的として導入された新しい在留資格制度。')\">育成就労制度</span>（ESD）」への移行を加速させ、2027年の完全撤廃を控える中、今年は単なる「労働力」ではなく、人口減少社会における「地域の一員」として彼らを受け入れる共生のあり方が問われています。人手不足が常態化する中、伝統の継承は今、国境を越えた信頼関係の上に成り立っています。",
+        "critique_en": "Editor H's Perspective: We often talk about 'saving' Japanese culture as if it were a static museum piece. But culture is alive, and today, its heartbeat is being sustained by young people from Vietnam, Indonesia, and beyond. The shift from the exploitative TITP to the more skill-focused ESD is a step toward dignity, but the real challenge is social. Can a rural town in Japan truly become a home for someone born thousands of miles away? Our future prosperity depends on whether we view these newcomers as tools or as neighbors.",
+        "critique_jp": "編集者Hの視点：私たちは「日本の文化を守る」と口にしますが、それは博物館の展示品を維持することではありません。文化とは生き物であり、現在その鼓動を支えているのはベトナムやインドネシアから来た若者たちです。搾取的な技能実習制度から、より尊厳を重視した「育成就労制度」への転換は一歩前進ですが、真の課題は社会の受容性にあります。数千キロ離れた地で生まれた人々にとって、日本の地方都市が真の「ホーム」になれるか。私たちの未来は、彼らを単なる労働力ではなく、隣人として迎えられるかにかかっています。",
+        "proverb_jp": {
+          "title": "温故知新",
+          "desc": "過去の教訓を学び、そこから新しい知識や見解を得ること。伝統を守るために新しい血を取り入れる姿勢に重なります。"
+        },
+        "proverb_en": {
+          "title": "Build bridges, not walls",
+          "desc": "Focusing on connection and cooperation rather than isolation, especially relevant to the integration of foreign workers into Japanese society."
+        },
+        "glossary": [
+          {
+            "term_en": "ESD (Employment for Skill Development)",
+            "def_en": "The new Japanese residency status replacing the Technical Intern Training Program, focused on long-term skill acquisition and career paths.",
+            "term_jp": "育成就労制度",
+            "def_jp": "技能実習制度に代わり、人材確保と育成を目的として導入された新しい在留資格制度。"
+          },
+          {
+            "term_en": "Symbiosis",
+            "def_en": "Living together in a mutually beneficial relationship, often used to describe the ideal state of multicultural society in Japan.",
+            "term_jp": "多文化共生",
+            "def_jp": "国籍や民族などの異なる人々が、互いの文化的違いを認め合い、対等な関係を築こうとすること。"
+          },
+          {
+            "term_en": "Demographic Squeeze",
+            "def_en": "A situation where the working-age population is shrinking while the elderly population grows, putting pressure on the economy.",
+            "term_jp": "人口動態の圧迫",
+            "def_jp": "少子高齢化により、現役世代の負担が増し、社会経済システムの維持が困難になる状況。"
+          },
+          {
+            "term_en": "Regional Revitalization",
+            "def_en": "Government policies aimed at boosting local economies and stopping depopulation in rural areas.",
+            "term_jp": "地方創生",
+            "def_jp": "東京一極集中を是正し、地方の人口減少に歯止めをかけ、地域経済を活性化させる取り組み。"
+          },
+          {
+            "term_en": "Heritage Industry",
+            "def_en": "Traditional sectors such as agriculture, fisheries, and crafts that have historical and cultural significance.",
+            "term_jp": "伝統産業",
+            "def_jp": "古くから受け継がれてきた技術や文化に基づき、地域の資源を活用して行われる産業。"
+          }
+        ]
+      },
+      {
+        "category": "Investment",
+        "title_en": "Nikkei 225 Eyes the 55,000 Milestone ： How 'Sanaenomics' and Corporate Reforms Reawakened Japanese Equities",
+        "title_jp": "日経平均、5万円台定着へ ： 「サナエノミクス」と企業ガバナンス改革が導く日本株の覚醒",
+        "content_en": "The Tokyo Stock Exchange has entered 2026 with historic momentum, as the Nikkei 225 hovers near record highs. This surge is fueled by Prime Minister Sanae Takaichi’s '<span class=\"term\" onclick=\"openPanel('Sanaenomics', 'The economic policies of PM Sanae Takaichi, characterized by fiscal expansion and a focus on national strength.')\">Sanaenomics</span>'—a blend of aggressive fiscal stimulus and structural reforms. Investors are specifically responding to improved Return on Equity (ROE) and a new wave of share buybacks. For the first time in decades, real wage growth is beginning to support domestic demand, making Japan a top destination for global institutional capital.",
+        "content_jp": "東京株式市場は、2026年を歴史的な強含みで迎え、日経平均株価は5万円台の大台を固める動きを見せています。この上昇を牽引するのは、高市早苗首相が掲げる「<span class=\"term\" onclick=\"openPanel('サナエノミクス', '高市早苗首相の経済政策。積極的な財政出動、戦略的な投資、成長戦略を柱とする。')\">サナエノミクス</span>」です。積極的な財政出動と構造改革に加え、企業の<span class=\"term\" onclick=\"openPanel('自己資本利益率', '企業が株主資本をいかに効率的に運用して利益を上げているかを示す指標。')\">自己資本利益率</span>（ROE）の向上や株主還元策が海外投資家の呼び水となっています。数十年来で初めて、<span class=\"term\" onclick=\"openPanel('実質賃金の上昇', '物価の変動を考慮した後の賃金の上昇。消費者の購買力が実際に高まっていることを示す。')\">実質賃金の上昇</span>が内需を下支えし始めており、日本株はもはや「割安だから買う」対象ではなく、「成長のために買う」対象へと変貌を遂げました。",
+        "critique_en": "Editor H's Perspective: For years, investing in Japan felt like waiting for a sunrise that never quite cleared the horizon. But 2026 feels different. The focus has shifted from mere survival to aggressive 'value creation.' However, the 'Takaichi Trade' carries risks—namely, a potential bond market backlash if fiscal spending overheats. The real test for investors this year isn't just watching the index climb, but identifying which companies are truly innovating rather than just riding the tide of a weak yen.",
+        "critique_jp": "編集者Hの視点：長年、日本への投資は「昇りきらない朝日」を待つようなもどかしさがありました。しかし、2026年の景色は違います。企業の姿勢は「守り」から「価値創造」へと明確にシフトしました。もっとも、「サナエノミクス」に伴う積極財政には、国債市場の反乱というリスクも孕んでいます。投資家にとっての真の試練は、指数の上昇に浮かれることではなく、円安の追い風を抜きにしても成長できる本物のイノベーターを見極めることにあります。",
+        "proverb_jp": {
+          "title": "待てば海路の日和あり",
+          "desc": "焦らずに待っていれば、良い機会が訪れるということ。長年の低迷を抜けた日本市場の現状に重なります。"
+        },
+        "proverb_en": {
+          "title": "Fortune favors the bold",
+          "desc": "Success comes to those who take risks, reflecting the current aggressive shift in Japanese corporate governance and fiscal policy."
+        },
+        "glossary": [
+          {
+            "term_en": "Sanaenomics",
+            "def_en": "The economic policies of PM Sanae Takaichi, characterized by fiscal expansion and a focus on national strength.",
+            "term_jp": "サナエノミクス",
+            "def_jp": "高市早苗首相の経済政策。積極的な財政出動、戦略的な投資、成長戦略を柱とする。"
+          },
+          {
+            "term_en": "ROE (Return on Equity)",
+            "def_en": "A measure of financial performance calculated by dividing net income by shareholders' equity.",
+            "term_jp": "自己資本利益率",
+            "def_jp": "企業が株主資本をいかに効率的に運用して利益を上げているかを示す指標。"
+          },
+          {
+            "term_en": "Real Wage Growth",
+            "def_en": "Wage increases adjusted for inflation, indicating an actual increase in purchasing power.",
+            "term_jp": "実質賃金の上昇",
+            "def_jp": "物価の変動を考慮した後の賃金の上昇。消費者の購買力が実際に高まっていることを示す。"
+          },
+          {
+            "term_en": "Share Buyback",
+            "def_en": "When a company buys its own outstanding shares to reduce the number of shares on the market, often increasing share value.",
+            "term_jp": "自社株買い",
+            "def_jp": "企業が自らの資金で発行済みの自社株式を買い戻すこと。株主還元策の一つとされる。"
+          },
+          {
+            "term_en": "Fiscal Dove",
+            "def_en": "A policymaker who favors increased government spending and is less concerned about budget deficits.",
+            "term_jp": "財政ハト派",
+            "def_jp": "経済成長や雇用を重視し、積極的な財政支出や金融緩和を容認する立場をとる政治家や当局者。"
+          }
+        ]
+      },
+      {
+        "category": "International",
+        "title_en": "The 2026 AI Governance Crossroads ： Seeking Global Alignment in Geneva Amid Shadows of Fragmentation",
+        "title_jp": "2026年、AIガバナンスの分岐点 ： ジュネーブ合意に向けた国際社会の足並みと分断の影",
+        "content_en": "World leaders gathered in Geneva this week to negotiate the first comprehensive international treaty on Artificial Intelligence. As AI systems become more autonomous in 2026, the global community faces a stark choice: establish shared ethical guardrails or retreat into technological nationalism. While the EU and Japan push for interoperable standards, deep divisions remain over 'frontier models' and export controls. The outcome will decide whether AI becomes a bridge for global development or a tool for a new digital iron curtain.",
+        "content_jp": "今週、ジュネーブに集結した各国首脳は、人工知能（AI）に関する初の包括的な国際条約の策定に向けて協議を開始しました。AIが自律性を増す2026年、国際社会は「共有された倫理的枠組み」を構築するか、「技術ナショナリズム」に沈むかの瀬戸際に立たされています。日欧が相互運用可能な基準を求める一方で、最先端モデルの規制や輸出管理を巡る分断は根深く、合意の成否が今後の世界のデジタル秩序を左右することになります。",
+        "critique_en": "Editor H's Perspective: We are at a 'Oppenheimer moment' for the digital age. The Geneva talks aren't just about code or compute power; they are about the soul of our future social contract. If we allow AI governance to fragment along geopolitical lines, we risk creating a world where safety and ethics are luxury goods available only to the highest bidder. Cooperation is no longer a diplomatic nicety—it is a survival strategy for a species that has finally built a mirror that can think for itself.",
+        "critique_jp": "編集者Hの視点：私たちは今、デジタル時代の「オッペンハイマー・モーメント」に立ち会っています。ジュネーブでの協議は、単なるコードや計算能力の制御を論じているのではありません。それは未来の社会契約の在り方を問うものです。もしAIガバナンスが地政学的な境界線で分断されれば、安全性や倫理が「富裕国の特権」となる世界を招きかねません。対話はもはや外交上の儀礼ではなく、自ら考える鏡を作り出してしまった人類にとっての生存戦略なのです。",
+        "proverb_jp": {
+          "title": "一蓮托生",
+          "desc": "結果がどうなろうと、行動や運命を共にすること。AIという全人類共通の課題に対する国際社会の運命を象徴します。"
+        },
+        "proverb_en": {
+          "title": "United we stand, divided we fall",
+          "desc": "Emphasizing that global cooperation is essential to manage the risks and rewards of AI technology."
+        },
+        "glossary": [
+          {
+            "term_en": "Multilateralism",
+            "def_en": "The practice of coordinating national policies in groups of three or more states.",
+            "term_jp": "多国間主義",
+            "def_jp": "複数の国が協力して、共通の課題解決やルール作りを行う国際政治のあり方。"
+          },
+          {
+            "term_en": "AI Accord",
+            "def_en": "An international agreement or treaty specifically targeting the regulation and ethical use of artificial intelligence.",
+            "term_jp": "AI国際合意",
+            "def_jp": "人工知能の利用、開発、規制に関して国家間で結ばれる協定や条約。"
+          },
+          {
+            "term_en": "Algorithmic Bias",
+            "def_en": "Systematic and repeatable errors in a computer system that create unfair outcomes, such as privileging one group over another.",
+            "term_jp": "アルゴリズムの偏り",
+            "def_jp": "AIの計算過程において、特定の属性に対して不当に不利な結果が生じる偏見や差別。"
+          },
+          {
+            "term_en": "Sovereignty",
+            "def_en": "The authority of a state to govern itself or another state; here, often referring to 'digital sovereignty' over data and AI.",
+            "term_jp": "主権",
+            "def_jp": "国家が持つ、他国から干渉されずに自国の事項を決定する権利。近年はデジタル主権が注目される。"
+          },
+          {
+            "term_en": "Frontier Models",
+            "def_en": "The most advanced and highly capable AI models that push the boundaries of current technology.",
+            "term_jp": "フロンティアモデル",
+            "def_jp": "現在の技術水準を凌駕する、極めて高い能力を持つ最先端のAI大規模モデル。"
+          }
+        ]
+      }
+    ],
+    "date": "2026-01-04"
+  },
+  {
+    "articles": [
+      {
+        "category": "Social",
         "title_en": "The Breaking Point of Rural Healthcare ： The '2026 Problem' and the Digital Survival Strategy",
         "title_jp": "地方医療の限界点 ： 「2026年問題」とデジタル生存戦略の本格始動",
         "content_en": "As Japan enters 2026, the '<span class=\"term\" onclick=\"openPanel('2026 Problem', 'The social crisis expected when all baby boomers reach the age of 75, straining social security.')\">2026 Problem</span>'—where the entire baby boomer generation surpasses the age of 75—has triggered a critical shortage in rural healthcare resources. Major Japanese newspapers report a record number of clinic closures in Hokkaido and Kyushu due to the lack of successors. In response, the Ministry of Health, Labour and Welfare has accelerated the deregulation of AI-driven diagnostic tools and remote monitoring systems. The goal is to create a 'human-lite' medical infrastructure that maintains quality of care despite a dwindling workforce.",
