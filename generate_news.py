@@ -13,35 +13,36 @@ jst = timezone(timedelta(hours=+9), 'JST')
 now = datetime.datetime.now(jst)
 today_str = now.strftime("%Y-%m-%d")
 
-# 2. プロンプト設定
+# 2. プロンプト設定 (4ヶ国語対応)
 PROMPT = f"""
 Today's date is {today_str}. 
 Search for top news from Japan's 5 major newspapers and global news (BBC/Reuters).
 Select THREE topics: 1. Social (Japan), 2. Investment (Japan), 3. International (Global).
 
 Requirements for TITLES:
-- Main Title: Factual, straight news headline.
-- Sub Title: Insightful sub-headline.
 - Format: 'Main Title ： Sub Title' (Full-width '：').
+- Languages: Japanese (jp), English (en), Chinese Simplified (zh), Hindi (hi).
 
 Requirements for CONTENT:
-- Perspective: Write the critique section as "Editor H's Perspective" (編集者Hの視点).
-- Tone: Intellectual yet accessible (Kristof-style).
-- Sign-off: DO NOT add a signature like "Editor H" at the very end of the text.
-- Language: Both English and Japanese.
-- Glossary: Define 5 key terms used in the text for the sliding panel.
+- Perspective: "Editor H's Perspective" (編集者Hの視点).
+- Tone: Intellectual yet accessible.
+- Languages: All 4 languages (jp, en, zh, hi).
+- Glossary: Define 5 key terms in all 4 languages.
 
 Output ONLY a raw JSON object:
 {{
   "articles": [
     {{
       "category": "Social",
-      "title_en": "Main ： Sub", "title_jp": "メイン ： サブ",
-      "content_en": "...", "content_jp": "...",
-      "critique_en": "...", "critique_jp": "...",
-      "proverb_jp": {{"title": "...", "desc": "..."}},
-      "proverb_en": {{"title": "...", "desc": "..."}},
-      "glossary": [{{"term_en": "...", "def_en": "...", "term_jp": "...", "def_jp": "..."}}]
+      "titles": {{"jp": "...", "en": "...", "zh": "...", "hi": "..."}},
+      "contents": {{"jp": "...", "en": "...", "zh": "...", "hi": "..."}},
+      "critiques": {{"jp": "...", "en": "...", "zh": "...", "hi": "..."}},
+      "glossary": [
+        {{
+          "terms": {{"jp": "...", "en": "...", "zh": "...", "hi": "..."}},
+          "defs": {{"jp": "...", "en": "...", "zh": "...", "hi": "..."}}
+        }}
+      ]
     }}
   ]
 }}
@@ -52,7 +53,7 @@ def generate():
     for attempt in range(3):
         try:
             response = client.models.generate_content(
-                model='gemini-3-flash-preview',
+                model='gemini-2.0-flash-exp', # 最新モデルを指定
                 contents=PROMPT,
                 config=types.GenerateContentConfig(
                     tools=[types.Tool(google_search=types.GoogleSearchRetrieval())],
@@ -67,18 +68,22 @@ def generate():
     
     if not data: return
 
-    # 本文中の用語を自動的にスライド解説用タグに置換
+    # 本文中の用語をポップアップ用に置換（全言語対応）
+    langs = ['jp', 'en', 'zh', 'hi']
     for article in data['articles']:
         for g in article['glossary']:
-            t_jp, d_jp = g['term_jp'], g['def_jp'].replace("'", "\\'")
-            article['content_jp'] = article['content_jp'].replace(t_jp, f'<span class="term" onclick="openPanel(\'{t_jp}\', \'{d_jp}\')">{t_jp}</span>')
-            t_en, d_en = g['term_en'], g['def_en'].replace("'", "\\'")
-            article['content_en'] = article['content_en'].replace(t_en, f'<span class="term" onclick="openPanel(\'{t_en}\', \'{d_en}\')">{t_en}</span>')
+            for l in langs:
+                term = g['terms'][l]
+                definition = g['defs'][l].replace("'", "\\'")
+                article['contents'][l] = article['contents'][l].replace(
+                    term, f'<span class="term" onclick="openPanel(\'{term}\', \'{definition}\')">{term}</span>'
+                )
 
     data['date'] = today_str
     data_path = 'docs/data.json'
     os.makedirs('docs/articles', exist_ok=True)
     
+    # 履歴管理
     history = []
     if os.path.exists(data_path):
         with open(data_path, 'r', encoding='utf-8') as f:
@@ -90,12 +95,13 @@ def generate():
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(history[:100], f, ensure_ascii=False, indent=2)
 
+    # HTML生成
     for t_name, out_name in [('template_article.html', f'docs/articles/{today_str}.html'), ('template_portal.html', 'docs/index.html')]:
         if os.path.exists(t_name):
             with open(t_name, 'r', encoding='utf-8') as f:
                 tmpl = Template(f.read())
             with open(out_name, 'w', encoding='utf-8') as f:
-                f.write(tmpl.render(items=history, item=data))
+                f.write(tmpl.render(items=history, item=data, today=today_str))
 
 if __name__ == "__main__":
     generate()
