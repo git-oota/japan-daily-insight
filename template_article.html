@@ -3,99 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article | THE INSIGHT</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <title>{{ item.articles[0].titles.jp }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --navy: #001f3f; --gold: #c5a059; }
-        body { font-family: 'Noto Serif JP', serif; margin: 0; line-height: 2.1; color: #333; background: #fff; }
-        
-        /* ヘッダー：重なり防止Flexbox */
-        header { background: var(--navy); color: white; padding: 15px 25px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 5px solid var(--gold); }
-        .header-logo { font-family: 'Playfair Display'; font-size: 1.8rem; flex-grow: 1; text-align: center; margin-left: 80px; }
-        .lang-btn { background: var(--gold); color: white; border: none; padding: 6px 15px; cursor: pointer; border-radius: 4px; font-weight: bold; white-space: nowrap; }
-
-        main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-        article { margin-bottom: 100px; }
-        .category { color: var(--gold); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
-        
-        .main-title { font-size: 2.8rem; line-height: 1.1; margin: 15px 0 5px 0; color: var(--navy); }
-        .sub-title { font-size: 1.3rem; color: var(--gold); font-weight: normal; margin-bottom: 35px; line-height: 1.4; }
-
-        .term { color: var(--navy); font-weight: bold; border-bottom: 2px dashed var(--gold); cursor: pointer; padding: 0 2px; }
-        
-        /* 視点ボックスの修正 */
-        .critique-box { background: #fdfaf4; border-left: 5px solid var(--gold); padding: 30px; margin: 40px 0; border-radius: 0 8px 8px 0; font-style: italic; }
-
-        #glossary-panel { position: fixed; bottom: -100%; left: 0; width: 100%; background: white; box-shadow: 0 -15px 40px rgba(0,0,0,0.2); transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); z-index: 1000; padding: 40px 30px; box-sizing: border-box; border-radius: 28px 28px 0 0; }
-        #glossary-panel.active { bottom: 0; }
-        .panel-close { float: right; cursor: pointer; font-size: 2rem; color: #ccc; margin-top: -20px; }
-        #panel-term { color: var(--gold); margin: 0 0 10px 0; font-size: 1.6rem; }
-
-        .en { display: none; }
-        @media (max-width: 600px) { 
-            header { flex-direction: column; padding: 10px; }
-            .header-logo { margin-left: 0; font-size: 1.4rem; }
-            .lang-btn { margin-top: 10px; }
-            .main-title { font-size: 1.8rem; } .sub-title { font-size: 1rem; } 
-        }
+        .term { color: #d97706; border-bottom: 1px dotted #d97706; cursor: pointer; font-weight: bold; }
+        #side-panel { transition: transform 0.3s ease; transform: translateX(100%); }
+        #side-panel.open { transform: translateX(0); }
     </style>
 </head>
-<body>
+<body class="bg-stone-50 text-stone-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-50 px-4 h-16 flex items-center justify-between">
+        <a href="../index.html" class="text-sm font-bold text-stone-500 hover:text-stone-800">← TOPへ戻る</a>
+        <select onchange="switchLang(this.value)" class="border rounded px-2 py-1 text-sm">
+            <option value="jp">🇯🇵 日本語</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="zh">🇨🇳 中文</option>
+            <option value="hi">🇮🇳 हिन्दी</option>
+        </select>
+    </nav>
 
-<header>
-    <div class="header-logo">THE INSIGHT</div>
-    <button class="lang-btn" onclick="toggleLang()">EN / JP</button>
-</header>
+    <main class="container mx-auto px-4 py-10 max-w-3xl">
+        <div class="text-stone-400 text-sm mb-2">{{ item.date }}</div>
+        
+        {% for art in item.articles %}
+        <article class="mb-20">
+            <span class="bg-stone-200 text-stone-600 px-2 py-1 rounded text-xs font-bold">{{ art.category }}</span>
+            <h2 class="text-2xl md:text-3xl font-bold my-4 lang-content jp">{{ art.titles.jp }}</h2>
+            <h2 class="text-2xl md:text-3xl font-bold my-4 lang-content en hidden">{{ art.titles.en }}</h2>
+            <h2 class="text-2xl md:text-3xl font-bold my-4 lang-content zh hidden">{{ art.titles.zh }}</h2>
+            <h2 class="text-2xl md:text-3xl font-bold my-4 lang-content hi hidden">{{ art.titles.hi }}</h2>
 
-<main>
-    <div style="margin-bottom: 40px;"><a href="../index.html" style="color: var(--gold); text-decoration: none;">← Home</a></div>
-    {% for art in item.articles %}
-    <article>
-        <div class="category">{{ art.category }}</div>
-        <div class="jp">
-            {% set parts = art.title_jp.split('：') %}
-            <h1 class="main-title">{{ parts[0] }}</h1>
-            {% if parts|length > 1 %}<div class="sub-title">{{ parts[1] }}</div>{% endif %}
-            <div class="content">{{ art.content_jp | safe | replace('\n', '<br>') }}
-                <div class="critique-box"><strong>編集者Hの視点:</strong><br>{{ art.critique_jp }}</div>
-                <p><strong>今日のことわざ:</strong> {{ art.proverb_jp.title }} - {{ art.proverb_jp.desc }}</p>
-                </div>
-        </div>
-        <div class="en">
-            {% set parts_en = art.title_en.split(' ： ') %}
-            <h1 class="main-title">{{ parts_en[0] }}</h1>
-            {% if parts_en|length > 1 %}<div class="sub-title">{{ parts_en[1] }}</div>{% endif %}
-            <div class="content">{{ art.content_en | safe | replace('\n', '<br>') }}
-                <div class="critique-box"><strong>Editor H's Perspective:</strong><br>{{ art.critique_en }}</div>
-                <p><strong>Today's Proverb:</strong> {{ art.proverb_en.title }} - {{ art.proverb_en.desc }}</p>
-                </div>
-        </div>
-    </article>
-    <hr style="border:0; border-top: 1px solid #eee; margin: 100px 0;">
-    {% endfor %}
-</main>
+            <div class="prose max-w-none leading-relaxed">
+                <div class="lang-content jp">{{ art.contents.jp | safe }}</div>
+                <div class="lang-content en hidden">{{ art.contents.en | safe }}</div>
+                <div class="lang-content zh hidden">{{ art.contents.zh | safe }}</div>
+                <div class="lang-content hi hidden">{{ art.contents.hi | safe }}</div>
+            </div>
 
-<div id="glossary-panel"><span class="panel-close" onclick="closePanel()">×</span><h3 id="panel-term">用語</h3><p id="panel-def">解説</p></div>
+            <div class="mt-8 p-6 bg-white rounded-xl border border-stone-200">
+                <h4 class="font-bold border-b mb-4 pb-2">Editor H's Perspective</h4>
+                <div class="lang-content jp italic text-stone-600">{{ art.critiques.jp }}</div>
+                <div class="lang-content en hidden italic text-stone-600">{{ art.critiques.en }}</div>
+                <div class="lang-content zh hidden italic text-stone-600">{{ art.critiques.zh }}</div>
+                <div class="lang-content hi hidden italic text-stone-600">{{ art.critiques.hi }}</div>
+            </div>
+        </article>
+        {% endfor %}
+    </main>
 
-<script>
-    function toggleLang() {
-        const jps = document.querySelectorAll('.jp');
-        const ens = document.querySelectorAll('.en');
-        const isJp = jps[0].style.display !== 'none';
-        jps.forEach(el => el.style.display = isJp ? 'none' : 'block');
-        ens.forEach(el => el.style.display = isJp ? 'block' : 'none');
-        closePanel();
-    }
-    function openPanel(term, def) {
-        document.getElementById('panel-term').innerText = term;
-        document.getElementById('panel-def').innerText = def;
-        document.getElementById('glossary-panel').classList.add('active');
-    }
-    function closePanel() { document.getElementById('glossary-panel').classList.remove('active'); }
-    document.addEventListener('click', function(e) {
-        const panel = document.getElementById('glossary-panel');
-        if (!panel.contains(e.target) && !e.target.classList.contains('term')) { closePanel(); }
-    });
-</script>
+    <div id="side-panel" class="fixed top-0 right-0 w-80 h-full bg-white shadow-2xl z-[100] p-8 border-l">
+        <button onclick="closePanel()" class="absolute top-4 right-4 text-2xl">×</button>
+        <h3 id="panel-title" class="text-xl font-bold mb-4 text-amber-600"></h3>
+        <p id="panel-desc" class="text-stone-600 leading-relaxed"></p>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.' + lang).forEach(el => el.classList.remove('hidden'));
+        }
+        function openPanel(title, desc) {
+            document.getElementById('panel-title').innerText = title;
+            document.getElementById('panel-desc').innerText = desc;
+            document.getElementById('side-panel').classList.add('open');
+        }
+        function closePanel() {
+            document.getElementById('side-panel').classList.remove('open');
+        }
+    </script>
 </body>
 </html>
