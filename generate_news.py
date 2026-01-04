@@ -53,7 +53,7 @@ def generate():
     for attempt in range(3):
         try:
             response = client.models.generate_content(
-                model='gemini-2.0-flash-exp', # 最新モデルを指定
+                model='gemini-3-flash-preview', # 最新モデルを指定
                 contents=PROMPT,
                 config=types.GenerateContentConfig(
                     tools=[types.Tool(google_search=types.GoogleSearchRetrieval())],
